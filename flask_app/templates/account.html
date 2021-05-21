@@ -1,0 +1,30 @@
+{% extends "header.html" %}
+{% block content %}
+<div class="row">
+    <div class="col">
+        <h1>Hey, {{ current_user.username }}!</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <form action="" method="post">
+            {{ username_form.csrf_token }}
+            <div class="form-group">
+                Update Username here:
+                {{ username_form.username(class="form-control form-control-lg") }}
+
+                {% if username_form.username.errors %}
+                <div class="alert alert-warning" role="alert">
+                    {% for error in username_form.username.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ username_form.submit }}
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}>

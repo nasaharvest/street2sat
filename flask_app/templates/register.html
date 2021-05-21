@@ -1,0 +1,68 @@
+{% extends "header.html" %}
+{% block content %}
+<div class="row">
+    <div class="col">
+        <h2>Registration</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        If you already have an account, then just <a href="{{ url_for('users.login') }}">Log In!</a>
+    </div>
+</div>
+<!-- Registration Form: -->
+<div class="row">
+    <div class="col">
+        <form action="" method="post">
+            {{ form.csrf_token }}
+            <div class="form-group">
+                {{ form.username.label(class="form-control-label") }}
+                {{ form.username(class="form-control form-control-lg") }}
+                {% if form.username.errors %}
+                <div class="alert alert-warning" role="alert">
+                    {% for error in form.username.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.email.label(class="form-control-label") }}
+                {{ form.email(class="form-control form-control-lg") }}
+                {% if form.email.errors %}
+                <div class="alert alert-warning" role="alert">
+                    {% for error in form.email.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.password.label(class="form-control-label") }}
+                {{ form.password(class="form-control form-control-lg") }}
+                {% if form.password.errors %}
+                <div class="alert alert-warning" role="alert">
+                    {% for error in form.password.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.confirm_password.label(class="form-control-label") }}
+                {{ form.confirm_password(class="form-control form-control-lg") }}
+                {% if form.confirm_password.errors %}
+                <div class="alert alert-warning" role="alert">
+                    {% for error in form.confirm_password.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.submit(class="form-control form-control-lg") }}
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

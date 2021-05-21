@@ -1,0 +1,12 @@
+tobacco
+coffee
+banana
+tea
+beans
+maize
+sorghum
+millet
+sweet_potatoes
+cassava
+rice
+sugarcane
