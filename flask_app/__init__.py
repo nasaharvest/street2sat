@@ -38,7 +38,7 @@ def remove_folders():
     print('After', os.listdir('./temp'))
 
 sched = BackgroundScheduler(daemon=True)
-sched.add_job(remove_folders,'interval', minutes=15,id='remove_temp_folders')
+sched.add_job(remove_folders,'interval', minutes=5,id='remove_temp_folders')
 sched.start()
 
 def create_app(test_config=None):

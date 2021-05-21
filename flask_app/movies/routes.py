@@ -54,7 +54,7 @@ def prediction():
     form = TestDataForm()
     if form.validate_on_submit():
         from .. import sched
-        sched.reschedule_job('remove_temp_folders', trigger='interval', minutes=15)
+        sched.reschedule_job('remove_temp_folders', trigger='interval', minutes=5)
         jpg_files = []
         letters = string.ascii_letters
         uniq = ( ''.join(random.choice(letters) for i in range(10)) )
@@ -78,7 +78,7 @@ def prediction():
 @model.route("/displayone",methods = ["GET", "POST"])
 def displayone():
     from .. import sched
-    sched.reschedule_job('remove_temp_folders', trigger='interval', minutes=15)
+    sched.reschedule_job('remove_temp_folders', trigger='interval', minutes=5)
     jpg_files = session.get('jpg_files', None)
     choose_picture = ChoosePicture(images = jpg_files)
     file_path = session.get('file_path', None)
