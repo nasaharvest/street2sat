@@ -82,6 +82,10 @@ def displayone():
     jpg_files = session.get('jpg_files', None)
     choose_picture = ChoosePicture(images = jpg_files)
     file_path = session.get('file_path', None)
+    if not os.path.isdir(file_path):
+        return redirect(url_for("model.prediction"))
+
+
     img_path = os.path.join(file_path, jpg_files[0])
     label_path = os.path.join(file_path, 'exp', 'labels', jpg_files[0].split('.')[0] + '.txt')
 
@@ -115,6 +119,8 @@ def display():
     jpg_files = session.get('jpg_files', None)
     choose_picture = ChoosePicture(images = jpg_files)
     file_path = session.get('file_path', None)
+    if not os.path.isdir(file_path):
+        return redirect(url_for("model.prediction"))
 
 
     if choose_picture.validate_on_submit():
