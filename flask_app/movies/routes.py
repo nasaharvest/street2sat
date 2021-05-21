@@ -90,7 +90,7 @@ def displayone():
     lat_long = get_exif_location(tags)
     time = get_exif_datetime(tags)
 
-    map = folium.Map(location = lat_long, zoom_start = 13, tiles = "Stamen Terrain")
+    map = folium.Map(location = lat_long, zoom_start = 17, tiles = "OpenStreetMap")
     folium.Marker(lat_long, popup="<i> {}\n{}:{}:{}</i>".format(jpg_files[0], time.tm_hour, time.tm_min, time.tm_sec), icon=folium.Icon(color='lightgray')).add_to(map)
 
 
@@ -111,7 +111,7 @@ def displayone():
 @model.route("/display", methods = ["GET", "POST"])
 def display():
     from .. import sched
-    sched.reschedule_job('remove_temp_folders', trigger='interval', minutes=15)
+    sched.reschedule_job('remove_temp_folders', trigger='interval', minutes=5)
     jpg_files = session.get('jpg_files', None)
     choose_picture = ChoosePicture(images = jpg_files)
     file_path = session.get('file_path', None)
