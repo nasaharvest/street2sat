@@ -15,7 +15,7 @@ import math
 
 # from .dl_model import raga_resnet
 def predict(img_dir, save_dir):
-    command = 'python yolov5/detect.py --weights model_weights/best.pt --source {} --save-txt --save-conf --project {}'.format(img_dir, save_dir)
+    command = 'python yolov5/detect.py --weights model_weights/best.pt --nosave --source {} --save-txt --save-conf --project {}'.format(img_dir, save_dir)
     os.system(command)
 
 def get_image(image_path):
