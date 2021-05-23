@@ -8,8 +8,6 @@ from ..utils import current_time
 import io
 import base64
 import os
-from pydub import AudioSegment
-import pydub
 from werkzeug.utils import secure_filename
 from ..client import *
 import random
