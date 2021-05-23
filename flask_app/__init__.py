@@ -49,6 +49,18 @@ def remove_folders():
     for var, obj in local_vars:
         print(var, sys.getsizeof(obj))
 
+    start_path = '.'
+    total_size = 0
+    for dirpath, dirnames, filenames in os.walk(start_path):
+        for f in filenames:
+            fp = os.path.join(dirpath, f)
+            # skip if it is symbolic link
+            if not os.path.islink(fp):
+                print(fp, os.path.getsize(fp))
+                total_size += os.path.getsize(fp)
+
+    print(total_size, 'bytes')
+
 sched = BackgroundScheduler(daemon=True)
 sched.add_job(remove_folders,'interval', minutes = 5, id='remove_temp_folders')
 sched.start()
