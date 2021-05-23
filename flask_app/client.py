@@ -13,6 +13,7 @@ import time
 import math
 from .models import *
 import numpy
+from .yolov5 import hubconf
 
 def predict(jpg_files):
     imgs = []
@@ -24,7 +25,8 @@ def predict(jpg_files):
         img = img[:, :, ::-1] # BGR to RGB
         imgs.append(img)
 
-    model = torch.hub.load('ultralytics/yolov5', 'custom', path='model_weights/best.pt')
+    # model = torch.hub.load('ultralytics/yolov5', 'custom', path='model_weights/best.pt')
+    model = hubconf.custom('model_weights/best.pt')
     results = model(imgs)
     return results
 
@@ -167,7 +169,7 @@ def get_new_points(time_dict, coord_dict, distance_dict):
 
         ##### IMPORTANT ASSUMPTION ALL CAMERAS POINT LEFT ####
         bearings[file] = (compass_bearing - 90) % 360
-        
+
     # file:crop:(lat,long)
     new_points = {}
     for file, bearing in bearings.items():
