@@ -20,6 +20,7 @@ Jinja2==2.11.2
 MarkupSafe==1.1.1
 mongoengine==0.20.0
 numpy==1.20.2
+opencv-python>=4.1.2
 packaging==20.4
 Pillow==8.2.0
 pluggy==0.13.1
