@@ -16,6 +16,7 @@ import os
 from apscheduler.schedulers.background import BackgroundScheduler
 import shutil
 import sys
+import gc
 # os.environ["TORCH_INSTALL"] = "0"
 # local
 
