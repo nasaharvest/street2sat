@@ -15,6 +15,7 @@ import datetime
 import os
 from apscheduler.schedulers.background import BackgroundScheduler
 import shutil
+os.environ["TORCH_INSTALL"] = "0"
 # local
 
 db = MongoEngine()
