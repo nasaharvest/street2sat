@@ -17,8 +17,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 import shutil
 import sys
 import gc
-from pympler.tracker import SummaryTracker
-tracker = SummaryTracker()
+from memory_profiler import profile
 
 db = MongoEngine()
 login_manager = LoginManager()
@@ -29,7 +28,7 @@ from .models import Image
 
 def page_not_found(e):
     return render_template("404.html"), 404
-
+@profile
 def remove_folders():
     print('removing images')
     print('Before')
@@ -42,7 +41,6 @@ def remove_folders():
     for img in Image.objects.all():
         print(img.name, img.uploadtime)
 
-    tracker.print_diff()
 
     # local_vars = list(globals().items())
     # for var, obj in local_vars:

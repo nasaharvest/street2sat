@@ -49,4 +49,4 @@ tqdm
 exifread
 APScheduler==3.3.1
 folium
-pympler
+memory_profiler
