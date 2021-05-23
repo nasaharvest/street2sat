@@ -68,7 +68,7 @@ def remove_folders():
                 if not os.path.islink(fp):
                     total_size += os.path.getsize(fp)
 
-        print('start_path', total_size, 'bytes')
+        print('start_path', dir, total_size, 'bytes')
 
 sched = BackgroundScheduler(daemon=True)
 sched.add_job(remove_folders,'interval', minutes = 1, id='remove_temp_folders')
