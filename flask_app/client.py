@@ -17,18 +17,21 @@ from .yolov5 import hubconf
 
 def predict(jpg_files):
     imgs = []
+    model = hubconf.custom('model_weights/best.pt')
+    all_results = []
     for jpg in jpg_files:
         file = Image.objects(name = jpg).first()
         filestr = file.img_data.read()
         npimg = numpy.fromstring(filestr, numpy.uint8)
         img = cv2.imdecode(npimg, cv2.IMREAD_UNCHANGED)
         img = img[:, :, ::-1] # BGR to RGB
-        imgs.append(img)
-
+        # imgs.append(img)
+        results = model(img)
+        all_results.append(results.pandas().xyxy[0].to_json(orient="records"))
     # model = torch.hub.load('ultralytics/yolov5', 'custom', path='model_weights/best.pt')
-    model = hubconf.custom('model_weights/best.pt')
-    results = model(imgs)
-    return results
+
+    # print(results)
+    return all_results
 
 
 def get_image(image_path):

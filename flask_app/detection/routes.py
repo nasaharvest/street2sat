@@ -144,7 +144,8 @@ def prediction():
 
         for i,f in enumerate(jpg_files):
             img = Image.objects(name = f).first()
-            img.result = results.pandas().xyxy[i].to_json(orient="records")
+            # img.result = results.pandas().xyxy[i].to_json(orient="records")
+            img.result = results[i]
             img.save()
 
         if len(form.files.data) == 1:
