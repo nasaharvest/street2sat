@@ -41,13 +41,15 @@ def remove_folders():
     for img in Image.objects.all():
         print(img.name, img.uploadtime)
 
-    local_vars = list(globals().items())
-    for var, obj in local_vars:
-        print(var, sys.getsizeof(obj))
+    gc.set_debug(gc.DEBUG_LEAK)
 
-    local_vars = list(locals().items())
-    for var, obj in local_vars:
-        print(var, sys.getsizeof(obj))
+    # local_vars = list(globals().items())
+    # for var, obj in local_vars:
+    #     print(var, sys.getsizeof(obj))
+    #
+    # local_vars = list(locals().items())
+    # for var, obj in local_vars:
+    #     print(var, sys.getsizeof(obj))
 
     # start_path = '.'
     # total_size = 0
@@ -57,18 +59,18 @@ def remove_folders():
     #         # skip if it is symbolic link
     #         if not os.path.islink(fp):
     #             total_size += os.path.getsize(fp)
-    print(os.listdir('.'))
-    for dir in os.listdir('.'):
-        start_path = './' + dir
-        total_size = 0
-        for dirpath, dirnames, filenames in os.walk(start_path):
-            for f in filenames:
-                fp = os.path.join(dirpath, f)
-                # skip if it is symbolic link
-                if not os.path.islink(fp):
-                    total_size += os.path.getsize(fp)
-
-        print('start_path', dir, total_size, 'bytes')
+    # print(os.listdir('.'))
+    # for dir in os.listdir('.'):
+    #     start_path = './' + dir
+    #     total_size = 0
+    #     for dirpath, dirnames, filenames in os.walk(start_path):
+    #         for f in filenames:
+    #             fp = os.path.join(dirpath, f)
+    #             # skip if it is symbolic link
+    #             if not os.path.islink(fp):
+    #                 total_size += os.path.getsize(fp)
+    #
+    #     print('start_path', dir, total_size, 'bytes')
 
 sched = BackgroundScheduler(daemon=True)
 sched.add_job(remove_folders,'interval', minutes = 1, id='remove_temp_folders')
