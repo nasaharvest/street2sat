@@ -139,7 +139,7 @@ def prediction():
 
             jpg_files.append(file_filename)
 
-        return redirect(url_for("model.prediction"))
+        # return redirect(url_for("model.prediction"))
         results = predict(jpg_files)
 
         # save current session jpg files to cookie
