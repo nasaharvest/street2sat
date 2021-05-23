@@ -15,6 +15,7 @@ from .models import *
 import numpy
 from .yolov5 import hubconf
 from memory_profiler import profile
+import gc
 
 @profile
 def predict(jpg_files):
@@ -28,8 +29,9 @@ def predict(jpg_files):
         img = img[:, :, ::-1] # BGR to RGB
         results = model(img)
         all_results.append(results.pandas().xyxy[0].to_json(orient="records"))
-        del results
-        
+
+    model = 0
+    gc.collect() 
     return all_results
 
 
