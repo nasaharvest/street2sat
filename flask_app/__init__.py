@@ -29,7 +29,7 @@ from .models import Image
 def page_not_found(e):
     return render_template("404.html"), 404
 
-@profile
+
 def remove_folders():
     print('removing images')
     # print('Before')

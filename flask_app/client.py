@@ -14,7 +14,9 @@ import math
 from .models import *
 import numpy
 from .yolov5 import hubconf
+from memory_profiler import profile
 
+@profile
 def predict(jpg_files):
     model = hubconf.custom('model_weights/best.pt')
     all_results = []
@@ -26,9 +28,8 @@ def predict(jpg_files):
         img = img[:, :, ::-1] # BGR to RGB
         results = model(img)
         all_results.append(results.pandas().xyxy[0].to_json(orient="records"))
-
-    del model
-    del results
+        del results
+        
     return all_results
 
 
