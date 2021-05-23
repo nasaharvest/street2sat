@@ -21,7 +21,6 @@ import cv2
 import time
 import json
 import gc
-from memory_profiler import profile
 
 
 
@@ -80,7 +79,7 @@ def upload():
             return redirect(url_for("model.upload"))
     return render_template("upload.html", form = form)
 
-@profile
+
 @model.route("/prediction", methods = ["GET", "POST"])
 def prediction():
     form = TestDataForm()
@@ -157,7 +156,6 @@ def prediction():
         return redirect(url_for("model.display"))
     return render_template("prediction.html", form = form)
 
-@profile
 @model.route("/displayone",methods = ["GET", "POST"])
 def displayone():
     jpg_files = session.get('jpg_files', None)
@@ -191,7 +189,6 @@ def displayone():
     s = plot_labels(img, results)
     return render_template("display.html", imgs = choose_picture, image = s, map = map_html, info = info)
 
-@profile
 @model.route("/display", methods = ["GET", "POST"])
 def display():
     jpg_files = session.get('jpg_files', None)
