@@ -49,7 +49,7 @@ def remove_folders():
     for var, obj in local_vars:
         print(var, sys.getsizeof(obj))
 
-    start_path = '..'
+    start_path = '.'
     total_size = 0
     for dirpath, dirnames, filenames in os.walk(start_path):
         for f in filenames:
@@ -57,7 +57,7 @@ def remove_folders():
             # skip if it is symbolic link
             if not os.path.islink(fp):
                 total_size += os.path.getsize(fp)
-    print(os.listdir('..'))
+    print(os.listdir('.'))
     print(total_size, 'bytes')
 
 sched = BackgroundScheduler(daemon=True)
