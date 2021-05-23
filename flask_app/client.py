@@ -20,18 +20,20 @@ import gc
 @profile
 def predict(jpg_files):
     model = hubconf.custom('model_weights/best.pt')
+    model.eval()
     all_results = []
-    for jpg in jpg_files:
-        file = Image.objects(name = jpg).first()
-        filestr = file.img_data.read()
-        npimg = numpy.fromstring(filestr, numpy.uint8)
-        img = cv2.imdecode(npimg, cv2.IMREAD_UNCHANGED)
-        img = img[:, :, ::-1] # BGR to RGB
-        results = model(img)
-        all_results.append(results.pandas().xyxy[0].to_json(orient="records"))
+    with torch.no_grad():
+        for jpg in jpg_files:
+            file = Image.objects(name = jpg).first()
+            filestr = file.img_data.read()
+            npimg = numpy.fromstring(filestr, numpy.uint8)
+            img = cv2.imdecode(npimg, cv2.IMREAD_UNCHANGED)
+            img = img[:, :, ::-1] # BGR to RGB
+            results = model(img)
+            all_results.append(results.pandas().xyxy[0].to_json(orient="records"))
 
     model = 0
-    gc.collect() 
+    gc.collect()
     return all_results
 
 
