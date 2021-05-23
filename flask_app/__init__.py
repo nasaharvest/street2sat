@@ -15,7 +15,8 @@ import datetime
 import os
 from apscheduler.schedulers.background import BackgroundScheduler
 import shutil
-os.environ["TORCH_INSTALL"] = "0"
+import sys
+# os.environ["TORCH_INSTALL"] = "0"
 # local
 
 db = MongoEngine()
@@ -40,6 +41,13 @@ def remove_folders():
     for img in Image.objects.all():
         print(img.name, img.uploadtime)
 
+    local_vars = list(globals().items())
+    for var, obj in local_vars:
+        print(var, sys.getsizeof(obj))
+
+    local_vars = list(locals().items())
+    for var, obj in local_vars:
+        print(var, sys.getsizeof(obj))
 
 sched = BackgroundScheduler(daemon=True)
 sched.add_job(remove_folders,'interval', minutes = 5, id='remove_temp_folders')
