@@ -1,6 +1,6 @@
 import exifread
 import time
-
+from datetime import datetime
 
 
 def _get_if_exist(data, key):
@@ -47,7 +47,8 @@ def get_exif_location(exif_data):
 
 def get_exif_datetime(exif_data):
     date_time = _get_if_exist(exif_data, 'Image DateTime')
-    dt = time.strptime(str(date_time),"%Y:%m:%d %H:%M:%S")
+    # dt = time.strptime(str(date_time),"%Y:%m:%d %H:%M:%S")
+    dt = datetime.strptime(str(date_time), "%Y:%m:%d %H:%M:%S")
     return dt
 
 def get_exif_focal_length(exif_data):

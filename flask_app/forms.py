@@ -17,8 +17,8 @@ import string
 from .models import User
 
 class UploadToDatabaseForm(FlaskForm):
-    files = MultipleFileField('JPG File(s) Upload')
-    txt_files = MultipleFileField('Txt File(s) Upload')
+    files = MultipleFileField("JPG File(s) Upload")
+    txt_files = MultipleFileField("Txt File(s) Upload")
     submit = SubmitField("Upload")
 
 class TestDataForm(FlaskForm):
