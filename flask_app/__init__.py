@@ -28,18 +28,19 @@ from .models import Image
 
 def page_not_found(e):
     return render_template("404.html"), 404
-# @profile
-# def remove_folders():
-#     print('removing images')
-#     print('Before')
-#     for img in Image.objects.all():
-#         print(img.name, img.uploadtime)
-#
-#     now = datetime.datetime.now() - datetime.timedelta(minutes=15)
-#     Image.objects(uploadtime__lte = now).delete()
-#     print('After')
-#     for img in Image.objects.all():
-#         print(img.name, img.uploadtime)
+
+@profile
+def remove_folders():
+    print('removing images')
+    # print('Before')
+    # for img in Image.objects.all():
+    #     print(img.name, img.uploadtime)
+
+    now = datetime.datetime.now() - datetime.timedelta(minutes=15)
+    Image.objects(uploadtime__lte = now).delete()
+    # print('After')
+    # for img in Image.objects.all():
+    #     print(img.name, img.uploadtime)
 
 
     # local_vars = list(globals().items())
@@ -50,30 +51,11 @@ def page_not_found(e):
     # for var, obj in local_vars:
     #     print(var, sys.getsizeof(obj))
 
-    # start_path = '.'
-    # total_size = 0
-    # for dirpath, dirnames, filenames in os.walk(start_path):
-    #     for f in filenames:
-    #         fp = os.path.join(dirpath, f)
-    #         # skip if it is symbolic link
-    #         if not os.path.islink(fp):
-    #             total_size += os.path.getsize(fp)
-    # print(os.listdir('.'))
-    # for dir in os.listdir('.'):
-    #     start_path = './' + dir
-    #     total_size = 0
-    #     for dirpath, dirnames, filenames in os.walk(start_path):
-    #         for f in filenames:
-    #             fp = os.path.join(dirpath, f)
-    #             # skip if it is symbolic link
-    #             if not os.path.islink(fp):
-    #                 total_size += os.path.getsize(fp)
-    #
     #     print('start_path', dir, total_size, 'bytes')
 
-# sched = BackgroundScheduler(daemon=True)
-# sched.add_job(remove_folders,'interval', minutes = 1, id='remove_temp_folders')
-# sched.start()
+sched = BackgroundScheduler(daemon=True)
+sched.add_job(remove_folders,'interval', minutes = 1, id='remove_temp_folders')
+sched.start()
 
 def create_app(test_config=None):
     app = Flask(__name__)

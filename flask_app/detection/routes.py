@@ -21,7 +21,7 @@ import cv2
 import time
 import json
 import gc
-
+from memory_profiler import profile
 
 
 model = Blueprint("model", __name__)
@@ -81,6 +81,7 @@ def upload():
 
 
 @model.route("/prediction", methods = ["GET", "POST"])
+@profile
 def prediction():
     form = TestDataForm()
     if form.validate_on_submit():
@@ -157,6 +158,7 @@ def prediction():
     return render_template("prediction.html", form = form)
 
 @model.route("/displayone",methods = ["GET", "POST"])
+@profile
 def displayone():
     jpg_files = session.get('jpg_files', None)
     choose_picture = ChoosePicture(images = jpg_files)
