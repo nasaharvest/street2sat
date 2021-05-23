@@ -158,7 +158,6 @@ def prediction():
 
 @model.route("/displayone",methods = ["GET", "POST"])
 def displayone():
-    gc.collect()
     jpg_files = session.get('jpg_files', None)
     choose_picture = ChoosePicture(images = jpg_files)
 
@@ -192,7 +191,6 @@ def displayone():
 
 @model.route("/display", methods = ["GET", "POST"])
 def display():
-    gc.collect()
     jpg_files = session.get('jpg_files', None)
     choose_picture = ChoosePicture(images = jpg_files)
 

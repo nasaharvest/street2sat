@@ -17,8 +17,8 @@ from apscheduler.schedulers.background import BackgroundScheduler
 import shutil
 import sys
 import gc
-# os.environ["TORCH_INSTALL"] = "0"
-# local
+from pympler.tracker import SummaryTracker
+tracker = SummaryTracker()
 
 db = MongoEngine()
 login_manager = LoginManager()
@@ -42,7 +42,7 @@ def remove_folders():
     for img in Image.objects.all():
         print(img.name, img.uploadtime)
 
-    gc.set_debug(gc.DEBUG_LEAK)
+    tracker.print_diff()
 
     # local_vars = list(globals().items())
     # for var, obj in local_vars:
