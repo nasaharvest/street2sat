@@ -1,4 +1,6 @@
 -f https://download.pytorch.org/whl/torch_stable.html
+torch==1.8.0+cpu
+torchvision==0.9.0+cpu
 attrs==20.2.0
 bcrypt==3.2.0
 certifi==2020.6.20
@@ -35,8 +37,6 @@ requests==2.24.0
 scipy>=1.4.1
 six==1.15.0
 toml==0.10.1
-torch==1.8.1+cpu
-torchvision==0.9.1+cpu
 typing-extensions==3.10.0.0
 urllib3==1.25.11
 Werkzeug==1.0.1
