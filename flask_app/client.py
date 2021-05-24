@@ -18,7 +18,7 @@ from memory_profiler import profile
 import gc
 torch.set_num_threads(1)
 
-@profile
+
 def predict(jpg_files):
     torch.set_num_threads(1)
     model = hubconf.custom('model_weights/best.pt')

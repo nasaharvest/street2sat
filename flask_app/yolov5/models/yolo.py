@@ -5,7 +5,7 @@ import logging
 import sys
 from copy import deepcopy
 from pathlib import Path
-
+from memory_profiler import profile
 sys.path.append(Path(__file__).parent.parent.absolute().__str__())  # to run '$ python *.py' files in subdirectories
 logger = logging.getLogger(__name__)
 
@@ -128,7 +128,7 @@ class Model(nn.Module):
             yi = self._descale_pred(yi, fi, si, img_size)
             y.append(yi)
         return torch.cat(y, 1), None  # augmented inference, train
-
+    @profile
     def forward_once(self, x, profile=False):
         y, dt = [], []  # outputs
         for m in self.model:
