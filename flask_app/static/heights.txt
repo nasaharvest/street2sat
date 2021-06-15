@@ -9,4 +9,4 @@ millet 0
 sweet_potatoes 0
 cassava 0
 rice 0
-sugarcane 3000
+sugarcane 4000

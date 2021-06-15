@@ -21,9 +21,12 @@ import cv2
 import time
 import json
 import gc
-
+import shapefile
+import zipfile
+from html2text import html2text
 
 model = Blueprint("model", __name__)
+
 
 
 @model.route("/", methods=["GET", "POST"])
@@ -39,6 +42,35 @@ def download_labels():
     path = './static/classes.txt'
     return send_file(path, as_attachment=True)
 
+@model.route("/download_shapefile")
+def download_shapefile():
+    new_points = session['new_points']
+    print(new_points)
+
+    letters = string.ascii_letters
+    uniq = ( ''.join(random.choice(letters) for i in range(5)) )
+
+    w = shapefile.Writer(shapefile.POINT)
+    w.field('Latitude','N', decimal=30)
+    w.field('Longitude','N', decimal=30)
+    w.field('Crop Type', 'C')
+    for file,crops in new_points.items():
+        for crop, new_p in crops.items():
+            w.point(new_p[1], new_p[0])
+            w.record(new_p[0], new_p[1], crop)
+    w.save('./temp/' + uniq + '_shapefile')
+
+
+    zipf = zipfile.ZipFile('./temp/' + uniq + 'downloaded_shapefile.zip','w', zipfile.ZIP_DEFLATED)
+    zipf.write('./temp/' + uniq + '_shapefile.shp')
+    zipf.write('./temp/' + uniq + '_shapefile.dbf')
+    zipf.write('./temp/' + uniq + '_shapefile.shx')
+    zipf.close()
+
+    return send_file('../temp/' + uniq + 'downloaded_shapefile.zip',
+            mimetype = 'zip',
+            attachment_filename= 'points.zip',
+            as_attachment = True)
 
 @model.route("/upload", methods = [ "GET", "POST"])
 def upload():
@@ -93,6 +125,7 @@ def prediction():
             flash("More than 20 files detected, only running on the first 20.")
 
         for file in form.files.data[:20]:
+        # for file in form.files.data[:]:
             file_filename = secure_filename(file.filename)
             file_filename = uniq + file_filename
 
@@ -180,7 +213,7 @@ def displayone():
     img = img[:, :, ::-1] # BGR to RGB
 
     map = folium.Map(location = lat_long, zoom_start = 17, tiles = "OpenStreetMap")
-    folium.Marker(lat_long, popup="<i> {}\n{}:{}:{}</i>".format(jpg_files[0], time.hour, time.minute, time.second), icon=folium.Icon(color='lightgray')).add_to(map)
+    folium.Marker(lat_long, popup="<i> {}\n{}:{}:{}\nLocation:{}</i>".format(jpg_files[0], time.hour, time.minute, time.second, lat_long), icon=folium.Icon(color='lightgray')).add_to(map)
     map_html = map._repr_html_()
 
     info = get_distance_meters(results, focal_length, pixel_width, pixel_height, lat_long)
@@ -206,9 +239,9 @@ def display():
         for file in jpg_files:
             time = file_time[file]
             if file != selected_img:
-                folium.Marker(file_coord[file], popup="<i> {}\n{}:{}:{}</i>".format(file, time.hour, time.minute, time.second), icon=folium.Icon(color='lightgray')).add_to(map)
+                folium.Marker(file_coord[file], popup="<i> {}\n{}:{}:{}\nLocation:{}</i>".format(file, time.hour, time.minute, time.second, file_coord[selected_img]), icon=folium.Icon(color='lightgray')).add_to(map)
             else:
-                folium.Marker(file_coord[file], popup="<i> {}\n{}:{}:{}</i>".format(file, time.hour, time.minute, time.second), icon=folium.Icon(color='black')).add_to(map)
+                folium.Marker(file_coord[file], popup="<i> {}\n{}:{}:{}\nLocation:{}</i>".format(file, time.hour, time.minute, time.second, file_coord[selected_img]), icon=folium.Icon(color='black')).add_to(map)
 
         for file,crops in new_points.items():
             for crop, new_p in crops.items():

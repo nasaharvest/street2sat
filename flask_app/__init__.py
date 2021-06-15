@@ -36,25 +36,16 @@ def remove_folders():
     # for img in Image.objects.all():
     #     print(img.name, img.uploadtime)
 
-    now = datetime.datetime.now() - datetime.timedelta(minutes=15)
+    now = datetime.datetime.now() - datetime.timedelta(minutes=30)
     Image.objects(uploadtime__lte = now).delete()
-    # print('After')
-    # for img in Image.objects.all():
-    #     print(img.name, img.uploadtime)
 
-
-    # local_vars = list(globals().items())
-    # for var, obj in local_vars:
-    #     print(var, sys.getsizeof(obj))
-    #
-    # local_vars = list(locals().items())
-    # for var, obj in local_vars:
-    #     print(var, sys.getsizeof(obj))
-
-    #     print('start_path', dir, total_size, 'bytes')
+    for file in os.listdir('./temp'):
+        if file != 'expl.txt':
+            # print(os.path.join('./temp', file))
+            os.remove(os.path.join('./temp', file))
 
 sched = BackgroundScheduler(daemon=True)
-sched.add_job(remove_folders,'interval', minutes = 1, id='remove_temp_folders')
+sched.add_job(remove_folders,'interval', minutes = 5, id='remove_temp_folders')
 sched.start()
 
 def create_app(test_config=None):
@@ -64,7 +55,7 @@ def create_app(test_config=None):
     if test_config is not None:
         app.config.update(test_config)
 
-    app.config["MONGODB_HOST"] = os.getenv("MONGODB_HOST")
+    # app.config["MONGODB_HOST"] = os.getenv("MONGODB_HOST")
 
     db.init_app(app)
     login_manager.init_app(app)

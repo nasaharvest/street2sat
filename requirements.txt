@@ -50,3 +50,5 @@ exifread
 APScheduler==3.3.1
 folium
 memory_profiler
+pyshp==1.2.2
+html2text

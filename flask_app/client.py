@@ -18,7 +18,7 @@ from memory_profiler import profile
 import gc
 torch.set_num_threads(1)
 
-
+@profile
 def predict(jpg_files):
     torch.set_num_threads(1)
     model = hubconf.custom('model_weights/best.pt')
@@ -53,6 +53,10 @@ def get_image(image_path):
 
 
 def plot_labels(img, results):
+    classes = {}
+    with open('flask_app/static/classes.txt') as classes_file:
+        for i,line in enumerate(classes_file):
+            classes[i] = line.strip()
 
     img = numpy.copy(img)
     colors = [(0, 0, 255), (0, 255, 0), (255, 0, 0), (0, 255, 255), (255, 0, 255), (255, 255, 0)]
@@ -68,6 +72,7 @@ def plot_labels(img, results):
             all_classes_so_far[c] = colors[len(all_classes_so_far.keys())]
 
         cv2.rectangle(img, (l, t), (r, b), all_classes_so_far[c], 5)
+        cv2.putText(img, classes[c], (r, b - 10), cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 0, 0), 3, cv2.LINE_AA)
 
     s = io.BytesIO()
     fig = Figure()
@@ -147,6 +152,7 @@ def get_new_points(time_dict, coord_dict, distance_dict):
     # find closest point in time
     # find heading by doing coordinate at closest point and current point 90 degrees left
     # add distance to current point
+    # taken from https://gist.github.com/jeromer/2005586
     bearings = {}
     for time_val,file in time_dict.items():
         all_times = list(time_dict.keys())
@@ -158,7 +164,7 @@ def get_new_points(time_dict, coord_dict, distance_dict):
         original_coord = coord_dict[file]
         closest_coord = coord_dict[file_with_closest_time]
 
-        # taken from https://gist.github.com/jeromer/2005586
+
         lat1 = math.radians(original_coord[0])
         lat2 = math.radians(closest_coord[0])
 
