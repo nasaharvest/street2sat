@@ -21,8 +21,7 @@ torch.set_num_threads(1)
 @profile
 def predict(jpg_files):
     torch.set_num_threads(1)
-    model = hubconf.custom('model_weights/best.pt')
-    model.eval()
+    model = get_model()
     all_results = []
     with torch.no_grad():
         for jpg in jpg_files:
@@ -31,12 +30,20 @@ def predict(jpg_files):
             npimg = numpy.fromstring(filestr, numpy.uint8)
             img = cv2.imdecode(npimg, cv2.IMREAD_UNCHANGED)
             img = img[:, :, ::-1] # BGR to RGB
-            results = model(img)
-            all_results.append(results.pandas().xyxy[0].to_json(orient="records"))
-
+            all_results.append(run_prediction(img, model))
     model = 0
     gc.collect()
     return all_results
+
+def run_prediction(img, model):
+    results = model(img)
+    results = results.pandas().xyxy[0].to_json(orient="records")
+    return results
+
+def get_model(path = 'model_weights/best.pt'):
+    model = hubconf.custom(path)
+    model.eval()
+    return model
 
 
 def get_image(image_path):
@@ -52,9 +59,9 @@ def get_image(image_path):
     return s
 
 
-def plot_labels(img, results):
+def plot_labels(img, results, path_prefix = 'flask_app/static/'):
     classes = {}
-    with open('flask_app/static/classes.txt') as classes_file:
+    with open(os.path.join(path_prefix,'classes.txt')) as classes_file:
         for i,line in enumerate(classes_file):
             classes[i] = line.strip()
 
@@ -99,15 +106,15 @@ def get_height_pixels(outputs):
     return all_h
 
 
-def get_distance_meters(outputs, focal_length, pixel_width, pixel_height, lat_long):
+def get_distance_meters(outputs, focal_length, pixel_width, pixel_height, lat_long, path_prefix = 'flask_app/static/'):
     GOPRO_SENSOR_HEIGHT = 4.55
 
     heights = {}
-    with open('flask_app/static/heights.txt') as heights_file:
+    with open(os.path.join(path_prefix,'heights.txt')) as heights_file:
         for line in heights_file:
             heights[line.split()[0]] = float(line.split()[1])
     classes = {}
-    with open('flask_app/static/classes.txt') as classes_file:
+    with open(os.path.join(path_prefix, 'classes.txt')) as classes_file:
         for i,line in enumerate(classes_file):
             classes[i] = line.strip()
 
