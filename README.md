@@ -9,7 +9,6 @@ Steps to get street2sat running on your own computer:
 6. Run: `export FLASK_APP=run`
 5. Run the app using `flask run`
 6. Navigate to http://127.0.0.1:5000/
-7. Run the command
 
 
 Paper accepted to ICML 2021 Tackling Climate Change Using AI Workshop.
