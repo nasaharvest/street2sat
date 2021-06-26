@@ -1,7 +1,12 @@
 from flask import Blueprint, render_template, url_for, redirect, request, flash, session, send_file
 from flask_login import current_user
 
-# from .. import movie_client
+import sys
+import os
+sys.path.insert(1, './street2sat_utils')
+from exif_utils import *
+from client import *
+
 from ..forms import UploadToDatabaseForm, TestDataForm, ChoosePicture
 from ..models import User, Image
 from ..utils import current_time
@@ -9,12 +14,10 @@ import io
 import base64
 import os
 from werkzeug.utils import secure_filename
-from ..client import *
 import random
 import string
 import folium
 import exifread
-from ..exif_utils import *
 import collections
 import numpy
 import cv2
@@ -173,7 +176,16 @@ def prediction():
             jpg_files.append(file_filename)
 
         # return redirect(url_for("model.prediction"))
-        results = predict(jpg_files)
+        all_files_to_pred = []
+        for jpg in jpg_files:
+            file = Image.objects(name = jpg).first()
+            filestr = file.img_data.read()
+            npimg = numpy.fromstring(filestr, numpy.uint8)
+            img = cv2.imdecode(npimg, cv2.IMREAD_UNCHANGED)
+            img = img[:, :, ::-1] # BGR to RGB
+            all_files_to_pred.append(img)
+
+        results = predict(all_files_to_pred)
 
         # save current session jpg files to cookie
         session['jpg_files'] = jpg_files

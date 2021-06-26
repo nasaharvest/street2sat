@@ -18,6 +18,8 @@ import shutil
 import sys
 import gc
 from memory_profiler import profile
+import sys
+sys.path.insert(1, '../street2sat_utils')
 
 db = MongoEngine()
 login_manager = LoginManager()

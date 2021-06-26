@@ -2,6 +2,10 @@
 # Created by https://www.gitignore.io/api/python,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=python,visualstudiocode
 
+# Notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
