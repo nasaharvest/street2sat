@@ -50,14 +50,10 @@ The <a href="https://github.com/ultralytics/yolov5">Yolo Object Detection</a> fr
 
 The heights of the predicted bounding boxes are used to predict the distance from the camera to the crop. We calculated the distance to each bounding box and then calculated the average depth for all of the boxes of the same crop type class to get a single depth for the field. We used the following equation to predict distance:
 
-$$
-\begin{equation}
-    d = \frac{(l_{focal} * h_{crop} * h_{image})}{(h_{bbox} * h_{sensor})}
-\end{equation}
-$$
+<img src="https://render.githubusercontent.com/render/math?math=d = \frac{l_{focal} * h_{crop} * h_{image}}{h_{bbox} * h_{sensor}}">
 
 
-The focal length, $$l_{focal}$$, was obtained from the EXIF image metadata; the crop height, $$h_{crop}$$, is from known heights of crops; $$h_{bbox}$$ is the height of the bounding box in pixels; $$h_{image}$$ is the height of the image in pixels; and the GoPro sensor height $$h_{sensor}$$ is 4.55 mm.
+The focal length, *l<sub>focal</sub>*, was obtained from the EXIF image metadata; the crop height, *h<sub>crop</sub>*, is from known heights of crops; *h<sub>bbox</sub>* is the height of the bounding box in pixels; *h<sub>image</sub>* is the height of the image in pixels; and the GoPro sensor height *h<sub>sensor</sub>* is 4.55 mm.
 
 <h5 id="gps">GPS Coordinate Estimation</h5>
 
