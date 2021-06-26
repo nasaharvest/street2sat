@@ -20,12 +20,13 @@ Link coming soon!
 Ground-truth labels on crop type and other variables are critically needed to develop machine learning methods that use satellite observations to combat climate change and food insecurity. These labels difficult and costly to obtain over large areas, particularly in Sub-Saharan Africa where they are most scarce.  Street2Sat is a new framework for obtaining large data sets of geo-referenced crop type labels obtained from vehicle mounted cameras that can be extended to other applications.
 </p>
 
-The Street2Sat pipeline has 5 steps:
+The Street2Sat pipeline has 6 steps:
 <li>Data Collection drives</li>
 <li>Image Preprocessing</li>
 <li>Crop Type Prediction</li>
 <li>Distance Estimation</li>
 <li>GPS Coordinate Correction</li>
+<li>Quality Assesement and Control</li>
 
 <p></p>
 <h5 id="Data Collection">Data Collection</h5>
@@ -57,3 +58,7 @@ The focal length, *l<sub>focal</sub>*, was obtained from the EXIF image metadata
 <h5 id="gps">GPS Coordinate Estimation</h5>
 
 After obtaining the average distance to the crop in the image, the bearing of the camera had to be calculated. To find the bearing, a velocity vector is calculated between the current image and the closest other image in time that is uploaded. We assume that the camera is pointed 90 degrees orthogonal to the drive direction and relocate the point the average distance in that direction.
+
+
+<h5 id="gps">Quality Control and Control</h5>
+Errors could occur in this pipeline due to a variety of factors such as poor lighting, mixed crop fields, occlusions, and object detection errors. In future work, we plan to apply techniques for quality assessment and control (QA/QC) to identify points with possible errors and correct them, e.g., out-of-distribution detection to find outliers located on roads or other objects.
