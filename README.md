@@ -60,5 +60,5 @@ The focal length, *l<sub>focal</sub>*, was obtained from the EXIF image metadata
 After obtaining the average distance to the crop in the image, the bearing of the camera had to be calculated. To find the bearing, a velocity vector is calculated between the current image and the closest other image in time that is uploaded. We assume that the camera is pointed 90 degrees orthogonal to the drive direction and relocate the point the average distance in that direction.
 
 
-<h5 id="gps">Quality Control and Control</h5>
+<h5 id="gps">Quality Assesement and Control</h5>
 Errors could occur in this pipeline due to a variety of factors such as poor lighting, mixed crop fields, occlusions, and object detection errors. In future work, we plan to apply techniques for quality assessment and control (QA/QC) to identify points with possible errors and correct them, e.g., out-of-distribution detection to find outliers located on roads or other objects.
