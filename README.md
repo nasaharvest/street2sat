@@ -1,20 +1,46 @@
-# street2sat_website
+# Street2Sat
 
-Steps to get street2sat running on your own computer:
+ Street2Sat is a new framework for obtaining large data sets of geo-referenced crop type labels obtained from vehicle mounted cameras that can be extended to other applications.
 
-1. Clone the repository.
-2. Install MongoDB at this link: https://docs.mongodb.com/manual/installation/
-3. pip install -r requirements.txt
-4. Verify that all packages are installed properly.
-6. Run: `export FLASK_APP=run`
-5. Run the app using `flask run`
-6. Navigate to http://127.0.0.1:5000/
-
-
-Paper accepted to ICML 2021 Tackling Climate Change Using AI Workshop.
-
+Paper accepted to ICML 2021 Tackling Climate Change Using AI Workshop. 🎉 
 Link coming soon! 
 
+## Setting up the environment
+1. Clone the repository
+2. Set up and activate a Python virtual environment 
+    ```bash
+    python3 -m venv venv 
+    source venv/bin/activate
+    ```
+3. Install the dependencies
+    ```bash
+    pip install -r requirements.txt
+    ```
+## Usage
+#### Notebooks
+The model and example data is accessible through two jupyter notebooks:
+- [Single_image_pipeline.ipynb](noteboooks/Single_image_pipeline.ipynb)
+- [Multiple_image_pipeline.ipynb](noteboooks/Multiple_image_pipeline.ipynb)
+
+#### Flask server
+
+The code can also be accessible through a demo flask app:
+
+1. Ensure [MongoDB](https://docs.mongodb.com/manual/installation/) is installed. 
+2. Start the flask app:
+    ```bash
+    export FLASK_APP=run
+    flask run
+    ```
+The app should be live on http://127.0.0.1:5000/
+
+#### Google Cloud Platform
+Ensure the Google Cloud CLI is installed.
+```
+gsutil mb gs://street2sat-uploaded
+```
+
+##  4. <a name='Background'></a>Background
 <p></p>
 <p>
 Ground-truth labels on crop type and other variables are critically needed to develop machine learning methods that use satellite observations to combat climate change and food insecurity. These labels difficult and costly to obtain over large areas, particularly in Sub-Saharan Africa where they are most scarce.  Street2Sat is a new framework for obtaining large data sets of geo-referenced crop type labels obtained from vehicle mounted cameras that can be extended to other applications.
