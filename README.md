@@ -34,8 +34,8 @@ The code can also be accessible through a demo flask app:
     ```
 The app should be live on http://127.0.0.1:5000/
 
-#### Google Cloud Platform
-Ensure the Google Cloud CLI is installed.
+#### Google Cloud Platform [IN PROGRESS]
+Ensure the [Google Cloud CLI](https://cloud.google.com/sdk/docs/install) is installed.
 ```
 gsutil mb gs://street2sat-uploaded
 ```
