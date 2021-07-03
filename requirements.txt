@@ -51,3 +51,4 @@ folium
 memory_profiler
 pyshp==1.2.2
 html2text
+yolov5>=5.0.7
