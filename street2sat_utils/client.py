@@ -4,15 +4,11 @@ import torch
 from matplotlib.figure import Figure
 import io
 import base64
-from exif_utils import *
-import exifread
 from statistics import mean
-import time
 import math
-# from .models import *
 import numpy
 from yolov5 import hubconf
-# torch.set_num_threads(1)
+
 
 def predict(images):
     torch.set_num_threads(1)
@@ -21,16 +17,17 @@ def predict(images):
     with torch.no_grad():
         for img in images:
             all_results.append(run_prediction(img, model))
-    model = 0
     return all_results
+
 
 def run_prediction(img, model):
     results = model(img)
     results = results.pandas().xyxy[0].to_json(orient="records")
     return results
 
-def get_model(path = 'street2sat_utils/model_weights/best.pt'):
-    assert os.path.exists(path) == True, 'Model path does not exist!'
+
+def get_model(path='street2sat_utils/model_weights/best.pt'):
+    assert os.path.exists(path), 'Model path does not exist!'
     model = hubconf.custom(path)
     model.eval()
     return model
@@ -49,10 +46,10 @@ def get_image(image_path):
     return s
 
 
-def plot_labels(img, results, path_prefix = 'street2sat_utils/crop_info/'):
+def plot_labels(img, results, path_prefix='street2sat_utils/crop_info/'):
     classes = {}
-    with open(os.path.join(path_prefix,'classes.txt')) as classes_file:
-        for i,line in enumerate(classes_file):
+    with open(os.path.join(path_prefix, 'classes.txt')) as classes_file:
+        for i, line in enumerate(classes_file):
             classes[i] = line.strip()
 
     img = numpy.copy(img)
@@ -96,16 +93,16 @@ def get_height_pixels(outputs):
     return all_h
 
 
-def get_distance_meters(outputs, focal_length, pixel_width, pixel_height, lat_long, path_prefix = 'street2sat_utils/crop_info/'):
+def get_distance_meters(outputs, focal_length, pixel_height, path_prefix='street2sat_utils/crop_info/'):
     GOPRO_SENSOR_HEIGHT = 4.55
 
     heights = {}
-    with open(os.path.join(path_prefix,'heights.txt')) as heights_file:
+    with open(os.path.join(path_prefix, 'heights.txt')) as heights_file:
         for line in heights_file:
             heights[line.split()[0]] = float(line.split()[1])
     classes = {}
     with open(os.path.join(path_prefix, 'classes.txt')) as classes_file:
-        for i,line in enumerate(classes_file):
+        for i, line in enumerate(classes_file):
             classes[i] = line.strip()
 
     detected_heights = get_height_pixels(outputs)
@@ -122,20 +119,22 @@ def get_distance_meters(outputs, focal_length, pixel_width, pixel_height, lat_lo
         dict_info[crop_name] = str(round(mean(all_dist), 3)) + ' meters'
     return dict_info
 
+
 def point_meters_away(original_coord, heading, meters_dict):
     # https://stackoverflow.com/a/7835325
     new_p_dict = {}
     for crop, meters in meters_dict.items():
-        R = 6378.1 #Radius of the Earth
-        brng = math.radians(heading) #Bearing isdegrees converted to radians.
+        R = 6378.1  # Radius of the Earth
+        brng = math.radians(heading)  # Bearing isdegrees converted to radians.
         meters = float(meters.split(' ')[0])
-        d = meters / 1000 #Distance in km
+        d = meters / 1000  # Distance in km
 
-        lat1 = math.radians(original_coord[0]) #Current lat point converted to radians
-        lon1 = math.radians(original_coord[1]) #Current long point converted to radians
+        lat1 = math.radians(original_coord[0])  # Current lat point converted to radians
+        lon1 = math.radians(original_coord[1])  # Current long point converted to radians
 
-        lat2 = math.asin( math.sin(lat1)*math.cos(d/R) + math.cos(lat1)*math.sin(d/R)*math.cos(brng))
-        lon2 = lon1 + math.atan2(math.sin(brng)*math.sin(d/R)*math.cos(lat1),math.cos(d/R)-math.sin(lat1)*math.sin(lat2))
+        lat2 = math.asin(math.sin(lat1) * math.cos(d / R) + math.cos(lat1) * math.sin(d / R) * math.cos(brng))
+        lon2 = lon1 + math.atan2(math.sin(brng) * math.sin(d / R) * math.cos(lat1),
+                                 math.cos(d / R) - math.sin(lat1) * math.sin(lat2))
 
         lat2 = math.degrees(lat2)
         lon2 = math.degrees(lon2)
@@ -151,7 +150,7 @@ def get_new_points(time_dict, coord_dict, distance_dict):
     # add distance to current point
     # taken from https://gist.github.com/jeromer/2005586
     bearings = {}
-    for time_val,file in time_dict.items():
+    for time_val, file in time_dict.items():
         all_times = list(time_dict.keys())
         all_times.remove(time_val)
         # closest_time = min(all_times, key=lambda d: abs(time.mktime(d) - time.mktime(time_val)))
@@ -161,7 +160,6 @@ def get_new_points(time_dict, coord_dict, distance_dict):
         original_coord = coord_dict[file]
         closest_coord = coord_dict[file_with_closest_time]
 
-
         lat1 = math.radians(original_coord[0])
         lat2 = math.radians(closest_coord[0])
 
@@ -169,7 +167,7 @@ def get_new_points(time_dict, coord_dict, distance_dict):
 
         x = math.sin(diffLong) * math.cos(lat2)
         y = math.cos(lat1) * math.sin(lat2) - (math.sin(lat1)
-                * math.cos(lat2) * math.cos(diffLong))
+                                               * math.cos(lat2) * math.cos(diffLong))
 
         initial_bearing = math.atan2(x, y)
         initial_bearing = math.degrees(initial_bearing)
@@ -191,7 +189,6 @@ def get_new_points(time_dict, coord_dict, distance_dict):
 
     return bearings, new_points
 
-## -- Example usage -- ###
+
 if __name__ == "__main__":
-    import os
-    predict('../temp/uQBYaAsIgV/', '../temp/uQBYaAsIgV/')
+    predict('../temp/uQBYaAsIgV/')
