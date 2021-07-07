@@ -1,7 +1,7 @@
 # Instructions for uploading images
 
 ## Getting Access (only done once)
-1. Request access to upload images from NASA Harvest.
+1. Request access to upload images from NASA Harvest using form: https://forms.gle/RdDX6569Xkr7rE5c9.
 2. Receive email with subject: **Google Cloud role upade for "street2sat-uploaded"**
 
     <img src="assets/street2sat-email.png"/>
