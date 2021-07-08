@@ -1,0 +1,2 @@
+google-cloud-storage
+yolov5>=5.0.7

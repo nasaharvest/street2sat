@@ -191,4 +191,8 @@ def get_new_points(time_dict, coord_dict, distance_dict):
 
 
 if __name__ == "__main__":
-    predict('../temp/uQBYaAsIgV/')
+    model = get_model("../street2sat_utils/model_weights/best.pt")
+    img1_path = '../noteboooks/example_images/GP__1312.JPG'
+    img1 = cv2.cvtColor(cv2.imread(img1_path), cv2.COLOR_BGR2RGB)
+    run_prediction(img1, model)
+    #predict('../temp/uQBYaAsIgV/')

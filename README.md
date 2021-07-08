@@ -34,10 +34,17 @@ The code can also be accessible through a demo flask app:
     ```
 The app should be live on http://127.0.0.1:5000/
 
-#### Google Cloud Platform [IN PROGRESS]
+#### Google Cloud Platform 
 Ensure the [Google Cloud CLI](https://cloud.google.com/sdk/docs/install) is installed.
-```
+
+**Initial Setup (only done once)**
+```bash
 gsutil mb gs://street2sat-uploaded
+gsutil mb gs://street2sat-model-predictions
+```
+**Deploying resources (done on every code update)**
+```bash
+sh deploy.sh
 ```
 
 ## Background
