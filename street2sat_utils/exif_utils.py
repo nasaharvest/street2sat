@@ -1,5 +1,4 @@
 import exifread
-import time
 from datetime import datetime
 
 
