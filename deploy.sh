@@ -11,7 +11,7 @@ gcloud run deploy street2sat --image ${TAG}:latest \
         --allow-unauthenticated
 
 gcloud functions deploy trigger-street2sat \
-    --source=gcp/trigger_inference_function \
+    --source=gcp/trigger_inference \
     --trigger-bucket=$BUCKET \
     --allow-unauthenticated \
     --runtime=python39 \
