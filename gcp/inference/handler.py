@@ -24,29 +24,31 @@ class ModelHandler(BaseHandler):
     """
     A custom model handler implementation.
     """
+
     size = 640
     max_stride = 32
     conf = 0.25
     iou = 0.45
     classes = None
     max_det = 1000
-    names = ['tobacco',
-             'coffee',
-             'banana',
-             'tea',
-             'beans',
-             'maize',
-             'sorghum',
-             'millet',
-             'sweet_potatoes',
-             'cassava',
-             'rice',
-             'sugarcane']
+    names = [
+        "tobacco",
+        "coffee",
+        "banana",
+        "tea",
+        "beans",
+        "maize",
+        "sorghum",
+        "millet",
+        "sweet_potatoes",
+        "cassava",
+        "rice",
+        "sugarcane",
+    ]
 
     def initialize(self, context):
         super().initialize(context)
         self.p = next(self.model.parameters())
-
 
     @staticmethod
     def download_file(uri: str) -> str:
@@ -65,7 +67,9 @@ class ModelHandler(BaseHandler):
                 break
             if i == retries:
                 raise ValueError(f"HANDLER ERROR: {uri} does not exist.")
-            print(f"HANDLER: {uri} does not yet exist, sleeping for 5 seconds and trying again.")
+            print(
+                f"HANDLER: {uri} does not yet exist, sleeping for 5 seconds and trying again."
+            )
             time.sleep(5)
         local_path = f"{tempfile.gettempdir()}/{uri_as_path.name}"
         blob.download_to_filename(local_path)
@@ -90,17 +94,23 @@ class ModelHandler(BaseHandler):
 
         # PREPROCESS IMAGE
         s = img.shape[:2]
-        g = (self.size / max(s))
+        g = self.size / max(s)
         shape1 = [[y * g for y in s]]
-        shape1 = [make_divisible(x, self.max_stride) for x in np.stack(shape1, 0).max(0)]  # inference shape
-        x = letterbox(img, new_shape=shape1, auto=False)[0]   # pad
+        shape1 = [
+            make_divisible(x, self.max_stride) for x in np.stack(shape1, 0).max(0)
+        ]  # inference shape
+        x = letterbox(img, new_shape=shape1, auto=False)[0]  # pad
         x = np.ascontiguousarray(x[None].transpose((0, 3, 1, 2)))  # BHWC to BCHW
-        img_tensor = torch.from_numpy(x).to(self.p.device).type_as(self.p) / 255.  # uint8 to fp16/32
+        img_tensor = (
+            torch.from_numpy(x).to(self.p.device).type_as(self.p) / 255.0
+        )  # uint8 to fp16/32
 
         print("HANDLER: Completed preprocessing")
         return uri, img, img_tensor, shape1
 
-    def inference(self, data, *args, **kwargs) -> Tuple[str, np.ndarray, torch.tensor, List, torch.tensor]:
+    def inference(
+        self, data, *args, **kwargs
+    ) -> Tuple[str, np.ndarray, torch.tensor, List, torch.tensor]:
         print("HANDLER: Starting inference")
         uri, img, img_tensor, shape1 = data
         y = self.model(img_tensor)[0]
@@ -111,18 +121,31 @@ class ModelHandler(BaseHandler):
         print("HANDLER: Starting postprocessing")
         uri, img, img_tensor, shape1, y = data
 
-        y = non_max_suppression(y, self.conf, iou_thres=self.iou, classes=self.classes, max_det=self.max_det)  # NMS
+        y = non_max_suppression(
+            y, self.conf, iou_thres=self.iou, classes=self.classes, max_det=self.max_det
+        )  # NMS
         scale_coords(shape1, y[0][:, :4], img.shape[:2])
-        detections = Detections([img], y, ["test.jpg"], [0,1,2,3], self.names, img_tensor.shape)
+        detections = Detections(
+            [img], y, ["test.jpg"], [0, 1, 2, 3], self.names, img_tensor.shape
+        )
 
         uri_as_path = Path(uri)
 
-        local_dest_path = Path(tempfile.gettempdir() + f"/result_{uri_as_path.stem}.json")
-        detections.pandas().xyxy[0].to_json(path_or_buf=str(local_dest_path), indent=4, orient="records")
+        local_dest_path = Path(
+            tempfile.gettempdir() + f"/result_{uri_as_path.stem}.json"
+        )
+        detections.pandas().xyxy[0].to_json(
+            path_or_buf=str(local_dest_path), indent=4, orient="records"
+        )
 
         cloud_dest_parent = "/".join(uri_as_path.parts[2:-1])
         cloud_dest_path_str = f"{cloud_dest_parent}/{local_dest_path.name}"
         dest_blob = dest_bucket.blob(cloud_dest_path_str)
         dest_blob.upload_from_filename(str(local_dest_path))
         print(f"HANDLER: Uploaded to gs://{dest_bucket_name}/{cloud_dest_path_str}")
-        return [{"src_uri": uri, "dest_uri": f"gs://{dest_bucket_name}/{cloud_dest_path_str}"}]
+        return [
+            {
+                "src_uri": uri,
+                "dest_uri": f"gs://{dest_bucket_name}/{cloud_dest_path_str}",
+            }
+        ]

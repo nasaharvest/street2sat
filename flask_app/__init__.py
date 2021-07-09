@@ -10,6 +10,7 @@ from flask_login import (
 )
 from flask_bcrypt import Bcrypt
 from werkzeug.utils import secure_filename
+
 # stdlib
 import datetime
 import os
@@ -19,7 +20,8 @@ import sys
 import gc
 from memory_profiler import profile
 import sys
-sys.path.insert(1, '../street2sat_utils')
+
+sys.path.insert(1, "../street2sat_utils")
 
 db = MongoEngine()
 login_manager = LoginManager()
@@ -28,27 +30,30 @@ from .users.routes import users
 from .detection.routes import model
 from .models import Image
 
+
 def page_not_found(e):
     return render_template("404.html"), 404
 
 
 def remove_folders():
-    print('removing images')
+    print("removing images")
     # print('Before')
     # for img in Image.objects.all():
     #     print(img.name, img.uploadtime)
 
     now = datetime.datetime.now() - datetime.timedelta(minutes=30)
-    Image.objects(uploadtime__lte = now).delete()
+    Image.objects(uploadtime__lte=now).delete()
 
-    for file in os.listdir('./temp'):
-        if file != 'expl.txt':
+    for file in os.listdir("./temp"):
+        if file != "expl.txt":
             # print(os.path.join('./temp', file))
-            os.remove(os.path.join('./temp', file))
+            os.remove(os.path.join("./temp", file))
+
 
 sched = BackgroundScheduler(daemon=True)
-sched.add_job(remove_folders,'interval', minutes = 5, id='remove_temp_folders')
+sched.add_job(remove_folders, "interval", minutes=5, id="remove_temp_folders")
 sched.start()
+
 
 def create_app(test_config=None):
     app = Flask(__name__)

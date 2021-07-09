@@ -2,7 +2,14 @@ from flask_login import current_user
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileRequired, FileAllowed
 from werkzeug.utils import secure_filename
-from wtforms import StringField, SubmitField, TextAreaField, PasswordField, SelectField, MultipleFileField
+from wtforms import (
+    StringField,
+    SubmitField,
+    TextAreaField,
+    PasswordField,
+    SelectField,
+    MultipleFileField,
+)
 from wtforms.validators import (
     InputRequired,
     DataRequired,
@@ -16,14 +23,17 @@ import string
 
 from .models import User
 
+
 class UploadToDatabaseForm(FlaskForm):
     files = MultipleFileField("JPG File(s) Upload")
     txt_files = MultipleFileField("Txt File(s) Upload")
     submit = SubmitField("Upload")
 
+
 class TestDataForm(FlaskForm):
-    files = MultipleFileField('JPG File(s) Upload')
+    files = MultipleFileField("JPG File(s) Upload")
     submit = SubmitField("Upload")
+
 
 class ChoosePicture(FlaskForm):
     drop_down = SelectField("Choose Image", choices=[])
@@ -41,7 +51,7 @@ class RegistrationForm(FlaskForm):
         "Username", validators=[InputRequired(), Length(min=1, max=40)]
     )
     email = StringField("Email", validators=[InputRequired(), Email()])
-    password = PasswordField("Password", validators=[InputRequired(), Length(min = 1)])
+    password = PasswordField("Password", validators=[InputRequired(), Length(min=1)])
     confirm_password = PasswordField(
         "Confirm Password", validators=[InputRequired(), EqualTo("password")]
     )
@@ -56,7 +66,6 @@ class RegistrationForm(FlaskForm):
         user = User.objects(email=email.data).first()
         if user is not None:
             raise ValidationError("Email is taken")
-
 
 
 class LoginForm(FlaskForm):

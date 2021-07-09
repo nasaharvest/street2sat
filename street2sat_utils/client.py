@@ -29,8 +29,8 @@ def run_prediction(img: np.ndarray, model: Model) -> str:
     return results
 
 
-def get_model(path: str = 'street2sat_utils/model_weights/best.pt') -> Model:
-    assert os.path.exists(path), 'Model path does not exist!'
+def get_model(path: str = "street2sat_utils/model_weights/best.pt") -> Model:
+    assert os.path.exists(path), "Model path does not exist!"
     model = hubconf.custom(path)
     model.eval()
     return model
@@ -43,50 +43,72 @@ def get_image(image_path: str) -> str:
     fig = Figure()
     ax = fig.subplots()
     ax.imshow(img)
-    ax.axis('off')
-    fig.savefig(s, format='png')
+    ax.axis("off")
+    fig.savefig(s, format="png")
     s = base64.b64encode(s.getbuffer()).decode("ascii")
     return s
 
 
-def plot_labels(img: np.ndarray, results: List[Dict[str, float]], path_prefix: str = 'street2sat_utils/crop_info/') -> str:
+def plot_labels(
+    img: np.ndarray,
+    results: List[Dict[str, float]],
+    path_prefix: str = "street2sat_utils/crop_info/",
+) -> str:
     classes = {}
-    with open(os.path.join(path_prefix, 'classes.txt')) as classes_file:
+    with open(os.path.join(path_prefix, "classes.txt")) as classes_file:
         for i, line in enumerate(classes_file):
             classes[i] = line.strip()
 
     img = np.copy(img)
-    colors = [(0, 0, 255), (0, 255, 0), (255, 0, 0), (0, 255, 255), (255, 0, 255), (255, 255, 0)]
+    colors = [
+        (0, 0, 255),
+        (0, 255, 0),
+        (255, 0, 0),
+        (0, 255, 255),
+        (255, 0, 255),
+        (255, 255, 0),
+    ]
     all_classes_so_far = {}
     for dt in results:
-        t = int(dt['ymax'])
-        b = int(dt['ymin'])
-        l = int(dt['xmax'])
-        r = int(dt['xmin'])
-        c = int(dt['class'])
+        t = int(dt["ymax"])
+        b = int(dt["ymin"])
+        l = int(dt["xmax"])
+        r = int(dt["xmin"])
+        c = int(dt["class"])
 
         if c not in all_classes_so_far:
             all_classes_so_far[c] = colors[len(all_classes_so_far.keys())]
 
         cv2.rectangle(img, (l, t), (r, b), all_classes_so_far[c], 5)
-        cv2.putText(img, classes[c], (r, b - 10), cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 0, 0), 3, cv2.LINE_AA)
+        cv2.putText(
+            img,
+            classes[c],
+            (r, b - 10),
+            cv2.FONT_HERSHEY_SIMPLEX,
+            2,
+            (0, 0, 0),
+            3,
+            cv2.LINE_AA,
+        )
 
     s = io.BytesIO()
     fig = Figure()
     ax = fig.subplots()
     ax.imshow(img)
-    ax.axis('off')
-    fig.savefig(s, format='png')
+    ax.axis("off")
+    fig.savefig(s, format="png")
     s = base64.b64encode(s.getbuffer()).decode("ascii")
     return s
 
 
-def get_height_pixels(outputs: List[Dict[str, Union[int, float]]]) -> Dict[Any, List[float]]:
+def get_height_pixels(
+    outputs: List[Dict[str, Union[int, float]]]
+) -> Dict[Any, List[float]]:
     all_h = {}
     for dt in outputs:
-        class_name = dt['class']
-        ymax = dt['ymax']
-        ymin = dt['ymin']
+        class_name = dt["class"]
+        ymax = dt["ymax"]
+        ymin = dt["ymin"]
 
         if class_name in all_h.keys():
             all_h[class_name].append(ymax - ymin)
@@ -96,15 +118,20 @@ def get_height_pixels(outputs: List[Dict[str, Union[int, float]]]) -> Dict[Any, 
     return all_h
 
 
-def get_distance_meters(outputs: List[Dict[str, Union[int, float]]], focal_length: float, pixel_height: float, path_prefix: str ='street2sat_utils/crop_info/') -> Dict[str, str]:
+def get_distance_meters(
+    outputs: List[Dict[str, Union[int, float]]],
+    focal_length: float,
+    pixel_height: float,
+    path_prefix: str = "street2sat_utils/crop_info/",
+) -> Dict[str, str]:
     GOPRO_SENSOR_HEIGHT = 4.55
 
     heights = {}
-    with open(os.path.join(path_prefix, 'heights.txt')) as heights_file:
+    with open(os.path.join(path_prefix, "heights.txt")) as heights_file:
         for line in heights_file:
             heights[line.split()[0]] = float(line.split()[1])
     classes = {}
-    with open(os.path.join(path_prefix, 'classes.txt')) as classes_file:
+    with open(os.path.join(path_prefix, "classes.txt")) as classes_file:
         for i, line in enumerate(classes_file):
             classes[i] = line.strip()
 
@@ -116,28 +143,39 @@ def get_distance_meters(outputs: List[Dict[str, Union[int, float]]], focal_lengt
         typical_crop_height = heights[crop_name]
         all_dist = []
         for plant_height in detected_heights[crop_index]:
-            dist = (focal_length * typical_crop_height * pixel_height) / (plant_height * GOPRO_SENSOR_HEIGHT)
+            dist = (focal_length * typical_crop_height * pixel_height) / (
+                plant_height * GOPRO_SENSOR_HEIGHT
+            )
             dist = dist / 1000
             all_dist.append(dist)
-        dict_info[crop_name] = str(round(mean(all_dist), 3)) + ' meters'
+        dict_info[crop_name] = str(round(mean(all_dist), 3)) + " meters"
     return dict_info
 
 
-def point_meters_away(original_coord: Tuple[float, float], heading: float, meters_dict: Dict[str, str]) -> Dict[str, Tuple[float, float]]:
+def point_meters_away(
+    original_coord: Tuple[float, float], heading: float, meters_dict: Dict[str, str]
+) -> Dict[str, Tuple[float, float]]:
     # https://stackoverflow.com/a/7835325
     new_p_dict = {}
     for crop, meters in meters_dict.items():
         R = 6378.1  # Radius of the Earth
         brng = math.radians(heading)  # Bearing is degrees converted to radians.
-        meters = float(meters.split(' ')[0])
+        meters = float(meters.split(" ")[0])
         d = meters / 1000  # Distance in km
 
         lat1 = math.radians(original_coord[0])  # Current lat point converted to radians
-        lon1 = math.radians(original_coord[1])  # Current long point converted to radians
+        lon1 = math.radians(
+            original_coord[1]
+        )  # Current long point converted to radians
 
-        lat2 = math.asin(math.sin(lat1) * math.cos(d / R) + math.cos(lat1) * math.sin(d / R) * math.cos(brng))
-        lon2 = lon1 + math.atan2(math.sin(brng) * math.sin(d / R) * math.cos(lat1),
-                                 math.cos(d / R) - math.sin(lat1) * math.sin(lat2))
+        lat2 = math.asin(
+            math.sin(lat1) * math.cos(d / R)
+            + math.cos(lat1) * math.sin(d / R) * math.cos(brng)
+        )
+        lon2 = lon1 + math.atan2(
+            math.sin(brng) * math.sin(d / R) * math.cos(lat1),
+            math.cos(d / R) - math.sin(lat1) * math.sin(lat2),
+        )
 
         lat2 = math.degrees(lat2)
         lon2 = math.degrees(lon2)
@@ -169,8 +207,9 @@ def get_new_points(time_dict: Dict, coord_dict: Dict, distance_dict: Dict) -> Tu
         diffLong = math.radians(closest_coord[1] - original_coord[1])
 
         x = math.sin(diffLong) * math.cos(lat2)
-        y = math.cos(lat1) * math.sin(lat2) - (math.sin(lat1)
-                                               * math.cos(lat2) * math.cos(diffLong))
+        y = math.cos(lat1) * math.sin(lat2) - (
+            math.sin(lat1) * math.cos(lat2) * math.cos(diffLong)
+        )
 
         initial_bearing = math.atan2(x, y)
         initial_bearing = math.degrees(initial_bearing)
@@ -187,7 +226,9 @@ def get_new_points(time_dict: Dict, coord_dict: Dict, distance_dict: Dict) -> Tu
     for file, bearing in bearings.items():
         if file in distance_dict.keys():
             distance_meters = distance_dict[file]
-            translated_coords = point_meters_away(coord_dict[file], bearing, distance_meters)
+            translated_coords = point_meters_away(
+                coord_dict[file], bearing, distance_meters
+            )
             new_points[file] = translated_coords
 
     return bearings, new_points
@@ -195,7 +236,7 @@ def get_new_points(time_dict: Dict, coord_dict: Dict, distance_dict: Dict) -> Tu
 
 if __name__ == "__main__":
     model = get_model("../street2sat_utils/model_weights/best.pt")
-    img1_path = '../example_images/GP__1312.JPG'
+    img1_path = "../example_images/GP__1312.JPG"
     img1 = cv2.cvtColor(cv2.imread(img1_path), cv2.COLOR_BGR2RGB)
     run_prediction(img1, model)
-    #predict('../temp/uQBYaAsIgV/')
+    # predict('../temp/uQBYaAsIgV/')

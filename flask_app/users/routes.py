@@ -11,7 +11,6 @@ import base64
 users = Blueprint("users", __name__)
 
 
-
 @users.route("/register", methods=["GET", "POST"])
 def register():
     if current_user.is_authenticated:
@@ -72,6 +71,7 @@ def account():
         title="Account",
         username_form=username_form,
     )
+
 
 # @users.route("/user/<username>")
 # @login_required

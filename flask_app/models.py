@@ -19,20 +19,20 @@ class User(db.Document, UserMixin):
     def get_id(self):
         return self.username
 
+
 class Image(db.Document):
-    name = db.StringField(required = True, unique = True)
+    name = db.StringField(required=True, unique=True)
     img_data = db.ImageField()
     uploadtime = db.DateTimeField()
     tags = db.DictField()
     takentime = db.DateTimeField()
     result = db.StringField()
 
+
 class UploadedImage(db.Document):
-    user = db.ReferenceField(User, required = False)
-    image_file = db.FileField(required = False)
-    text_file = db.FileField(required = False)
-
-
+    user = db.ReferenceField(User, required=False)
+    image_file = db.FileField(required=False)
+    text_file = db.FileField(required=False)
 
 
 # class Review(db.Document):

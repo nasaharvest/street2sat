@@ -7,6 +7,7 @@ import exifread
 import pandas as pd
 import geopandas as gpd
 
+
 def _get_if_exist(data, key):
     if key in data:
         return data[key]
@@ -25,7 +26,7 @@ def _convert_to_degrees(value):
     s = float(value.values[2].num) / float(value.values[2].den)
 
     return d + (m / 60.0) + (s / 3600.0)
-    
+
 
 def get_exif_location(exif_data):
     """
@@ -34,18 +35,18 @@ def get_exif_location(exif_data):
     lat = None
     lon = None
 
-    gps_latitude = _get_if_exist(exif_data, 'GPS GPSLatitude')
-    gps_latitude_ref = _get_if_exist(exif_data, 'GPS GPSLatitudeRef')
-    gps_longitude = _get_if_exist(exif_data, 'GPS GPSLongitude')
-    gps_longitude_ref = _get_if_exist(exif_data, 'GPS GPSLongitudeRef')
+    gps_latitude = _get_if_exist(exif_data, "GPS GPSLatitude")
+    gps_latitude_ref = _get_if_exist(exif_data, "GPS GPSLatitudeRef")
+    gps_longitude = _get_if_exist(exif_data, "GPS GPSLongitude")
+    gps_longitude_ref = _get_if_exist(exif_data, "GPS GPSLongitudeRef")
 
     if gps_latitude and gps_latitude_ref and gps_longitude and gps_longitude_ref:
         lat = _convert_to_degrees(gps_latitude)
-        if gps_latitude_ref.values[0] != 'N':
+        if gps_latitude_ref.values[0] != "N":
             lat = 0 - lat
 
         lon = _convert_to_degrees(gps_longitude)
-        if gps_longitude_ref.values[0] != 'E':
+        if gps_longitude_ref.values[0] != "E":
             lon = 0 - lon
 
     return lat, lon
@@ -53,43 +54,49 @@ def get_exif_location(exif_data):
 
 def main(imgdir, shppath):
     # Create an empty dictionary for the locations
-    locations = {} 
+    locations = {}
     # Walk through the image files
     for root, subdir, files in os.walk(imgdir):
         for file in files:
-            if file.endswith('.JPG'):
+            if file.endswith(".JPG"):
                 # Open the file
-                f = open(os.path.join(root, file), 'rb')
+                f = open(os.path.join(root, file), "rb")
                 # Get the exif metadata
                 meta = exifread.process_file(f)
                 # Add the location metadata to the dictionary
                 locations[os.path.join(root, file)] = get_exif_location(meta)
 
     # Turn the dictionary into a pandas dataframe
-    df = pd.DataFrame.from_dict(locations, orient='index', 
-                                           columns=['Latitude', 'Longitude'])
+    df = pd.DataFrame.from_dict(
+        locations, orient="index", columns=["Latitude", "Longitude"]
+    )
     # Drop invalid rows
     df = df.dropna()
     # Convert the pandas dataframe to a geopandas dataframe
     gdf = gpd.GeoDataFrame(df, geometry=gpd.points_from_xy(df.Longitude, df.Latitude))
     # Set the image file index to be its own column
-    gdf['Image'] = gdf.index
-    # Embed the image 
-    gdf['Link'] = None
+    gdf["Image"] = gdf.index
+    # Embed the image
+    gdf["Link"] = None
     for r, row in gdf.iterrows():
-        gdf.loc[r, 'Link'] = "<img src='%s' width='300px'>" % row['Image']
+        gdf.loc[r, "Link"] = "<img src='%s' width='300px'>" % row["Image"]
     # Save it as a shapefile
     gdf.to_file(shppath)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import argparse
-    parser = argparse.ArgumentParser(argument_default=argparse.SUPPRESS, 
-                                     description='Convert a directory of images to a shapefile')
-    
-    parser.add_argument('--imgdir', help='path to directory containing images')
-    parser.add_argument('--shppath', help='path for resulting shapefile, including filename')
-    
+
+    parser = argparse.ArgumentParser(
+        argument_default=argparse.SUPPRESS,
+        description="Convert a directory of images to a shapefile",
+    )
+
+    parser.add_argument("--imgdir", help="path to directory containing images")
+    parser.add_argument(
+        "--shppath", help="path for resulting shapefile, including filename"
+    )
+
     args = parser.parse_args()
 
     main(**vars(args))
