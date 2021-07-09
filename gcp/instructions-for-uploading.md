@@ -6,7 +6,7 @@
 
     <img src="assets/street2sat-email.png"/>
 
-3. Navigate to the link provided, select your country, check the box and click **Agree and Continue**:
+3. Navigate to the link provided. If prompted, select your country, check the box and click **Agree and Continue**:
 
     <img src="assets/street2sat-gcloud.png" width=80%/>
 
