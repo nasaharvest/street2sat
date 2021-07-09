@@ -6,11 +6,14 @@ import io
 import base64
 from statistics import mean
 import math
-import numpy
+import numpy as np
 from yolov5 import hubconf
+from yolov5.models.yolo import Model
+
+from typing import Any, Dict, List, Tuple, Union
 
 
-def predict(images):
+def predict(images: List[np.ndarray]) -> List[str]:
     torch.set_num_threads(1)
     model = get_model()
     all_results = []
@@ -20,20 +23,20 @@ def predict(images):
     return all_results
 
 
-def run_prediction(img, model):
+def run_prediction(img: np.ndarray, model: Model) -> str:
     results = model(img)
     results = results.pandas().xyxy[0].to_json(orient="records")
     return results
 
 
-def get_model(path='street2sat_utils/model_weights/best.pt'):
+def get_model(path: str = 'street2sat_utils/model_weights/best.pt') -> Model:
     assert os.path.exists(path), 'Model path does not exist!'
     model = hubconf.custom(path)
     model.eval()
     return model
 
 
-def get_image(image_path):
+def get_image(image_path: str) -> str:
     img = cv2.imread(image_path)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     s = io.BytesIO()
@@ -46,13 +49,13 @@ def get_image(image_path):
     return s
 
 
-def plot_labels(img, results, path_prefix='street2sat_utils/crop_info/'):
+def plot_labels(img: np.ndarray, results: List[Dict[str, float]], path_prefix: str = 'street2sat_utils/crop_info/') -> str:
     classes = {}
     with open(os.path.join(path_prefix, 'classes.txt')) as classes_file:
         for i, line in enumerate(classes_file):
             classes[i] = line.strip()
 
-    img = numpy.copy(img)
+    img = np.copy(img)
     colors = [(0, 0, 255), (0, 255, 0), (255, 0, 0), (0, 255, 255), (255, 0, 255), (255, 255, 0)]
     all_classes_so_far = {}
     for dt in results:
@@ -78,7 +81,7 @@ def plot_labels(img, results, path_prefix='street2sat_utils/crop_info/'):
     return s
 
 
-def get_height_pixels(outputs):
+def get_height_pixels(outputs: List[Dict[str, Union[int, float]]]) -> Dict[Any, List[float]]:
     all_h = {}
     for dt in outputs:
         class_name = dt['class']
@@ -93,7 +96,7 @@ def get_height_pixels(outputs):
     return all_h
 
 
-def get_distance_meters(outputs, focal_length, pixel_height, path_prefix='street2sat_utils/crop_info/'):
+def get_distance_meters(outputs: List[Dict[str, Union[int, float]]], focal_length: float, pixel_height: float, path_prefix: str ='street2sat_utils/crop_info/') -> Dict[str, str]:
     GOPRO_SENSOR_HEIGHT = 4.55
 
     heights = {}
@@ -120,12 +123,12 @@ def get_distance_meters(outputs, focal_length, pixel_height, path_prefix='street
     return dict_info
 
 
-def point_meters_away(original_coord, heading, meters_dict):
+def point_meters_away(original_coord: Tuple[float, float], heading: float, meters_dict: Dict[str, str]) -> Dict[str, Tuple[float, float]]:
     # https://stackoverflow.com/a/7835325
     new_p_dict = {}
     for crop, meters in meters_dict.items():
         R = 6378.1  # Radius of the Earth
-        brng = math.radians(heading)  # Bearing isdegrees converted to radians.
+        brng = math.radians(heading)  # Bearing is degrees converted to radians.
         meters = float(meters.split(' ')[0])
         d = meters / 1000  # Distance in km
 
@@ -144,7 +147,7 @@ def point_meters_away(original_coord, heading, meters_dict):
     return new_p_dict
 
 
-def get_new_points(time_dict, coord_dict, distance_dict):
+def get_new_points(time_dict: Dict, coord_dict: Dict, distance_dict: Dict) -> Tuple:
     # find closest point in time
     # find heading by doing coordinate at closest point and current point 90 degrees left
     # add distance to current point
@@ -192,7 +195,7 @@ def get_new_points(time_dict, coord_dict, distance_dict):
 
 if __name__ == "__main__":
     model = get_model("../street2sat_utils/model_weights/best.pt")
-    img1_path = '../noteboooks/example_images/GP__1312.JPG'
+    img1_path = '../example_images/GP__1312.JPG'
     img1 = cv2.cvtColor(cv2.imread(img1_path), cv2.COLOR_BGR2RGB)
     run_prediction(img1, model)
     #predict('../temp/uQBYaAsIgV/')
