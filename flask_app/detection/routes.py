@@ -1,42 +1,43 @@
-from flask import (
-    Blueprint,
-    render_template,
-    url_for,
-    redirect,
-    request,
-    flash,
-    session,
-    send_file,
-)
-from flask_login import current_user
-
-import sys
-import os
-
-sys.path.insert(1, "./street2sat_utils")
-from exif_utils import *
-from client import *
-
-from ..forms import UploadToDatabaseForm, TestDataForm, ChoosePicture
-from ..models import User, Image
-from ..utils import current_time
-import io
 import base64
+import collections
+import gc
+import io
+import json
 import os
-from werkzeug.utils import secure_filename
 import random
 import string
-import folium
-import exifread
-import collections
-import numpy
-import cv2
+import sys
 import time
-import json
-import gc
-import shapefile
 import zipfile
+
+import cv2
+import exifread
+import folium
+import numpy
+import shapefile
+from flask import (
+    Blueprint,
+    flash,
+    redirect,
+    render_template,
+    request,
+    send_file,
+    session,
+    url_for,
+)
+from flask_login import current_user
 from html2text import html2text
+from werkzeug.utils import secure_filename
+
+from client import *
+from exif_utils import *
+
+from ..forms import ChoosePicture, TestDataForm, UploadToDatabaseForm
+from ..models import Image, User
+from ..utils import current_time
+
+sys.path.insert(1, "./street2sat_utils")
+
 
 model = Blueprint("model", __name__)
 

@@ -1,25 +1,26 @@
+import string
+
 from flask_login import current_user
 from flask_wtf import FlaskForm
-from flask_wtf.file import FileField, FileRequired, FileAllowed
+from flask_wtf.file import FileAllowed, FileField, FileRequired
 from werkzeug.utils import secure_filename
 from wtforms import (
+    MultipleFileField,
+    PasswordField,
+    SelectField,
     StringField,
     SubmitField,
     TextAreaField,
-    PasswordField,
-    SelectField,
-    MultipleFileField,
 )
 from wtforms.validators import (
-    InputRequired,
     DataRequired,
-    NumberRange,
-    Length,
     Email,
     EqualTo,
+    InputRequired,
+    Length,
+    NumberRange,
     ValidationError,
 )
-import string
 
 from .models import User
 

@@ -1,9 +1,10 @@
-from flask_login import UserMixin
-from datetime import datetime
-from . import db, login_manager
-from . import config
-from .utils import current_time
 import base64
+from datetime import datetime
+
+from flask_login import UserMixin
+
+from . import config, db, login_manager
+from .utils import current_time
 
 
 @login_manager.user_loader

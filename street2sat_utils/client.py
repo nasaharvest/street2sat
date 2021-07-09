@@ -1,16 +1,16 @@
-import cv2
+import base64
+import io
+import math
 import os
+from statistics import mean
+from typing import Any, Dict, List, Tuple, Union
+
+import cv2
+import numpy as np
 import torch
 from matplotlib.figure import Figure
-import io
-import base64
-from statistics import mean
-import math
-import numpy as np
 from yolov5 import hubconf
 from yolov5.models.yolo import Model
-
-from typing import Any, Dict, List, Tuple, Union
 
 
 def predict(images: List[np.ndarray]) -> List[str]:

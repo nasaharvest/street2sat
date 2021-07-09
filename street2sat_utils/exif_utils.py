@@ -1,5 +1,6 @@
-import exifread
 from datetime import datetime
+
+import exifread
 
 
 def _get_if_exist(data, key):

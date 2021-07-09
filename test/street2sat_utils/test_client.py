@@ -1,19 +1,20 @@
-import numpy as np
 from datetime import datetime
 from pathlib import Path
 from unittest import TestCase, mock
+
+import numpy as np
 from yolov5.models.yolo import AutoShape
 
 from street2sat_utils.client import (
+    get_distance_meters,
+    get_height_pixels,
+    get_image,
+    get_model,
+    get_new_points,
+    plot_labels,
+    point_meters_away,
     predict,
     run_prediction,
-    get_model,
-    get_image,
-    plot_labels,
-    get_height_pixels,
-    get_distance_meters,
-    point_meters_away,
-    get_new_points,
 )
 
 home_dir = Path(__file__).parent.parent.parent

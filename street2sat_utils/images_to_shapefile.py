@@ -3,8 +3,10 @@
 # Convert directory of images to shapefile
 
 import os
+
 import exifread
 import pandas as pd
+
 import geopandas as gpd
 
 

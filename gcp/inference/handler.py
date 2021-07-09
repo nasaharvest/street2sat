@@ -1,17 +1,17 @@
-import cv2
 import json
-import numpy as np
 import tempfile
 import time
-import torch
-
 from pathlib import Path
+from typing import List, Tuple
+
+import cv2
+import numpy as np
+import torch
 from google.cloud import storage
 from ts.torch_handler.base_handler import BaseHandler
-from typing import List, Tuple
+from yolov5.models.common import Detections
 from yolov5.utils.datasets import letterbox
 from yolov5.utils.general import make_divisible, non_max_suppression, scale_coords
-from yolov5.models.common import Detections
 
 temp_dir = tempfile.gettempdir()
 
