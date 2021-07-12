@@ -9,9 +9,13 @@
 3. Navigate to the link provided. If prompted, select your country, check the box and click **Agree and Continue**:
 
     <img src="assets/street2sat-gcloud.png" width=80%/>
-
+    
 ## Uploading images
-The following format `<COUNTRY>/<YYYY>-<MM>-<DD>-<folder-name>/*.jpg` will be used for keeping the bucket organized.
+The following format `<COUNTRY>/<YYYY>-<MM>-<DD>-<FOLDER NAME>/*.jpg` will be used for keeping the bucket organized.
+Images can be uploaded using the Google Cloud Console (for a small amount of images) or Google Cloud Storage CLI, gsutil (for a large amount of images).
+
+#### Upload using the console
+Ensure you are on https://console.cloud.google.com/storage/browser/street2sat-uploaded
 1. Create a folder for the country where the images were taken (if it does not already exist).
     <img src="assets/street2sat-upload-country.png" width=80%/>
 
@@ -27,10 +31,19 @@ The following format `<COUNTRY>/<YYYY>-<MM>-<DD>-<folder-name>/*.jpg` will be us
 4. Verifying that the images were uploaded
 
     <img src="assets/street2sat-upload-done.png" width=80%/>
+    
+#### Prerequisite for upload using gsutil
+1. Ensure you have `gsutil` installed using either this [link](https://cloud.google.com/storage/docs/gsutil_install) or by executing `pip install gsutil`
+2. Run `gsutil config` and follow the prompts to set it up.
 
+#### Upload using gsutil
+1. Specify the source folder, country, date and destination folder and run the below command.
+```bash
+gsutil cp -r <SOURCE FOLDER>/* gs://street2sat-uploaded/<COUNTRY>/<YYYY>-<MM>-<DD>-<FOLDER NAME> 
+```
 
 That's it! 
 
-Next time new images are available you can navigate directly to https://console.cloud.google.com/storage/browser/street2sat-uploaded and follow the steps in **Uploading images**
+Next time new images are available you can start directly from **Upload using gsutil** or **Upload using the console**
 
 
