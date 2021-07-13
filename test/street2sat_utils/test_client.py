@@ -3,7 +3,7 @@ from pathlib import Path
 from unittest import TestCase, mock
 
 import numpy as np
-from yolov5.models.yolo import AutoShape
+from yolov5.models.yolo import AutoShape  # type: ignore
 
 from street2sat_utils.client import (
     get_distance_meters,

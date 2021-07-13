@@ -1,39 +1,29 @@
-import base64
-import collections
-import gc
-import io
 import json
-import os
 import random
 import string
 import sys
-import time
 import zipfile
 
-import cv2
-import exifread
-import folium
+import folium  # type: ignore
 import numpy
-import shapefile
+import shapefile  # type: ignore
 from flask import (
     Blueprint,
     flash,
     redirect,
     render_template,
-    request,
     send_file,
     session,
     url_for,
 )
-from flask_login import current_user
-from html2text import html2text
+from flask_login import current_user  # type: ignore
 from werkzeug.utils import secure_filename
 
-from client import *
-from exif_utils import *
+from street2sat_utils.client import *
+from street2sat_utils.exif_utils import *
 
 from ..forms import ChoosePicture, TestDataForm, UploadToDatabaseForm
-from ..models import Image, User
+from ..models import Image
 from ..utils import current_time
 
 sys.path.insert(1, "./street2sat_utils")

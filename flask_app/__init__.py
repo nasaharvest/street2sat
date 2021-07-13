@@ -1,24 +1,14 @@
 # 3rd-party packages
 # stdlib
 import datetime
-import gc
 import os
-import shutil
 import sys
 
-from apscheduler.schedulers.background import BackgroundScheduler
-from flask import Flask, redirect, render_template, request, url_for
-from flask_bcrypt import Bcrypt
-from flask_login import (
-    LoginManager,
-    current_user,
-    login_required,
-    login_user,
-    logout_user,
-)
-from flask_mongoengine import MongoEngine
-from memory_profiler import profile
-from werkzeug.utils import secure_filename
+from apscheduler.schedulers.background import BackgroundScheduler  # type: ignore
+from flask import Flask, render_template
+from flask_bcrypt import Bcrypt  # type: ignore
+from flask_login import LoginManager  # type: ignore
+from flask_mongoengine import MongoEngine  # type: ignore
 
 from .detection.routes import model
 from .models import Image
@@ -26,8 +16,8 @@ from .users.routes import users
 
 sys.path.insert(1, "../street2sat_utils")
 
-db = MongoEngine()
-login_manager = LoginManager()
+db: MongoEngine = MongoEngine()
+login_manager: LoginManager = LoginManager()
 bcrypt = Bcrypt()
 
 

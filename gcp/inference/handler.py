@@ -1,17 +1,20 @@
-import json
 import tempfile
 import time
 from pathlib import Path
 from typing import List, Tuple
 
-import cv2
+import cv2  # type: ignore
 import numpy as np
 import torch
-from google.cloud import storage
-from ts.torch_handler.base_handler import BaseHandler
-from yolov5.models.common import Detections
-from yolov5.utils.datasets import letterbox
-from yolov5.utils.general import make_divisible, non_max_suppression, scale_coords
+from google.cloud import storage  # type: ignore
+from ts.torch_handler.base_handler import BaseHandler  # type: ignore
+from yolov5.models.common import Detections  # type: ignore
+from yolov5.utils.datasets import letterbox  # type: ignore
+from yolov5.utils.general import (  # type: ignore
+    make_divisible,
+    non_max_suppression,
+    scale_coords,
+)
 
 temp_dir = tempfile.gettempdir()
 
@@ -78,18 +81,20 @@ class ModelHandler(BaseHandler):
         print(f"HANDLER: Verified file downloaded to {local_path}")
         return local_path
 
-    def preprocess(self, data) -> Tuple[str, np.ndarray, torch.tensor, List[int]]:
+    def preprocess(
+        self, data
+    ) -> Tuple[str, np.ndarray, torch.Tensor, List[List[float]]]:
         print(data)
         print("HANDLER: Starting preprocessing")
         # DOWNLOAD FILE
         try:
-            uri = next(q["uri"].decode() for q in data if "uri" in q)
+            uri: str = next(q["uri"].decode() for q in data if "uri" in q)
         except Exception:
             raise ValueError("'uri' not found.")
 
         local_path = self.download_file(uri)
 
-        img = cv2.cvtColor(cv2.imread(local_path), cv2.COLOR_BGR2RGB)
+        img: np.ndarray = cv2.cvtColor(cv2.imread(local_path), cv2.COLOR_BGR2RGB)
         Path(local_path).unlink()
 
         # PREPROCESS IMAGE
@@ -110,7 +115,7 @@ class ModelHandler(BaseHandler):
 
     def inference(
         self, data, *args, **kwargs
-    ) -> Tuple[str, np.ndarray, torch.tensor, List, torch.tensor]:
+    ) -> Tuple[str, np.ndarray, torch.Tensor, List, torch.Tensor]:
         print("HANDLER: Starting inference")
         uri, img, img_tensor, shape1 = data
         y = self.model(img_tensor)[0]

@@ -1,8 +1,13 @@
 import base64
 import io
 
-from flask import Blueprint, flash, redirect, render_template, request, url_for
-from flask_login import current_user, login_required, login_user, logout_user
+from flask import Blueprint, flash, redirect, render_template, url_for
+from flask_login import (  # type: ignore
+    current_user,
+    login_required,
+    login_user,
+    logout_user,
+)
 
 from .. import bcrypt
 from ..forms import LoginForm, RegistrationForm, UpdateUsernameForm
