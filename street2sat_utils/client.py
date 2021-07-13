@@ -3,14 +3,14 @@ import io
 import math
 import os
 from statistics import mean
-from typing import Any, Dict, List, Tuple, Union
+from typing import Dict, List, Tuple, Union
 
-import cv2
+import cv2  # type: ignore
 import numpy as np
 import torch
-from matplotlib.figure import Figure
-from yolov5 import hubconf
-from yolov5.models.yolo import Model
+from matplotlib.figure import Figure  # type: ignore
+from yolov5 import hubconf  # type: ignore
+from yolov5.models.yolo import Model  # type: ignore
 
 
 def predict(images: List[np.ndarray]) -> List[str]:
@@ -45,8 +45,7 @@ def get_image(image_path: str) -> str:
     ax.imshow(img)
     ax.axis("off")
     fig.savefig(s, format="png")
-    s = base64.b64encode(s.getbuffer()).decode("ascii")
-    return s
+    return base64.b64encode(s.getbuffer()).decode("ascii")
 
 
 def plot_labels(
@@ -68,7 +67,7 @@ def plot_labels(
         (255, 0, 255),
         (255, 255, 0),
     ]
-    all_classes_so_far = {}
+    all_classes_so_far: Dict[int, Tuple[int, int, int]] = {}
     for dt in results:
         t = int(dt["ymax"])
         b = int(dt["ymin"])
@@ -97,16 +96,18 @@ def plot_labels(
     ax.imshow(img)
     ax.axis("off")
     fig.savefig(s, format="png")
-    s = base64.b64encode(s.getbuffer()).decode("ascii")
-    return s
+    return base64.b64encode(s.getbuffer()).decode("ascii")
 
 
 def get_height_pixels(
     outputs: List[Dict[str, Union[int, float]]]
-) -> Dict[Any, List[float]]:
-    all_h = {}
+) -> Dict[int, List[float]]:
+    all_h: Dict[int, List[float]] = {}
     for dt in outputs:
         class_name = dt["class"]
+        if not isinstance(class_name, int):
+            raise ValueError(f"class should be an integer but got {class_name}")
+
         ymax = dt["ymax"]
         ymin = dt["ymin"]
 
@@ -157,10 +158,10 @@ def point_meters_away(
 ) -> Dict[str, Tuple[float, float]]:
     # https://stackoverflow.com/a/7835325
     new_p_dict = {}
-    for crop, meters in meters_dict.items():
+    for crop, meters_str in meters_dict.items():
         R = 6378.1  # Radius of the Earth
         brng = math.radians(heading)  # Bearing is degrees converted to radians.
-        meters = float(meters.split(" ")[0])
+        meters = float(meters_str.split(" ")[0])
         d = meters / 1000  # Distance in km
 
         lat1 = math.radians(original_coord[0])  # Current lat point converted to radians

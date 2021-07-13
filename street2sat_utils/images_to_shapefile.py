@@ -4,10 +4,9 @@
 
 import os
 
-import exifread
-import pandas as pd
-
-import geopandas as gpd
+import exifread  # type: ignore
+import geopandas as gpd  # type: ignore
+import pandas as pd  # type: ignore
 
 
 def _get_if_exist(data, key):

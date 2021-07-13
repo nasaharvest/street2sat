@@ -1,24 +1,19 @@
 import string
 
-from flask_login import current_user
-from flask_wtf import FlaskForm
-from flask_wtf.file import FileAllowed, FileField, FileRequired
-from werkzeug.utils import secure_filename
-from wtforms import (
+from flask_login import current_user  # type: ignore
+from flask_wtf import FlaskForm  # type: ignore
+from wtforms import (  # type: ignore
     MultipleFileField,
     PasswordField,
     SelectField,
     StringField,
     SubmitField,
-    TextAreaField,
 )
-from wtforms.validators import (
-    DataRequired,
+from wtforms.validators import (  # type: ignore
     Email,
     EqualTo,
     InputRequired,
     Length,
-    NumberRange,
     ValidationError,
 )
 
