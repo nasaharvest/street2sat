@@ -1,6 +1,7 @@
 import logging
-import time
 import os
+import time
+
 import requests
 
 logging.basicConfig(level=logging.INFO)

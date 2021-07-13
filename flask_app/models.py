@@ -1,9 +1,10 @@
-from flask_login import UserMixin
-from datetime import datetime
-from . import db, login_manager
-from . import config
-from .utils import current_time
 import base64
+from datetime import datetime
+
+from flask_login import UserMixin
+
+from . import config, db, login_manager
+from .utils import current_time
 
 
 @login_manager.user_loader
@@ -19,20 +20,20 @@ class User(db.Document, UserMixin):
     def get_id(self):
         return self.username
 
+
 class Image(db.Document):
-    name = db.StringField(required = True, unique = True)
+    name = db.StringField(required=True, unique=True)
     img_data = db.ImageField()
     uploadtime = db.DateTimeField()
     tags = db.DictField()
     takentime = db.DateTimeField()
     result = db.StringField()
 
+
 class UploadedImage(db.Document):
-    user = db.ReferenceField(User, required = False)
-    image_file = db.FileField(required = False)
-    text_file = db.FileField(required = False)
-
-
+    user = db.ReferenceField(User, required=False)
+    image_file = db.FileField(required=False)
+    text_file = db.FileField(required=False)
 
 
 # class Review(db.Document):

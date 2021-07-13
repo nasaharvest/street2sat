@@ -1,54 +1,59 @@
 # 3rd-party packages
-from flask import Flask, render_template, request, redirect, url_for
-from flask_mongoengine import MongoEngine
+# stdlib
+import datetime
+import gc
+import os
+import shutil
+import sys
+
+from apscheduler.schedulers.background import BackgroundScheduler
+from flask import Flask, redirect, render_template, request, url_for
+from flask_bcrypt import Bcrypt
 from flask_login import (
     LoginManager,
     current_user,
+    login_required,
     login_user,
     logout_user,
-    login_required,
 )
-from flask_bcrypt import Bcrypt
-from werkzeug.utils import secure_filename
-# stdlib
-import datetime
-import os
-from apscheduler.schedulers.background import BackgroundScheduler
-import shutil
-import sys
-import gc
+from flask_mongoengine import MongoEngine
 from memory_profiler import profile
-import sys
-sys.path.insert(1, '../street2sat_utils')
+from werkzeug.utils import secure_filename
+
+from .detection.routes import model
+from .models import Image
+from .users.routes import users
+
+sys.path.insert(1, "../street2sat_utils")
 
 db = MongoEngine()
 login_manager = LoginManager()
 bcrypt = Bcrypt()
-from .users.routes import users
-from .detection.routes import model
-from .models import Image
+
 
 def page_not_found(e):
     return render_template("404.html"), 404
 
 
 def remove_folders():
-    print('removing images')
+    print("removing images")
     # print('Before')
     # for img in Image.objects.all():
     #     print(img.name, img.uploadtime)
 
     now = datetime.datetime.now() - datetime.timedelta(minutes=30)
-    Image.objects(uploadtime__lte = now).delete()
+    Image.objects(uploadtime__lte=now).delete()
 
-    for file in os.listdir('./temp'):
-        if file != 'expl.txt':
+    for file in os.listdir("./temp"):
+        if file != "expl.txt":
             # print(os.path.join('./temp', file))
-            os.remove(os.path.join('./temp', file))
+            os.remove(os.path.join("./temp", file))
+
 
 sched = BackgroundScheduler(daemon=True)
-sched.add_job(remove_folders,'interval', minutes = 5, id='remove_temp_folders')
+sched.add_job(remove_folders, "interval", minutes=5, id="remove_temp_folders")
 sched.start()
+
 
 def create_app(test_config=None):
     app = Flask(__name__)

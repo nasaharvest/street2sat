@@ -1,15 +1,14 @@
-from flask import Blueprint, redirect, url_for, render_template, flash, request
+import base64
+import io
+
+from flask import Blueprint, flash, redirect, render_template, request, url_for
 from flask_login import current_user, login_required, login_user, logout_user
 
 from .. import bcrypt
-from ..forms import RegistrationForm, LoginForm, UpdateUsernameForm
+from ..forms import LoginForm, RegistrationForm, UpdateUsernameForm
 from ..models import User
-import io
-import base64
-
 
 users = Blueprint("users", __name__)
-
 
 
 @users.route("/register", methods=["GET", "POST"])
@@ -72,6 +71,7 @@ def account():
         title="Account",
         username_form=username_form,
     )
+
 
 # @users.route("/user/<username>")
 # @login_required
