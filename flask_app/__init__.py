@@ -10,15 +10,15 @@ from flask_bcrypt import Bcrypt  # type: ignore
 from flask_login import LoginManager  # type: ignore
 from flask_mongoengine import MongoEngine  # type: ignore
 
+db: MongoEngine = MongoEngine()
+login_manager: LoginManager = LoginManager()
+bcrypt = Bcrypt()
+
 from .detection.routes import model
 from .models import Image
 from .users.routes import users
 
 sys.path.insert(1, "../street2sat_utils")
-
-db: MongoEngine = MongoEngine()
-login_manager: LoginManager = LoginManager()
-bcrypt = Bcrypt()
 
 
 def page_not_found(e):
