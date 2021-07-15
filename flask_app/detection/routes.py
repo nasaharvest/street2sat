@@ -168,48 +168,51 @@ def upload():
 @model.route("/prediction", methods=["GET", "POST"])
 def prediction():
     form = TestDataForm()
-    if form.validate_on_submit():
-        jpg_files = []
-        letters = string.ascii_letters
-        uniq = "".join(random.choice(letters) for i in range(5))
-        uniq = "upload_" + uniq + "_"
+    if not form.validate_on_submit():
+        print("Form not validated!")
+        return render_template("prediction.html", form=form)
 
-        if len(form.files.data) > 20:
-            flash("More than 20 files detected, only running on the first 20.")
+    jpg_files = []
+    letters = string.ascii_letters
+    uniq = "".join(random.choice(letters) for _ in range(5))
+    uniq = "upload_" + uniq + "_"
 
-        for file in form.files.data[:20]:
-            # for file in form.files.data[:]:
-            file_filename = uniq + secure_filename(file.filename)
-            if Path(file_filename).suffix.lower() not in [".jpg", ".jpeg"]:
-                flash("Please upload all .jpg or .jpeg files!")
-                return redirect(url_for("model.prediction"))
+    if len(form.files.data) > 20:
+        flash("More than 20 files detected, only running on the first 20.")
 
-            try:
-                pred = Prediction(img_bytes=file.stream)
-            except:
-                return redirect(url_for("model.prediction"))
+    for file in form.files.data[:20]:
+        # for file in form.files.data[:]:
+        file_filename = uniq + secure_filename(file.filename)
+        if Path(file_filename).suffix.lower() not in [".jpg", ".jpeg"]:
+            flash("Please upload all .jpg or .jpeg files!")
+            return redirect(url_for("model.prediction"))
 
-            tag_dict = {
-                "lat_long": pred.coord,
-                "taken_time": pred.time,
-                "focal_length": pred.focal_length,
-                "pixel_width": pred.pixel_width,
-                "pixel_height": pred.pixel_height,
-            }
-            img = Image(
-                name=file_filename,
-                uploadtime=current_time(),
-                tags=tag_dict,
-                takentime=pred.time,
-                result=pred.results_str,
-            )
-            img.img_data.put(file.stream, content_type="jpg")
-            img.save()
-            jpg_files.append(file_filename)
-        # save current session jpg files to cookie
-        session["jpg_files"] = jpg_files
-        return redirect(url_for("model.display"))
-    return render_template("prediction.html", form=form)
+        try:
+            pred = Prediction(img_bytes=file.stream)
+        except ValueError as e:
+            flash(str(e))
+            return redirect(url_for("model.prediction"))
+
+        tag_dict = {
+            "lat_long": pred.coord,
+            "taken_time": pred.time,
+            "focal_length": pred.focal_length,
+            "pixel_width": pred.pixel_width,
+            "pixel_height": pred.pixel_height,
+        }
+        img = Image(
+            name=file_filename,
+            uploadtime=current_time(),
+            tags=tag_dict,
+            takentime=pred.time,
+            result=pred.results_str,
+        )
+        img.img_data.put(file.stream, content_type="jpg")
+        img.save()
+        jpg_files.append(file_filename)
+    # save current session jpg files to cookie
+    session["jpg_files"] = jpg_files
+    return redirect(url_for("model.display"))
 
 
 @model.route("/display", methods=["GET", "POST"])
