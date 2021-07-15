@@ -30,4 +30,3 @@ class UploadedImage(db.Document):
     user = db.ReferenceField(User, required=False)
     image_file = db.FileField(required=False)
     text_file = db.FileField(required=False)
-

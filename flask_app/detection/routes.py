@@ -127,7 +127,9 @@ def download_shapefile():
         "./temp/" + uniq + "downloaded_shapefile.zip", "w", zipfile.ZIP_DEFLATED
     )
 
-    shapefile_paths = [f"{target}_shapefile.{suffix}" for suffix in ["prj", "shp", "dbf", "shx"]]
+    shapefile_paths = [
+        f"{target}_shapefile.{suffix}" for suffix in ["prj", "shp", "dbf", "shx"]
+    ]
     for p in shapefile_paths:
         zipf.write(p)
         Path(p).unlink()
