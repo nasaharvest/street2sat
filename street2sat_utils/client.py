@@ -1,156 +1,163 @@
 import base64
 import io
+import json
 import math
-import os
+from collections import Counter, defaultdict
 from statistics import mean
-from typing import Dict, List, Tuple, Union
+from typing import Dict, List, Optional, Tuple, Union
 
 import cv2  # type: ignore
+import exifread  # type: ignore
 import numpy as np
-import torch
 from matplotlib.figure import Figure  # type: ignore
 from yolov5 import hubconf  # type: ignore
 from yolov5.models.yolo import Model  # type: ignore
 
+from constants import CROP_CLASSES, CROP_TO_HEIGHT_DICT, GOPRO_SENSOR_HEIGHT, MODEL_PATH
+from street2sat_utils import exif_utils
 
-def predict(images: List[np.ndarray]) -> List[str]:
-    torch.set_num_threads(1)
-    model = get_model()
-    all_results = []
-    with torch.no_grad():
-        for img in images:
-            all_results.append(run_prediction(img, model))
-    return all_results
+model: Model = hubconf.custom(str(MODEL_PATH))
+model.eval()
 
 
-def run_prediction(img: np.ndarray, model: Model) -> str:
-    results = model(img)
-    results = results.pandas().xyxy[0].to_json(orient="records")
-    return results
+class Prediction:
+    def __init__(
+        self,
+        img_path: Optional[str] = None,
+        img_bytes: Optional[io.BytesIO] = None,
+        already_generated_results_str: Optional[str] = None,
+        already_generated_tags: Optional[Dict] = None,
+        name: Optional[str] = None,
+    ):
 
+        if name:
+            self.name = name
 
-def get_model(path: str = "street2sat_utils/model_weights/best.pt") -> Model:
-    assert os.path.exists(path), "Model path does not exist!"
-    model = hubconf.custom(path)
-    model.eval()
-    return model
+        if img_path is None and img_bytes is None:
+            raise ValueError("One of img_path, img_bytes, must be set.")
 
+        elif img_path:
+            img_bytes = open(img_path, "rb")
+            self.img = cv2.cvtColor(cv2.imread(img_path), cv2.COLOR_BGR2RGB)
 
-def get_image(image_path: str) -> str:
-    img = cv2.imread(image_path)
-    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-    s = io.BytesIO()
-    fig = Figure()
-    ax = fig.subplots()
-    ax.imshow(img)
-    ax.axis("off")
-    fig.savefig(s, format="png")
-    return base64.b64encode(s.getbuffer()).decode("ascii")
+        elif img_bytes:
+            img_np = np.frombuffer(img_bytes.read(), np.uint8)
+            self.img = cv2.imdecode(img_np, cv2.IMREAD_UNCHANGED)[:, :, ::-1]
+            img_bytes.seek(0)
 
-
-def plot_labels(
-    img: np.ndarray,
-    results: List[Dict[str, float]],
-    path_prefix: str = "street2sat_utils/crop_info/",
-) -> str:
-    classes = {}
-    with open(os.path.join(path_prefix, "classes.txt")) as classes_file:
-        for i, line in enumerate(classes_file):
-            classes[i] = line.strip()
-
-    img = np.copy(img)
-    colors = [
-        (0, 0, 255),
-        (0, 255, 0),
-        (255, 0, 0),
-        (0, 255, 255),
-        (255, 0, 255),
-        (255, 255, 0),
-    ]
-    all_classes_so_far: Dict[int, Tuple[int, int, int]] = {}
-    for dt in results:
-        t = int(dt["ymax"])
-        b = int(dt["ymin"])
-        l = int(dt["xmax"])
-        r = int(dt["xmin"])
-        c = int(dt["class"])
-
-        if c not in all_classes_so_far:
-            all_classes_so_far[c] = colors[len(all_classes_so_far.keys())]
-
-        cv2.rectangle(img, (l, t), (r, b), all_classes_so_far[c], 5)
-        cv2.putText(
-            img,
-            classes[c],
-            (r, b - 10),
-            cv2.FONT_HERSHEY_SIMPLEX,
-            2,
-            (0, 0, 0),
-            3,
-            cv2.LINE_AA,
-        )
-
-    s = io.BytesIO()
-    fig = Figure()
-    ax = fig.subplots()
-    ax.imshow(img)
-    ax.axis("off")
-    fig.savefig(s, format="png")
-    return base64.b64encode(s.getbuffer()).decode("ascii")
-
-
-def get_height_pixels(
-    outputs: List[Dict[str, Union[int, float]]]
-) -> Dict[int, List[float]]:
-    all_h: Dict[int, List[float]] = {}
-    for dt in outputs:
-        class_name = dt["class"]
-        if not isinstance(class_name, int):
-            raise ValueError(f"class should be an integer but got {class_name}")
-
-        ymax = dt["ymax"]
-        ymin = dt["ymin"]
-
-        if class_name in all_h.keys():
-            all_h[class_name].append(ymax - ymin)
+        # Load tags
+        if already_generated_tags:
+            self.time = already_generated_tags["taken_time"]
+            self.focal_length = already_generated_tags["focal_length"]
+            self.coord = already_generated_tags["lat_long"]
+            self.pixel_height = already_generated_tags["pixel_height"]
+            self.pixel_width = already_generated_tags["pixel_width"]
         else:
-            all_h[class_name] = [ymax - ymin]
+            tags = exifread.process_file(img_bytes)
+            self.time = exif_utils.get_exif_datetime(tags)
+            self.focal_length = exif_utils.get_exif_focal_length(tags)
+            self.coord = exif_utils.get_exif_location(tags)
+            (
+                self.pixel_height,
+                self.pixel_width,
+            ) = exif_utils.get_exif_image_height_width(tags)
 
-    return all_h
+        # Predict img
+        if already_generated_results_str:
+            self.results_str = already_generated_results_str
+            self.results = json.loads(self.results_str)
+        else:
+            raw_results = model(self.img)
+            self.results = raw_results.pandas().xyxy[0].to_dict(orient="records")
+            self.results_str = raw_results.pandas().xyxy[0].to_json(orient="records")
 
+        self.crop_count = Counter([CROP_CLASSES[r["class"]] for r in self.results])
 
-def get_distance_meters(
-    outputs: List[Dict[str, Union[int, float]]],
-    focal_length: float,
-    pixel_height: float,
-    path_prefix: str = "street2sat_utils/crop_info/",
-) -> Dict[str, str]:
-    GOPRO_SENSOR_HEIGHT = 4.55
+        # Get heights of detected crops
+        all_heights = self.get_heights_for_all_crops(self.results)
 
-    heights = {}
-    with open(os.path.join(path_prefix, "heights.txt")) as heights_file:
-        for line in heights_file:
-            heights[line.split()[0]] = float(line.split()[1])
-    classes = {}
-    with open(os.path.join(path_prefix, "classes.txt")) as classes_file:
-        for i, line in enumerate(classes_file):
-            classes[i] = line.strip()
+        # Estimate distance to each crop in image
+        self.distances = {
+            crop: self.heights_to_distance(crop, heights)
+            for crop, heights in all_heights.items()
+        }
 
-    detected_heights = get_height_pixels(outputs)
+    def __repr__(self):
+        return f"""
+Image:
+    Time:     {self.time}
+    Coord:    {self.coord}
+    Dims:     {self.pixel_height} x {self.pixel_width} 
+    
+Predictions:
+    {self.crop_count}
+    
+Predicted distances:
+    {self.distances}
+        """
 
-    dict_info = {}
-    for crop_index in detected_heights.keys():
-        crop_name = classes[crop_index]
-        typical_crop_height = heights[crop_name]
-        all_dist = []
-        for plant_height in detected_heights[crop_index]:
-            dist = (focal_length * typical_crop_height * pixel_height) / (
-                plant_height * GOPRO_SENSOR_HEIGHT
+    @staticmethod
+    def get_heights_for_all_crops(results):
+        heights = defaultdict(list)
+        for r in results:
+            crop_name = CROP_CLASSES[r["class"]]
+            height = r["ymax"] - r["ymin"]
+            heights[crop_name].append(height)
+        return heights
+
+    def heights_to_distance(self, crop, heights):
+        distances = [self.get_crop_distance_from_height(crop, h) for h in heights]
+        return mean(distances)
+
+    def get_crop_distance_from_height(self, crop, plant_height):
+        typical_crop_height = CROP_TO_HEIGHT_DICT[crop]
+        numerator = self.focal_length * typical_crop_height * self.pixel_height
+        denominator = plant_height * GOPRO_SENSOR_HEIGHT
+        return (numerator / denominator) / 1000
+
+    @staticmethod
+    def img_to_base64_str(img: np.ndarray) -> str:
+        s = io.BytesIO()
+        fig = Figure()
+        ax = fig.subplots()
+        ax.imshow(img)
+        ax.axis("off")
+        fig.savefig(s, format="png")
+        return base64.b64encode(s.getbuffer()).decode("ascii")
+
+    def plot_labels(self, to_base_64: bool = False) -> str:
+        img = np.copy(self.img)
+        colors = [
+            (0, 0, 255),
+            (0, 255, 0),
+            (255, 0, 0),
+            (0, 255, 255),
+            (255, 0, 255),
+            (255, 255, 0),
+        ]
+        all_classes_so_far: Dict[int, Tuple[int, int, int]] = {}
+        for dt in self.results:
+            t, b, l, r, c = [
+                int(dt[key]) for key in ["ymax", "ymin", "xmax", "xmin", "class"]
+            ]
+
+            if c not in all_classes_so_far:
+                all_classes_so_far[c] = colors[len(all_classes_so_far.keys())]
+
+            cv2.rectangle(img, (l, t), (r, b), all_classes_so_far[c], 5)
+            cv2.putText(
+                img,
+                CROP_CLASSES[c],
+                (r, b - 10),
+                cv2.FONT_HERSHEY_SIMPLEX,
+                2,
+                (0, 0, 0),
+                3,
+                cv2.LINE_AA,
             )
-            dist = dist / 1000
-            all_dist.append(dist)
-        dict_info[crop_name] = str(round(mean(all_dist), 3)) + " meters"
-    return dict_info
+        if to_base_64:
+            return self.img_to_base64_str(img)
+        return img
 
 
 def point_meters_away(
@@ -158,10 +165,10 @@ def point_meters_away(
 ) -> Dict[str, Tuple[float, float]]:
     # https://stackoverflow.com/a/7835325
     new_p_dict = {}
-    for crop, meters_str in meters_dict.items():
+    for crop, meters in meters_dict.items():
         R = 6378.1  # Radius of the Earth
         brng = math.radians(heading)  # Bearing is degrees converted to radians.
-        meters = float(meters_str.split(" ")[0])
+        # meters = float(meters_str.split(" ")[0])
         d = meters / 1000  # Distance in km
 
         lat1 = math.radians(original_coord[0])  # Current lat point converted to radians
@@ -186,58 +193,57 @@ def point_meters_away(
     return new_p_dict
 
 
-def get_new_points(time_dict: Dict, coord_dict: Dict, distance_dict: Dict) -> Tuple:
-    # find closest point in time
-    # find heading by doing coordinate at closest point and current point 90 degrees left
-    # add distance to current point
-    # taken from https://gist.github.com/jeromer/2005586
-    bearings = {}
-    for time_val, file in time_dict.items():
-        all_times = list(time_dict.keys())
-        all_times.remove(time_val)
-        # closest_time = min(all_times, key=lambda d: abs(time.mktime(d) - time.mktime(time_val)))
-        closest_time = min(all_times, key=lambda d: (d - time_val).total_seconds())
+def get_new_points2(preds: List[Prediction]):
 
-        file_with_closest_time = time_dict[closest_time]
-        original_coord = coord_dict[file]
-        closest_coord = coord_dict[file_with_closest_time]
+    # Sort predictions by date
+    sorted_preds = sorted(preds, key=lambda pred: pred.time)
 
-        lat1 = math.radians(original_coord[0])
-        lat2 = math.radians(closest_coord[0])
+    # Go through predictions for each prediction find closest other prediction
+    for i, pred in enumerate(sorted_preds):
+        pred_before = sorted_preds[i - 1] if i > 0 else None
+        pred_after = sorted_preds[i + 1] if (i + 1) < len(preds) else None
 
-        diffLong = math.radians(closest_coord[1] - original_coord[1])
-
-        x = math.sin(diffLong) * math.cos(lat2)
-        y = math.cos(lat1) * math.sin(lat2) - (
-            math.sin(lat1) * math.cos(lat2) * math.cos(diffLong)
-        )
-
-        initial_bearing = math.atan2(x, y)
-        initial_bearing = math.degrees(initial_bearing)
-        compass_bearing = (initial_bearing + 360) % 360
-
-        if closest_time < time_val:
-            compass_bearing = (compass_bearing + 180) % 360
-
-        ##### IMPORTANT ASSUMPTION ALL CAMERAS POINT LEFT ####
-        bearings[file] = (compass_bearing - 90) % 360
-
-    # file:crop:(lat,long)
-    new_points = {}
-    for file, bearing in bearings.items():
-        if file in distance_dict.keys():
-            distance_meters = distance_dict[file]
-            translated_coords = point_meters_away(
-                coord_dict[file], bearing, distance_meters
+        if pred_before and pred_after:
+            time_to_pred_before = (pred.time - pred_before.time).total_seconds()
+            time_to_pred_after = (pred.time - sorted_preds[i + 1].time).total_seconds()
+            if time_to_pred_before < time_to_pred_after:
+                closest_pred = pred_before
+            else:
+                closest_pred = pred_after
+        elif pred_before:
+            closest_pred = pred_before
+        elif pred_after:
+            closest_pred = pred_after
+        else:
+            raise ValueError(
+                "A predictions list with atleast two elements must be passed."
             )
-            new_points[file] = translated_coords
 
-    return bearings, new_points
+        # Go through each prediction pair and get the latitude from both to calculate bearing
+        closest_is_earlier = closest_pred == pred_before
+        pred.bearing = compute_bearing(
+            pred.coord, closest_pred.coord, closest_is_earlier
+        )
+        pred.crop_coord = point_meters_away(pred.coord, pred.bearing, pred.distances)
 
 
-if __name__ == "__main__":
-    model = get_model("../street2sat_utils/model_weights/best.pt")
-    img1_path = "../example_images/GP__1312.JPG"
-    img1 = cv2.cvtColor(cv2.imread(img1_path), cv2.COLOR_BGR2RGB)
-    run_prediction(img1, model)
-    # predict('../temp/uQBYaAsIgV/')
+def compute_bearing(original_coord, closest_coord, closest_is_earlier):
+    lat1 = math.radians(original_coord[0])
+    lat2 = math.radians(closest_coord[0])
+
+    diffLong = math.radians(closest_coord[1] - original_coord[1])
+
+    x = math.sin(diffLong) * math.cos(lat2)
+    y = math.cos(lat1) * math.sin(lat2) - (
+        math.sin(lat1) * math.cos(lat2) * math.cos(diffLong)
+    )
+
+    initial_bearing = math.atan2(x, y)
+    initial_bearing = math.degrees(initial_bearing)
+    compass_bearing = (initial_bearing + 360) % 360
+
+    if closest_is_earlier:
+        compass_bearing = (compass_bearing + 180) % 360
+
+    ##### IMPORTANT ASSUMPTION ALL CAMERAS POINT LEFT ####
+    return (compass_bearing - 90) % 360
