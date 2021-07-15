@@ -21,7 +21,7 @@ from werkzeug.utils import secure_filename
 from street2sat_utils.client import Prediction, get_new_points2
 
 from ..forms import ChoosePicture, TestDataForm, UploadToDatabaseForm
-from ..models import Image
+from ..models import Image, UploadedImage
 from ..utils import current_time
 
 sys.path.insert(1, "./street2sat_utils")
@@ -95,12 +95,15 @@ def download_labels():
 @model.route("/download_shapefile")
 def download_shapefile():
     new_points = session["new_points"]
+    print("NEW POINTS")
     print(new_points)
 
     letters = string.ascii_letters
     uniq = "".join(random.choice(letters) for _ in range(5))
+    target = "./temp/" + uniq
 
-    w = shapefile.Writer(shapefile.POINT)
+    # Create shapefile
+    w = shapefile.Writer(target=f"{target}_shapefile", shape=shapefile.POINT)
     w.field("Latitude", "N", decimal=30)
     w.field("Longitude", "N", decimal=30)
     w.field("Crop Type", "C")
@@ -108,14 +111,26 @@ def download_shapefile():
         for crop, new_p in crops.items():
             w.point(new_p[1], new_p[0])
             w.record(new_p[0], new_p[1], crop)
-    w.save("./temp/" + uniq + "_shapefile")
+    w.close()
+
+    # Create projection file
+    prj = open(f"{target}_shapefile.prj", "w")
+    epsg = 'GEOGCS["WGS 84",'
+    epsg += 'DATUM["WGS_1984",'
+    epsg += 'SPHEROID["WGS 84",6378137,298.257223563]]'
+    epsg += ',PRIMEM["Greenwich",0],'
+    epsg += 'UNIT["degree",0.0174532925199433]]'
+    prj.write(epsg)
+    prj.close()
 
     zipf = zipfile.ZipFile(
         "./temp/" + uniq + "downloaded_shapefile.zip", "w", zipfile.ZIP_DEFLATED
     )
-    zipf.write("./temp/" + uniq + "_shapefile.shp")
-    zipf.write("./temp/" + uniq + "_shapefile.dbf")
-    zipf.write("./temp/" + uniq + "_shapefile.shx")
+
+    shapefile_paths = [f"{target}_shapefile.{suffix}" for suffix in ["prj", "shp", "dbf", "shx"]]
+    for p in shapefile_paths:
+        zipf.write(p)
+        Path(p).unlink()
     zipf.close()
 
     return send_file(
