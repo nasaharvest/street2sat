@@ -54,6 +54,8 @@ class Prediction:
             self.pixel_width = already_generated_tags["pixel_width"]
         else:
             tags = exifread.process_file(img_bytes)
+            if tags == {}:
+                raise ValueError("Exif tags could not be found for image.")
             self.time = exif_utils.get_exif_datetime(tags)
             self.focal_length = exif_utils.get_exif_focal_length(tags)
             self.coord = exif_utils.get_exif_location(tags)
