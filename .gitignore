@@ -127,3 +127,6 @@ dmypy.json
 .idea
 
 **venv/
+
+temp/**
+!temp/.gitkeep
