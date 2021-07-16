@@ -4,8 +4,8 @@ import base64
 import io
 import math
 from collections import Counter, defaultdict
-from datetime import datetime
 from dataclasses import dataclass
+from datetime import datetime
 from statistics import mean
 from typing import Dict, List, Optional, Tuple, Union
 
@@ -46,7 +46,9 @@ class Prediction:
         return img
 
     @classmethod
-    def from_results_and_tags(cls, results: Dict, tags: Dict, name: str, img_bytes=None) -> Prediction:
+    def from_results_and_tags(
+        cls, results: Dict, tags: Dict, name: str, img_bytes=None
+    ) -> Prediction:
         img = cls.load_img_from_bytes(img_bytes) if img_bytes else None
         time = tags["time"]
         focal_length = tags["focal_length"]
@@ -61,7 +63,7 @@ class Prediction:
             coord=coord,
             pixel_height=pixel_height,
             img=img,
-            is_generate_distance=True
+            is_generate_distance=True,
         )
 
     @classmethod
@@ -91,7 +93,7 @@ class Prediction:
             coord=coord,
             pixel_height=pixel_height,
             img=img,
-            is_generate_distance=True
+            is_generate_distance=True,
         )
 
     @classmethod
@@ -118,7 +120,7 @@ Predicted distances:
         return heights
 
     def generate_distances(self):
-        if hasattr(self, 'distances'):
+        if hasattr(self, "distances"):
             return self.distances
 
         # Get heights of detected crops
@@ -195,7 +197,7 @@ Predicted distances:
 
         x = math.sin(diffLong) * math.cos(lat2)
         y = math.cos(lat1) * math.sin(lat2) - (
-                math.sin(lat1) * math.cos(lat2) * math.cos(diffLong)
+            math.sin(lat1) * math.cos(lat2) * math.cos(diffLong)
         )
 
         initial_bearing = math.atan2(x, y)
@@ -229,7 +231,7 @@ Predicted distances:
             lon2 = lon1 + math.atan2(
                 math.sin(brng) * math.sin(d / R) * math.cos(lat1),
                 math.cos(d / R) - math.sin(lat1) * math.sin(lat2),
-                )
+            )
 
             lat2 = math.degrees(lat2)
             lon2 = math.degrees(lon2)
@@ -250,12 +252,11 @@ def calculate_crop_coords(preds: List[Prediction]) -> List[Prediction]:
 
     # Find closest for each remaining prediction
     for i, pred in enumerate(sorted_preds[1:-1]):
-        time_to_pred_before = (pred.time - sorted_preds[i-1].time).total_seconds()
-        time_to_pred_after = (pred.time - sorted_preds[i+1].time).total_seconds()
+        time_to_pred_before = (pred.time - sorted_preds[i - 1].time).total_seconds()
+        time_to_pred_after = (pred.time - sorted_preds[i + 1].time).total_seconds()
         if time_to_pred_before < time_to_pred_after:
-            pred.set_crop_coord(closest=sorted_preds[i-1])
+            pred.set_crop_coord(closest=sorted_preds[i - 1])
         else:
-            pred.set_crop_coord(closest=sorted_preds[i+1])
+            pred.set_crop_coord(closest=sorted_preds[i + 1])
 
     return sorted_preds
-

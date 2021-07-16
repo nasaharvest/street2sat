@@ -64,7 +64,7 @@ def generate_predictions():
             results=json.loads(file.result),
             tags=file.tags,
             name=filename,
-            img_bytes=file.img_data
+            img_bytes=file.img_data,
         )
         preds.append(pred)
 
@@ -204,7 +204,9 @@ def prediction():
             return redirect(url_for("model.prediction"))
 
         try:
-            pred = Prediction.from_img_bytes(img_bytes=file.stream, name=file_filename, close=False)
+            pred = Prediction.from_img_bytes(
+                img_bytes=file.stream, name=file_filename, close=False
+            )
         except ValueError as e:
             flash(str(e))
             return redirect(url_for("model.prediction"))
