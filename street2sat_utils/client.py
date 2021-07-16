@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 import base64
 import io
 import math
@@ -7,7 +5,7 @@ from collections import defaultdict
 from dataclasses import dataclass
 from datetime import datetime
 from statistics import mean
-from typing import Dict, IO, List, Optional, Tuple
+from typing import IO, Dict, List, Optional, Tuple
 
 import cv2  # type: ignore
 import exifread  # type: ignore
@@ -15,22 +13,29 @@ import numpy as np
 from matplotlib.figure import Figure  # type: ignore
 from yolov5 import hubconf  # type: ignore
 
-from constants import CROP_CLASSES, CROP_TO_HEIGHT_DICT, GOPRO_SENSOR_HEIGHT, MODEL_PATH
 from street2sat_utils import exif_utils
+from street2sat_utils.constants import (
+    CROP_CLASSES,
+    CROP_TO_HEIGHT_DICT,
+    GOPRO_SENSOR_HEIGHT,
+    MODEL_PATH,
+)
 
 
 def memoize(f):
     memo = {}
+
     def helper(x):
         if x not in memo:
             memo[x] = f(x)
         return memo[x]
+
     return helper
 
 
 @memoize
-def load_model():
-    model = hubconf.custom(str(MODEL_PATH))
+def load_model(model_path: str):
+    model = hubconf.custom(model_path)
     model.eval()
     return model
 
@@ -52,7 +57,7 @@ class Prediction:
 
     def to_dict(self):
         skip = ["img", "is_generate_distance"]
-        return {k: v for k, v in self.__dict__.items() if k in skip}
+        return {k: v for k, v in self.__dict__.items() if k not in skip}
 
     @staticmethod
     def load_img_from_bytes(img_bytes) -> np.ndarray:
@@ -64,18 +69,17 @@ class Prediction:
     @classmethod
     def from_results_and_tags(
         cls, results: List, tags: Dict, name: str, img_bytes=None, img_np=None
-    ) -> Prediction:
+    ):
         time = tags["time"]
         focal_length = tags["focal_length"]
         coord = tags["coord"]
         pixel_height = tags["pixel_height"]
 
+        img = None
         if img_bytes is not None:
             img = cls.load_img_from_bytes(img_bytes)
         elif img_np is not None:
             img = img_np
-        else:
-            img = None
 
         return cls(
             name=name,
@@ -89,7 +93,7 @@ class Prediction:
         )
 
     @classmethod
-    def from_img_bytes(cls, img_bytes: IO, name: str, close=True) -> Prediction:
+    def from_img_bytes(cls, img_bytes: IO, name: str, close=True):
         # Open img
         img = cls.load_img_from_bytes(img_bytes)
 
@@ -97,14 +101,14 @@ class Prediction:
         tags = cls.generate_tags(img_bytes, close)
 
         # Predict img
-        model = load_model()
+        model = load_model(str(MODEL_PATH))
         raw_results = model(img)
         results = raw_results.pandas().xyxy[0].to_dict(orient="records")
 
         return cls.from_results_and_tags(results, tags, name, img_np=img)
 
     @classmethod
-    def from_img_path(cls, img_path: str) -> Prediction:
+    def from_img_path(cls, img_path: str):
         img_bytes = open(img_path, "rb")
         return cls.from_img_bytes(img_bytes, name=img_path)
 
@@ -120,7 +124,7 @@ class Prediction:
             "time": exif_utils.get_exif_datetime(tags),
             "focal_length": exif_utils.get_exif_focal_length(tags),
             "coord": exif_utils.get_exif_location(tags),
-            "pixel_height": exif_utils.get_exif_image_height_width(tags)[0]
+            "pixel_height": exif_utils.get_exif_image_height_width(tags)[0],
         }
 
     def __repr__(self):
@@ -211,7 +215,7 @@ Predicted distances:
             return Prediction.img_to_base64_str(img)
         return img
 
-    def compute_bearing(self, closest: Prediction) -> float:
+    def compute_bearing(self, closest) -> float:
         lat1 = math.radians(self.coord[0])
         lat2 = math.radians(closest.coord[0])
 
@@ -232,7 +236,7 @@ Predicted distances:
         ##### IMPORTANT ASSUMPTION ALL CAMERAS POINT LEFT ####
         return (compass_bearing - 90) % 360
 
-    def set_crop_coord(self, closest: Prediction) -> None:
+    def set_crop_coord(self, closest) -> None:
         distances = self.generate_distances()
         bearing = self.compute_bearing(closest)
 
