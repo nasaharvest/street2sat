@@ -1,3 +1,4 @@
+import json
 import random
 import string
 import sys
@@ -18,7 +19,7 @@ from flask import (
 from flask_login import current_user  # type: ignore
 from werkzeug.utils import secure_filename
 
-from street2sat_utils.client import Prediction, get_new_points2
+from street2sat_utils.client import Prediction, calculate_crop_coords
 
 from ..forms import ChoosePicture, TestDataForm, UploadToDatabaseForm
 from ..models import Image, UploadedImage
@@ -59,18 +60,16 @@ def generate_predictions():
         if file is None:
             flash("Sorry, session expired. please upload images again.")
             return redirect(url_for("model.prediction"))
-
-        preds.append(
-            Prediction(
-                img_bytes=file.img_data,
-                already_generated_results_str=file.result,
-                already_generated_tags=file.tags,
-                name=filename,
-            )
+        pred = Prediction.from_results_and_tags(
+            results=json.loads(file.result),
+            tags=file.tags,
+            name=filename,
+            img_bytes=file.img_data
         )
+        preds.append(pred)
 
     if len(preds) > 1:
-        get_new_points2(preds)
+        preds = calculate_crop_coords(preds)
         session["new_points"] = [p.crop_coord for p in preds]
 
     return preds, current_index, choose_picture
@@ -205,16 +204,15 @@ def prediction():
             return redirect(url_for("model.prediction"))
 
         try:
-            pred = Prediction(img_bytes=file.stream)
+            pred = Prediction.from_img_bytes(img_bytes=file.stream, name=file_filename, close=False)
         except ValueError as e:
             flash(str(e))
             return redirect(url_for("model.prediction"))
 
         tag_dict = {
-            "lat_long": pred.coord,
-            "taken_time": pred.time,
+            "coord": pred.coord,
+            "time": pred.time,
             "focal_length": pred.focal_length,
-            "pixel_width": pred.pixel_width,
             "pixel_height": pred.pixel_height,
         }
         img = Image(
@@ -222,7 +220,7 @@ def prediction():
             uploadtime=current_time(),
             tags=tag_dict,
             takentime=pred.time,
-            result=pred.results_str,
+            result=json.dumps(pred.results),
         )
         img.img_data.put(file.stream, content_type="jpg")
         img.save()
