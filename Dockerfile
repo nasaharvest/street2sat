@@ -25,6 +25,8 @@ RUN torch-model-archiver \
     --handler handler.py \
     --export-path=model-store
 
+ENV LABEL_IMG_PERCENT=1.0
+ENV DEST_BUCKET_NAME="street2sat-model-predictions"
 CMD ["torchserve", "--start", "--ncs", "--model-store", "model-store", \
        "--models", "street2sat=street2sat.mar"]
 
