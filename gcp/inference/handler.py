@@ -123,7 +123,12 @@ class ModelHandler(BaseHandler):
         )
         scale_coords(shape1, y[0][:, :4], img.shape[:2])
         detections = Detections(
-            imgs=[img], pred=y, files=[], times=[0, 1, 2, 3], names=CROP_CLASSES, shape=img_tensor.shape
+            imgs=[img],
+            pred=y,
+            files=[],
+            times=[0, 1, 2, 3],
+            names=CROP_CLASSES,
+            shape=img_tensor.shape,
         )
         results = detections.pandas().xyxy[0].to_dict(orient="records")
 
