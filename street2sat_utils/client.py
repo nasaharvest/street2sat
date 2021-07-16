@@ -7,7 +7,7 @@ from collections import Counter, defaultdict
 from dataclasses import dataclass
 from datetime import datetime
 from statistics import mean
-from typing import Dict, List, Optional, Tuple, Union
+from typing import Dict, IO, List, Optional, Tuple, Union
 
 import cv2  # type: ignore
 import exifread  # type: ignore
@@ -67,7 +67,7 @@ class Prediction:
         )
 
     @classmethod
-    def from_img_bytes(cls, img_bytes: io.BytesIO, name: str, close=True) -> Prediction:
+    def from_img_bytes(cls, img_bytes: IO, name: str, close=True) -> Prediction:
         # Open img
         img = cls.load_img_from_bytes(img_bytes)
 
