@@ -13,11 +13,11 @@ RUN pip install -r requirements.txt
 
 FROM reqs as build-torchserve
 COPY gcp/inference/handler.py /home/model-server
-COPY street2sat_utils/model_weights/*.pt /home/model-server
+COPY model_weights/*.pt /home/model-server
+COPY street2sat_utils /home/model-server/street2sat_utils
 
 WORKDIR /home/model-server
 
-ARG MODELS
 RUN torch-model-archiver \
     --model-name street2sat \
     --version 1.0 \
