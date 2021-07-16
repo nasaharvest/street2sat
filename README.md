@@ -18,8 +18,7 @@ Link coming soon!
     ```
 ## Usage
 #### Notebooks
-The model and example data is accessible through two jupyter notebooks:
-- [Single_image_pipeline.ipynb](noteboooks/Single_image_pipeline.ipynb)
+The model and example data is accessible through a jupyter notebook:
 - [Multiple_image_pipeline.ipynb](noteboooks/Multiple_image_pipeline.ipynb)
 
 #### Flask server
@@ -45,6 +44,30 @@ gsutil mb gs://street2sat-model-predictions
 **Deploying resources (done on every code update)**
 ```bash
 sh deploy.sh
+```
+
+**Querying Firestore**
+Uploading an image to bucket street2sat-uploaded triggers the inference pipeline and stores the results in FireStore. To query the database, first set up your account
+```bash
+gcloud auth application-default login
+```
+Example python usage:
+```python
+>> from google.cloud import firestore
+>> db = firestore.Client()
+>> coll = db.collection("street2sat")
+>> uri = 'gs://street2sat-uploaded/Uganda/2021-06-23_lutoto_left2/100GOPRO/G0017668.JPG'
+>> query = coll .where("input_img", "==", uri).get()
+>> query[0].to_dict()
+{'time': DatetimeWithNanoseconds(2021, 6, 23, 13, 53, 42, tzinfo=<UTC>),
+ 'distances': {'maize': 16.36581243763188},
+ 'focal_length': 3,
+ ...
+
+>> query = coll.where("name", ">=", "Uganda-2021-06-23_lutoto_left2-100GOPRO")
+            .where("name", "<", "Uganda-2021-06-23_lutoto_left2-101GOPRO").get()
+>> len(q)
+999
 ```
 
 ## Background
