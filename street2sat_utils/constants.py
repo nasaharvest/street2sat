@@ -1,7 +1,7 @@
 from pathlib import Path
 
-HOME_DIR = Path(__file__).parent
-MODEL_PATH = HOME_DIR / "street2sat_utils/model_weights/best.pt"
+HOME_DIR = Path(__file__).parent.parent
+MODEL_PATH = HOME_DIR / "model_weights/best.pt"
 
 GOPRO_SENSOR_HEIGHT = 4.55
 

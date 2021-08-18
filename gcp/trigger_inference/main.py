@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-def hello_gcs(event, context):
+def hello_gcs(event, context=None):
     """Triggered by a change to a Cloud Storage bucket.
     Args:
          event (dict): Event payload.
@@ -34,3 +34,13 @@ def hello_gcs(event, context):
             break
         logger.error(f"Failed response: {response.raw}")
         time.sleep(5)
+
+
+if __name__ == "__main__":
+    os.environ["INFERENCE_HOST"] = "https://street2sat-grxg7bzh2a-uc.a.run.app"
+    hello_gcs(
+        {
+            "bucket": "street2sat-uploaded",
+            "name": "Uganda/2021-07-07_example_images/GP_1312.JPG",
+        }
+    )
