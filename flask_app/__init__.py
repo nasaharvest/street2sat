@@ -27,16 +27,11 @@ def page_not_found(e):
 
 def remove_folders():
     print("removing images")
-    # print('Before')
-    # for img in Image.objects.all():
-    #     print(img.name, img.uploadtime)
-
     now = datetime.datetime.now() - datetime.timedelta(minutes=30)
     Image.objects(uploadtime__lte=now).delete()
 
     for file in os.listdir("./temp"):
-        if file != "expl.txt":
-            # print(os.path.join('./temp', file))
+        if file != ".gitkeep":
             os.remove(os.path.join("./temp", file))
 
 

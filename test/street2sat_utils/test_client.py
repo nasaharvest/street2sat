@@ -1,162 +1,98 @@
 from datetime import datetime
 from pathlib import Path
-from unittest import TestCase, mock
+from unittest import TestCase
 
-import numpy as np
-from yolov5.models.yolo import AutoShape  # type: ignore
-
-from street2sat_utils.client import (
-    get_distance_meters,
-    get_height_pixels,
-    get_image,
-    get_model,
-    get_new_points,
-    plot_labels,
-    point_meters_away,
-    predict,
-    run_prediction,
-)
+from street2sat_utils.client import Prediction, calculate_crop_coords
 
 home_dir = Path(__file__).parent.parent.parent
+
+image_path = home_dir / "example_images/GP__1312.JPG"
 
 
 class TestClient(TestCase):
 
     sample_results = [
         {
-            "xmin": 474.7214355469,
-            "ymin": 834.8707885742,
-            "xmax": 646.2578735352,
-            "ymax": 1155.9974365234,
-            "confidence": 0.6548386812,
             "class": 11,
+            "confidence": 0.6548390984535217,
             "name": "sugarcane",
+            "xmax": 646.2578735351562,
+            "xmin": 474.721435546875,
+            "ymax": 1155.9974365234375,
+            "ymin": 834.8707885742188,
         },
         {
+            "class": 11,
+            "confidence": 0.6288385987281799,
+            "name": "sugarcane",
+            "xmax": 1398.083251953125,
             "xmin": 1242.162109375,
-            "ymin": 750.7573852539,
-            "xmax": 1398.0832519531,
-            "ymax": 1085.2777099609,
-            "confidence": 0.6288382411,
-            "class": 11,
-            "name": "sugarcane",
+            "ymax": 1085.2777099609375,
+            "ymin": 750.7573852539062,
         },
         {
-            "xmin": 1986.4957275391,
-            "ymin": 783.6393432617,
-            "xmax": 2100.9672851562,
-            "ymax": 1043.1098632812,
-            "confidence": 0.6045597196,
             "class": 11,
+            "confidence": 0.6045596599578857,
             "name": "sugarcane",
+            "xmax": 2100.96728515625,
+            "xmin": 1986.495849609375,
+            "ymax": 1043.10986328125,
+            "ymin": 783.6393432617188,
         },
     ]
 
-    @mock.patch("street2sat_utils.client.get_model")
-    def test_predict_no_imgs(self, mock_get_model):
-        test_images = []
-        results = predict(test_images)
-        mock_get_model.assert_called_once()
-        self.assertEqual(results, [])
+    def test_prediction_from_img_path(self):
+        pred = Prediction.from_img_path(img_path=str(image_path))
+        self.assertEqual(pred.coord, (0.6752619999999999, 34.7491525))
+        self.assertEqual(pred.distances, {"sugarcane": 20.397414224803118})
+        self.assertEqual(pred.focal_length, 3)
+        self.assertEqual(pred.img.shape, (2028, 2704, 3))
+        self.assertEqual(pred.pixel_height, 2028)
+        self.assertEqual(len(pred.results), 32)
+        self.assertEqual(pred.results[:3], self.sample_results)
+        self.assertEqual(pred.time, datetime(2020, 12, 16, 8, 42, 54))
 
-    @mock.patch("street2sat_utils.client.run_prediction")
-    @mock.patch("street2sat_utils.client.get_model")
-    def test_predict_one_imgs(self, mock_get_model, mock_run_prediction):
-        test_images = [np.ones((3, 64, 64))]
-        mock_return = "{json: string}"
-        mock_run_prediction.return_value = mock_return
-        results = predict(test_images)
-        mock_get_model.assert_called_once()
-        mock_run_prediction.assert_called_once()
-        self.assertEqual(len(results), 1)
-        self.assertEqual(results[0], mock_return)
+    def test_prediction_from_img_bytes(self):
+        img_bytes = open(image_path, "rb")
+        pred = Prediction.from_img_bytes(img_bytes=img_bytes, name=str(image_path))
+        self.assertEqual(pred.coord, (0.6752619999999999, 34.7491525))
+        self.assertEqual(pred.distances, {"sugarcane": 20.397414224803118})
+        self.assertEqual(pred.focal_length, 3)
+        self.assertEqual(pred.img.shape, (2028, 2704, 3))
+        self.assertEqual(pred.pixel_height, 2028)
+        self.assertEqual(len(pred.results), 32)
+        self.assertEqual(pred.results[:3], self.sample_results)
+        self.assertEqual(pred.time, datetime(2020, 12, 16, 8, 42, 54))
 
-    @mock.patch("yolov5.models.common.Detections")
-    @mock.patch("yolov5.models.yolo.Model")
-    def test_run_prediction(self, mock_Model, mock_Detections):
-        mock_Model.return_value = mock_Detections
-        res = run_prediction(np.ones((3, 64, 64)), mock_Model)
-        self.assertEqual(res, mock_Detections.pandas().xyxy[0].to_json())
-
-    def test_get_model(self):
-        model_path = home_dir / "street2sat_utils/model_weights/best.pt"
-        m = get_model(str(model_path))
-        self.assertFalse(m.training)
-        self.assertEqual(type(m), AutoShape)
-
-    def test_get_image(self):
-        image_path = home_dir / "example_images/GP__1312.JPG"
-        img = get_image(str(image_path))
-        self.assertEqual(type(img), str)
-        self.assertEqual(len(img), 347596)
-
-    def test_plot_labels(self):
-        test_img = np.ones((2000, 2000, 3))
-        path_prefix = home_dir / "street2sat_utils/crop_info"
-        img_result = plot_labels(test_img, self.sample_results[:1], path_prefix)
-        self.assertEqual(type(img_result), str)
-        self.assertEqual(len(img_result), 5764)
-
-    def test_get_height_pixels_one(self):
-        result_heights = get_height_pixels(self.sample_results[:1])
-        self.assertEqual(result_heights, {11: [321.1266479492]})
-
-    def test_get_height_pixels_multiple(self):
-        result_heights = get_height_pixels(self.sample_results)
-        self.assertEqual(
-            result_heights, {11: [321.1266479492, 334.520324707, 259.4705200195]}
+    def test_prediction_from_results_and_tags(self):
+        tags = {
+            "time": datetime(2020, 12, 16, 8, 42, 54),
+            "focal_length": 3,
+            "coord": (0, 0),
+            "pixel_height": 0,
+        }
+        pred = Prediction.from_results_and_tags(
+            results=self.sample_results, tags=tags, name=str(image_path)
         )
-
-    def test_get_distance_meters(self):
-        path_prefix = str(home_dir / "street2sat_utils/crop_info/")
-        result_distance = get_distance_meters(
-            self.sample_results,
-            focal_length=3,
-            pixel_height=2028,
-            path_prefix=path_prefix,
-        )
-        self.assertEqual(result_distance, {"sugarcane": "17.753 meters"})
-
-    def test_point_meters_away(self):
-        coord = (0.6807162, 34.7490831)
-        heading = 90
-        meters_dict = {"sugarcane": "17.753 meters"}
-        result_points = point_meters_away(coord, heading, meters_dict)
-        self.assertEqual(
-            result_points, {"sugarcane": (0.6807161999973629, 34.74924259009357)}
-        )
+        self.assertEqual(pred.coord, (0, 0))
+        self.assertEqual(pred.distances, {"sugarcane": 0.0})
+        self.assertEqual(pred.focal_length, 3)
+        self.assertEqual(pred.pixel_height, 0)
+        self.assertEqual(len(pred.results), 3)
+        self.assertEqual(pred.results, self.sample_results)
+        self.assertEqual(pred.time, datetime(2020, 12, 16, 8, 42, 54))
 
     def test_get_new_points(self):
-        time_dict = {
-            datetime(2020, 12, 16, 8, 42, 54): 0,
-            datetime(2020, 12, 16, 8, 45, 35): 1,
-            datetime(2020, 12, 16, 8, 45, 41): 2,
-        }
+        paths = [home_dir / f"example_images/GP__131{i}.JPG" for i in ["2", "3", "4"]]
+        preds = [Prediction.from_img_path(p) for p in paths]
+        preds = calculate_crop_coords(preds)
+        crop_coords = [p.crop_coord for p in preds]
 
-        coord_dict = {
-            0: (0.6752619999999999, 34.7491525),
-            1: (0.6805182999999999, 34.7490718),
-            2: (0.6807162, 34.7490831),
-        }
+        expected_crop_coords = [
+            {"sugarcane": (0.6752591873315441, 34.748969274711484)},
+            {"sugarcane": (0.6805255576596102, 34.748944676649)},
+            {"sugarcane": (0.6807243040599843, 34.74894115130783)},
+        ]
 
-        distance_dict = {
-            0: {"sugarcane": "20.397 meters"},
-            1: {"sugarcane": "14.173 meters"},
-            2: {"sugarcane": "15.826 meters"},
-        }
-
-        bearings, new_points = get_new_points(time_dict, coord_dict, distance_dict)
-
-        expected_bearnings = {
-            0: 269.12046874982326,
-            1: 269.12046779505033,
-            2: 269.2710504885695,
-        }
-        expected_new_points = {
-            0: {"sugarcane": (0.675259187388663, 34.74896927843237)},
-            1: {"sugarcane": (0.6805163456356776, 34.74894448705709)},
-            2: {"sugarcane": (0.6807143913019371, 34.7489409332708)},
-        }
-
-        self.assertEqual(bearings, expected_bearnings)
-        self.assertEqual(new_points, expected_new_points)
+        for actual, expected in zip(crop_coords, expected_crop_coords):
+            self.assertEqual(expected, actual)

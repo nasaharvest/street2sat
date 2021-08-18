@@ -50,7 +50,6 @@ def get_exif_location(exif_data):
 
 def get_exif_datetime(exif_data):
     date_time = _get_if_exist(exif_data, "Image DateTime")
-    # dt = time.strptime(str(date_time),"%Y:%m:%d %H:%M:%S")
     dt = datetime.strptime(str(date_time), "%Y:%m:%d %H:%M:%S")
     return dt
 
