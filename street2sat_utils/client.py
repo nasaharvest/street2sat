@@ -75,6 +75,9 @@ class Prediction:
         coord = tags["coord"]
         pixel_height = tags["pixel_height"]
 
+        if coord == [None, None]:
+            raise ValueError("coord must be set to from_results_and_tags")
+
         img = None
         if img_bytes is not None:
             img = cls.load_img_from_bytes(img_bytes)
