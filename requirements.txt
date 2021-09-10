@@ -9,6 +9,7 @@ flask-mongoengine
 folium
 geopandas
 google-cloud-storage
+google-cloud-firestore
 jupyter
 isort
 mypy
