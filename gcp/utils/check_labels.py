@@ -14,6 +14,7 @@ def main():
     client = storage.Client()
     bucket = client.get_bucket('street2sat-model-labeled-data')
 
+    # TODO: determine from yaml file 
     imgs_train_prefix = 'run2/images/train/'
     imgs_val_prefix = 'run2/images/val/'
     labels_train_prefix = 'run2/labels/train/'
@@ -78,7 +79,7 @@ def main():
 Usage:
 python check_labels.py
 
-Must be authenticated on gcloud 
+Must be authenticated on gcloud
 '''
 if __name__ == "__main__":
     main()
