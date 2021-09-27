@@ -14,7 +14,7 @@ def main():
     client = storage.Client()
     bucket = client.get_bucket('street2sat-model-labeled-data')
 
-    # TODO: determine from yaml file 
+    # TODO: determine from yaml file
     imgs_train_prefix = 'run2/images/train/'
     imgs_val_prefix = 'run2/images/val/'
     labels_train_prefix = 'run2/labels/train/'
@@ -42,14 +42,14 @@ def main():
         files = list(bucket.list_blobs(prefix=pfx))
         file_names[pfx] = [multiple_replace(dict, x.name) for x in files]
 
-    print('Found:\n {} training images\n {} validation images\n {} training labels\n {} validation labels\n'.format(len(file_names[imgs_train_prefix]), len(file_names[imgs_val_prefix]), len(file_names[labels_train_prefix]), len(file_names[labels_val_prefix ])))
+    print(f'Found:\n {len(file_names[imgs_train_prefix])} training images\n {len(file_names[imgs_val_prefix])} validation images\n {len(file_names[labels_train_prefix])} training labels\n {len(file_names[labels_val_prefix ])} validation labels\n')
 
     # check for duplicates within each folder
     for pfx in file_names.keys():
         dups = set()
         for file in file_names[pfx]:
             if file in dups:
-                print('DUPLICATE FOUND: {}'.format(pfx + file))
+                print(f'DUPLICATE FOUND: {pfx + file}')
 
     # check in imgs but not in labels
     train_extra = set(file_names[imgs_train_prefix]) - set(file_names[labels_train_prefix])

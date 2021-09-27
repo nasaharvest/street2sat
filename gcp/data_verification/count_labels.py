@@ -1,5 +1,6 @@
 from google.cloud import storage
 import re
+from tqdm import tqdm
 
 # count the number of boxes from a txt string
 def count_from_txt(txt):
@@ -21,12 +22,12 @@ def main():
     labels_val_prefix = 'run2/labels/val/'
 
     train_counts = {}
-    for file in bucket.list_blobs(prefix=labels_train_prefix):
+    for file in tqdm(bucket.list_blobs(prefix=labels_train_prefix)):
         counts = count_from_txt(file.download_as_string())
         train_counts = {k: train_counts.get(k, 0) + counts.get(k, 0) for k in set(train_counts) | set(counts)}
 
     val_counts = {}
-    for file in bucket.list_blobs(prefix=labels_val_prefix):
+    for file in tqdm(bucket.list_blobs(prefix=labels_val_prefix)):
         counts = count_from_txt(file.download_as_string())
         val_counts = {k: val_counts.get(k, 0) + counts.get(k, 0) for k in set(val_counts) | set(counts)}
 
@@ -41,7 +42,7 @@ def main():
 Usage:
 python count_labels.py
 
-Must be authenticated on gcloud 
+Must be authenticated on gcloud
 '''
 if __name__ == "__main__":
     main()
