@@ -5,10 +5,10 @@ import re
 # https://googleapis.dev/python/storage/latest/buckets.html
 
 
-def multiple_replace(dict, text):
+def multiple_replace(d, text):
     # Create a regular expression  from the dictionary keys
-    regex = re.compile("(%s)" % "|".join(map(re.escape, dict.keys())))
-    return regex.sub(lambda mo: dict[mo.string[mo.start():mo.end()]], text)
+    regex = re.compile("(%s)" % "|".join(map(re.escape, d.keys())))
+    return regex.sub(lambda mo: d[mo.string[mo.start():mo.end()]], text)
 
 def main():
     client = storage.Client()
@@ -23,7 +23,7 @@ def main():
     data_prefixes = [imgs_train_prefix, labels_train_prefix, imgs_val_prefix, labels_val_prefix]
 
     # rules to clean file names
-    dict = {
+    dict_file_extentions = {
         imgs_train_prefix : '',
         imgs_val_prefix : '',
         labels_train_prefix : '',
@@ -40,7 +40,7 @@ def main():
     file_names = {}
     for pfx in data_prefixes:
         files = list(bucket.list_blobs(prefix=pfx))
-        file_names[pfx] = [multiple_replace(dict, x.name) for x in files]
+        file_names[pfx] = [multiple_replace(dict_file_extentions, x.name) for x in files]
 
     print(f'Found:\n {len(file_names[imgs_train_prefix])} training images\n {len(file_names[imgs_val_prefix])} validation images\n {len(file_names[labels_train_prefix])} training labels\n {len(file_names[labels_val_prefix ])} validation labels\n')
 
@@ -54,11 +54,11 @@ def main():
     # check in imgs but not in labels
     train_extra = set(file_names[imgs_train_prefix]) - set(file_names[labels_train_prefix])
     val_extra = set(file_names[imgs_val_prefix]) - set(file_names[labels_val_prefix])
-    if train_extra != set():
+    if len(train_extra) > 0:
         print("These IMAGES from training did not have a corresponding label: ")
         for img in train_extra:
             print(img)
-    if val_extra != set():
+    if len(val_extra) > 0:
         print("These IMAGES from validation did not have a corresponding label: ")
         for img in val_extra:
             print(img)
@@ -66,11 +66,11 @@ def main():
     # check in labels but not in images
     train_extra = set(file_names[labels_train_prefix]) - set(file_names[imgs_train_prefix])
     val_extra = set(file_names[labels_val_prefix]) - set(file_names[imgs_val_prefix])
-    if train_extra != set():
+    if len(train_extra) > 0:
         print("These LABELS from training did not have a corresponding image: ")
         for img in train_extra:
             print(img)
-    if val_extra != set():
+    if len(val_extra) > 0:
         print("These LABELS from validation did not have a corresponding image: ")
         for img in val_extra:
             print(img)

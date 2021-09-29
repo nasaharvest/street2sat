@@ -1,17 +1,15 @@
 from google.cloud import storage
 import re
 from tqdm import tqdm
+from collections import defaultdict
 
 # count the number of boxes from a txt string
 def count_from_txt(txt):
     # labels are stored as integers
-    counts = {}
+    counts = defaultdict(lambda: 0)
     for line in txt.splitlines():
-        l = line.split()
-        if int(l[0]) not in counts.keys():
-            counts[int(l[0])] = 1
-        else:
-            counts[int(l[0])] = counts[int(l[0])] + 1
+        crop_label = int(line.split()[0])
+        counts[crop_label] += 1
     return counts
 
 def main():
