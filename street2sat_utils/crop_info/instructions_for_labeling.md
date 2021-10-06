@@ -6,7 +6,7 @@
 4. Click Object Detection
 ![load_screen](https://github.com/nasaharvest/street2sat_website/blob/labeling_instructions/street2sat_utils/crop_info/assets/opening_screen.png)
 5. Click 'Load Labels' From File
-6. Upload the classes.txt file found here: https://github.com/nasaharvest/street2sat_website/blob/labeling_instructions/street2sat_utils/crop_info/classes.txt
+6. Upload the classes.txt file found here: https://github.com/nasaharvest/street2sat_website/blob/main/street2sat_utils/crop_info/classes.txt
 7. Click the 'Click here' to select it
 8. Make sure it says 13 labels found
 9. Click 'Load Labels' from list
