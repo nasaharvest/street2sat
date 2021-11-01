@@ -7,9 +7,11 @@ Flask-Bcrypt
 Flask-Login
 flask-mongoengine
 folium
+fsspec
 geopandas
 google-cloud-storage
 google-cloud-firestore
+gcsfs
 jupyter
 isort
 mypy
