@@ -9,6 +9,7 @@ flask-mongoengine
 folium
 fsspec
 geopandas
+google-cloud-aiplatform
 google-cloud-storage
 google-cloud-firestore
 gcsfs
