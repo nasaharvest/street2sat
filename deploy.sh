@@ -18,3 +18,12 @@ gcloud functions deploy trigger-street2sat \
     --entry-point=hello_gcs \
     --set-env-vars INFERENCE_HOST="$URL" \
     --timeout=300s
+    
+gcloud functions deploy delete-street2sat-prediction \
+    --source=gcp/delete-street2sat-prediction \
+    --trigger-event=google.storage.object.delete \
+    --trigger-resource=$BUCKET \
+    --allow-unauthenticated \
+    --runtime=python39 \
+    --entry-point=hello_gcs \
+    --timeout=300s    
