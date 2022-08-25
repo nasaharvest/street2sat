@@ -93,7 +93,7 @@ dup_checker = set()
 i = 0
 
 # query limit amount bc queries can't live for more than 30 seconds 
-limit_amount = 10000
+limit_amount = 1000
 
 test_num = 0
 nones_indexes = []
