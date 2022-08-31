@@ -1,56 +1,57 @@
+import json
 from pydoc import cli
-from google.cloud import firestore
-from google.cloud import storage
-from tqdm import tqdm
-import json 
 
-'''
+from google.cloud import firestore, storage
+from tqdm import tqdm
+
+"""
 This script will create a new bucket on google cloud. 
 
 The input folder/bucket will be used to pull the same named images
 from the street2sat uploaded bucket and copy into the new bucket. 
-'''
+"""
 
-INPUT_BUCKET = 'street2sat-model-predictions'
-INPUT_FOLDER = ''
+INPUT_BUCKET = "street2sat-model-predictions"
+INPUT_FOLDER = ""
 
-OUTPUT_BUCKET_NAME = 'street2sat-iiasa'
+OUTPUT_BUCKET_NAME = "street2sat-iiasa"
 
 
 client = storage.Client()
 
-all_paths = [blob.name for blob in tqdm(client.list_blobs(INPUT_BUCKET, prefix=INPUT_FOLDER))] 
+all_paths = [
+    blob.name for blob in tqdm(client.list_blobs(INPUT_BUCKET, prefix=INPUT_FOLDER))
+]
 
-print(f'{len(all_paths)} images were found. Copying to {OUTPUT_BUCKET_NAME}.')
+print(f"{len(all_paths)} images were found. Copying to {OUTPUT_BUCKET_NAME}.")
 
 input_bucket = client.get_bucket(INPUT_BUCKET)
-street2sat_uploaded_bucket = client.get_bucket('street2sat-uploaded')
+street2sat_uploaded_bucket = client.get_bucket("street2sat-uploaded")
 try:
-    new_bucket = client.create_bucket(OUTPUT_BUCKET_NAME, location = 'us-east1')
-except: 
+    new_bucket = client.create_bucket(OUTPUT_BUCKET_NAME, location="us-east1")
+except:
     print("BUCKET ALREADY EXISTS!")
     new_bucket = client.get_bucket(OUTPUT_BUCKET_NAME)
 
 
 failed = []
-for path in tqdm(all_paths): 
+for path in tqdm(all_paths):
     # convert from result_ format for model-predictions bucket to normal name for street2sat-uploaded bucket
-    new_path = path.replace('result_', '', 1)
-    new_path = new_path.replace('.jpg', '.JPG', 1)
+    new_path = path.replace("result_", "", 1)
+    new_path = new_path.replace(".jpg", ".JPG", 1)
     old_blob = street2sat_uploaded_bucket.blob(new_path)
     # copy from street2sat uploaded into new_bucket
-    try: 
+    try:
         new_blob = street2sat_uploaded_bucket.copy_blob(old_blob, new_bucket)
-    except: 
+    except:
         failed.append(new_path)
-        print('FAILED', path, new_path) 
+        print("FAILED", path, new_path)
 
 
 print(failed)
 
 
-
-'''
+"""
 ['USA/2021-08-20-croptour/G0013252.JPG', 'USA/2021-08-20-croptour/G0013296.JPG', 'USA/2021-08-20-croptour/G0013364.JPG', 
 'USA/2021-08-20-croptour/G0013675.JPG', 'USA/2021-08-20-croptour/G0013775.JPG', 'USA/2021-08-20-croptour/G0013898.JPG', 
 'USA/2021-08-20-croptour/G0014008.JPG', 'USA/2021-08-20-croptour/G0014017.JPG', 'USA/2021-08-20-croptour/G0014130.JPG', 
@@ -88,4 +89,4 @@ print(failed)
 'USA/2021-08-20-croptour/G0052546.JPG', 'USA/2021-08-20-croptour/G0052559.JPG', 'USA/2021-08-20-croptour/G0052585.JPG', 
 'USA/2021-08-20-croptour/G0052658.JPG', 'USA/2021-08-20-croptour/G0052687.JPG', 'USA/2021-08-20-croptour/G0063016.JPG', 
 'USA/2021-08-20-croptour/G0063028.JPG']
-'''
+"""
