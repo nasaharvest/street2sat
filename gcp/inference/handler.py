@@ -19,10 +19,11 @@ from yolov5.utils.general import (  # type: ignore
     scale_coords,
 )
 
-sys.path.insert(0, "/home/model-server")
-
 from street2sat_utils.client import Prediction
 from street2sat_utils.constants import CROP_CLASSES
+
+sys.path.insert(0, "/home/model-server")
+
 
 LABEL_IMG_PERCENT = float(os.environ.get("LABEL_IMG_PERCENT", 1.0))
 DEST_BUCKET_NAME = os.environ.get("DEST_BUCKET_NAME", "street2sat-model-predictions")

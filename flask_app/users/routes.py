@@ -1,6 +1,3 @@
-import base64
-import io
-
 from flask import Blueprint, flash, redirect, render_template, url_for
 from flask_login import (  # type: ignore
     current_user,

@@ -1,0 +1,10 @@
+[flake8]
+exclude = venv
+max-line-length = 120
+extend-ignore = 
+    E203, 
+    W291, 
+    E741, ; scripts\run_on_folder.py:8:5: F541 f-string is missing placeholders
+    F541 ; scripts\run_on_folder.py:8:5: F541 f-string is missing placeholders
+per-file-ignores =
+    flask_app\__init__.py: E402

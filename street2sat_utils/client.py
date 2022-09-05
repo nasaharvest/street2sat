@@ -135,7 +135,7 @@ class Prediction:
 Image:
     Time:     {self.time}
     Coord:    {self.coord}
-    
+
 Predicted distances:
     {self.distances}
         """
@@ -182,7 +182,7 @@ Predicted distances:
         fig.savefig(s, format="png")
         return base64.b64encode(s.getbuffer()).decode("ascii")
 
-    def plot_labels(self, to_base_64: bool = False) -> str:
+    def plot_labels(self, to_base_64: bool = False):
         if self.img is None:
             raise ValueError("self.img must be set to plot_labels")
         img = np.copy(self.img)
@@ -236,7 +236,7 @@ Predicted distances:
         if closest.time < self.time:
             compass_bearing = (compass_bearing + 180) % 360
 
-        ##### IMPORTANT ASSUMPTION ALL CAMERAS POINT LEFT ####
+        # IMPORTANT ASSUMPTION ALL CAMERAS POINT LEFT #
         return (compass_bearing - 90) % 360
 
     def set_crop_coord(self, closest) -> None:

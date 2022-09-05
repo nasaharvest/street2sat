@@ -170,7 +170,7 @@ def upload():
                     t_file_index = txt_names.index(file.filename[:-5])
                 else:
                     raise Exception("Bruh whats going on?")
-            except:
+            except Exception:
                 flash("Must upload a matching txt file for each jpg.")
                 return redirect(url_for("model.upload"))
 

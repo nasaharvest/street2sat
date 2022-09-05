@@ -1,13 +1,15 @@
+from typing import List
 import pandas as pd
 from google.cloud import firestore, storage
 from tqdm import tqdm
 
+import collections
+import reverse_geocoder as rg
+
 pd.options.display.max_colwidth = 600
 pd.options.display.max_columns = None
 pd.options.display.max_rows = None
-import collections
 
-import reverse_geocoder as rg
 
 """
 This script updates the csv located inside 'street2sat-database-csv' bucket 
@@ -92,7 +94,8 @@ lat = []
 lon = []
 name = []
 being_labeled = []
-country = []
+country: List[str] = []
+# country = []
 location = []
 test_set = []
 time_d = []
@@ -113,12 +116,13 @@ while True:
     p_i = i
     for image in docs:
         d_image = image.to_dict()
-        if d_image["coord"][0] == None or d_image["coord"][1] == None:
+        if d_image["coord"][0] is None or d_image["coord"][1] is None:
             nones_indexes.append(i)
             # temporarily append a  0,0 so that reverge_geocoder works right, fix later
             location.append((0, 0))
         else:
-            location.append(tuple(d_image["coord"]))
+            location.append(d_image["coord"])
+            # location.append(tuple(d_image["coord"]))
 
         lat.append(d_image["coord"][0])
         lon.append(d_image["coord"][1])
@@ -135,7 +139,7 @@ while True:
 
         # weird extra folder case
         if d_image["input_img"].split("/")[3].startswith("2021"):
-            country.append(None)
+            country.append(" ")
         else:
             country.append(d_image["input_img"].split("/")[3])
 

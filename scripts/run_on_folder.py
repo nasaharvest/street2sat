@@ -7,7 +7,7 @@ Script to easily run detections on folder. Modify as needed.
 command = (
     f"python /gpfs/data1/cmongp1/mpaliyam/street2sat/yolov5/detect.py "
     "--weights /gpfs/data1/cmongp1/mpaliyam/street2sat/yolov5/runs/train/exp18/weights/best.pt "
-    "--source '/gpfs/data1/cmongp1/mpaliyam/street2sat/data/uploaded_folder/2021-06-17_NACCRI-Catherine/{0}/{1}/**.jpg' "
+    "--source '/gpfs/data1/cmongp1/mpaliyam/street2sat/data/uploaded_folder/2021-06-17_NACCRI-Catherine/{0}/{1}/**.jpg'"
     "--save-crop "
     "--save-txt "
     "--save-conf "

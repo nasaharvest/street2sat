@@ -1,7 +1,5 @@
 from datetime import datetime
 
-import exifread  # type: ignore
-
 
 def _get_if_exist(data, key):
     if key in data:
