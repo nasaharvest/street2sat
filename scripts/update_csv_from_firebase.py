@@ -1,10 +1,10 @@
+import collections
 from typing import List
+
 import pandas as pd
+import reverse_geocoder as rg
 from google.cloud import firestore, storage
 from tqdm import tqdm
-
-import collections
-import reverse_geocoder as rg
 
 pd.options.display.max_colwidth = 600
 pd.options.display.max_columns = None

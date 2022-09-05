@@ -7,4 +7,4 @@ extend-ignore =
     E741, ; scripts\run_on_folder.py:8:5: F541 f-string is missing placeholders
     F541 ; scripts\run_on_folder.py:8:5: F541 f-string is missing placeholders
 per-file-ignores =
-    flask_app\__init__.py: E402
+    flask_app\__init__.py:E402
