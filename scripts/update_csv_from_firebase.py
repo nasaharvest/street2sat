@@ -94,8 +94,7 @@ lat = []
 lon = []
 name = []
 being_labeled = []
-country: List[str] = []
-# country = []
+country: List[Optional[str]] = []
 location = []
 test_set = []
 time_d = []
@@ -139,7 +138,7 @@ while True:
 
         # weird extra folder case
         if d_image["input_img"].split("/")[3].startswith("2021"):
-            country.append(" ")
+            country.append(None)
         else:
             country.append(d_image["input_img"].split("/")[3])
 

@@ -14,9 +14,9 @@ db: MongoEngine = MongoEngine()
 login_manager: LoginManager = LoginManager()
 bcrypt = Bcrypt()
 
-from .detection.routes import model
-from .models import Image
-from .users.routes import users
+from .detection.routes import model # noqa
+from .models import Image # noqa
+from .users.routes import users # noqa
 
 sys.path.insert(1, "../street2sat_utils")
 
