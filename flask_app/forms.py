@@ -1,5 +1,3 @@
-import string
-
 from flask_login import current_user  # type: ignore
 from flask_wtf import FlaskForm  # type: ignore
 from wtforms import (  # type: ignore

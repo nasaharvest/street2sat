@@ -52,7 +52,9 @@ def main():
         ]
 
     print(
-        f"Found:\n {len(file_names[imgs_train_prefix])} training images\n {len(file_names[imgs_val_prefix])} validation images\n {len(file_names[labels_train_prefix])} training labels\n {len(file_names[labels_val_prefix ])} validation labels\n"
+        f"Found:\n {len(file_names[imgs_train_prefix])} training images\n {len(file_names[imgs_val_prefix])} \
+            validation images\n {len(file_names[labels_train_prefix])} \
+                training labels\n {len(file_names[labels_val_prefix ])} validation labels\n"
     )
 
     # check for duplicates within each folder

@@ -1,4 +1,5 @@
-# The given script creates a CLoud Function to that is triggered when an image file is deleted from the street2sat-uploaded bucket
+# The given script creates a CLoud Function to that is triggered
+# when an image file is deleted from the street2sat-uploaded bucket
 # and then proceeds to delete the corresponding record from the Firestore DB.
 import logging
 

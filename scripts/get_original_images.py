@@ -1,7 +1,4 @@
-import json
-from pydoc import cli
-
-from google.cloud import firestore, storage
+from google.cloud import storage
 from tqdm import tqdm
 
 """
@@ -29,7 +26,7 @@ input_bucket = client.get_bucket(INPUT_BUCKET)
 street2sat_uploaded_bucket = client.get_bucket("street2sat-uploaded")
 try:
     new_bucket = client.create_bucket(OUTPUT_BUCKET_NAME, location="us-east1")
-except:
+except Exception:
     print("BUCKET ALREADY EXISTS!")
     new_bucket = client.get_bucket(OUTPUT_BUCKET_NAME)
 
@@ -43,7 +40,7 @@ for path in tqdm(all_paths):
     # copy from street2sat uploaded into new_bucket
     try:
         new_blob = street2sat_uploaded_bucket.copy_blob(old_blob, new_bucket)
-    except:
+    except Exception:
         failed.append(new_path)
         print("FAILED", path, new_path)
 
