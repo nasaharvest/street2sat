@@ -20,8 +20,7 @@ def hello_gcs(event, context=None):
     src_path = f"gs://{bucket_name}/{blob_name}"
     logger.info(src_path)
 
-    host = os.environ.get("INFERENCE_HOST")
-    url = f"{host}/predictions/street2sat"
+    url = os.environ.get("INFERENCE_URL")
     logger.info(url)
     data = {"uri": src_path}
     for _ in range(3):
@@ -37,10 +36,15 @@ def hello_gcs(event, context=None):
 
 
 if __name__ == "__main__":
-    os.environ["INFERENCE_HOST"] = "https://street2sat-grxg7bzh2a-uc.a.run.app"
+    cropnop_url = "https://street2sat-cropnop-grxg7bzh2a-uc.a.run.app/predictions/cropnop"
+    segment_url = "https://street2sat-segment-grxg7bzh2a-uc.a.run.app/predictions/segmentation"
+    
+    
+    os.environ["INFERENCE_URL"] = segment_url
+    # "https://street2sat-cropnop-grxg7bzh2a-uc.a.run.app"
     hello_gcs(
         {
-            "bucket": "street2sat-uploaded",
-            "name": "Uganda/2021-07-07_example_images/GP_1312.JPG",
+            "bucket": "street2sat-crops",
+            "name": "Inference_test/G0011604_JPG_1.jpg",
         }
     )
