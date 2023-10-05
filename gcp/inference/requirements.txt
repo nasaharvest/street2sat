@@ -1,4 +1,0 @@
-exifread
-google-cloud-storage
-google-cloud-firestore
-yolov5>=5.0.7
