@@ -24,7 +24,7 @@ def hello_gcs(event, context):
     logging.info("The name of the document is " + doc_ref + ".")
 
     # Getting the document reference
-    doc = db.collection("street2sat").document(doc_ref)
+    doc = db.collection("street2sat-v2").document(doc_ref)
     doc_check = doc.get()
 
     # Checking if the document reference exists in the collections and deleting it.

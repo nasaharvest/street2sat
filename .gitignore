@@ -135,3 +135,4 @@ data/database-info.csv
 data/test.csv
 data/train.csv
 data/val.csv
+/model_weights
