@@ -1,0 +1,5 @@
+outs:
+- md5: 96a24737346998cbd44a2f58b17dba25
+  size: 599097826
+  hash: md5
+  path: street2sat-v2.csv
