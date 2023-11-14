@@ -1,12 +1,13 @@
-import cv2
 import os
 import tempfile
-import wget
 from datetime import timedelta
-from pygeotile.tile import Tile, Point
 from pathlib import Path
-from google.cloud import storage, firestore
+
+import cv2
+import wget
+from google.cloud import firestore, storage
 from google.cloud.firestore_v1.base_query import FieldFilter
+from pygeotile.tile import Point, Tile
 
 # Google Cloud Storage
 storage_client = storage.Client()
@@ -23,7 +24,7 @@ if "mapbox" in MAP_TILE_SERVERS:
     from google.cloud import secretmanager
 
     secret_client = secretmanager.SecretManagerServiceClient()
-    name = f"projects/1012768714927/secrets/MAPBOX_TOKEN_IVAN/versions/1"
+    name = "projects/1012768714927/secrets/MAPBOX_TOKEN_IVAN/versions/1"
     response = secret_client.access_secret_version(name=name)
     MAPBOX_TOKEN = response.payload.data.decode("UTF-8")
 else:

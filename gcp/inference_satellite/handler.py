@@ -1,17 +1,15 @@
 import os
-
+import re
+import sys
+import tempfile
 from pathlib import Path
-from pygeotile.tile import Tile, Point
 from typing import Tuple
 
 import cv2
 import numpy as np
-import re
-import sys
-import tempfile
 import torch
-
-from google.cloud import storage, firestore  # type: ignore
+from google.cloud import firestore, storage  # type: ignore
+from pygeotile.tile import Point, Tile
 from ts.torch_handler.base_handler import BaseHandler  # type: ignore
 
 sys.path.insert(0, "/home/model-server")
