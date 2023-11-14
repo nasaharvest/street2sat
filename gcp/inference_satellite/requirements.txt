@@ -1,0 +1,5 @@
+google-cloud-storage
+google-cloud-firestore
+matplotlib
+opencv-python
+pygeotile
