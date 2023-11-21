@@ -10,7 +10,6 @@ image_path = home_dir / "example_images/GP__1312.JPG"
 
 
 class TestClient(TestCase):
-
     sample_results = [
         {
             "class": 11,
