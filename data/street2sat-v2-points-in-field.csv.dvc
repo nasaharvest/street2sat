@@ -1,5 +1,5 @@
 outs:
-- md5: a1a379ac77c33199939d83ebbf22de72
-  size: 8329111
+- md5: cd6ce5dd8ae4f4229bfc66108d8a89a4
+  size: 10441183
   hash: md5
   path: street2sat-v2-points-in-field.csv
