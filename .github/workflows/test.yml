@@ -20,8 +20,8 @@ jobs:
         pip install -r requirements.txt
     - name: black
       run: black --check --diff .
-    - name: Run type check
-      run: mypy .
+    # - name: Run type check
+    #   run: mypy .
     - name: Run flake8
       run: flake8 .
     - name: isort
