@@ -1,5 +1,6 @@
 import os
 import sys
+from datetime import datetime
 from pathlib import Path
 from typing import Tuple
 
@@ -14,15 +15,12 @@ sys.path.insert(0, "/home/model-server")
 
 from inference_utils import download_file, get_name_from_uri  # noqa: E402
 
-
 os.environ["LRU_CACHE_CAPACITY"] = "1"
 
 storage_client = storage.Client()
 db = firestore.Client()
 DEST_BUCKET_NAME = os.environ.get("DEST_BUCKET_NAME", "street2sat-crops")
 device = "cuda" if torch.cuda.is_available() else "cpu"
-
-from datetime import datetime
 
 
 def _get_if_exist(data, key):
@@ -87,7 +85,7 @@ class ModelHandler(BaseHandler):
     A custom model handler implementation.
     """
 
-    def preprocess(self, data) -> Tuple[str, torch.Tensor]:
+    def preprocess(self, data) -> Tuple[str, torch.Tensor, dict]:
         print(data)
         print("HANDLER: Starting preprocessing")
         try:
@@ -116,7 +114,7 @@ class ModelHandler(BaseHandler):
         img_tensor = torch.from_numpy(img).float().to(device)
         return uri, img_tensor, img_tags
 
-    def inference(self, data, *args, **kwargs) -> Tuple[str, torch.Tensor]:
+    def inference(self, data, *args, **kwargs) -> Tuple[str, bool, dict]:
         print("HANDLER: Starting inference")
         uri, img_tensor, img_tags = data
         output = self.model(img_tensor.unsqueeze(0))

@@ -36,12 +36,8 @@ def hello_gcs(event, context=None):
 
 
 if __name__ == "__main__":
-    cropnop_url = (
-        "https://street2sat-cropnop-grxg7bzh2a-uc.a.run.app/predictions/cropnop"
-    )
-    segment_url = (
-        "https://street2sat-segment-grxg7bzh2a-uc.a.run.app/predictions/segmentation"
-    )
+    cropnop_url = "https://street2sat-cropnop-grxg7bzh2a-uc.a.run.app/predictions/cropnop"  # noqa: E501
+    segment_url = "https://street2sat-segment-grxg7bzh2a-uc.a.run.app/predictions/segmentation"  # noqa: E501
 
     os.environ["INFERENCE_URL"] = segment_url
     # "https://street2sat-cropnop-grxg7bzh2a-uc.a.run.app"

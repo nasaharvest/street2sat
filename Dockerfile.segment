@@ -24,5 +24,3 @@ RUN torch-model-archiver \
 
 CMD ["torchserve", "--start", "--ncs", "--model-store", "model-store", \
        "--models", "segmentation=segmentation.mar"]
-
-
