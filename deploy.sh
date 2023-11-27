@@ -61,8 +61,8 @@ fi
 docker build . -f Dockerfile.satellite -t $SATELLITE_TAG
 docker push $SATELLITE_TAG
 gcloud run deploy street2sat-satellite --image ${SATELLITE_TAG}:latest \
-        --cpu=4 \
-        --memory=16Gi \
+        --cpu=2 \
+        --memory=8Gi \
         --concurrency=1 \
         --platform=managed \
         --region=us-central1 \
