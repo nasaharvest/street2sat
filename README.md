@@ -22,25 +22,12 @@ Link coming soon!
 
 [db_to_shapefile.ipynb](noteboooks/db_to_shapefile.ipynb) demonstrates access to the FireStore database and generation of dataset (geodataframe, shapefile).
 
-#### Flask server
-
-The code can also be accessible through a demo flask app:
-
-1. Ensure [MongoDB](https://docs.mongodb.com/manual/installation/) is installed. 
-2. Start the flask app:
-    ```bash
-    export FLASK_APP=run
-    flask run
-    ```
-The app should be live on http://127.0.0.1:5000/
-
 #### Google Cloud Platform 
 Ensure the [Google Cloud CLI](https://cloud.google.com/sdk/docs/install) is installed.
 
 **Initial Setup (only done once)**
 ```bash
 gsutil mb gs://street2sat-uploaded
-gsutil mb gs://street2sat-model-predictions
 ```
 **Deploying resources (done on every code update)**
 ```bash
