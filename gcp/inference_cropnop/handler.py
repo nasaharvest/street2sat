@@ -7,30 +7,29 @@ import cv2  # type: ignore
 import exifread
 import matplotlib.pyplot as plt
 import torch
-
-from google.cloud import storage, firestore  # type: ignore
+from google.cloud import firestore, storage  # type: ignore
 from ts.torch_handler.base_handler import BaseHandler  # type: ignore
 
 sys.path.insert(0, "/home/model-server")
 
-from inference_utils import download_file, get_name_from_uri
-from street2sat_utils import exif_utils
+from inference_utils import download_file, get_name_from_uri  # noqa: E402
+
+from street2sat_utils import exif_utils  # noqa: E402
 
 os.environ["LRU_CACHE_CAPACITY"] = "1"
 
 storage_client = storage.Client()
 db = firestore.Client()
 DEST_BUCKET_NAME = os.environ.get("DEST_BUCKET_NAME", "street2sat-crops")
-device = ("cuda" if torch.cuda.is_available() else "cpu")
+device = "cuda" if torch.cuda.is_available() else "cpu"
+
 
 class ModelHandler(BaseHandler):
     """
     A custom model handler implementation.
     """
 
-    def preprocess(
-        self, data
-    ) -> Tuple[str, torch.Tensor]:
+    def preprocess(self, data) -> Tuple[str, torch.Tensor]:
         print(data)
         print("HANDLER: Starting preprocessing")
         try:
@@ -54,11 +53,10 @@ class ModelHandler(BaseHandler):
 
         img = plt.imread(local_path)
         Path(local_path).unlink()
-        img = cv2.resize(img, (300,300)) / 255
-        img = img.transpose(2,0,1).astype('float32')
+        img = cv2.resize(img, (300, 300)) / 255
+        img = img.transpose(2, 0, 1).astype("float32")
         img_tensor = torch.from_numpy(img).float().to(device)
         return uri, img_tensor, img_tags
-        
 
     def inference(self, data, *args, **kwargs) -> Tuple[str, torch.Tensor]:
         print("HANDLER: Starting inference")
@@ -93,7 +91,7 @@ class ModelHandler(BaseHandler):
         }
         if not is_crop:
             return [resp]
-        
+
         uri_as_path = Path(uri)
         src_bucket_name = uri_as_path.parts[1]
         src_bucket = storage_client.get_bucket(src_bucket_name)

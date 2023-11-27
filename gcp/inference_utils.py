@@ -1,13 +1,14 @@
-import time
 import tempfile
-
+import time
 from pathlib import Path
 
 temp_dir = tempfile.gettempdir()
 
+
 def get_name_from_uri(uri: str) -> str:
     uri_as_path = Path(uri)
     return "-".join(uri_as_path.parts[2:-1]) + "-" + uri_as_path.stem
+
 
 def download_file(storage_client, uri: str) -> str:
     """
