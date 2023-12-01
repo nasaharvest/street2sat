@@ -26,13 +26,13 @@ def download_file(storage_client, uri: str) -> str:
             break
         if i == retries:
             raise ValueError(f"HANDLER ERROR: {uri} does not exist.")
-        print(
-            f"HANDLER: {uri} does not yet exist, sleeping for 5 seconds and trying again."
-        )
+        msg = f"HANDLER: {uri} doesn't exist, sleeping for 5 seconds and retrying."
+        print(msg)
         time.sleep(5)
     local_path = f"{temp_dir}/{uri_as_path.name}"
     blob.download_to_filename(local_path)
     if not Path(local_path).exists():
-        raise FileExistsError(f"HANDLER: {uri} from storage was not downloaded")
+        msg = f"HANDLER: {uri} from storage was not downloaded"
+        raise FileExistsError(msg)
     print(f"HANDLER: Verified file downloaded to {local_path}")
     return local_path

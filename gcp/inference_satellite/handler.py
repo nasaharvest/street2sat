@@ -79,7 +79,7 @@ class ModelHandler(BaseHandler):
     A custom model handler implementation.
     """
 
-    def preprocess(self, data) -> Tuple[str, torch.Tensor]:
+    def preprocess(self, data) -> Tuple[str, torch.Tensor, object]:
         print(data)
         print("HANDLER: Starting preprocessing")
         try:
@@ -112,7 +112,7 @@ class ModelHandler(BaseHandler):
         img_tensor = img_tensor.to(device)
         return path, img_tensor, db_ref
 
-    def inference(self, data, *args, **kwargs) -> Tuple[str, torch.Tensor]:
+    def inference(self, data, *args, **kwargs) -> Tuple[str, np.array, object]:
         print("HANDLER: Starting inference")
         path, img_tensor, db_ref = data
         pred = self.model(img_tensor.unsqueeze(0))

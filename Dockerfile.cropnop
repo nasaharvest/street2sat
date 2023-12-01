@@ -8,7 +8,6 @@ COPY gcp/inference_cropnop/requirements.txt requirements.txt
 RUN pip3 install --upgrade pip
 RUN pip install -r requirements.txt
 COPY gcp/inference_utils.py /home/model-server/inference_utils.py
-COPY street2sat_utils /home/model-server/street2sat_utils
 
 FROM reqs as build-torchserve
 COPY gcp/inference_cropnop/handler.py /home/model-server
@@ -25,5 +24,3 @@ RUN torch-model-archiver \
 
 CMD ["torchserve", "--start", "--ncs", "--model-store", "model-store", \
        "--models", "cropnop=cropnop.mar"]
-
-

@@ -94,9 +94,9 @@ gcloud functions deploy trigger-street2sat-satellite \
     --entry-point=hello_gcs \
     --set-env-vars INFERENCE_URL="$SATELLITE_URL" \
     --timeout=300s
-    
+
 gcloud functions deploy delete-street2sat-prediction \
-    --source=gcp/delete-street2sat-prediction \
+    --source=gcp/delete_street2sat_prediction \
     --trigger-event=google.storage.object.delete \
     --trigger-resource=$BUCKET_UPLOADED \
     --allow-unauthenticated \
