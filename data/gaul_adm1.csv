@@ -1,0 +1,3423 @@
+gaul_adm1,adm1_name,str1_year,exp1_year,status,disp_area
+40542,Bubanza,1000,3000,Member State,NO
+40543,Bujumbura Mairie,1991,3000,Member State,NO
+40544,Bujumbura Rural,1991,3000,Member State,NO
+40545,Bururi,1000,3000,Member State,NO
+40546,Cankuzo,1000,3000,Member State,NO
+40547,Cibitoke,1000,3000,Member State,NO
+40548,Gitega,1000,3000,Member State,NO
+40549,Karuzi,1000,3000,Member State,NO
+40550,Kayanza,1000,3000,Member State,NO
+40551,Kirundo,1000,3000,Member State,NO
+40552,Makamba,1000,3000,Member State,NO
+40553,Muramvya,1998,3000,Member State,NO
+40554,Muyinga,1000,3000,Member State,NO
+40555,Mwaro,1998,3000,Member State,NO
+40556,Ngozi,1000,3000,Member State,NO
+40557,Rutana,1000,3000,Member State,NO
+40558,Ruyigi,1000,3000,Member State,NO
+592,Administrative unit not available,1000,3000,FR Territory,NO
+696,Administrative unit not available,1000,3000,UK Territory,NO
+967,Anjouan,1000,3000,Member State,NO
+968,Moheli,1000,3000,Member State,NO
+969,Ngazidja,1000,3000,Member State,NO
+1093,Ali Sabieh,1000,3000,Member State,NO
+1094,Dikhil,1000,3000,Member State,NO
+1095,Djibouti,1000,3000,Member State,NO
+1096,Obock,1000,3000,Member State,NO
+1097,Tadjourah,1000,3000,Member State,NO
+1205,Anseba,1000,3000,Member State,NO
+1206,Archipelagos,1000,3000,Member State,NO
+1207,Debub,1000,3000,Member State,NO
+1208,Debubawi Keih Bahri,1000,3000,Member State,NO
+1209,Gash Barka,1000,3000,Member State,NO
+1210,Maekel,1000,3000,Member State,NO
+1211,Semenawi Keih Bahri,1000,3000,Member State,NO
+1227,Addis Ababa,1994,3000,Member State,NO
+1228,Afar,1994,3000,Member State,NO
+1229,Amhara,1994,3000,Member State,NO
+1230,Beneshangul Gumu,1994,3000,Member State,NO
+1231,Dire Dawa,1998,3000,Member State,NO
+1232,Gambela,1994,3000,Member State,NO
+1233,Hareri,1994,3000,Member State,NO
+47678,Oromia,1994,3000,Member State,NO
+1236,SNNPR,1994,3000,Member State,NO
+47679,Somali,1998,3000,Member State,NO
+1237,Tigray,1994,3000,Member State,NO
+1238,Administrative unit not available,1000,3000,FR Territory,NO
+1335,Administrative unit not available,1000,3000,FR Territory,NO
+61033,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+1713,Administrative unit not available,1000,3000,FR Territory,NO
+51325,Central,1000,3000,Member State,NO
+51326,Coast,1000,3000,Member State,NO
+51327,Eastern,1000,3000,Member State,NO
+51328,Nairobi,1000,3000,Member State,NO
+51329,North Eastern,1000,3000,Member State,NO
+51330,Nyanza,1000,3000,Member State,NO
+51331,Rift Valley,1000,3000,Member State,NO
+51332,Western,1000,3000,Member State,NO
+41750,Alaotra Mangoro,1000,3000,Member State,NO
+41751,Amoron I Mania,1000,3000,Member State,NO
+41752,Analamanga,1000,3000,Member State,NO
+41753,Analanjirofo,1000,3000,Member State,NO
+41754,Androy,1000,3000,Member State,NO
+41755,Anosy,1000,3000,Member State,NO
+41756,Atsimo Andrefana,1000,3000,Member State,NO
+41757,Atsimo Atsinanana,1000,3000,Member State,NO
+41758,Atsinanana,1000,3000,Member State,NO
+41759,Betsiboka,1000,3000,Member State,NO
+41760,Boeny,1000,3000,Member State,NO
+41761,Bongolava,1000,3000,Member State,NO
+41762,Diana,1000,3000,Member State,NO
+41763,Haute Matsiatra,1000,3000,Member State,NO
+41764,Ihorombe,1000,3000,Member State,NO
+41765,Itasy,1000,3000,Member State,NO
+41766,Melaky,1000,3000,Member State,NO
+41767,Menabe,1000,3000,Member State,NO
+41768,Sava,1000,3000,Member State,NO
+41769,Sofia,1000,3000,Member State,NO
+41770,Vakinankaratra,1000,3000,Member State,NO
+41771,Vatovavy Fitovinany,1000,3000,Member State,NO
+2112,Cabo Delgado,1000,3000,Member State,NO
+2113,Gaza,1000,3000,Member State,NO
+2114,Inhambane,1000,3000,Member State,NO
+2115,Manica,1000,3000,Member State,NO
+2118,Nampula,1000,3000,Member State,NO
+2119,Niassa,1000,3000,Member State,NO
+2120,Sofala,1000,3000,Member State,NO
+2121,Tete,1000,3000,Member State,NO
+2122,Zambezia,1000,3000,Member State,NO
+41373,Maputo,2013,3000,Member State,NO
+65246,Lago niassa,1000,3000,Member State,NO
+2017,Administrative unit not available,1000,3000,Member State,NO
+2018,Black River,1000,3000,Member State,NO
+2019,Flacq,1000,3000,Member State,NO
+2020,Grand Port,1000,3000,Member State,NO
+2021,Moka,1000,3000,Member State,NO
+2022,Pamplemousses,1000,3000,Member State,NO
+2023,Plaines Wilhems,1000,3000,Member State,NO
+2024,Port Louis,1000,3000,Member State,NO
+2025,Riviere Du Rempart,1000,3000,Member State,NO
+2026,Savanne,1000,3000,Member State,NO
+1888,Central Region,1000,3000,Member State,NO
+1889,Northern Region,1000,3000,Member State,NO
+1890,Southern Region,1000,3000,Member State,NO
+65268,Area under National Administration,1000,3000,Member State,NO
+2027,Administrative unit not available,1000,3000,FR Territory,NO
+2590,Arrondissement_du_vent,1000,3000,FR Territory,NO
+2591,Arrondissement_souse_le_vent,1000,3000,FR Territory,NO
+21969,East/Iburasirazuba,2006,3000,Member State,NO
+21970,Kigali City/Umujyi wa Kigali,2006,3000,Member State,NO
+21971,North/Amajyaruguru,2006,3000,Member State,NO
+21972,South/Amajyepfo,2006,3000,Member State,NO
+21973,West/Iburengerazuba,2006,3000,Member State,NO
+2688,Awdal,1000,3000,Member State,NO
+2689,Bakool,1000,3000,Member State,NO
+2690,Bari,1000,3000,Member State,NO
+2691,Bay,1000,3000,Member State,NO
+2692,Banadir,1000,3000,Member State,NO
+2693,Galgaduud,1000,3000,Member State,NO
+2694,Gedo,1000,3000,Member State,NO
+2695,Hiraan,1000,3000,Member State,NO
+2696,Juba Hoose,1000,3000,Member State,NO
+2697,Shabelle Hoose,1000,3000,Member State,NO
+2698,Juba Dhexe,1000,3000,Member State,NO
+2699,Shabelle Dhexe,1000,3000,Member State,NO
+2700,Mudug,1000,3000,Member State,NO
+2701,Nugaal,1000,3000,Member State,NO
+2702,Sanaag,1000,3000,Member State,NO
+2703,Sool,1000,3000,Member State,NO
+2704,Togdheer,1000,3000,Member State,NO
+2705,Woqooyi Galbeed,1000,3000,Member State,NO
+2746,El Buheyrat,1994,3000,Member State,NO
+2747,Unity,1994,3000,Member State,NO
+2748,Central Equatoria,1994,3000,Member State,NO
+2750,Eastern Equatoria,1994,3000,Member State,NO
+2751,Jonglei,1994,3000,Member State,NO
+2754,Northern Bahr El Ghazal,1994,3000,Member State,NO
+2765,Warab,1994,3000,Member State,NO
+2766,Western Bahr El Ghazal,1994,3000,Member State,NO
+2768,Western Equatoria,1994,3000,Member State,NO
+37021,Upper Nile,1994,3000,Member State,NO
+61135,Aldabra,1000,3000,Member State,NO
+61136,Alphonse,1000,3000,Member State,NO
+61137,Anse Aux Pins,1000,3000,Member State,NO
+61138,Anse Boileau,1000,3000,Member State,NO
+61139,Anse Etoile,1000,3000,Member State,NO
+61140,Anse Royale,1000,3000,Member State,NO
+61141,Aride,1000,3000,Member State,NO
+61142,Assumption,1000,3000,Member State,NO
+61143,Astove,1000,3000,Member State,NO
+61144,Au Cap,1000,3000,Member State,NO
+61145,Baie Lazare,1000,3000,Member State,NO
+61146,Beau Vallon,1000,3000,Member State,NO
+61147,Bel Air,1000,3000,Member State,NO
+61148,Belombre,1000,3000,Member State,NO
+61149,Bijoutier,1000,3000,Member State,NO
+61150,Bird,1000,3000,Member State,NO
+61153,Cascade,1000,3000,Member State,NO
+61154,Cerf Island,1000,3000,Member State,NO
+61155,Conception,1000,3000,Member State,NO
+61156,Cosmoledo,1000,3000,Member State,NO
+61157,Cousin,1000,3000,Member State,NO
+61158,Cousine,1000,3000,Member State,NO
+61159,Curieuse,1000,3000,Member State,NO
+61160,Darros,1000,3000,Member State,NO
+61161,Denis,1000,3000,Member State,NO
+61162,Desnoeufs,1000,3000,Member State,NO
+61163,Desroches,1000,3000,Member State,NO
+61164,English River,1000,3000,Member State,NO
+61165,Farquhar,1000,3000,Member State,NO
+61166,Felicite,1000,3000,Member State,NO
+61167,Fregate,1000,3000,Member State,NO
+61168,Glacis,1000,3000,Member State,NO
+61169,Grand Anse Mahe,1000,3000,Member State,NO
+61170,Grande Soeur,1000,3000,Member State,NO
+61174,Ile du Sud,1000,3000,Member State,NO
+61178,La Digue,1000,3000,Member State,NO
+61179,Les Mamelles,1000,3000,Member State,NO
+61182,Marie-Louise,1000,3000,Member State,NO
+61183,Mont Buxton,1000,3000,Member State,NO
+61184,Mont Fleuri,1000,3000,Member State,NO
+61186,North Island,1000,3000,Member State,NO
+61187,Petite Soeur,1000,3000,Member State,NO
+61188,Plaisance,1000,3000,Member State,NO
+61189,Platte,1000,3000,Member State,NO
+61190,Pointe Larue,1000,3000,Member State,NO
+61191,Poivre,1000,3000,Member State,NO
+61192,Port Glaud,1000,3000,Member State,NO
+61193,Praslin,1000,3000,Member State,NO
+61194,Providence,1000,3000,Member State,NO
+61195,Remire,1000,3000,Member State,NO
+61196,Roche Caiman,1000,3000,Member State,NO
+61199,Silhouette,1000,3000,Member State,NO
+61200,St Louis,1000,3000,Member State,NO
+61201,St. Francois,1000,3000,Member State,NO
+61202,St. Joseph Atoll,1000,3000,Member State,NO
+61203,St. Pierre,1000,3000,Member State,NO
+61204,Ste Anne,1000,3000,Member State,NO
+61205,Takamaka,1000,3000,Member State,NO
+61206,Therese,1000,3000,Member State,NO
+61207,Coetivy,1000,3000,Member State,NO
+2992,Administrative unit not available,1000,3000,FR Territory,NO
+48357,Arusha,2002,3000,Member State,NO
+48358,Dar-es-salaam,1000,3000,Member State,NO
+48359,Dodoma,1000,3000,Member State,NO
+115002,Geita,2012,3000,Member State,NO
+115003,Iringa,2012,3000,Member State,NO
+115004,Kagera,2012,3000,Member State,NO
+48371,Kaskazini Pemba,1000,3000,Member State,NO
+48372,Kaskazini Unguja,1000,3000,Member State,NO
+115005,Katavi,2012,3000,Member State,NO
+48362,Kigoma,1000,3000,Member State,NO
+48363,Kilimanjaro,1000,3000,Member State,NO
+48378,Kusini Pemba,1000,3000,Member State,NO
+48379,Kusini Unguja,1000,3000,Member State,NO
+48364,Lindi,1000,3000,Member State,NO
+48365,Manyara,2002,3000,Member State,NO
+48366,Mara,1000,3000,Member State,NO
+48367,Mbeya,1000,3000,Member State,NO
+48382,Mjini Magharibi,1000,3000,Member State,NO
+48368,Morogoro,1000,3000,Member State,NO
+48369,Mtwara,1000,3000,Member State,NO
+115006,Mwanza,2012,3000,Member State,NO
+115007,Njombe,2012,3000,Member State,NO
+48373,Pwani,1000,3000,Member State,NO
+115008,Rukwa,2012,3000,Member State,NO
+48375,Ruvuma,1000,3000,Member State,NO
+115009,Shinyanga,2012,3000,Member State,NO
+115010,Simiyu,2012,3000,Member State,NO
+48377,Singida,1000,3000,Member State,NO
+48380,Tabora,1000,3000,Member State,NO
+48381,Tanga,1000,3000,Member State,NO
+3104,Adjumani,1000,3000,Member State,NO
+3110,Busia,1000,3000,Member State,NO
+3112,Hoima,1000,3000,Member State,NO
+3114,Jinja,1000,3000,Member State,NO
+3115,Kabale,1000,3000,Member State,NO
+3117,Kalangala,1000,3000,Member State,NO
+3121,Kasese,1000,3000,Member State,NO
+3123,Kibaale,1000,3000,Member State,NO
+3125,Kisoro,1000,3000,Member State,NO
+3136,Moyo,1000,3000,Member State,NO
+3141,Ntungamo,1000,3000,Member State,NO
+3145,Ssembabule,1000,3000,Member State,NO
+42180,Kabarole,1000,3000,Member State,NO
+42181,Kaberamaido,1000,3000,Member State,NO
+42182,Kampala,1000,3000,Member State,NO
+42183,Kamwenge,1000,3000,Member State,NO
+42184,Kanungu,1000,3000,Member State,NO
+42185,Kayunga,1000,3000,Member State,NO
+42189,Mayuge,1000,3000,Member State,NO
+42195,Nakasongola,1000,3000,Member State,NO
+42197,Rukungiri,1000,3000,Member State,NO
+42200,Wakiso,1000,3000,Member State,NO
+42201,Yumbe,1000,3000,Member State,NO
+47067,Amolatar,1000,3000,Member State,NO
+47068,Amuria,1000,3000,Member State,NO
+47071,Butaleja,1000,3000,Member State,NO
+47072,Ibanda,1000,3000,Member State,NO
+47073,Isingiro,1000,3000,Member State,NO
+47074,Kaabong,1000,3000,Member State,NO
+47075,Kaliro,1000,3000,Member State,NO
+47078,Katakwi,1000,3000,Member State,NO
+47079,Kiruhura,1000,3000,Member State,NO
+47080,Koboko,1000,3000,Member State,NO
+47083,Luwero,1000,3000,Member State,NO
+47085,Mbale,1000,3000,Member State,NO
+47086,Mbarara,1000,3000,Member State,NO
+47087,Mityana,1000,3000,Member State,NO
+47088,Mubende,1000,3000,Member State,NO
+47089,Nakaseke,1000,3000,Member State,NO
+47090,Tororo,1000,3000,Member State,NO
+747,Budaka,2005,3000,Member State,NO
+743,Abim,2006,3000,Member State,NO
+745,Amuru,2006,3000,Member State,NO
+753,Buliisa,2006,3000,Member State,NO
+765,Kotido,2006,3000,Member State,NO
+774,Namutumba,2006,3000,Member State,NO
+780,Maracha,2006,3000,Member State,NO
+782,Oyam,2006,3000,Member State,NO
+789,Dokolo,2006,3000,Member State,NO
+1057,Arua,2006,3000,Member State,NO
+769,Manafwa,2007,3000,Member State,NO
+788,Bukedea,2007,3000,Member State,NO
+1080,Bududa,2007,3000,Member State,NO
+1371,Rakai,2007,3000,Member State,NO
+1372,Lyantonde,2007,3000,Member State,NO
+744,Amudat,2009,3000,Member State,NO
+749,Buikwe,2009,3000,Member State,NO
+756,Buyende,2009,3000,Member State,NO
+760,Kamuli,2009,3000,Member State,NO
+763,Kitgum,2009,3000,Member State,NO
+767,Lamwo,2009,3000,Member State,NO
+773,Nakapiripirit,2009,3000,Member State,NO
+776,Nebbi,2009,3000,Member State,NO
+781,Otuke,2009,3000,Member State,NO
+787,Zombo,2009,3000,Member State,NO
+1361,Kyegegwa,2009,3000,Member State,NO
+1362,Kyenjojo,2009,3000,Member State,NO
+746,Apac,2010,3000,Member State,NO
+748,Bugiri,2010,3000,Member State,NO
+750,Bukomansimbi,2010,3000,Member State,NO
+751,Bukwo,2010,3000,Member State,NO
+752,Bulambuli,2010,3000,Member State,NO
+754,Bundibugyo,2010,3000,Member State,NO
+755,Bushenyi,2010,3000,Member State,NO
+757,Butambala,2010,3000,Member State,NO
+758,Iganga,2010,3000,Member State,NO
+759,Kalungu,2010,3000,Member State,NO
+761,Kapchorwa,2010,3000,Member State,NO
+762,Sheema,2010,3000,Member State,NO
+764,Kole,2010,3000,Member State,NO
+766,Kween,2010,3000,Member State,NO
+768,Luuka,2010,3000,Member State,NO
+770,Masaka,2010,3000,Member State,NO
+771,Masindi,2010,3000,Member State,NO
+772,Moroto,2010,3000,Member State,NO
+775,Napak,2010,3000,Member State,NO
+777,Ngora,2010,3000,Member State,NO
+778,Buhweju,2010,3000,Member State,NO
+779,Ntoroko,2010,3000,Member State,NO
+783,Pader,2010,3000,Member State,NO
+784,Rubirizi,2010,3000,Member State,NO
+785,Sironko,2010,3000,Member State,NO
+786,Soroti,2010,3000,Member State,NO
+790,Agago,2010,3000,Member State,NO
+852,Alebtong,2010,3000,Member State,NO
+1082,Buvuma,2010,3000,Member State,NO
+1086,Gomba,2010,3000,Member State,NO
+1089,Gulu,2010,3000,Member State,NO
+1234,Kiboga,2010,3000,Member State,NO
+1235,Kibuku,2010,3000,Member State,NO
+1241,Kiryandongo,2010,3000,Member State,NO
+1261,Kumi,2010,3000,Member State,NO
+1344,Kyankwanzi,2010,3000,Member State,NO
+1360,Mitooma,2010,3000,Member State,NO
+1363,Mpigi,2010,3000,Member State,NO
+1364,Nwoya,2010,3000,Member State,NO
+1365,Serere,2010,3000,Member State,NO
+1366,Lwengo,2010,3000,Member State,NO
+1367,Mukono,2010,3000,Member State,NO
+1368,Namayingo,2010,3000,Member State,NO
+1369,Pallisa,2010,3000,Member State,NO
+1370,Lira,2010,3000,Member State,NO
+3426,Central,1000,3000,Member State,NO
+3427,Copperbelt,1000,3000,Member State,NO
+3428,Eastern,1000,3000,Member State,NO
+3429,Luapula,1000,3000,Member State,NO
+3430,Lusaka,1000,3000,Member State,NO
+3431,North-Western,1000,3000,Member State,NO
+3432,Northern,1000,3000,Member State,NO
+3433,Southern,1000,3000,Member State,NO
+3434,Western,1000,3000,Member State,NO
+3437,Manicaland,1000,3000,Member State,NO
+3438,Mashonaland Central,1000,3000,Member State,NO
+3440,Mashonaland West,1000,3000,Member State,NO
+3441,Masvingo,1000,3000,Member State,NO
+3443,Matabeleland South,1000,3000,Member State,NO
+3444,Midlands,1000,3000,Member State,NO
+3435,Bulawayo,1997,3000,Member State,NO
+3436,Harare,1997,3000,Member State,NO
+69549,Matabeleland North,1997,3000,Member State,NO
+69550,Mashonaland East,1997,3000,Member State,NO
+970,Bouenza,1000,3000,Member State,NO
+190432,Brazzaville,2002,3000,Member State,NO
+971,Cuvette,1995,3000,Member State,NO
+972,Cuvette-Ouest,1995,3000,Member State,NO
+190433,Kouilou,2011,3000,Member State,NO
+974,Lekoumou,1000,3000,Member State,NO
+975,Likouala,1000,3000,Member State,NO
+976,Niari,1000,3000,Member State,NO
+977,Plateaux,1000,3000,Member State,NO
+190434,Point-Noire,2011,3000,Member State,NO
+190431,Pool,2002,3000,Member State,NO
+979,Sangha,1000,3000,Member State,NO
+1198,Annobon,1000,3000,Member State,NO
+1199,Bioko Norte,1000,3000,Member State,NO
+1200,Bioko Sur,1000,3000,Member State,NO
+1201,Centro Sur,1000,3000,Member State,NO
+1202,Kientem,1000,3000,Member State,NO
+1203,Litoral,1000,3000,Member State,NO
+1204,Welenzas,1000,3000,Member State,NO
+1275,Estuaire,1000,3000,Member State,NO
+1276,Haut-Ogooue,1000,3000,Member State,NO
+1277,Moyen-Ogooue,1000,3000,Member State,NO
+1278,Ngounie,1000,3000,Member State,NO
+1279,Nyanga,1000,3000,Member State,NO
+1280,Ogooue-Ivindo,1000,3000,Member State,NO
+1281,Ogooue-lolo,1000,3000,Member State,NO
+1282,Ogooue-Maritime,1000,3000,Member State,NO
+1283,Woleu-Ntem,1000,3000,Member State,NO
+870,Biltine,1000,3000,Member State,NO
+873,Guera,1000,3000,Member State,NO
+875,Lac,1000,3000,Member State,NO
+876,Logone Occidental,1000,3000,Member State,NO
+881,Salamat,1000,3000,Member State,NO
+12904,Batha Est,2000,3000,Member State,NO
+12905,Batha Ouest,2000,3000,Member State,NO
+12907,Borkou,2000,3000,Member State,NO
+12908,Ennedi,2000,3000,Member State,NO
+12909,Tibesti,2000,3000,Member State,NO
+12910,Baguirmi,2000,3000,Member State,NO
+12911,Daraba,2000,3000,Member State,NO
+12912,Hadjer Lamis,2000,3000,Member State,NO
+12914,Barl El Gazal,2000,3000,Member State,NO
+12915,Kanem,2000,3000,Member State,NO
+12918,Logone Oriental,2000,3000,Member State,NO
+12919,Mont De Lam,2000,3000,Member State,NO
+12920,Kabia,2000,3000,Member State,NO
+12921,Mayo-Boneye,2000,3000,Member State,NO
+12922,Mayo-Dala,2000,3000,Member State,NO
+12923,Barh Koh,2000,3000,Member State,NO
+12924,Lac Iro,2000,3000,Member State,NO
+12925,Mandoul,2000,3000,Member State,NO
+12926,Assongha,2000,3000,Member State,NO
+12927,Ouaddai,2000,3000,Member State,NO
+12928,Sila,2000,3000,Member State,NO
+12930,Tandjile Est,2000,3000,Member State,NO
+12931,Tandjile Ouest,2000,3000,Member State,NO
+2620,Principe,1000,3000,Member State,NO
+2621,Sao Tome,1000,3000,Member State,NO
+1066,Bandundu,1000,3000,Member State,NO
+1067,Bas-Congo,1000,3000,Member State,NO
+1068,Equateur,1000,3000,Member State,NO
+1069,Kasai Occidental,1000,3000,Member State,NO
+1070,Kasai Oriental,1000,3000,Member State,NO
+1071,Katanga,1000,3000,Member State,NO
+1072,Kinshasa,1000,3000,Member State,NO
+1073,Maniema,1997,3000,Member State,NO
+1074,Nord-Kivu,1997,3000,Member State,NO
+1075,Orientale,1000,3000,Member State,NO
+1076,Sud-Kivu,1997,3000,Member State,NO
+815,Adamaoua,1000,3000,Member State,NO
+816,Centre,1000,3000,Member State,NO
+817,Est,1000,3000,Member State,NO
+818,Extrême - Nord,1000,3000,Member State,NO
+819,Littoral,1000,3000,Member State,NO
+820,Nord,1000,3000,Member State,NO
+821,Nord - Ouest,1000,3000,Member State,NO
+822,Ouest,1000,3000,Member State,NO
+823,Sud,1000,3000,Member State,NO
+824,Sud - Ouest,1000,3000,Member State,NO
+853,Bamingui-Bangoran,1000,3000,Member State,NO
+67154,Bangui,1000,3000,Member State,NO
+854,Basse-Kotto,1000,3000,Member State,NO
+855,Haut-Mbomou,1000,3000,Member State,NO
+856,Haute-Kotto,1000,3000,Member State,NO
+857,Kémo,1000,3000,Member State,NO
+858,Lobaye,1000,3000,Member State,NO
+859,Mambéré-Kadéï,1000,3000,Member State,NO
+860,Mbomou,1000,3000,Member State,NO
+861,Nana-Gribizi,1000,3000,Member State,NO
+862,Nana-Mambéré,1000,3000,Member State,NO
+863,Ombella M'Poko,1000,3000,Member State,NO
+864,Ouaka,1000,3000,Member State,NO
+865,Ouham,1000,3000,Member State,NO
+866,Ouham Pendé,1000,3000,Member State,NO
+867,Sangha-Mbaéré,1000,3000,Member State,NO
+868,Vakaga,1000,3000,Member State,NO
+398,Bengo,1000,3000,Member State,NO
+399,Benguela,1000,3000,Member State,NO
+400,Bie,1000,3000,Member State,NO
+401,Cabinda,1000,3000,Member State,NO
+402,Cuando Cubango,1000,3000,Member State,NO
+403,Cuanza Sul,1000,3000,Member State,NO
+404,Cunene,1000,3000,Member State,NO
+405,Huambo,1000,3000,Member State,NO
+406,Huila,1000,3000,Member State,NO
+407,Kuanza Norte,1000,3000,Member State,NO
+408,Luanda,1000,3000,Member State,NO
+409,Lunda Norte,1000,3000,Member State,NO
+410,Lunda Sul,1000,3000,Member State,NO
+411,Malanje,1000,3000,Member State,NO
+412,Moxico,1000,3000,Member State,NO
+413,Namibe,1000,3000,Member State,NO
+414,Uige,1000,3000,Member State,NO
+415,Zaire,1000,3000,Member State,NO
+40777,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+2745,Al Jazeera,1994,3000,Member State,NO
+2749,Blue Nile,1994,3000,Member State,NO
+2753,Khartoum,1000,3000,Member State,NO
+2755,Northern,1994,3000,Member State,NO
+2757,Northern Darfur,1994,3000,Member State,NO
+2761,Nile,1994,3000,Member State,NO
+2762,Sennar,1994,3000,Member State,NO
+2764,Southern Darfur,1994,3000,Member State,NO
+2769,Western Darfur,1994,3000,Member State,NO
+2770,White Nile,1994,3000,Member State,NO
+4150,Southern Kordofan,2011,3000,Member State,NO
+40772,Red Sea,1994,3000,Member State,NO
+68783,Kassala,2006,3000,Member State,NO
+68784,Northern Kordofan,2006,3000,Member State,NO
+68805,Gadaref,2006,3000,Member State,NO
+2993,Ariana,1000,3000,Member State,NO
+2994,Ben Arous,1000,3000,Member State,NO
+2995,Bizerte,1000,3000,Member State,NO
+2996,Beja,1000,3000,Member State,NO
+2997,Gabes,1000,3000,Member State,NO
+2998,Gafsa,1000,3000,Member State,NO
+2999,Jendouba,1000,3000,Member State,NO
+3000,Kairouan,1000,3000,Member State,NO
+3001,Kasserine,1000,3000,Member State,NO
+3002,Kebili,1000,3000,Member State,NO
+3003,Le Kef,1000,3000,Member State,NO
+3004,Mahdia,1000,3000,Member State,NO
+3005,Manouba,1000,3000,Member State,NO
+3006,Monastir,1000,3000,Member State,NO
+3007,Medenine,1000,3000,Member State,NO
+3008,Nabeul,1000,3000,Member State,NO
+3009,Sfax,1000,3000,Member State,NO
+3010,Sidi Bouz,1000,3000,Member State,NO
+3011,Siliana,1000,3000,Member State,NO
+3012,Sousse,1000,3000,Member State,NO
+3013,Tataouine,1000,3000,Member State,NO
+3014,Tozeur,1000,3000,Member State,NO
+3015,Tunis,1000,3000,Member State,NO
+3016,Zaghouan,1000,3000,Member State,NO
+2107,Meknès - Tafilalet,1000,3000,Member State,NO
+2109,Oriental,1000,3000,Member State,NO
+147326,Chaouia - Ouardigha,1997,3000,Member State,NO
+147327,Doukkala - Abda,1997,3000,Member State,NO
+147328,Fès - Boulemane,1997,3000,Member State,NO
+147329,Gharb - Chrarda - Béni Hssen,1997,3000,Member State,NO
+147330,Grand Casablanca,1997,3000,Member State,NO
+147331,Guelmim - Es-Semara,1997,3000,Member State,NO
+147332,Laâyoune - Boujdour - Sakia El Hamra,1997,3000,Member State,NO
+147333,Marrakech - Tensift - Al Haouz,1997,3000,Member State,NO
+147334,Rabat - Salé - Zemmour - Zaer,1997,3000,Member State,NO
+147335,Souss - Massa - Draâ,1997,3000,Member State,NO
+147336,Tadla - Azilal,1997,3000,Member State,NO
+147337,Tanger - Tétouan,1997,3000,Member State,NO
+147338,Taza - Al Hoceima - Taounate,1997,3000,Member State,NO
+1829,Ajdabiya (agedabia),1000,3000,Member State,NO
+1830,Al Aziziyah,1000,3000,Member State,NO
+1831,Al Fatah,1000,3000,Member State,NO
+1832,Al Jabal Al Akhdar,1000,3000,Member State,NO
+1833,Al Jufrah,1000,3000,Member State,NO
+1834,Al Khoms,1000,3000,Member State,NO
+1835,Al Kufrah,1000,3000,Member State,NO
+1836,Ash Shati,1000,3000,Member State,NO
+1837,Awbari (ubari),1000,3000,Member State,NO
+1838,Az Zawia (azzawiya),1000,3000,Member State,NO
+1839,Banghazi,1000,3000,Member State,NO
+1840,Darnah,1000,3000,Member State,NO
+1841,Ghadamis,1000,3000,Member State,NO
+1842,Gharyan,1000,3000,Member State,NO
+1843,Misurata,1000,3000,Member State,NO
+1844,Murzuq,1000,3000,Member State,NO
+1845,Nuqat Al Khams,1000,3000,Member State,NO
+1846,Sabha,1000,3000,Member State,NO
+1847,Sawfajjin (sofuljeen),1000,3000,Member State,NO
+1848,Surt (sirte),1000,3000,Member State,NO
+1849,Tarhunah,1000,3000,Member State,NO
+1850,Tripoli (tarabulus),1000,3000,Member State,NO
+1851,Tubruq (tobruk),1000,3000,Member State,NO
+1852,Yafran (yefren),1000,3000,Member State,NO
+1853,Zeleitin (zliten),1000,3000,Member State,NO
+40776,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+3405,Rio De Oro,1000,3000,Non-Self-Governing Territory,NO
+3406,Saguia El Hamra,1000,3000,Non-Self-Governing Territory,NO
+61510,Alexandria,1000,3000,Member State,NO
+61511,Assiut,1000,3000,Member State,NO
+61512,Aswan,1000,3000,Member State,NO
+61513,Behera,1000,3000,Member State,NO
+61514,Beni Suef,1000,3000,Member State,NO
+61515,Cairo,1000,3000,Member State,NO
+61516,Dakahlia,1000,3000,Member State,NO
+61517,Damietta,1000,3000,Member State,NO
+61518,Fayoum,1000,3000,Member State,NO
+61519,Gharbia,1000,3000,Member State,NO
+61520,Giza,1000,3000,Member State,NO
+61521,Ismailia,1000,3000,Member State,NO
+61522,Kafr El-Shikh,1000,3000,Member State,NO
+61523,Kalyoubia,1000,3000,Member State,NO
+61524,Luxor,2009,3000,Member State,NO
+61525,Matrouh,1000,3000,Member State,NO
+61526,Menia,1000,3000,Member State,NO
+61527,Menoufia,1000,3000,Member State,NO
+61528,New Valley,1000,3000,Member State,NO
+61529,North Sinai,1000,3000,Member State,NO
+61530,Port Said,1000,3000,Member State,NO
+61531,Qena,2009,3000,Member State,NO
+61532,Red Sea,1000,3000,Member State,NO
+61533,Shrkia,1000,3000,Member State,NO
+61534,South Sinai,1000,3000,Member State,NO
+61535,Suez,1000,3000,Member State,NO
+61536,Suhag,1000,3000,Member State,NO
+341,Adrar,1000,3000,Member State,NO
+342,Ain-Defla,1000,3000,Member State,NO
+343,Ain-Temouchent,1000,3000,Member State,NO
+344,Alger,1000,3000,Member State,NO
+345,Annaba,1000,3000,Member State,NO
+346,Batna,1000,3000,Member State,NO
+347,Bechar,1000,3000,Member State,NO
+348,Bejaia,1000,3000,Member State,NO
+349,Biskra,1000,3000,Member State,NO
+350,Blida,1000,3000,Member State,NO
+351,Bordj Bou Arrer,1000,3000,Member State,NO
+352,Bouira,1000,3000,Member State,NO
+353,Boumerdes,1000,3000,Member State,NO
+354,Chlef,1000,3000,Member State,NO
+355,Constantine,1000,3000,Member State,NO
+356,Djelfa,1000,3000,Member State,NO
+357,El Bayadh,1000,3000,Member State,NO
+358,El Oued,1000,3000,Member State,NO
+359,El-Tarf,1000,3000,Member State,NO
+360,Ghardaia,1000,3000,Member State,NO
+361,Guelma,1000,3000,Member State,NO
+362,Illizi,1000,3000,Member State,NO
+363,Jijel,1000,3000,Member State,NO
+364,Khenchela,1000,3000,Member State,NO
+365,Laghouat,1000,3000,Member State,NO
+366,Mascara,1000,3000,Member State,NO
+367,Medea,1000,3000,Member State,NO
+368,Mila,1000,3000,Member State,NO
+369,Mostaganem,1000,3000,Member State,NO
+370,M'Sila,1000,3000,Member State,NO
+371,Naama,1000,3000,Member State,NO
+372,Oran,1000,3000,Member State,NO
+373,Ouargla,1000,3000,Member State,NO
+374,Oum El Bouaghi,1000,3000,Member State,NO
+375,Relizane,1000,3000,Member State,NO
+376,Saida,1000,3000,Member State,NO
+377,Setif,1000,3000,Member State,NO
+378,Sidi Bel Abbes,1000,3000,Member State,NO
+379,Skikda,1000,3000,Member State,NO
+380,Souk-Ahras,1000,3000,Member State,NO
+381,Tamanrasset,1000,3000,Member State,NO
+382,Tebessa,1000,3000,Member State,NO
+383,Tindouf,1000,3000,Member State,NO
+384,Tiaret,1000,3000,Member State,NO
+385,Tipaza,1000,3000,Member State,NO
+386,Tissemsilt,1000,3000,Member State,NO
+387,Tizi Ouzou,1000,3000,Member State,NO
+388,Tlemcen,1000,3000,Member State,NO
+124,Administrative unit not available,2011,3000,Sovereignty unsettled,YES
+2782,Hhohho,1000,3000,Member State,NO
+2783,Lubombo,1000,3000,Member State,NO
+2784,Manzini,1000,3000,Member State,NO
+2785,Shiselweni,1000,3000,Member State,NO
+77310,Eastern Cape,2005,3000,Member State,NO
+2707,Free State,1000,3000,Member State,NO
+2708,Gauteng,1994,3000,Member State,NO
+77311,KwaZulu-Natal,2005,3000,Member State,NO
+77313,Mpumalanga,2005,3000,Member State,NO
+77314,North West,2005,3000,Member State,NO
+77315,Northern Cape,2005,3000,Member State,NO
+77312,Limpopo,2005,3000,Member State,NO
+2714,Western Cape,1994,3000,Member State,NO
+2137,Caprivi,1000,3000,Member State,NO
+2138,Erongo,1000,3000,Member State,NO
+2139,Hardap,1000,3000,Member State,NO
+2140,Karas,1000,3000,Member State,NO
+2141,Kavango,1000,3000,Member State,NO
+2142,Khomas,1000,3000,Member State,NO
+2143,Kunene,1000,3000,Member State,NO
+2144,Ohangwena,1000,3000,Member State,NO
+2145,Omaheke,1000,3000,Member State,NO
+2146,Omusati,1000,3000,Member State,NO
+2147,Oshana,1000,3000,Member State,NO
+2148,Oshikoto,1000,3000,Member State,NO
+2149,Otjozondjupa,1000,3000,Member State,NO
+1803,Berea,1000,3000,Member State,NO
+1804,Butha Buthe,1000,3000,Member State,NO
+1805,Leribe,1000,3000,Member State,NO
+1806,Mafeteng,1000,3000,Member State,NO
+1807,Maseru,1000,3000,Member State,NO
+1808,Mohale's Hoek,1000,3000,Member State,NO
+1809,Mokhotlong,1000,3000,Member State,NO
+1810,Qacha's Nek,1000,3000,Member State,NO
+1811,Quthing,1000,3000,Member State,NO
+1812,Thaba Tseka,1000,3000,Member State,NO
+654,Central,1000,3000,Member State,NO
+655,Chobe,1000,3000,Member State,NO
+656,Ghanzi,1000,3000,Member State,NO
+657,Kgalagadi,1000,3000,Member State,NO
+658,Kgatleng,1000,3000,Member State,NO
+659,Kweneng,1000,3000,Member State,NO
+660,Ngamiland,1000,3000,Member State,NO
+661,North East,1000,3000,Member State,NO
+662,South-East,1000,3000,Member State,NO
+663,Southern,1000,3000,Member State,NO
+1285,Central River,1000,3000,Member State,NO
+1287,Lower River,1000,3000,Member State,NO
+1288,North Bank,1000,3000,Member State,NO
+1289,Upper River,1000,3000,Member State,NO
+1290,West Coast,1000,3000,Member State,NO
+112869,Kanifing Municipal Council,2003,3000,Member State,NO
+1324,Ashanti,1000,3000,Member State,NO
+1325,Brong Ahafo,1000,3000,Member State,NO
+1326,Central,1000,3000,Member State,NO
+1327,Eastern,1000,3000,Member State,NO
+1328,Greater Accra,1000,3000,Member State,NO
+1329,Northern,1000,3000,Member State,NO
+1330,Upper East,1000,3000,Member State,NO
+1331,Upper West,1000,3000,Member State,NO
+1332,Volta,1000,3000,Member State,NO
+1333,Western,1000,3000,Member State,NO
+2004,Adrar,1000,3000,Member State,NO
+2005,Assaba,1000,3000,Member State,NO
+2006,Brakna,1000,3000,Member State,NO
+2007,Dakhlet-Nouadhibou,1000,3000,Member State,NO
+2008,Gorgol,1000,3000,Member State,NO
+2009,Guidimakha,1000,3000,Member State,NO
+2010,Hodh Ech Chargi,1000,3000,Member State,NO
+2011,Hodh El Gharbi,1000,3000,Member State,NO
+2012,Inchiri,1000,3000,Member State,NO
+2013,Nouakchott,1000,3000,Member State,NO
+2014,Tagant,1000,3000,Member State,NO
+2015,Tiris-Zemmour,1000,3000,Member State,NO
+2016,Trarza,1000,3000,Member State,NO
+65698,Abia,1997,3000,Member State,NO
+2221,Abuja,1000,3000,Member State,NO
+2211,Adamawa,1000,3000,Member State,NO
+2212,Akwa Ibom,1000,3000,Member State,NO
+2213,Anambra,1000,3000,Member State,NO
+65699,Bauchi,1997,3000,Member State,NO
+65700,Bayelsa,1997,3000,Member State,NO
+2215,Benue,1000,3000,Member State,NO
+2216,Borno,1000,3000,Member State,NO
+2217,Cross River,1000,3000,Member State,NO
+2218,Delta,1000,3000,Member State,NO
+65701,Ebonyi,1997,3000,Member State,NO
+2219,Edo,1000,3000,Member State,NO
+65702,Ekiti,1997,3000,Member State,NO
+65703,Enugu,1997,3000,Member State,NO
+65704,Gombe,1997,3000,Member State,NO
+2222,Imo,1000,3000,Member State,NO
+2223,Jigawa,1000,3000,Member State,NO
+2224,Kaduna,1000,3000,Member State,NO
+2225,Kano,1000,3000,Member State,NO
+2226,Katsina,1000,3000,Member State,NO
+2227,Kebbi,1000,3000,Member State,NO
+2228,Kogi,1000,3000,Member State,NO
+2229,Kwara,1000,3000,Member State,NO
+2230,Lagos,1000,3000,Member State,NO
+65705,Nassarawa,1997,3000,Member State,NO
+2231,Niger,1000,3000,Member State,NO
+2232,Ogun,1000,3000,Member State,NO
+65706,Ondo,1997,3000,Member State,NO
+2234,Osun,1000,3000,Member State,NO
+2235,Oyo,1000,3000,Member State,NO
+65707,Plateau,1997,3000,Member State,NO
+65708,Rivers,1997,3000,Member State,NO
+65709,Sokoto,1997,3000,Member State,NO
+2239,Taraba,1000,3000,Member State,NO
+2240,Yobe,1000,3000,Member State,NO
+65710,Zamfara,1997,3000,Member State,NO
+1385,Bafata,1000,3000,Member State,NO
+1386,Biombo,1991,3000,Member State,NO
+1387,Bolama/bijagos,1000,3000,Member State,NO
+1388,Cacheu,1000,3000,Member State,NO
+1389,Gabu,1000,3000,Member State,NO
+1390,Oio,1000,3000,Member State,NO
+1391,Quinara,1000,3000,Member State,NO
+1392,Sector Autonomo De Bissau,1991,3000,Member State,NO
+1393,Tombali,1000,3000,Member State,NO
+68772,Ascension,1000,3000,UK Non-Self-Governing Territory,NO
+68773,Saint Helena,1000,3000,UK Non-Self-Governing Territory,NO
+68774,Tristan Da Cunha,1000,3000,UK Non-Self-Governing Territory,NO
+2970,Centrale,1000,3000,Member State,NO
+2971,Kara,1000,3000,Member State,NO
+2972,Maritime,1000,3000,Member State,NO
+2973,Plateaux,1000,3000,Member State,NO
+2974,Savanes,1000,3000,Member State,NO
+838,Boa Vista,1000,3000,Member State,NO
+839,Brava,1000,3000,Member State,NO
+840,Cima,1000,3000,Member State,NO
+841,Fogo,1000,3000,Member State,NO
+842,Ilheu Branco,1000,3000,Member State,NO
+843,Ilheu Raso,1000,3000,Member State,NO
+844,Maio,1000,3000,Member State,NO
+845,Rombo,1000,3000,Member State,NO
+846,Sal,1000,3000,Member State,NO
+847,Santa Luzia,1000,3000,Member State,NO
+848,Santiago,1000,3000,Member State,NO
+849,Santo Antao,1000,3000,Member State,NO
+850,Sao Nicolau,1000,3000,Member State,NO
+851,Sao Vicente,1000,3000,Member State,NO
+2202,Agadez,1000,3000,Member State,NO
+2203,Diffa,1000,3000,Member State,NO
+2204,Dosso,1000,3000,Member State,NO
+2205,Maradi,1000,3000,Member State,NO
+2206,Niamey,1000,3000,Member State,NO
+2207,Tahoua,1000,3000,Member State,NO
+2208,Tillaberi,1000,3000,Member State,NO
+2209,Zinder,1000,3000,Member State,NO
+609,Alibori,1999,3000,Member State,NO
+610,Atakora,1999,3000,Member State,NO
+611,Atlantique,1999,3000,Member State,NO
+612,Borgou,1999,3000,Member State,NO
+613,Collines,1999,3000,Member State,NO
+614,Couffo,1999,3000,Member State,NO
+615,Donga,1999,3000,Member State,NO
+616,Littoral,1999,3000,Member State,NO
+617,Mono,1999,3000,Member State,NO
+618,Oueme,1999,3000,Member State,NO
+619,Plateau,1999,3000,Member State,NO
+620,Zou,1999,3000,Member State,NO
+40276,Boucle Du Mouhoun,2001,3000,Member State,NO
+40277,Cascades,2001,3000,Member State,NO
+40278,Centre,2001,3000,Member State,NO
+40279,Centre-est,2001,3000,Member State,NO
+40280,Centre-nord,2001,3000,Member State,NO
+40281,Centre-ouest,2001,3000,Member State,NO
+40282,Centre-sud,2001,3000,Member State,NO
+40283,Est,2001,3000,Member State,NO
+40284,Hauts-bassins,2001,3000,Member State,NO
+40285,Nord,2001,3000,Member State,NO
+40286,Plateau Central,2001,3000,Member State,NO
+40287,Sahel,2001,3000,Member State,NO
+40288,Sud-ouest,2001,3000,Member State,NO
+1373,Kaolack,2008,3000,Member State,NO
+1374,Kedougou,2008,3000,Member State,NO
+1375,Kolda,2008,3000,Member State,NO
+1376,Sedhiou,2008,3000,Member State,NO
+1377,Tambacounda,2008,3000,Member State,NO
+1378,Kaffrine,2008,3000,Member State,NO
+2636,Dakar,1000,3000,Member State,NO
+2644,Thies,1000,3000,Member State,NO
+2645,Ziguinchor,1000,3000,Member State,NO
+47585,Diourbel,2002,3000,Member State,NO
+47586,Fatick,2002,3000,Member State,NO
+47587,Louga,2002,3000,Member State,NO
+47588,Matam,2002,3000,Member State,NO
+47589,Saint louis,2002,3000,Member State,NO
+40700,Boke,1000,3000,Member State,NO
+40701,Conakry,1000,3000,Member State,NO
+40702,Faranah,1000,3000,Member State,NO
+40703,Kankan,1000,3000,Member State,NO
+40704,Kindia,1000,3000,Member State,NO
+40706,Mamou,1996,3000,Member State,NO
+40707,Nzerekore,1000,3000,Member State,NO
+40705,Labe,1996,3000,Member State,NO
+1814,Bomi,1000,3000,Member State,NO
+1815,Bong,1000,3000,Member State,NO
+1816,Gbarpolu,2001,3000,Member State,NO
+1817,Grand Bassa,1000,3000,Member State,NO
+1818,Grand Cape Mount,1000,3000,Member State,NO
+1819,Grand Gedeh,2000,3000,Member State,NO
+1820,Grand Kru,1000,3000,Member State,NO
+1821,Lofa,2001,3000,Member State,NO
+1822,Margibi,1000,3000,Member State,NO
+1823,Maryland,1000,3000,Member State,NO
+1824,Montserrado,1000,3000,Member State,NO
+1825,Nimba,1000,3000,Member State,NO
+1826,Rivercess,1000,3000,Member State,NO
+1827,River Gee,2000,3000,Member State,NO
+1828,Sinoe,1000,3000,Member State,NO
+1927,Gao,1991,3000,Member State,NO
+1928,Kayes,1000,3000,Member State,NO
+1929,Kidal,1991,3000,Member State,NO
+1930,Koulikoro,1000,3000,Member State,NO
+1931,Mopti,1000,3000,Member State,NO
+1932,Segou,1000,3000,Member State,NO
+1933,Sikasso,1000,3000,Member State,NO
+1934,Tombouctou,1000,3000,Member State,NO
+1926,Bamako,1000,3000,Member State,NO
+190430,Bas Sassandra,1997,3000,Member State,NO
+1041,Denguele,1997,3000,Member State,NO
+1048,Savanes,1991,3000,Member State,NO
+1051,Vallee Du Bandama,1997,3000,Member State,NO
+1053,Zanzan,1991,3000,Member State,NO
+16837,Comoe,2012,3000,Member State,NO
+16838,District autonome de Abidjan,2012,3000,Member State,NO
+16839,District autonome de Yamoussoukro,2012,3000,Member State,NO
+16840,Gôh-Djiboua,2012,3000,Member State,NO
+16841,Lacs,2012,3000,Member State,NO
+16842,Lagunes,2012,3000,Member State,NO
+16843,Montagnes,2012,3000,Member State,NO
+16844,Sassandra-Marahoue,2012,3000,Member State,NO
+16845,Woroba,2012,3000,Member State,NO
+2654,Eastern,1000,3000,Member State,NO
+2655,Northern,1000,3000,Member State,NO
+2656,Southern,1000,3000,Member State,NO
+2657,Western Area,1000,3000,Member State,NO
+61297,Fort-de-France,1000,3000,FR Territory,NO
+61298,La Trinite,1000,3000,FR Territory,NO
+61299,Le Marin,1000,3000,FR Territory,NO
+61300,Saint-Pierre,1000,3000,FR Territory,NO
+2157,Administrative unit not available,1000,3000,NL Territory,NO
+1352,Name Unknown,1000,3000,Member State,NO
+1353,St. Andrew's,1000,3000,Member State,NO
+1354,St. George's,1000,3000,Member State,NO
+1355,St. John's,1000,3000,Member State,NO
+1356,St. Mark's,1000,3000,Member State,NO
+1357,St. Patrick's,1000,3000,Member State,NO
+1636,Clarendon,1000,3000,Member State,NO
+1637,Hanover,1000,3000,Member State,NO
+1638,Manchester,1000,3000,Member State,NO
+1639,Portland,1000,3000,Member State,NO
+1640,Saint Andrew And Kingston,1000,3000,Member State,NO
+1641,Saint Ann,1000,3000,Member State,NO
+1642,Saint Catherine,1000,3000,Member State,NO
+1643,Saint Elizabeth,1000,3000,Member State,NO
+1644,Saint James,1000,3000,Member State,NO
+1645,Saint Mary,1000,3000,Member State,NO
+1646,Saint Thomas,1000,3000,Member State,NO
+1647,Trelawny,1000,3000,Member State,NO
+1648,Westmoreland,1000,3000,Member State,NO
+2593,Christ Church Nichola Town,1000,3000,Member State,NO
+2594,Saint Anne Sandy Point,1000,3000,Member State,NO
+2595,Saint George Basseterre,1000,3000,Member State,NO
+2596,Saint George Gingerland,1000,3000,Member State,NO
+2597,Saint James Windward,1000,3000,Member State,NO
+2598,Saint John Capisterre,1000,3000,Member State,NO
+2599,Saint John Figtree,1000,3000,Member State,NO
+2600,Saint Mary Cayon,1000,3000,Member State,NO
+2601,Saint Paul Capisterre,1000,3000,Member State,NO
+2602,Saint Paul Charlestown,1000,3000,Member State,NO
+2603,Saint Peter Basseterre,1000,3000,Member State,NO
+2604,Saint Thomas Lowland,1000,3000,Member State,NO
+2605,Saint Thomas Middle Island,1000,3000,Member State,NO
+2606,Trinity Palmetto Point,1000,3000,Member State,NO
+2098,Brodericks,1000,3000,UK Non-Self-Governing Territory,NO
+2099,Central,1000,3000,UK Non-Self-Governing Territory,NO
+2100,East,1000,3000,UK Non-Self-Governing Territory,NO
+2101,North,1000,3000,UK Non-Self-Governing Territory,NO
+2102,Plymouth,1000,3000,UK Non-Self-Governing Territory,NO
+2103,Salem,1000,3000,UK Non-Self-Governing Territory,NO
+2104,South,1000,3000,UK Non-Self-Governing Territory,NO
+39497,Grand Turk,1000,3000,UK Non-Self-Governing Territory,NO
+39498,Middle Caicos,1000,3000,UK Non-Self-Governing Territory,NO
+39499,North Caicos,1000,3000,UK Non-Self-Governing Territory,NO
+39500,Providenciales and West Caicos,1000,3000,UK Non-Self-Governing Territory,NO
+39501,Salt City,1000,3000,UK Non-Self-Governing Territory,NO
+39502,South and East Caicos,1000,3000,UK Non-Self-Governing Territory,NO
+2977,Arima,1000,3000,Member State,NO
+2978,Chaguanas,1000,3000,Member State,NO
+2979,Couva/Tabaquite/Talparo,1000,3000,Member State,NO
+2980,Diego Martin,1000,3000,Member State,NO
+2981,Penal/Debe,1000,3000,Member State,NO
+2982,Point Fortin,1000,3000,Member State,NO
+2983,Port Of Spain,1000,3000,Member State,NO
+2984,Princes Town,1000,3000,Member State,NO
+2985,Rio Claro/Mayaro,1000,3000,Member State,NO
+2986,San Fernando,1000,3000,Member State,NO
+2987,San Juan/Laventille,1000,3000,Member State,NO
+2988,Sangre Grande,1000,3000,Member State,NO
+2989,Siparia,1000,3000,Member State,NO
+2990,Tobago,1000,3000,Member State,NO
+2991,Tunapuna/Piarco,1000,3000,Member State,NO
+1108,Azua,1000,3000,Member State,NO
+1109,Baoruco,1000,3000,Member State,NO
+1110,Barahona,1000,3000,Member State,NO
+1111,Dajabon,1000,3000,Member State,NO
+1112,Santo Domingo,1000,3000,Member State,NO
+1113,Duarte,1000,3000,Member State,NO
+1114,El Seibo,1000,3000,Member State,NO
+1115,Espaillat,1000,3000,Member State,NO
+1116,Independencia,1000,3000,Member State,NO
+1117,La Altagracia,1000,3000,Member State,NO
+1118,Elias Pina,1000,3000,Member State,NO
+1119,La Romana,1000,3000,Member State,NO
+1120,La Vega,1000,3000,Member State,NO
+1121,Maria Trinidad Sanches,1000,3000,Member State,NO
+1122,Monte Cristi,1000,3000,Member State,NO
+1123,Pedernales,1000,3000,Member State,NO
+1124,Peravia,1000,3000,Member State,NO
+1125,Puerto Plata,1000,3000,Member State,NO
+1126,Salcedo,1000,3000,Member State,NO
+1127,Samana,1000,3000,Member State,NO
+1128,San Cristobal,1000,3000,Member State,NO
+1129,San Juan,1000,3000,Member State,NO
+1130,San Pedro de Macoris,1000,3000,Member State,NO
+1131,Sanchez Ramirez,1000,3000,Member State,NO
+1132,Santiago,1000,3000,Member State,NO
+1133,Santiago Rodriguez,1000,3000,Member State,NO
+1134,Valverde,1000,3000,Member State,NO
+36854,Hato Mayor,1000,3000,Member State,NO
+36855,Monsenor Nouel,1000,3000,Member State,NO
+36856,Monte Plata,1000,3000,Member State,NO
+36857,San José de Ocoa,1000,3000,Member State,NO
+36858,Distrito Nacional,1000,3000,Member State,NO
+1098,St. Andrew,1000,3000,Member State,NO
+1099,St. David,1000,3000,Member State,NO
+1100,St. George,1000,3000,Member State,NO
+1101,St. John,1000,3000,Member State,NO
+1102,St. Joseph,1000,3000,Member State,NO
+1103,St. Luke,1000,3000,Member State,NO
+1104,St. Mark,1000,3000,Member State,NO
+1105,St. Patrick,1000,3000,Member State,NO
+1106,St. Paul,1000,3000,Member State,NO
+1107,St. Peter,1000,3000,Member State,NO
+2607,Area Under National Administra,1000,3000,Member State,NO
+2608,Region Number 1,1000,3000,Member State,NO
+2609,Region Number 2,1000,3000,Member State,NO
+2610,Region Number 3,1000,3000,Member State,NO
+2611,Region Number 4,1000,3000,Member State,NO
+2612,Region Number 5,1000,3000,Member State,NO
+2613,Region Number 6,1000,3000,Member State,NO
+2614,Region Number 7,1000,3000,Member State,NO
+2615,Region Number 8,1000,3000,Member State,NO
+2151,Administrative unit not available,1000,3000,US Territory,NO
+61285,Grenadines,1000,3000,Member State,NO
+61286,Charlotte,1000,3000,Member State,NO
+61287,Saint Andrew,1000,3000,Member State,NO
+61288,Saint David,1000,3000,Member State,NO
+61289,Saint George,1000,3000,Member State,NO
+61290,Saint Patrick,1000,3000,Member State,NO
+39503,Anegada,1000,3000,UK Non-Self-Governing Territory,NO
+39504,Jost van Dyke,1000,3000,UK Non-Self-Governing Territory,NO
+39505,Other Islands,1000,3000,UK Non-Self-Governing Territory,NO
+39506,Tortola,1000,3000,UK Non-Self-Governing Territory,NO
+39507,Virgin Gorda,1000,3000,UK Non-Self-Governing Territory,NO
+68742,Grand Cayman,1000,3000,UK Non-Self-Governing Territory,NO
+68743,Cayman Brac,1000,3000,UK Non-Self-Governing Territory,NO
+68744,Little Cayman,1000,3000,UK Non-Self-Governing Territory,NO
+1009,Camaguey,1000,3000,Member State,NO
+1010,Ciego De Avila,1000,3000,Member State,NO
+1011,Cienfuegos,1000,3000,Member State,NO
+1012,Ciudad De La Habana,1000,3000,Member State,NO
+1013,Granma,1000,3000,Member State,NO
+1014,Guantanamo,1000,3000,Member State,NO
+1015,Holguin,1000,3000,Member State,NO
+1016,Isla De La Juventud,1000,3000,Member State,NO
+1017,La Habana,1000,3000,Member State,NO
+1018,Las Tunas,1000,3000,Member State,NO
+1019,Matanzas,1000,3000,Member State,NO
+1020,Pinar Del Rio,1000,3000,Member State,NO
+1021,Sancti Spiritus,1000,3000,Member State,NO
+1022,Santiago De Cuba,1000,3000,Member State,NO
+1023,Villa Clara,1000,3000,Member State,NO
+642,Administrative unit not available,1000,3000,VE Territory,NO
+1358,Administrative unit not available,1000,3000,FR Territory,NO
+1409,Artibonite,1000,3000,Member State,NO
+1410,Centre,1000,3000,Member State,NO
+1412,Nord,1000,3000,Member State,NO
+1413,Nord Est,1000,3000,Member State,NO
+1414,Nord Ouest,1000,3000,Member State,NO
+1415,Ouest,1000,3000,Member State,NO
+1416,Sud,1000,3000,Member State,NO
+1417,Sud Est,1000,3000,Member State,NO
+72911,Grande Anse,2003,3000,Member State,NO
+72912,Nippes,2003,3000,Member State,NO
+581,Christ Church,1000,3000,Member State,NO
+582,St. Andrew,1000,3000,Member State,NO
+583,St. George,1000,3000,Member State,NO
+584,St. James,1000,3000,Member State,NO
+585,St. John,1000,3000,Member State,NO
+586,St. Joseph,1000,3000,Member State,NO
+587,St. Lucy,1000,3000,Member State,NO
+588,St. Michael,1000,3000,Member State,NO
+589,St. Peter,1000,3000,Member State,NO
+590,St. Phillip,1000,3000,Member State,NO
+591,St. Tomas,1000,3000,Member State,NO
+2414,Aguadilla,1000,3000,US Territory,NO
+2415,Arecibo,1000,3000,US Territory,NO
+2416,Bayamon,1000,3000,US Territory,NO
+2417,Guayama,1000,3000,US Territory,NO
+2418,Humacao,1000,3000,US Territory,NO
+2419,Mayaguez,1000,3000,US Territory,NO
+2420,Ponce,1000,3000,US Territory,NO
+2421,San Juan,1000,3000,US Territory,NO
+39508,Saint Croix (County Equivalent),1000,3000,US Non-Self-Governing Territory,NO
+39509,Saint John (County Equivalent),1000,3000,US Non-Self-Governing Territory,NO
+39510,Saint Thomas (County Equivalent),1000,3000,US Non-Self-Governing Territory,NO
+561,Administrative unit not available,1000,3000,Member State,NO
+40206,Barbuda,1000,3000,Member State,NO
+40207,Name Unknown,1000,3000,Member State,NO
+40208,St. George,1000,3000,Member State,NO
+40209,St. John,1000,3000,Member State,NO
+40210,St. Mary,1000,3000,Member State,NO
+40211,St. Paul,1000,3000,Member State,NO
+40212,St. Peter,1000,3000,Member State,NO
+40213,St. Philip,1000,3000,Member State,NO
+416,Name Unknown,1000,3000,UK Non-Self-Governing Territory,NO
+417,Name Unknown,1000,3000,UK Non-Self-Governing Territory,NO
+418,Name Unknown,1000,3000,UK Non-Self-Governing Territory,NO
+419,Name Unknown,1000,3000,UK Non-Self-Governing Territory,NO
+420,Name Unknown,1000,3000,UK Non-Self-Governing Territory,NO
+421,Name Unknown,1000,3000,UK Non-Self-Governing Territory,NO
+422,Name Unknown,1000,3000,UK Non-Self-Governing Territory,NO
+423,Name Unknown,1000,3000,UK Non-Self-Governing Territory,NO
+424,Name Unknown,1000,3000,UK Non-Self-Governing Territory,NO
+425,Name Unknown,1000,3000,UK Non-Self-Governing Territory,NO
+465,Administrative unit not available,1000,3000,NL Self-Governing Territory,NO
+2028,Aguascalientes,1000,3000,Member State,NO
+2029,Baja California,1000,3000,Member State,NO
+2030,Baja California Sur,1000,3000,Member State,NO
+2031,Campeche,1000,3000,Member State,NO
+2032,Chiapas,1000,3000,Member State,NO
+2033,Chihuahua,1000,3000,Member State,NO
+2034,Coahuila,1000,3000,Member State,NO
+2035,Colima,1000,3000,Member State,NO
+2036,Distrito Federal,1000,3000,Member State,NO
+2037,Durango,1000,3000,Member State,NO
+2038,Guanajuato,1000,3000,Member State,NO
+2039,Guerrero,1000,3000,Member State,NO
+2040,Hidalgo,1000,3000,Member State,NO
+2041,Jalisco,1000,3000,Member State,NO
+2042,Mexico,1000,3000,Member State,NO
+2043,Michoacan,1000,3000,Member State,NO
+2044,Morelos,1000,3000,Member State,NO
+2045,Nayarit,1000,3000,Member State,NO
+2046,Nuevo Leon,1000,3000,Member State,NO
+2047,Oaxaca,1000,3000,Member State,NO
+2048,Puebla,1000,3000,Member State,NO
+2049,Queretaro,1000,3000,Member State,NO
+2050,Quintana Roo,1000,3000,Member State,NO
+2051,San Luis Potosi,1000,3000,Member State,NO
+2052,Sinaloa,1000,3000,Member State,NO
+2053,Sonora,1000,3000,Member State,NO
+2054,Tabasco,1000,3000,Member State,NO
+2055,Tamaulipas,1000,3000,Member State,NO
+2056,Tlaxcala,1000,3000,Member State,NO
+2057,Veracruz,1000,3000,Member State,NO
+2058,Yucatan,1000,3000,Member State,NO
+2059,Zacatecas,1000,3000,Member State,NO
+2282,Coclé,1000,3000,Member State,NO
+2283,Colón,1000,3000,Member State,NO
+2284,Kuna Yala,1000,3000,Member State,NO
+2286,Herrera,1000,3000,Member State,NO
+2287,Los Santos,1000,3000,Member State,NO
+2288,Panamá,1000,3000,Member State,NO
+93668,Bocas del Toro,1997,3000,Member State,NO
+93669,Chiriquí,1997,3000,Member State,NO
+93670,Darién,1998,3000,Member State,NO
+93671,Emberá,1998,3000,Member State,NO
+93672,Ngöbe Buglé,1997,3000,Member State,NO
+93673,Veraguas,1997,3000,Member State,NO
+2185,Atlantico Norte,1000,3000,Member State,NO
+2186,Atlantico Sur,1000,3000,Member State,NO
+2187,Boaco,1000,3000,Member State,NO
+2188,Carazo,1000,3000,Member State,NO
+2189,Chinandega,1000,3000,Member State,NO
+2190,Chontales,1000,3000,Member State,NO
+2191,Esteli,1000,3000,Member State,NO
+2192,Granada,1000,3000,Member State,NO
+2193,Jinotega,1000,3000,Member State,NO
+2194,Leon,1000,3000,Member State,NO
+2195,Madriz,1000,3000,Member State,NO
+2196,Managua,1000,3000,Member State,NO
+2197,Masaya,1000,3000,Member State,NO
+2198,Matagalpa,1000,3000,Member State,NO
+2199,Nueva Segovia,1000,3000,Member State,NO
+2200,Rio San Juan,1000,3000,Member State,NO
+2201,Rivas,1000,3000,Member State,NO
+1184,Ahuachapan,1000,3000,Member State,NO
+1185,Cabanas,1000,3000,Member State,NO
+1186,Chalatenango,1000,3000,Member State,NO
+1187,Cuscatlan,1000,3000,Member State,NO
+1188,La Libertad,1000,3000,Member State,NO
+1189,La Paz,1000,3000,Member State,NO
+1190,La Union,1000,3000,Member State,NO
+1191,Morazan,1000,3000,Member State,NO
+1192,San Miguel,1000,3000,Member State,NO
+1193,San Salvador,1000,3000,Member State,NO
+1194,San Vicente,1000,3000,Member State,NO
+1195,Santa Ana,1000,3000,Member State,NO
+1196,Sonsonate,1000,3000,Member State,NO
+1197,Usulutan,1000,3000,Member State,NO
+1420,Atlantida,1000,3000,Member State,NO
+1421,Choluteca,1000,3000,Member State,NO
+1422,Colon,1000,3000,Member State,NO
+1423,Comayagua,1000,3000,Member State,NO
+1424,Copan,1000,3000,Member State,NO
+1425,Cortes,1000,3000,Member State,NO
+1426,Francisco Morazan,1000,3000,Member State,NO
+1427,Gracias A Dios,1000,3000,Member State,NO
+1428,Intibuca,1000,3000,Member State,NO
+1429,Islas De Bahia,1000,3000,Member State,NO
+1430,La Paz,1000,3000,Member State,NO
+1431,Lempira,1000,3000,Member State,NO
+1432,Name Unknown,1000,3000,Member State,NO
+1433,Ocotepeque,1000,3000,Member State,NO
+1434,Olancho,1000,3000,Member State,NO
+1435,Paraiso,1000,3000,Member State,NO
+1436,Santa Barbara,1000,3000,Member State,NO
+1437,Valle,1000,3000,Member State,NO
+1438,Yoro,1000,3000,Member State,NO
+64821,Guatemala,1000,3000,Member State,NO
+64822,El Progreso,1000,3000,Member State,NO
+64823,Sacatepéquez,1000,3000,Member State,NO
+64824,Chimaltenango,1000,3000,Member State,NO
+64825,Escuintla,1000,3000,Member State,NO
+64826,Santa Rosa,1000,3000,Member State,NO
+64827,Sololá,1000,3000,Member State,NO
+64828,Totonicapán,1000,3000,Member State,NO
+64829,Quetzaltenango,1000,3000,Member State,NO
+64830,Suchitepéquez,1000,3000,Member State,NO
+64831,Retalhuleu,1000,3000,Member State,NO
+64832,San Marcos,1000,3000,Member State,NO
+64833,Huehuetenango,1000,3000,Member State,NO
+64834,Quiché,1000,3000,Member State,NO
+64835,Baja Verapaz,1000,3000,Member State,NO
+64836,Alta Verapaz,1000,3000,Member State,NO
+64837,Petén,1000,3000,Member State,NO
+64838,Izabal,1000,3000,Member State,NO
+64839,Zacapa,1000,3000,Member State,NO
+64840,Chiquimula,1000,3000,Member State,NO
+64841,Jalapa,1000,3000,Member State,NO
+64842,Jutiapa,1000,3000,Member State,NO
+981,Alajuela,1000,3000,Member State,NO
+982,Cartago,1000,3000,Member State,NO
+983,Guanacaste,1000,3000,Member State,NO
+984,Heredia,1000,3000,Member State,NO
+985,Limon,1000,3000,Member State,NO
+986,Puntarenas,1000,3000,Member State,NO
+987,San Jose,1000,3000,Member State,NO
+932,Administrative unit not available,1000,3000,FR Territory,NO
+603,Belize,1000,3000,Member State,NO
+604,Cayo,1000,3000,Member State,NO
+605,Corozal,1000,3000,Member State,NO
+606,Orange Walk,1000,3000,Member State,NO
+607,Stann Creek,1000,3000,Member State,NO
+608,Toledo,1000,3000,Member State,NO
+3214,Alabama,1000,3000,Member State,NO
+3215,Alaska,1000,3000,Member State,NO
+3216,Arizona,1000,3000,Member State,NO
+3217,Arkansas,1000,3000,Member State,NO
+3218,California,1000,3000,Member State,NO
+3219,Colorado,1000,3000,Member State,NO
+3220,Connecticut,1000,3000,Member State,NO
+3221,Delaware,1000,3000,Member State,NO
+3222,District of Columbia,1000,3000,Member State,NO
+3223,Florida,1000,3000,Member State,NO
+3224,Georgia,1000,3000,Member State,NO
+3225,Hawaii,1000,3000,Member State,NO
+3226,Idaho,1000,3000,Member State,NO
+3227,Illinois,1000,3000,Member State,NO
+3228,Indiana,1000,3000,Member State,NO
+3229,Iowa,1000,3000,Member State,NO
+3230,Kansas,1000,3000,Member State,NO
+3231,Kentucky,1000,3000,Member State,NO
+3232,Louisiana,1000,3000,Member State,NO
+3233,Maine,1000,3000,Member State,NO
+3234,Maryland,1000,3000,Member State,NO
+3235,Massachusetts,1000,3000,Member State,NO
+3236,Michigan,1000,3000,Member State,NO
+3237,Minnesota,1000,3000,Member State,NO
+3238,Mississippi,1000,3000,Member State,NO
+3239,Missouri,1000,3000,Member State,NO
+3240,Montana,1000,3000,Member State,NO
+3241,Nebraska,1000,3000,Member State,NO
+3242,Nevada,1000,3000,Member State,NO
+3243,New Hampshire,1000,3000,Member State,NO
+3244,New Jersey,1000,3000,Member State,NO
+3245,New Mexico,1000,3000,Member State,NO
+3246,New York,1000,3000,Member State,NO
+3247,North Carolina,1000,3000,Member State,NO
+3248,North Dakota,1000,3000,Member State,NO
+3249,Ohio,1000,3000,Member State,NO
+3250,Oklahoma,1000,3000,Member State,NO
+3251,Oregon,1000,3000,Member State,NO
+3252,Pennsylvania,1000,3000,Member State,NO
+3253,Rhode Island,1000,3000,Member State,NO
+3254,South Carolina,1000,3000,Member State,NO
+3255,South Dakota,1000,3000,Member State,NO
+3256,Tennessee,1000,3000,Member State,NO
+3257,Texas,1000,3000,Member State,NO
+3258,Utah,1000,3000,Member State,NO
+3259,Vermont,1000,3000,Member State,NO
+3260,Virginia,1000,3000,Member State,NO
+3261,Washington,1000,3000,Member State,NO
+3262,West Virginia,1000,3000,Member State,NO
+3263,Wisconsin,1000,3000,Member State,NO
+3264,Wyoming,1000,3000,Member State,NO
+39511,Miquelon-Langlade,1000,3000,FR Territory,NO
+39512,Saint-Pierre,1000,3000,FR Territory,NO
+2279,Administrative unit not available,1000,3000,US Territory,NO
+2061,Administrative unit not available,1000,3000,US Territory,NO
+1738,Administrative unit not available,1000,3000,US Territory,NO
+1698,Administrative unit not available,1000,3000,US Territory,NO
+1700,Administrative unit not available,1000,3000,US Territory,NO
+1439,Administrative unit not available,1000,3000,US Territory,NO
+1349,Nordgronland,1000,3000,DK Self-Governing Territory,NO
+1350,Ostgronland,1000,3000,DK Self-Governing Territory,NO
+1351,Vestgronland,1000,3000,DK Self-Governing Territory,NO
+825,Alberta,1000,3000,Member State,NO
+826,British Columbia / Colombie-Britannique,1000,3000,Member State,NO
+827,Manitoba,1000,3000,Member State,NO
+828,New Brunswick / Nouveau-Brunswick,1000,3000,Member State,NO
+829,Newfoundland and Labrador / Terre-Neuve-et-Labrador,1000,3000,Member State,NO
+830,Northwest Territories / Territoires du Nord-Ouest,1999,3000,Member State,NO
+831,Nova Scotia / Nouvelle-Écosse,1000,3000,Member State,NO
+832,Nunavut,1999,3000,Member State,NO
+833,Ontario,1000,3000,Member State,NO
+834,Prince Edward Island / Île-du-Prince-Édouard,1000,3000,Member State,NO
+835,Quebec / Québec,1000,3000,Member State,NO
+836,Saskatchewan,1000,3000,Member State,NO
+837,Yukon,1000,3000,Member State,NO
+621,Administrative unit not available,1000,3000,UK Non-Self-Governing Territory,NO
+574,Administrative unit not available,1000,3000,US Territory,NO
+1271,Cayenne,1000,3000,Member State,NO
+1272,Saint-laurent-du-maroni,1000,3000,Member State,NO
+1398,Barima Waini (region N°1),1000,3000,Member State,NO
+1399,Cuyuni/mazaruni (region N°7),1000,3000,Member State,NO
+1400,Demerara Mahaica (region N°4),1000,3000,Member State,NO
+1401,East Berbice/corentyne (region N°6),1000,3000,Member State,NO
+1402,Essequibo Islands/west Demerara (region N°3),1000,3000,Member State,NO
+1403,Mahaica Berbice (region N°5),1000,3000,Member State,NO
+1404,Pomeroon/supenaam (region N°2,1000,3000,Member State,NO
+1405,Potaro/siparuni (region N°8),1000,3000,Member State,NO
+1406,Upper Demerara/berbice (region N°10),1000,3000,Member State,NO
+1407,Upper Takutu/upper Essequibo (region N°9),1000,3000,Member State,NO
+3265,Artigas,1000,3000,Member State,NO
+3266,Canelones,1000,3000,Member State,NO
+3267,Cerro Largo,1000,3000,Member State,NO
+3268,Colonia,1000,3000,Member State,NO
+3269,Durazno,1000,3000,Member State,NO
+3270,Flores,1000,3000,Member State,NO
+3271,Florida,1000,3000,Member State,NO
+3272,Lavalleja,1000,3000,Member State,NO
+3273,Maldonado,1000,3000,Member State,NO
+3274,Montevideo,1000,3000,Member State,NO
+3275,Paysandu,1000,3000,Member State,NO
+3276,Rio Negro,1000,3000,Member State,NO
+3277,Rivera,1000,3000,Member State,NO
+3278,Rocha,1000,3000,Member State,NO
+3279,Salto,1000,3000,Member State,NO
+3280,San Jose,1000,3000,Member State,NO
+3281,Soriano,1000,3000,Member State,NO
+3282,Tacuarembo,1000,3000,Member State,NO
+3283,Treinta Y Tres,1000,3000,Member State,NO
+3302,Amazonas,1000,3000,Member State,NO
+3303,Anzoategui,1000,3000,Member State,NO
+3304,Apure,1000,3000,Member State,NO
+3305,Aragua,1000,3000,Member State,NO
+3306,Barinas,1000,3000,Member State,NO
+3307,Bolivar,1000,3000,Member State,NO
+3308,Carabobo,1000,3000,Member State,NO
+3309,Cojedes,1000,3000,Member State,NO
+3310,Delta Amacuro,1000,3000,Member State,NO
+3311,Dependencias Federales,1000,3000,Member State,NO
+3313,Falcon,1000,3000,Member State,NO
+3314,Guarico,1000,3000,Member State,NO
+3315,Lara,1000,3000,Member State,NO
+3316,Merida,1000,3000,Member State,NO
+3317,Miranda,1000,3000,Member State,NO
+3318,Monagas,1000,3000,Member State,NO
+3319,Nueva Esparta,1000,3000,Member State,NO
+3320,Portuguesa,1000,3000,Member State,NO
+3321,Sucre,1000,3000,Member State,NO
+3322,Tachira,1000,3000,Member State,NO
+3323,Trujillo,1000,3000,Member State,NO
+3324,Yaracuy,1000,3000,Member State,NO
+3325,Zulia,1000,3000,Member State,NO
+67152,Vargas,1998,3000,Member State,NO
+67153,Distrito Capital,1998,3000,Member State,NO
+1239,Administrative unit not available,1000,3000,UK Non-Self-Governing Territory,NO
+2328,Amazonas,1000,3000,Member State,NO
+2329,Ancash,1000,3000,Member State,NO
+2330,Apurímac,1000,3000,Member State,NO
+2331,Arequipa,1000,3000,Member State,NO
+2332,Ayacucho,1000,3000,Member State,NO
+2333,Cajamarca,1000,3000,Member State,NO
+2334,Callao,1000,3000,Member State,NO
+2335,Cusco,1000,3000,Member State,NO
+2336,Huancavelica,1000,3000,Member State,NO
+2337,Huánuco,1000,3000,Member State,NO
+2338,Ica,1000,3000,Member State,NO
+2339,Junín,1000,3000,Member State,NO
+2340,La Libertad,1000,3000,Member State,NO
+2341,Lambayeque,1000,3000,Member State,NO
+2342,Lima,1000,3000,Member State,NO
+2343,Loreto,1000,3000,Member State,NO
+2344,Madre de Dios,1000,3000,Member State,NO
+2345,Moquegua,1000,3000,Member State,NO
+2346,Pasco,1000,3000,Member State,NO
+2347,Piura,1000,3000,Member State,NO
+2348,Puno,1000,3000,Member State,NO
+2349,San Martín,1000,3000,Member State,NO
+2350,Tacna,1000,3000,Member State,NO
+2351,Tumbes,1000,3000,Member State,NO
+2352,Ucayali,1000,3000,Member State,NO
+2311,Alto Paraguay,1000,3000,Member State,NO
+2312,Alto Parana,1000,3000,Member State,NO
+2313,Amambay,1000,3000,Member State,NO
+2314,Boqueron,1000,3000,Member State,NO
+2315,Caaguazu,1000,3000,Member State,NO
+2316,Caazapa,1000,3000,Member State,NO
+2317,Canindeyu,1000,3000,Member State,NO
+2318,Central,1000,3000,Member State,NO
+2319,Concepcion,1000,3000,Member State,NO
+2320,Cordillera,1000,3000,Member State,NO
+2321,Guaira,1000,3000,Member State,NO
+2322,Itapua,1000,3000,Member State,NO
+2323,Misiones,1000,3000,Member State,NO
+2324,Neembucu,1000,3000,Member State,NO
+2325,Paraguari,1000,3000,Member State,NO
+2326,Presidente Hayes,1000,3000,Member State,NO
+2327,San Pedro,1000,3000,Member State,NO
+2715,Administrative unit not available,1000,3000,UK Territory,NO
+2771,Brokopondo,1000,3000,Member State,NO
+2772,Commewijne,1000,3000,Member State,NO
+2773,Coronie,1000,3000,Member State,NO
+2774,Marowijne,1000,3000,Member State,NO
+2775,Nickerie,1000,3000,Member State,NO
+2776,Para,1000,3000,Member State,NO
+2777,Paramaribo,1000,3000,Member State,NO
+2778,Saramacca,1000,3000,Member State,NO
+2779,Sipaliwini,1000,3000,Member State,NO
+2780,Wanica,1000,3000,Member State,NO
+1135,Azuay,1000,3000,Member State,NO
+1136,Bolivar,1000,3000,Member State,NO
+1137,Canar,1000,3000,Member State,NO
+1138,Carchi,1000,3000,Member State,NO
+1139,Chimborazo,1000,3000,Member State,NO
+1140,Cotopaxi,1000,3000,Member State,NO
+1141,El Oro,1000,3000,Member State,NO
+1142,Esmeraldas,1000,3000,Member State,NO
+1143,Galapagos,1000,3000,Member State,NO
+1145,Imbabura,1000,3000,Member State,NO
+1146,Loja,1000,3000,Member State,NO
+1147,Los Rios,1000,3000,Member State,NO
+1148,Manabi,1000,3000,Member State,NO
+1149,Morona Santiago,1000,3000,Member State,NO
+1150,Napo,1998,3000,Member State,NO
+1151,Orellana,1998,3000,Member State,NO
+1152,Pastaza,1000,3000,Member State,NO
+1154,Sucumbios,1000,3000,Member State,NO
+1155,Tungurahua,1000,3000,Member State,NO
+1156,Zamora Chinchipe,1000,3000,Member State,NO
+1157,Zona No Delimitada,1000,3000,Member State,NO
+22005,Guayas,2007,3000,Member State,NO
+22006,Pichincha,2007,3000,Member State,NO
+22007,Santa Elena,2007,3000,Member State,NO
+22008,Santo Domingo de los Tsachilas,2007,3000,Member State,NO
+934,Amazonas,1000,3000,Member State,NO
+935,Antioquia,1000,3000,Member State,NO
+936,Arauca,1000,3000,Member State,NO
+937,Atlantico,1000,3000,Member State,NO
+938,Bolivar,1000,3000,Member State,NO
+939,Boyaca,1000,3000,Member State,NO
+940,Buenaventura,1000,3000,Member State,NO
+941,Caldas,1000,3000,Member State,NO
+942,Caqueta,1000,3000,Member State,NO
+943,Casanare,1000,3000,Member State,NO
+944,Cauca,1000,3000,Member State,NO
+945,Cesar,1000,3000,Member State,NO
+946,Choco,1000,3000,Member State,NO
+947,Cordoba,1000,3000,Member State,NO
+948,Cundinamarca,1000,3000,Member State,NO
+949,Guainia,1000,3000,Member State,NO
+950,Guajira,1000,3000,Member State,NO
+951,Guaviare,1000,3000,Member State,NO
+952,Huila,1000,3000,Member State,NO
+953,Magdalena,1000,3000,Member State,NO
+954,Meta,1000,3000,Member State,NO
+955,Narino,1000,3000,Member State,NO
+956,Norte De Santander,1000,3000,Member State,NO
+957,Putumayo,1000,3000,Member State,NO
+958,Quindio,1000,3000,Member State,NO
+959,Risaralda,1000,3000,Member State,NO
+960,San Andres Y Providencia,1000,3000,Member State,NO
+961,Santander,1000,3000,Member State,NO
+962,Sucre,1000,3000,Member State,NO
+963,Tolima,1000,3000,Member State,NO
+964,Valle Del Cauca,1000,3000,Member State,NO
+965,Vaupes,1000,3000,Member State,NO
+966,Vichada,1000,3000,Member State,NO
+91504,Los Rios,2007,3000,Member State,NO
+886,Aisen del Gral. Carlos Ibañez del Campo,1000,3000,Member State,NO
+883,Antofagasta,1000,3000,Member State,NO
+884,Araucania,1000,3000,Member State,NO
+91503,Arica y Painacota,2007,3000,Member State,NO
+885,Atacama,1000,3000,Member State,NO
+887,Biobio,1000,3000,Member State,NO
+888,Coquimbo,1000,3000,Member State,NO
+889,Libertador Gral. Bernardo O'Higgins,1000,3000,Member State,NO
+91501,Los Lagos,2007,3000,Member State,NO
+891,Magallanes y Antartica chilena,1000,3000,Member State,NO
+892,Maule,1000,3000,Member State,NO
+893,Metropolitana,1000,3000,Member State,NO
+91502,Tarapaca,2007,3000,Member State,NO
+149630,Valparaiso,1000,3000,Member State,NO
+665,Acre,1000,3000,Member State,NO
+666,Alagoas,1000,3000,Member State,NO
+667,Amapa,1000,3000,Member State,NO
+668,Amazonas,1000,3000,Member State,NO
+669,Bahia,1000,3000,Member State,NO
+670,Ceara,1000,3000,Member State,NO
+671,Distrito Federal,1000,3000,Member State,NO
+672,Espirito Santo,1000,3000,Member State,NO
+673,Goias,1000,3000,Member State,NO
+674,Maranhao,1000,3000,Member State,NO
+675,Mato Grosso,1000,3000,Member State,NO
+676,Mato Grosso Do Sul,1000,3000,Member State,NO
+677,Minas Gerais,1000,3000,Member State,NO
+678,Para,1000,3000,Member State,NO
+679,Paraiba,1000,3000,Member State,NO
+680,Parana,1000,3000,Member State,NO
+681,Pernambuco,1000,3000,Member State,NO
+682,Piaui,1000,3000,Member State,NO
+683,Rio De Janeiro,1000,3000,Member State,NO
+684,Rio Grande Do Norte,1000,3000,Member State,NO
+685,Rio Grande Do Sul,1000,3000,Member State,NO
+686,Rondonia,1000,3000,Member State,NO
+687,Roraima,1000,3000,Member State,NO
+688,Santa Catarina,1000,3000,Member State,NO
+689,Sao Paulo,1000,3000,Member State,NO
+690,Sergipe,1000,3000,Member State,NO
+691,Tocantins,1000,3000,Member State,NO
+692,Name Unknown,1000,3000,Member State,NO
+693,Name Unknown,1000,3000,Member State,NO
+694,Name Unknown,1000,3000,Member State,NO
+695,Name Unknown,1000,3000,Member State,NO
+648,Pando,1000,3000,Member State,NO
+40443,Beni,1000,3000,Member State,NO
+40444,Chuquisaca,1000,3000,Member State,NO
+40445,Cochabamba,1000,3000,Member State,NO
+40446,La Paz,1000,3000,Member State,NO
+40447,Oruro,1000,3000,Member State,NO
+40448,Potosi,1000,3000,Member State,NO
+40449,Santa Cruz,1000,3000,Member State,NO
+40450,Tarija,1000,3000,Member State,NO
+429,Buenos Aires,1000,3000,Member State,NO
+430,Buenos Aires D.f.,1000,3000,Member State,NO
+431,Catamarca,1000,3000,Member State,NO
+432,Chaco,1000,3000,Member State,NO
+433,Chubut,1000,3000,Member State,NO
+434,Cordoba,1000,3000,Member State,NO
+435,Corrientes,1000,3000,Member State,NO
+436,Entre Rios,1000,3000,Member State,NO
+437,Formosa,1000,3000,Member State,NO
+438,Jujuy,1000,3000,Member State,NO
+439,La Pampa,1000,3000,Member State,NO
+440,La Rioja,1000,3000,Member State,NO
+441,Mendoza,1000,3000,Member State,NO
+442,Misiones,1000,3000,Member State,NO
+443,Neuquen,1000,3000,Member State,NO
+444,Rio Negro,1000,3000,Member State,NO
+445,Salta,1000,3000,Member State,NO
+446,San Juan,1000,3000,Member State,NO
+447,San Luis,1000,3000,Member State,NO
+448,Santa Cruz,1000,3000,Member State,NO
+449,Santa Fe,1000,3000,Member State,NO
+450,Santiago Del Estero,1000,3000,Member State,NO
+451,Tierra Del Fuego,1000,3000,Member State,NO
+452,Tucuman,1000,3000,Member State,NO
+1418,Administrative unit not available,1000,3000,AU Territory,NO
+1274,Administrative unit not available,1000,3000,FR Territory,NO
+664,Administrative unit not available,1000,3000,NO Territory,NO
+426,Administrative unit not available,1000,3000,,NO
+3097,Chardzhou,1000,3000,Member State,NO
+3098,Administrative unit not available,1000,3000,Member State,NO
+3099,Mary,1000,3000,Member State,NO
+3100,Tashauz,1000,3000,Member State,NO
+147322,Balkan,1000,3000,Member State,NO
+147323,Ahal,1000,3000,Member State,NO
+3284,Andijan,1000,3000,Member State,NO
+3285,Bukhara,1000,3000,Member State,NO
+3286,Fergana,1000,3000,Member State,NO
+3287,Karakalpakstan,1000,3000,Member State,NO
+3288,Kashkadarya,1000,3000,Member State,NO
+3289,Khorezm,1000,3000,Member State,NO
+3291,Namangan,1000,3000,Member State,NO
+3292,Samarkand,1000,3000,Member State,NO
+3293,Surkhandarya,1000,3000,Member State,NO
+3294,Sirdarya,1000,3000,Member State,NO
+3295,Tashkent,1000,3000,Member State,NO
+39696,Jizzakh,1000,3000,Member State,NO
+39697,Navoiy,1000,3000,Member State,NO
+39698,Tashkent city,1000,3000,Member State,NO
+2847,Badakhshoni Kuni,1000,3000,Member State,NO
+2848,Khatlon,1000,3000,Member State,NO
+2849,Sogd,1000,3000,Member State,NO
+2850,Tadzhikistan Territories,1000,3000,Member State,NO
+1746,Batken,1999,3000,Member State,NO
+147294,Chuy,2000,3000,Member State,NO
+1748,Jalal-Abad,1000,3000,Member State,NO
+1749,Naryn,1000,3000,Member State,NO
+1750,Osh,1999,3000,Member State,NO
+1751,Talas,1000,3000,Member State,NO
+1752,Ysyk-Kol,1000,3000,Member State,NO
+147293,Bishkek,2000,3000,Member State,NO
+1714,Akmolinskaya,1000,3000,Member State,NO
+1715,Aktyubinskaya,1000,3000,Member State,NO
+1716,Almatinskaya,1000,3000,Member State,NO
+1717,Atyrauskaya,1000,3000,Member State,NO
+1718,Jambylslkaya,1000,3000,Member State,NO
+1719,Karagandinskaya,1000,3000,Member State,NO
+1720,Kustanayskaya,1000,3000,Member State,NO
+1721,Kyzylordinskaya,1000,3000,Member State,NO
+1723,Administrative unit not available,1000,3000,Member State,NO
+1724,Mangistauskaya,1000,3000,Member State,NO
+1725,Pavlodarskaya,1000,3000,Member State,NO
+1726,Severo-kazachstanskaya,1000,3000,Member State,NO
+1727,Vostochno-kazachstanskaya,1000,3000,Member State,NO
+1728,Yujno-kazachstanskaya,1000,3000,Member State,NO
+1729,Zapadno-kazachstanskaya,1000,3000,Member State,NO
+37157,Almaty City area,1000,3000,Member State,NO
+925,Taiwan Sheng,1000,3000,CN Province,NO
+2075,Arxangai,1000,3000,Member State,NO
+2076,Bayan-O'lgii,1000,3000,Member State,NO
+2077,Bayanxongor,1000,3000,Member State,NO
+2078,Bulgan,1000,3000,Member State,NO
+2079,Darxan-Uul,1000,3000,Member State,NO
+2081,Dornod,1000,3000,Member State,NO
+2082,Dornogovi,1996,3000,Member State,NO
+2083,Dundgovi,1000,3000,Member State,NO
+2085,Govi-Altai,1000,3000,Member State,NO
+2084,Govisu'mber,1996,3000,Member State,NO
+2089,O'mnogovi,1000,3000,Member State,NO
+2091,O'vorxangai,1000,3000,Member State,NO
+2090,Orxon,1000,3000,Member State,NO
+2092,Selenge,1000,3000,Member State,NO
+2093,Su'xbaatar,1000,3000,Member State,NO
+2094,To'v,1000,3000,Member State,NO
+2095,Ulaanbaatar,1000,3000,Member State,NO
+2096,Uvs,1000,3000,Member State,NO
+2086,Xentii,1000,3000,Member State,NO
+2088,Xo'vsgol,1000,3000,Member State,NO
+2087,Xovd,1000,3000,Member State,NO
+2097,Zavxan,1000,3000,Member State,NO
+73915,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+1054,Chagang-do,1000,3000,Member State,NO
+1055,Kaesong-si,1000,3000,Member State,NO
+1056,Kangwon-do,1000,3000,Member State,NO
+1058,Hamgyong-bukto,1000,3000,Member State,NO
+1059,Hwanghae-bukto,1000,3000,Member State,NO
+1060,P'yongan-bukto,1000,3000,Member State,NO
+1061,P'yongyang-si,1000,3000,Member State,NO
+1062,Hamgyong-namdo,1000,3000,Member State,NO
+1063,Hwanghae-namdo,1000,3000,Member State,NO
+1064,P'yongan-namdo,1000,3000,Member State,NO
+1065,Yanggang-do,1000,3000,Member State,NO
+2635,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+2646,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+1879,Administrative unit not available,1000,3000,CN Special Administrative Region,NO
+2431,Cheju-do,1000,3000,Member State,NO
+2432,Chollabuk-do,1000,3000,Member State,NO
+2433,Chollanam-do,1000,3000,Member State,NO
+2434,Chungchongbuk-do,1000,3000,Member State,NO
+2435,Chungchongnam-do,1000,3000,Member State,NO
+2436,Inchon,1000,3000,Member State,NO
+2437,Kang-won-do,1000,3000,Member State,NO
+2438,Kwangju,1000,3000,Member State,NO
+2439,Kyonggi-do,1000,3000,Member State,NO
+2440,Kyongsangbuk-do,1000,3000,Member State,NO
+2441,Kyongsangnam-do,1000,3000,Member State,NO
+2442,Pusan,1000,3000,Member State,NO
+2443,Seoul,1000,3000,Member State,NO
+2444,Taegu,1000,3000,Member State,NO
+2445,Taejon,1000,3000,Member State,NO
+1651,Aiti,1000,3000,Member State,NO
+1652,Akita,1000,3000,Member State,NO
+1653,Aomori,1000,3000,Member State,NO
+1654,Ehime,1000,3000,Member State,NO
+1655,Hukui,1000,3000,Member State,NO
+1656,Hukuoka,1000,3000,Member State,NO
+1657,Hukusima,1000,3000,Member State,NO
+1658,Gifu,1000,3000,Member State,NO
+1659,Gunma,1000,3000,Member State,NO
+1660,Hirosima,1000,3000,Member State,NO
+1661,Hokkaidoo,1000,3000,Member State,NO
+1662,Hyoogo,1000,3000,Member State,NO
+1663,Ibaraki,1000,3000,Member State,NO
+1664,Isikawa,1000,3000,Member State,NO
+1665,Iwate,1000,3000,Member State,NO
+1666,Kagawa,1000,3000,Member State,NO
+1667,Kagosima,1000,3000,Member State,NO
+1668,Kanagawa,1000,3000,Member State,NO
+1669,Kooti,1000,3000,Member State,NO
+1670,Kumamoto,1000,3000,Member State,NO
+1671,Kyooto,1000,3000,Member State,NO
+1672,Mie,1000,3000,Member State,NO
+1673,Miyagi,1000,3000,Member State,NO
+1674,Miyazaki,1000,3000,Member State,NO
+1675,Nagano,1000,3000,Member State,NO
+1676,Nagasaki,1000,3000,Member State,NO
+1677,Nara,1000,3000,Member State,NO
+1678,Niigata,1000,3000,Member State,NO
+1679,Ooita,1000,3000,Member State,NO
+1680,Okayama,1000,3000,Member State,NO
+1681,Okinawa,1000,3000,Member State,NO
+1682,Oosaka,1000,3000,Member State,NO
+1683,Saga,1000,3000,Member State,NO
+1684,Saitama,1000,3000,Member State,NO
+1685,Siga,1000,3000,Member State,NO
+1686,Simane,1000,3000,Member State,NO
+1687,Sizuoka,1000,3000,Member State,NO
+1688,Totigi,1000,3000,Member State,NO
+1689,Tokusima,1000,3000,Member State,NO
+1690,Tookyoo,1000,3000,Member State,NO
+1691,Tottori,1000,3000,Member State,NO
+1692,Toyama,1000,3000,Member State,NO
+1693,Tiba,1000,3000,Member State,NO
+1694,Wakayama,1000,3000,Member State,NO
+1695,Yamagata,1000,3000,Member State,NO
+1696,Yamaguti,1000,3000,Member State,NO
+1697,Yamanasi,1000,3000,Member State,NO
+910,Administrative unit not available,1000,3000,CN Special Administrative Region,NO
+898,Anhui Sheng,1000,3000,Member State,NO
+899,Beijing Shi,1000,3000,Member State,NO
+900,Chongqing Shi,1000,3000,Member State,NO
+901,Fujian Sheng,1000,3000,Member State,NO
+902,Gansu Sheng,1000,3000,Member State,NO
+903,Guangdong Sheng,1000,3000,Member State,NO
+904,Guangxi Zhuangzu Zizhiqu,1000,3000,Member State,NO
+905,Guizhou Sheng,1000,3000,Member State,NO
+906,Hainan Sheng,1000,3000,Member State,NO
+907,Hebei Sheng,1000,3000,Member State,NO
+908,Heilongjiang Sheng,1000,3000,Member State,NO
+909,Henan Sheng,1000,3000,Member State,NO
+911,Hubei Sheng,1000,3000,Member State,NO
+912,Hunan Sheng,1000,3000,Member State,NO
+913,Jiangsu Sheng,1000,3000,Member State,NO
+914,Jiangxi Sheng,1000,3000,Member State,NO
+915,Jilin Sheng,1000,3000,Member State,NO
+916,Liaoning Sheng,1000,3000,Member State,NO
+917,Nei Mongol Zizhiqu,1000,3000,Member State,NO
+918,Ningxia Huizu Zizhiqu,1000,3000,Member State,NO
+919,Qinghai Sheng,1000,3000,Member State,NO
+920,Shaanxi Sheng,1000,3000,Member State,NO
+921,Shandong Sheng,1000,3000,Member State,NO
+922,Shanghai Shi,1000,3000,Member State,NO
+923,Shanxi Sheng,1000,3000,Member State,NO
+924,Sichuan Sheng,1000,3000,Member State,NO
+926,Tianjin Shi,1000,3000,Member State,NO
+927,Xinjiang Uygur Zizhiqu,1000,3000,Member State,NO
+928,Xizang Zizhiqu,1000,3000,Member State,NO
+929,Yunnan Sheng,1000,3000,Member State,NO
+930,Zhejiang Sheng,1000,3000,Member State,NO
+897,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+304,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+2123,Rakhine,1000,3000,Member State,NO
+2125,Chin,1000,3000,Member State,NO
+2126,Ayeyawaddy,1000,3000,Member State,NO
+2127,Kachin,1000,3000,Member State,NO
+2128,Kayin,1000,3000,Member State,NO
+2129,Kayar,1000,3000,Member State,NO
+2130,Magway,1000,3000,Member State,NO
+2131,Mandalay,1000,3000,Member State,NO
+2132,Mon,1000,3000,Member State,NO
+2133,Sagaing,1000,3000,Member State,NO
+2135,Taninthayi,1000,3000,Member State,NO
+2136,Yangon,1000,3000,Member State,NO
+41772,Bago (E),1000,3000,Member State,NO
+41773,Bago (W),1000,3000,Member State,NO
+41774,Shan (E),1000,3000,Member State,NO
+41775,Shan (N),1000,3000,Member State,NO
+41776,Shan (S),1000,3000,Member State,NO
+65290,Area under National Administration 1,1000,3000,Member State,NO
+65289,Area under National Administration 2,1000,3000,Member State,NO
+791,Banteay Meanchey,1000,3000,Member State,NO
+792,Battambang,1997,3000,Member State,NO
+793,Kampong Cham,1000,3000,Member State,NO
+794,Kampong Chhnang,1000,3000,Member State,NO
+795,Kampong Speu,1000,3000,Member State,NO
+796,Kampong Thom,1000,3000,Member State,NO
+797,Kampot,1000,3000,Member State,NO
+798,Kandal,1000,3000,Member State,NO
+800,Kep,1000,3000,Member State,NO
+799,Koh Kong,1000,3000,Member State,NO
+801,Kratie,1000,3000,Member State,NO
+803,Mondul Kiri,1000,3000,Member State,NO
+804,Otdar Meanchey,1995,3000,Member State,NO
+805,Pailin,1997,3000,Member State,NO
+806,Phnom Penh,1000,3000,Member State,NO
+802,Preah Sihanouk,1000,3000,Member State,NO
+807,Preah Vihear,1000,3000,Member State,NO
+808,Prey Veng,1000,3000,Member State,NO
+809,Pursat,1000,3000,Member State,NO
+810,Ratanak Kiri,1000,3000,Member State,NO
+811,Siem Reap,1995,3000,Member State,NO
+812,Stung Treng,1000,3000,Member State,NO
+813,Svay Rieng,1000,3000,Member State,NO
+814,Takeo,1000,3000,Member State,NO
+3326,An Giang,1000,3000,Member State,NO
+3332,Ben Tre,1000,3000,Member State,NO
+3343,Dong Thap,1000,3000,Member State,NO
+3351,Hai Phong City,1000,3000,Member State,NO
+3352,Ho Chi Minh City,1000,3000,Member State,NO
+3356,Kien Giang,1000,3000,Member State,NO
+3359,Lam Dong,1000,3000,Member State,NO
+3362,Long An,1000,3000,Member State,NO
+3375,Quang Ninh,1000,3000,Member State,NO
+3378,Son La,1000,3000,Member State,NO
+3379,Tay Ninh,1000,3000,Member State,NO
+3380,Thai Binh,1000,3000,Member State,NO
+3382,Thanh Hoa,1000,3000,Member State,NO
+3384,Tien Giang,1000,3000,Member State,NO
+3333,Binh Dinh,1990,3000,Member State,NO
+3338,Cao Bang,1990,3000,Member State,NO
+3355,Khanh Hoa,1990,3000,Member State,NO
+3360,Lang Son,1990,3000,Member State,NO
+3370,Phu Yen,1990,3000,Member State,NO
+3371,Quang Binh,1990,3000,Member State,NO
+3374,Quang Ngai,1990,3000,Member State,NO
+3376,Quang Tri,1990,3000,Member State,NO
+3383,Thua Thien - Hue,1990,3000,Member State,NO
+3327,Ba Ria-Vung Tau,1992,3000,Member State,NO
+3336,Binh Thuan,1992,3000,Member State,NO
+3342,Dong Nai,1992,3000,Member State,NO
+3344,Gia Lai,1992,3000,Member State,NO
+3345,Ha Giang,1992,3000,Member State,NO
+3347,Ha Noi City,1992,3000,Member State,NO
+3348,Ha Tay,1992,3000,Member State,NO
+3349,Ha Tinh,1992,3000,Member State,NO
+3353,Hoa Binh,1992,3000,Member State,NO
+3357,Kon Tum,1992,3000,Member State,NO
+3366,Nghe An,1992,3000,Member State,NO
+3367,Ninh Binh,1992,3000,Member State,NO
+3368,Ninh Thuan,1992,3000,Member State,NO
+3377,Soc Trang,1992,3000,Member State,NO
+3386,Tra Vinh,1992,3000,Member State,NO
+3387,Tuyen Quang,1992,3000,Member State,NO
+3388,Vinh Long,1992,3000,Member State,NO
+3390,Yen Bai,1992,3000,Member State,NO
+3328,Bac Kan,1997,3000,Member State,NO
+3329,Bac Giang,1997,3000,Member State,NO
+3330,Bac Lieu,1997,3000,Member State,NO
+3331,Bac Ninh,1997,3000,Member State,NO
+3334,Binh Duong,1997,3000,Member State,NO
+3335,Binh Phuoc,1997,3000,Member State,NO
+3339,Ca Mau,1997,3000,Member State,NO
+3340,Da Nang City,1997,3000,Member State,NO
+3346,Ha Nam,1997,3000,Member State,NO
+3350,Hai Duong,1997,3000,Member State,NO
+3354,Hung Yen,1997,3000,Member State,NO
+3364,Nam Dinh,1997,3000,Member State,NO
+3369,Phu Tho,1997,3000,Member State,NO
+3372,Quang Nam,1997,3000,Member State,NO
+3381,Thai Nguyen,1997,3000,Member State,NO
+3389,Vinh Phuc,1997,3000,Member State,NO
+73933,Can Tho city,2004,3000,Member State,NO
+73934,Dak Lak,2004,3000,Member State,NO
+73935,Dak Nong,2004,3000,Member State,NO
+73936,Dien Bien,2004,3000,Member State,NO
+73937,Hau Giang,2004,3000,Member State,NO
+73938,Lai Chau,2004,3000,Member State,NO
+73939,Lao Cai,2004,3000,Member State,NO
+1753,Attapu,1000,3000,Member State,NO
+1754,Bokeo,1000,3000,Member State,NO
+1756,Champasak,1000,3000,Member State,NO
+1757,Houaphan,1000,3000,Member State,NO
+1758,Khammouan,1000,3000,Member State,NO
+1759,Louangphabang,1000,3000,Member State,NO
+1760,Louang-Namtha,1000,3000,Member State,NO
+1761,Oudomxai,1000,3000,Member State,NO
+1762,Phongsali,1000,3000,Member State,NO
+1763,Salavan,1000,3000,Member State,NO
+1764,Savannakhet,1000,3000,Member State,NO
+1765,Xaignabouli,1000,3000,Member State,NO
+1766,Xekong,1000,3000,Member State,NO
+1768,Vientiane capital,1000,3000,Member State,NO
+1755,Bolikhamxai,1995,3000,Member State,NO
+74346,Vientiane,2006,3000,Member State,NO
+74347,Xiangkhouang,2006,3000,Member State,NO
+1891,Johor,1000,3000,Member State,NO
+1892,Kedah,1000,3000,Member State,NO
+1893,Kelantan,1000,3000,Member State,NO
+1894,Kuala Lumpur,1000,3000,Member State,NO
+1895,Melaka,1000,3000,Member State,NO
+1896,Negeri Sembilan,1000,3000,Member State,NO
+1897,Pahang,1000,3000,Member State,NO
+1898,Perak,1000,3000,Member State,NO
+1899,Perlis,1000,3000,Member State,NO
+1900,Pulau Pinang,1000,3000,Member State,NO
+1901,Sabah,1000,3000,Member State,NO
+1902,Sarawak,1000,3000,Member State,NO
+1903,Selangor,1000,3000,Member State,NO
+1904,Terengganu,1000,3000,Member State,NO
+37336,Labuan,1000,3000,Member State,NO
+2354,Cordillera Administrative region (CAR),1000,3000,Member State,NO
+2355,National Capital region (NCR),1000,3000,Member State,NO
+2356,Region I (Ilocos region),1000,3000,Member State,NO
+2357,Region II (Cagayan Valley),1000,3000,Member State,NO
+2361,Region V (Bicol region),1000,3000,Member State,NO
+2362,Region VI (Western Visayas),1000,3000,Member State,NO
+2363,Region VII (Central Visayas),1000,3000,Member State,NO
+2364,Region VIII (Eastern Visayas),1000,3000,Member State,NO
+2368,Region XIII (Caraga),1995,3000,Member State,NO
+67156,Autonomous region in Muslim Mindanao (ARMM),2001,3000,Member State,NO
+67159,Region IX (Zamboanga Peninsula),2001,3000,Member State,NO
+67160,Region X (Northern Mindanao),2001,3000,Member State,NO
+67161,Region XI (Davao Region),2001,3000,Member State,NO
+67162,Region XII (Soccsksargen),2001,3000,Member State,NO
+67165,Region III (Central Luzon),2002,3000,Member State,NO
+67166,Region IV-A (Calabarzon),2002,3000,Member State,NO
+67167,Region IV (Southern Tagalog),2002,3000,Member State,NO
+2852,Ang Thong,1000,3000,Member State,NO
+2853,Bangkok,1000,3000,Member State,NO
+2854,Buriram,1000,3000,Member State,NO
+2855,Chachoengsao,1000,3000,Member State,NO
+2856,Chainat,1000,3000,Member State,NO
+2857,Chaiyaphum,1000,3000,Member State,NO
+2858,Chanthaburi,1000,3000,Member State,NO
+2859,Chiang Mai,1000,3000,Member State,NO
+2860,Chiang Rai,1000,3000,Member State,NO
+2861,Chonburi,1000,3000,Member State,NO
+2862,Chumphon,1000,3000,Member State,NO
+2863,Kalasin,1000,3000,Member State,NO
+2864,Kampaeng Phet,1000,3000,Member State,NO
+2865,Kanchanaburi,1000,3000,Member State,NO
+2866,Khon Kaen,1000,3000,Member State,NO
+2867,Krabi,1000,3000,Member State,NO
+2868,Lampang,1000,3000,Member State,NO
+2869,Lamphun,1000,3000,Member State,NO
+2870,Loei,1000,3000,Member State,NO
+2871,Lopburi,1000,3000,Member State,NO
+2872,Mae Hong Son,1000,3000,Member State,NO
+2873,Maha Sarakham,1000,3000,Member State,NO
+2874,Mukdahan,1000,3000,Member State,NO
+2875,Nakhon Nayok,1000,3000,Member State,NO
+2876,Nakhon Pathom,1000,3000,Member State,NO
+2877,Nakhon Phanom,1000,3000,Member State,NO
+2878,Nakhon Ratchasima,1000,3000,Member State,NO
+2879,Nakhon Sawan,1000,3000,Member State,NO
+2880,Nakhon Si Thammarat,1000,3000,Member State,NO
+2881,Nan,1000,3000,Member State,NO
+2882,Narathiwat,1000,3000,Member State,NO
+2884,Nong Khai,1000,3000,Member State,NO
+2885,Nonthaburi,1000,3000,Member State,NO
+2886,Pathum Thani,1000,3000,Member State,NO
+2887,Pattani,1000,3000,Member State,NO
+2889,Phangnga,1000,3000,Member State,NO
+2890,Phatthalung,1000,3000,Member State,NO
+2891,Phayao,1000,3000,Member State,NO
+2892,Phetchabun,1000,3000,Member State,NO
+2893,Phetchaburi,1000,3000,Member State,NO
+2894,Phichit,1000,3000,Member State,NO
+2895,Phitsanulok,1000,3000,Member State,NO
+2896,Phra Nakhon Si Ayudhya,1000,3000,Member State,NO
+2897,Phrae,1000,3000,Member State,NO
+2898,Phuket,1000,3000,Member State,NO
+2899,Prachuap Khilikhan,1000,3000,Member State,NO
+2900,Ranong,1000,3000,Member State,NO
+2901,Ratchaburi,1000,3000,Member State,NO
+2902,Rayong,1000,3000,Member State,NO
+2903,Roi Et,1000,3000,Member State,NO
+2905,Sakon Nakhon,1000,3000,Member State,NO
+2906,Samut Prakarn,1000,3000,Member State,NO
+2907,Samut Sakhon,1000,3000,Member State,NO
+2908,Samut Songkham,1000,3000,Member State,NO
+2909,Saraburi,1000,3000,Member State,NO
+2910,Satun,1000,3000,Member State,NO
+2911,Si Saket,1000,3000,Member State,NO
+2912,Singburi,1000,3000,Member State,NO
+2913,Songkhla,1000,3000,Member State,NO
+2914,Sukhothai,1000,3000,Member State,NO
+2915,Suphanburi,1000,3000,Member State,NO
+2916,Surat Thani,1000,3000,Member State,NO
+2917,Surin,1000,3000,Member State,NO
+2918,Tak,1000,3000,Member State,NO
+2919,Trad,1000,3000,Member State,NO
+2920,Trang,1000,3000,Member State,NO
+2923,Uthai Thani,1000,3000,Member State,NO
+2924,Uttaradit,1000,3000,Member State,NO
+2925,Yala,1000,3000,Member State,NO
+2926,Yasothon,1000,3000,Member State,NO
+2851,Amnat Charoen,1994,3000,Member State,NO
+2883,Nong Bua Lamphu,1994,3000,Member State,NO
+2888,Phachinburi,1994,3000,Member State,NO
+2904,Sa Kaeo,1994,3000,Member State,NO
+2921,Ubon Ratchathani,1994,3000,Member State,NO
+2922,Udon Thani,1994,3000,Member State,NO
+2658,Ang Mo Kio-cheng San,1000,3000,Member State,NO
+2659,Bukit Timah,1000,3000,Member State,NO
+2660,Central Singapore,1000,3000,Member State,NO
+2661,Hougang,1000,3000,Member State,NO
+2662,Marine Parade,1000,3000,Member State,NO
+2663,Northeast,1000,3000,Member State,NO
+2664,Potong Pasir,1000,3000,Member State,NO
+2665,Sembawang-hong Kah,1000,3000,Member State,NO
+2666,Tanjong Pagar,1000,3000,Member State,NO
+1512,Nangroe Aceh Darussalam,1000,3000,Member State,NO
+1513,Bali,1000,3000,Member State,NO
+1514,Bengkulu,1000,3000,Member State,NO
+1515,Daerah Istimewa Yogyakarta,1000,3000,Member State,NO
+1516,Dki Jakarta,1000,3000,Member State,NO
+1518,Jambi,1000,3000,Member State,NO
+1520,Jawa Tengah,1000,3000,Member State,NO
+1521,Jawa Timur,1000,3000,Member State,NO
+1522,Kalimantan Barat,1000,3000,Member State,NO
+1523,Kalimantan Selatan,1000,3000,Member State,NO
+1524,Kalimantan Tengah,1000,3000,Member State,NO
+1525,Kalimantan Timur,1000,3000,Member State,NO
+1526,Lampung,1000,3000,Member State,NO
+1528,Nusatenggara Barat,1000,3000,Member State,NO
+1529,Nusatenggara Timur,1000,3000,Member State,NO
+1532,Sulawesi Tengah,1000,3000,Member State,NO
+1533,Sulawesi Tenggara,1000,3000,Member State,NO
+1535,Sumatera Barat,1000,3000,Member State,NO
+1537,Sumatera Utara,1000,3000,Member State,NO
+73615,Maluku,2000,3000,Member State,NO
+73616,Maluku Utara,2000,3000,Member State,NO
+73609,Bangka Belitung,2001,3000,Member State,NO
+73610,Banten,2001,3000,Member State,NO
+73611,Gorontalo,2001,3000,Member State,NO
+73612,Papua Barat,2001,3000,Member State,NO
+73613,Jawa Barat,2001,3000,Member State,NO
+73617,Papua,2001,3000,Member State,NO
+73621,Sulawesi Utara,2001,3000,Member State,NO
+73622,Sumatera Selatan,2001,3000,Member State,NO
+73614,Kepulauan-riau,2003,3000,Member State,NO
+73618,Riau,2003,3000,Member State,NO
+73619,Sulawesi Barat,2005,3000,Member State,NO
+73620,Sulawesi Selatan,2005,3000,Member State,NO
+73921,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+2957,Aileu,1000,3000,Member State,NO
+2958,Ainaro,1000,3000,Member State,NO
+2959,Baucau,1000,3000,Member State,NO
+2960,Bobonaro,1000,3000,Member State,NO
+2961,Covalima,1000,3000,Member State,NO
+2962,Dili,1000,3000,Member State,NO
+2963,Ermera,1000,3000,Member State,NO
+2964,Lautem,1000,3000,Member State,NO
+2965,Liquica,1000,3000,Member State,NO
+2966,Manatuto,1000,3000,Member State,NO
+2967,Manufahi,1000,3000,Member State,NO
+2968,Oecussi,1000,3000,Member State,NO
+2969,Viqueque,1000,3000,Member State,NO
+698,Belait,1000,3000,Member State,NO
+699,Brunei and Muara,1000,3000,Member State,NO
+700,Temburong,1000,3000,Member State,NO
+701,Tutong,1000,3000,Member State,NO
+1905,Alifu Alifu,1000,3000,Member State,NO
+1906,Alifu Dhaalu,1000,3000,Member State,NO
+1907,Baa,1000,3000,Member State,NO
+1908,Dhaalu,1000,3000,Member State,NO
+1909,Faafu,1000,3000,Member State,NO
+1910,Gaafu Alifu,1000,3000,Member State,NO
+1911,Gaafu Dhaalu,1000,3000,Member State,NO
+1913,Haa Alifu,1000,3000,Member State,NO
+1914,Haa Dhaalu,1000,3000,Member State,NO
+1915,Kaafu,1000,3000,Member State,NO
+1916,Laamu,1000,3000,Member State,NO
+1917,Lhaviyani,1000,3000,Member State,NO
+1918,Male',1000,3000,Member State,NO
+1919,Meemu,1000,3000,Member State,NO
+1920,Noonu,1000,3000,Member State,NO
+1921,Raa,1000,3000,Member State,NO
+1922,Seenu,1000,3000,Member State,NO
+1923,Shaviyani,1000,3000,Member State,NO
+1924,Thaa,1000,3000,Member State,NO
+1925,Vaavu,1000,3000,Member State,NO
+2152,Central,1000,3000,Member State,NO
+2153,Eastern,1000,3000,Member State,NO
+2154,Far Western,1000,3000,Member State,NO
+2155,Mid Western,1000,3000,Member State,NO
+2156,Western,1000,3000,Member State,NO
+2272,Balochistan,1000,3000,Member State,NO
+2273,Federally Administered Tribal Areas,1000,3000,Member State,NO
+2274,Islamabad,1000,3000,Member State,NO
+2275,North-West Frontier,1000,3000,Member State,NO
+2276,Punjab,1000,3000,Member State,NO
+2277,Sindh,1000,3000,Member State,NO
+1484,Andaman and Nicobar,1000,3000,Member State,NO
+1485,Andhra Pradesh,1000,3000,Member State,NO
+1487,Assam,1000,3000,Member State,NO
+1489,Delhi,1000,3000,Member State,NO
+1490,Goa,1000,3000,Member State,NO
+1491,Gujarat,1000,3000,Member State,NO
+1492,Haryana,1000,3000,Member State,NO
+1493,Himachal Pradesh,1000,3000,Member State,NO
+1494,Karnataka,1000,3000,Member State,NO
+1495,Kerala,1000,3000,Member State,NO
+1496,Lakshadweep,1000,3000,Member State,NO
+1498,Maharashtra,1000,3000,Member State,NO
+1500,Manipur,1000,3000,Member State,NO
+1501,Meghalaya,1000,3000,Member State,NO
+1502,Mizoram,1000,3000,Member State,NO
+1503,Nagaland,1000,3000,Member State,NO
+1504,Orissa,1000,3000,Member State,NO
+1505,Punjab,1000,3000,Member State,NO
+1506,Rajasthan,1000,3000,Member State,NO
+1507,Sikkim,1000,3000,Member State,NO
+1508,Tamil Nadu,1000,3000,Member State,NO
+1509,Tripura,1000,3000,Member State,NO
+1511,West Bengal,1000,3000,Member State,NO
+70072,Arunachal Pradesh,1000,3000,Member State,NO
+70073,Bihar,2001,3000,Member State,NO
+70074,Chandigarh,1000,3000,Member State,NO
+70075,Chhattisgarh,2001,3000,Member State,NO
+70076,Dadra and Nagar Haveli,1000,3000,Member State,NO
+70077,Daman and Diu,1000,3000,Member State,NO
+70078,Jharkhand,2001,3000,Member State,NO
+70079,Madhya Pradesh,2001,3000,Member State,NO
+70080,Puducherry,1000,3000,Member State,NO
+70081,Uttar Pradesh,2001,3000,Member State,NO
+70082,Uttarakhand,2001,3000,Member State,NO
+1539,Kermanshah,1000,3000,Member State,NO
+1540,Bushehr,1000,3000,Member State,NO
+1541,Chaharmahal-o bakhtiyar,1000,3000,Member State,NO
+1542,East Azarbayejan,1000,3000,Member State,NO
+1543,Esfahan,1000,3000,Member State,NO
+1544,Fars,1000,3000,Member State,NO
+1545,Gilan,1000,3000,Member State,NO
+1546,Hamedan,1000,3000,Member State,NO
+1547,Khorasan,1000,3000,Member State,NO
+1548,Hormozgan,1000,3000,Member State,NO
+1549,Ilam,1000,3000,Member State,NO
+1550,Kerman,1000,3000,Member State,NO
+1551,Khuzestan,1000,3000,Member State,NO
+1552,Kohgiluyeh va boyerahma,1000,3000,Member State,NO
+1553,Kordestan,1000,3000,Member State,NO
+1554,Administrative unit not available,1000,3000,Member State,NO
+1555,Lorestan,1000,3000,Member State,NO
+1556,Markazi,1000,3000,Member State,NO
+1557,Mazandaran,1000,3000,Member State,NO
+1558,Semnan,1000,3000,Member State,NO
+1559,Sistan-o baluchestan,1000,3000,Member State,NO
+1560,Tehran,1000,3000,Member State,NO
+1561,West Azarbayejan,1000,3000,Member State,NO
+1562,Yazd,1000,3000,Member State,NO
+1563,Zanjan,1000,3000,Member State,NO
+33110,Ardebil,1000,3000,Member State,NO
+33111,Golestan,1000,3000,Member State,NO
+33112,Ghazvin,1000,3000,Member State,NO
+33113,Ghom,1000,3000,Member State,NO
+40408,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+40409,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+40422,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+40423,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+40424,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+40425,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+40426,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+40427,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+40428,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+40429,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+40430,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+40431,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+2736,Central,1000,3000,Member State,NO
+2737,Eastern,1000,3000,Member State,NO
+2738,North Central,1000,3000,Member State,NO
+2739,North Western,1000,3000,Member State,NO
+2740,Northern,1000,3000,Member State,NO
+2741,Sabaragamuwa,1000,3000,Member State,NO
+2742,Southern,1000,3000,Member State,NO
+2743,Uva,1000,3000,Member State,NO
+2744,Western,1000,3000,Member State,NO
+622,Bumthang,1000,3000,Member State,NO
+623,Chhukha,1000,3000,Member State,NO
+41308,Dagana,1992,3000,Member State,NO
+625,Gasa,1992,3000,Member State,NO
+41309,Haa,1992,3000,Member State,NO
+627,Lhuentse,1000,3000,Member State,NO
+628,Monggar,1000,3000,Member State,NO
+629,Paro,1000,3000,Member State,NO
+41310,Pemagatshel,1992,3000,Member State,NO
+631,Punakha,1992,3000,Member State,NO
+41311,Samdrupjongkhar,1992,3000,Member State,NO
+41312,Samtse,1992,3000,Member State,NO
+41313,Sarpang,1992,3000,Member State,NO
+635,Thimphu,1000,3000,Member State,NO
+637,Trashigang,1992,3000,Member State,NO
+636,Trashiyangtse,1992,3000,Member State,NO
+638,Trongsa,1000,3000,Member State,NO
+639,Tsirang,1000,3000,Member State,NO
+640,Wangduephodrang,1000,3000,Member State,NO
+41314,Zhemgang,1992,3000,Member State,NO
+575,Barisal,1993,3000,Member State,NO
+576,Chittagong,1998,3000,Member State,NO
+577,Dhaka,1000,3000,Member State,NO
+578,Khulna,1993,3000,Member State,NO
+580,Sylhet,1998,3000,Member State,NO
+61362,Rajshahi,2010,3000,Member State,NO
+61363,Rangpur,2010,3000,Member State,NO
+70036,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+70037,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+272,Badakhshan,1000,3000,Member State,NO
+273,Badghis,1000,3000,Member State,NO
+274,Baghlan,1000,3000,Member State,NO
+275,Balkh,1000,3000,Member State,NO
+276,Bamyan,1000,3000,Member State,NO
+277,Farah,1000,3000,Member State,NO
+278,Faryab,1000,3000,Member State,NO
+279,Ghazni,1000,3000,Member State,NO
+280,Ghor,1000,3000,Member State,NO
+281,Hilmand,1000,3000,Member State,NO
+282,Hirat,1000,3000,Member State,NO
+283,Jawzjan,1000,3000,Member State,NO
+284,Kabul,1000,3000,Member State,NO
+285,Kandahar,1000,3000,Member State,NO
+286,Kapisa,1000,3000,Member State,NO
+287,Khost,1995,3000,Member State,NO
+288,Kunar,1000,3000,Member State,NO
+289,Kunduz,1000,3000,Member State,NO
+290,Laghman,1000,3000,Member State,NO
+291,Logar,1000,3000,Member State,NO
+292,Nangarhar,1000,3000,Member State,NO
+293,Nimroz,1000,3000,Member State,NO
+294,Nuristan,1000,3000,Member State,NO
+295,Paktika,1995,3000,Member State,NO
+296,Paktya,1000,3000,Member State,NO
+298,Samangan,1000,3000,Member State,NO
+299,Sar-e-Pul,1000,3000,Member State,NO
+300,Takhar,1000,3000,Member State,NO
+302,Wardak,1000,3000,Member State,NO
+303,Zabul,1000,3000,Member State,NO
+99878,Daykundi,2004,3000,Member State,NO
+99879,Panjsher,2004,3000,Member State,NO
+99880,Parwan,2004,3000,Member State,NO
+99881,Uruzgan,2004,3000,Member State,NO
+2263,A Dakhliya,1000,3000,Member State,NO
+2264,A Sharqiya,1000,3000,Member State,NO
+2265,Al Batnah,1000,3000,Member State,NO
+2266,Al Dhahira,1000,3000,Member State,NO
+2267,Al Wusta,1000,3000,Member State,NO
+2268,Dhofar,1000,3000,Member State,NO
+2269,Musandam,1000,3000,Member State,NO
+2270,Muscat,1000,3000,Member State,NO
+2271,Name Unknown,1000,3000,Member State,NO
+1741,Al Farwaniyah,1000,3000,Member State,NO
+1742,Al Ahmadi,1000,3000,Member State,NO
+1743,Al Jahrah,1000,3000,Member State,NO
+1744,Al Kuwayt,1000,3000,Member State,NO
+1745,Hawalli,1000,3000,Member State,NO
+3394,Al Khalil (Hebron),1000,3000,Occupied Palestinian Territory,NO
+3395,Al Quds (Jerusalem),1000,3000,Occupied Palestinian Territory,NO
+3396,Ariha (Jericho),1000,3000,Occupied Palestinian Territory,NO
+3397,Bethlehem,1000,3000,Occupied Palestinian Territory,NO
+3398,Jenin,1000,3000,Occupied Palestinian Territory,NO
+3399,Nablus,1000,3000,Occupied Palestinian Territory,NO
+3400,Qalqiliya,1000,3000,Occupied Palestinian Territory,NO
+3401,Ramallah,1000,3000,Occupied Palestinian Territory,NO
+3402,Salfit,1000,3000,Occupied Palestinian Territory,NO
+3403,Tubas,1000,3000,Occupied Palestinian Territory,NO
+3404,Tulkarm,1000,3000,Occupied Palestinian Territory,NO
+68766,Administrative unit not available,1000,3000,Occupied Palestinian Territory,NO
+68765,Administrative unit not available,1000,3000,Occupied Palestinian Territory,NO
+1296,Abkhazia Aut. Rep.,1000,3000,Member State,NO
+1297,Adjara Aut. Rep.,1000,3000,Member State,NO
+1298,Guria,1000,3000,Member State,NO
+1299,Imereti,1000,3000,Member State,NO
+1300,Kakheti,1000,3000,Member State,NO
+1301,Kvemo Kartli,1000,3000,Member State,NO
+1302,Mtskheta-Mtianeti,1000,3000,Member State,NO
+1303,Racha-Lechkhumi and Kvemo (lower) Svaneti,1000,3000,Member State,NO
+1304,Samergelo and Zemo (upper) Svaneti,1000,3000,Member State,NO
+1305,Samtskhe-Javakheti,1000,3000,Member State,NO
+1306,Shida Kartli,1000,3000,Member State,NO
+1307,Tbilisi,1000,3000,Member State,NO
+2422,Ad Dawhah,1000,3000,Member State,NO
+2423,Al Ghuwayriyah,1000,3000,Member State,NO
+2424,Al Jumayliyah,1000,3000,Member State,NO
+2425,Al Khawr,1000,3000,Member State,NO
+2426,Al-wakrah,1000,3000,Member State,NO
+2427,Ar Rayyan,1000,3000,Member State,NO
+2428,Ash Shamal,1000,3000,Member State,NO
+2430,Umm Salal,1000,3000,Member State,NO
+2429,Jarayan Al Batnah,1000,3000,Member State,NO
+144969,Amanat Al Asimah,1994,3000,Member State,NO
+144970,Hadramaut,2000,3000,Member State,NO
+144971,Raymah,2004,3000,Member State,NO
+144972,Sana'a,2004,3000,Member State,NO
+144973,Aden,2000,3000,Member State,NO
+3407,Abyan,1000,3000,Member State,NO
+3410,Al Bayda,1000,3000,Member State,NO
+3408,Al Dhale'e,1000,3000,Member State,NO
+3411,Al Hudaydah,1000,3000,Member State,NO
+3412,Al Jawf,1000,3000,Member State,NO
+3413,Al Maharah,1000,3000,Member State,NO
+3414,Al Mahwit,1000,3000,Member State,NO
+3415,Amran,1000,3000,Member State,NO
+3416,Dhamar,1000,3000,Member State,NO
+3418,Hajjah,1000,3000,Member State,NO
+3419,Ibb,1000,3000,Member State,NO
+3420,Lahj,1000,3000,Member State,NO
+3421,Marib,1000,3000,Member State,NO
+3422,Sa'ada,1000,3000,Member State,NO
+3424,Shabwah,1000,3000,Member State,NO
+3425,Taizz,1000,3000,Member State,NO
+562,Central Region,1000,3000,Member State,NO
+563,Hamad Town,1000,3000,Member State,NO
+564,Hawar Island,1000,3000,Member State,NO
+565,Hidd,1000,3000,Member State,NO
+566,Isa Town,1000,3000,Member State,NO
+567,Jidhafs,1000,3000,Member State,NO
+568,Manama,1000,3000,Member State,NO
+569,Muharraq,1000,3000,Member State,NO
+570,Northern Region,1000,3000,Member State,NO
+571,Riffa,1000,3000,Member State,NO
+572,Sitra,1000,3000,Member State,NO
+573,Western Region,1000,3000,Member State,NO
+1024,Famgusta,1000,3000,Member State,NO
+1025,Kyrenia,1000,3000,Member State,NO
+1026,Larnaca,1000,3000,Member State,NO
+1027,Limassol,1000,3000,Member State,NO
+1028,Nicosia,1000,3000,Member State,NO
+1029,Paphos,1000,3000,Member State,NO
+1291,Deir al Balah,1000,3000,Occupied Palestinan Territory,NO
+1292,Gaza,1000,3000,Occupied Palestinan Territory,NO
+1293,Jabalya,1000,3000,Occupied Palestinan Territory,NO
+1294,Khan Yunis,1000,3000,Occupied Palestinan Territory,NO
+1295,Rafah,1000,3000,Occupied Palestinan Territory,NO
+1798,Beirut,1000,3000,Member State,NO
+1797,Bekaa,1000,3000,Member State,NO
+1801,Mount Lebanon,1000,3000,Member State,NO
+1802,Nabatiye,1993,3000,Member State,NO
+1799,North,1000,3000,Member State,NO
+1800,South,1993,3000,Member State,NO
+2622,Asir,1000,3000,Member State,NO
+2623,Baha,1000,3000,Member State,NO
+2624,Eastern Province,1000,3000,Member State,NO
+2625,Hail,1000,3000,Member State,NO
+2626,Jawf,1000,3000,Member State,NO
+2627,Jizan,1000,3000,Member State,NO
+2628,Madinah,1000,3000,Member State,NO
+2629,Makkah,1000,3000,Member State,NO
+2630,Najran,1000,3000,Member State,NO
+2631,Northern Frontier,1000,3000,Member State,NO
+2632,Quassim,1000,3000,Member State,NO
+2633,Riyad,1000,3000,Member State,NO
+2634,Tabuk,1000,3000,Member State,NO
+3017,Adana,1000,3000,Member State,NO
+3018,Adiyaman,1000,3000,Member State,NO
+3019,Afyon,1000,3000,Member State,NO
+3020,Agri,1000,3000,Member State,NO
+3021,Aksaray,1000,3000,Member State,NO
+3022,Amasya,1000,3000,Member State,NO
+3023,Ankara,1000,3000,Member State,NO
+3024,Antalya,1000,3000,Member State,NO
+3025,Ardahan,1000,3000,Member State,NO
+3026,Artvin,1000,3000,Member State,NO
+3027,Aydin,1000,3000,Member State,NO
+3028,Balikesir,1000,3000,Member State,NO
+3029,Bartin,1000,3000,Member State,NO
+3030,Batman,1000,3000,Member State,NO
+3031,Bayburt,1000,3000,Member State,NO
+3032,Bilecik,1000,3000,Member State,NO
+3033,Bingol,1000,3000,Member State,NO
+3034,Bitlis,1000,3000,Member State,NO
+3035,Bolu,1000,3000,Member State,NO
+3036,Burdur,1000,3000,Member State,NO
+3037,Bursa,1000,3000,Member State,NO
+3038,Canakkale,1000,3000,Member State,NO
+3039,Cankiri,1000,3000,Member State,NO
+3040,Corum,1000,3000,Member State,NO
+3041,Denizli,1000,3000,Member State,NO
+3042,Diyarbakir,1000,3000,Member State,NO
+3043,Edirne,1000,3000,Member State,NO
+3044,Elazig,1000,3000,Member State,NO
+3045,Erzincan,1000,3000,Member State,NO
+3046,Erzurum,1000,3000,Member State,NO
+3047,Eskisehir,1000,3000,Member State,NO
+3048,Gaziantep,1000,3000,Member State,NO
+3049,Giresun,1000,3000,Member State,NO
+3050,Gumushane,1000,3000,Member State,NO
+3051,Hakkari,1000,3000,Member State,NO
+3052,Hatay,1000,3000,Member State,NO
+3053,Icel,1000,3000,Member State,NO
+3054,Igdir,1000,3000,Member State,NO
+3055,Isparta,1000,3000,Member State,NO
+3056,Istanbul,1000,3000,Member State,NO
+3057,Izmir,1000,3000,Member State,NO
+3058,K.maras,1000,3000,Member State,NO
+3059,Karabuk,1000,3000,Member State,NO
+3060,Karaman,1000,3000,Member State,NO
+3061,Kars,1000,3000,Member State,NO
+3062,Kastamonu,1000,3000,Member State,NO
+3063,Kayseri,1000,3000,Member State,NO
+3064,Kilis,1000,3000,Member State,NO
+3065,Kirikkale,1000,3000,Member State,NO
+3066,Kirklareli,1000,3000,Member State,NO
+3067,Kirsehir,1000,3000,Member State,NO
+3068,Kocaeli,1000,3000,Member State,NO
+3069,Konya,1000,3000,Member State,NO
+3070,Kutahya,1000,3000,Member State,NO
+3071,Malatya,1000,3000,Member State,NO
+3072,Manisa,1000,3000,Member State,NO
+3073,Mardin,1000,3000,Member State,NO
+3074,Mugla,1000,3000,Member State,NO
+3075,Mus,1000,3000,Member State,NO
+3076,Nevsehir,1000,3000,Member State,NO
+3077,Nigde,1000,3000,Member State,NO
+3078,Ordu,1000,3000,Member State,NO
+3079,Osmaniye,1000,3000,Member State,NO
+3080,Rize,1000,3000,Member State,NO
+3081,Sakarya,1000,3000,Member State,NO
+3082,Samsun,1000,3000,Member State,NO
+3083,Sanliurfa,1000,3000,Member State,NO
+3084,Siirt,1000,3000,Member State,NO
+3085,Sinop,1000,3000,Member State,NO
+3086,Sirnak,1000,3000,Member State,NO
+3087,Sivas,1000,3000,Member State,NO
+3088,Tekirdag,1000,3000,Member State,NO
+3089,Tokat,1000,3000,Member State,NO
+3090,Trabzon,1000,3000,Member State,NO
+3091,Tunceli,1000,3000,Member State,NO
+3092,Usak,1000,3000,Member State,NO
+3093,Van,1000,3000,Member State,NO
+3094,Yalova,1000,3000,Member State,NO
+3095,Yozgat,1000,3000,Member State,NO
+3096,Zonguldak,1000,3000,Member State,NO
+1564,Anbar,1000,3000,Member State,NO
+1565,Basrah,1000,3000,Member State,NO
+1566,Muthanna,1000,3000,Member State,NO
+1567,Qadissiya,1000,3000,Member State,NO
+1568,Najaf,1000,3000,Member State,NO
+1569,Erbil,1000,3000,Member State,NO
+1570,Kirkuk,1000,3000,Member State,NO
+1571,Babil,1000,3000,Member State,NO
+1572,Baghdad,1000,3000,Member State,NO
+1573,Thi-Qar,1000,3000,Member State,NO
+1574,Dahuk,1000,3000,Member State,NO
+1575,Diyala,1000,3000,Member State,NO
+1576,Kerbala,1000,3000,Member State,NO
+1577,Missan,1000,3000,Member State,NO
+1578,Ninewa,1000,3000,Member State,NO
+1579,Salah al-Din,1000,3000,Member State,NO
+1580,Sulaymaniyah,1000,3000,Member State,NO
+1581,Wassit,1000,3000,Member State,NO
+1712,Zarqa,1996,3000,Member State,NO
+1701,Ajloon,1996,3000,Member State,NO
+1705,Amman,1996,3000,Member State,NO
+1703,Aqaba,1996,3000,Member State,NO
+1707,Irbid,1996,3000,Member State,NO
+1708,Jarash,1996,3000,Member State,NO
+1704,Karak,1000,3000,Member State,NO
+1709,Ma'an,1996,3000,Member State,NO
+1710,Madaba,1996,3000,Member State,NO
+1711,Mafraq,1000,3000,Member State,NO
+1706,Tafiela,1000,3000,Member State,NO
+1702,Balqa,1996,3000,Member State,NO
+2833,Al_Qunaytirah,1000,3000,Member State,NO
+2834,Aleppo,1000,3000,Member State,NO
+2835,As_Suweida,1000,3000,Member State,NO
+2836,City_Damascus,1000,3000,Member State,NO
+2837,Damascus,1000,3000,Member State,NO
+2838,Dara,1000,3000,Member State,NO
+2839,Dayr_Az_Zor,1000,3000,Member State,NO
+2840,Hama,1000,3000,Member State,NO
+2841,Hassakeh,1000,3000,Member State,NO
+2842,Homs,1000,3000,Member State,NO
+2843,Idleb,1000,3000,Member State,NO
+2844,Lattakia,1000,3000,Member State,NO
+2845,Raqqa,1000,3000,Member State,NO
+2846,Tartous,1000,3000,Member State,NO
+1610,Central District,1000,3000,Member State,NO
+1611,Haifa,1000,3000,Member State,NO
+1612,Jerusalem,1000,3000,Member State,NO
+1613,Northern,1000,3000,Member State,NO
+1614,Southern District,1000,3000,Member State,NO
+1615,Tel Aviv,1000,3000,Member State,NO
+147297,Absheron,1000,3000,Member State,NO
+147298,Aran,1000,3000,Member State,NO
+147299,Daghlig Shirvan,1000,3000,Member State,NO
+147300,Ganja-Gazakh,1000,3000,Member State,NO
+147301,Guba-Khachmaz,1000,3000,Member State,NO
+147302,Kalbajar-Lachin,1000,3000,Member State,NO
+147303,Lankaran,1000,3000,Member State,NO
+147304,Nakhchivan,1000,3000,Member State,NO
+147305,Shaki-Zaqatala,1000,3000,Member State,NO
+147306,Yukhari Garabakh,1000,3000,Member State,NO
+147307,Administrative unit not available,1000,3000,Member State,NO
+453,Aragatsotn,1000,3000,Member State,NO
+454,Ararat,1000,3000,Member State,NO
+455,Armavir,1000,3000,Member State,NO
+456,Gergharkunik,1000,3000,Member State,NO
+457,Kotayk,1000,3000,Member State,NO
+458,Lori,1000,3000,Member State,NO
+460,Shirak,1000,3000,Member State,NO
+461,Syunik,1000,3000,Member State,NO
+462,Tavush,1000,3000,Member State,NO
+463,Vayots Dzor,1000,3000,Member State,NO
+464,Yerevan,1000,3000,Member State,NO
+3173,Abu Dhabi,1000,3000,Member State,NO
+3177,Dubai,1000,3000,Member State,NO
+3179,Ras Al Khaimah,1000,3000,Member State,NO
+3180,Sharjah,1000,3000,Member State,NO
+3181,Umm AL Quwain,1000,3000,Member State,NO
+149626,Ajman,1000,3000,Member State,NO
+149627,Fujairah,1000,3000,Member State,NO
+2062,Balti,1000,3000,Member State,NO
+2063,Cahul,1000,3000,Member State,NO
+2064,Chisinau,1000,3000,Member State,NO
+2066,Dubasari,1000,3000,Member State,NO
+2067,Edinet,1000,3000,Member State,NO
+2068,Gagauzia,1000,3000,Member State,NO
+2069,Lapusna,1000,3000,Member State,NO
+2070,Orhei,1000,3000,Member State,NO
+2071,Soroca,1000,3000,Member State,NO
+2072,Tighina,1000,3000,Member State,NO
+2073,Ungheni,1000,3000,Member State,NO
+1440,Bacs-kiskun,1000,3000,Member State,NO
+1441,Baranya,1000,3000,Member State,NO
+1442,Bekes,1000,3000,Member State,NO
+1443,Borsod-abauj-zemplen,1000,3000,Member State,NO
+1444,Budapest,1000,3000,Member State,NO
+1445,Csongrad,1000,3000,Member State,NO
+1446,Fejer,1000,3000,Member State,NO
+1447,Gyor-moson-sopron,1000,3000,Member State,NO
+1448,Hajdu-bihar,1000,3000,Member State,NO
+1449,Heves,1000,3000,Member State,NO
+1450,Jasz-nagykun-szolnok,1000,3000,Member State,NO
+1451,Komarom-esztergom,1000,3000,Member State,NO
+1452,Nograd,1000,3000,Member State,NO
+1453,Pest,1000,3000,Member State,NO
+1454,Somogy,1000,3000,Member State,NO
+1455,Szabolcs-szatmar-bereg,1000,3000,Member State,NO
+1456,Tolna,1000,3000,Member State,NO
+1457,Vas,1000,3000,Member State,NO
+1458,Veszprem,1000,3000,Member State,NO
+1459,Zala,1000,3000,Member State,NO
+2446,Alba,1000,3000,Member State,NO
+2447,Arad,1000,3000,Member State,NO
+2448,Arges,1000,3000,Member State,NO
+2449,Bacau,1000,3000,Member State,NO
+2450,Bihor,1000,3000,Member State,NO
+2451,Bistrita-nasaud,1000,3000,Member State,NO
+2452,Botosani,1000,3000,Member State,NO
+2453,Braila,1000,3000,Member State,NO
+2454,Brasov,1000,3000,Member State,NO
+2455,Bucuresti,1000,3000,Member State,NO
+2456,Buzau,1000,3000,Member State,NO
+2457,Calarasi,1000,3000,Member State,NO
+2458,Caras-severin,1000,3000,Member State,NO
+2459,Cluj,1000,3000,Member State,NO
+2460,Constanta,1000,3000,Member State,NO
+2461,Covasna,1000,3000,Member State,NO
+2462,Dimbovita,1000,3000,Member State,NO
+2463,Dolj,1000,3000,Member State,NO
+2464,Galati,1000,3000,Member State,NO
+2465,Giurgiu,1000,3000,Member State,NO
+2466,Gorj,1000,3000,Member State,NO
+2467,Harghita,1000,3000,Member State,NO
+2468,Hunedoara,1000,3000,Member State,NO
+2469,Ialomita,1000,3000,Member State,NO
+2470,Iasi,1000,3000,Member State,NO
+2471,Maramures,1000,3000,Member State,NO
+2472,Mehedinti,1000,3000,Member State,NO
+2473,Mures,1000,3000,Member State,NO
+2474,Neamt,1000,3000,Member State,NO
+2475,Olt,1000,3000,Member State,NO
+2476,Prahova,1000,3000,Member State,NO
+2477,Salaj,1000,3000,Member State,NO
+2478,Satu Mare,1000,3000,Member State,NO
+2479,Sibiu,1000,3000,Member State,NO
+2480,Suceava,1000,3000,Member State,NO
+2481,Teleorman,1000,3000,Member State,NO
+2482,Timis,1000,3000,Member State,NO
+2483,Tulcea,1000,3000,Member State,NO
+2484,Vaslui,1000,3000,Member State,NO
+2485,Vilcea,1000,3000,Member State,NO
+2486,Vrancea,1000,3000,Member State,NO
+2370,Dolnoslaskie,1000,3000,Member State,NO
+2371,Kujawsko-Pomorskie,1000,3000,Member State,NO
+2372,Lodzkie,1000,3000,Member State,NO
+2373,Lubeiskie,1000,3000,Member State,NO
+2374,Lubuskie,1000,3000,Member State,NO
+2375,Malopolske,1000,3000,Member State,NO
+2376,Mazowieckie,1000,3000,Member State,NO
+2377,Opolskie,1000,3000,Member State,NO
+2378,Podkarpackie,1000,3000,Member State,NO
+2379,Podlaskie,1000,3000,Member State,NO
+2380,Pomorskie,1000,3000,Member State,NO
+2381,Slaskie,1000,3000,Member State,NO
+2382,Swietokrzyskie,1000,3000,Member State,NO
+2383,Warminsko-Mazurskie,1000,3000,Member State,NO
+2384,Wielkopolskie,1000,3000,Member State,NO
+2385,Zachodnio-Pomorskie,1000,3000,Member State,NO
+3148,Cherkas'ka,1000,3000,Member State,NO
+3149,Chernihivs'ka,1000,3000,Member State,NO
+3150,Chernivets'ka,1000,3000,Member State,NO
+3151,Dnipropetrovs'ka,1000,3000,Member State,NO
+3152,Donets'ka,1000,3000,Member State,NO
+3153,Ivano-frankivs'ka,1000,3000,Member State,NO
+3154,Kharkivs'ka,1000,3000,Member State,NO
+3155,Khersons'ka,1000,3000,Member State,NO
+3156,Khmel'nyts'ka,1000,3000,Member State,NO
+3157,Kirovohrads'ka,1000,3000,Member State,NO
+3158,Krym,1000,3000,Member State,NO
+3159,Kyyivs'ka,1000,3000,Member State,NO
+3160,L'vivs'ka,1000,3000,Member State,NO
+3161,Luhans'ka,1000,3000,Member State,NO
+3162,Mykolayivs'ka,1000,3000,Member State,NO
+3163,Odes'ka,1000,3000,Member State,NO
+3164,Poltavs'ka,1000,3000,Member State,NO
+3165,Rivnens'ka,1000,3000,Member State,NO
+3166,Sums'ka,1000,3000,Member State,NO
+3167,Ternopil's'ka,1000,3000,Member State,NO
+3168,Vinnyts'ka,1000,3000,Member State,NO
+3169,Volyns'ka,1000,3000,Member State,NO
+3170,Zakarpats'ka,1000,3000,Member State,NO
+3171,Zaporiz'ka,1000,3000,Member State,NO
+3172,Zhytomyrs'ka,1000,3000,Member State,NO
+1030,Jihocesky,1000,3000,Member State,NO
+1031,Jihomoravsky,1000,3000,Member State,NO
+1032,Praha,1000,3000,Member State,NO
+1033,Severocesky,1000,3000,Member State,NO
+1034,Severomoravsky,1000,3000,Member State,NO
+1035,Stredocesky,1000,3000,Member State,NO
+1036,Vychodocesky,1000,3000,Member State,NO
+1037,Zapadocesky,1000,3000,Member State,NO
+2487,Adygeya Rep.,1000,3000,Member State,NO
+2488,Aginskiy Buryatskiy A. Okrug,1000,3000,Member State,NO
+2489,Altay Rep.,1000,3000,Member State,NO
+2490,Altayskiy Kray,1000,3000,Member State,NO
+2491,Amurskaya Oblast,1000,3000,Member State,NO
+2492,Arkhangelskaya Oblast,1000,3000,Member State,NO
+2493,Astrakhanskaya Oblast,1000,3000,Member State,NO
+2494,Bashkortostan Rep.,1000,3000,Member State,NO
+2495,Belgorodskaya Oblast,1000,3000,Member State,NO
+2496,Bryanskaya Oblast,1000,3000,Member State,NO
+2497,Buryatiya Rep.,1000,3000,Member State,NO
+2498,Chechnya Rep.,1000,3000,Member State,NO
+2499,Chelyabinskaya Oblast,1000,3000,Member State,NO
+2500,Chitinskaya Oblast,1000,3000,Member State,NO
+2501,Chukotskiy Okrug,1000,3000,Member State,NO
+2502,Chuvashiya Rep.,1000,3000,Member State,NO
+2503,Dagestan Rep.,1000,3000,Member State,NO
+2504,Evenkiyskiy Okrug,1000,3000,Member State,NO
+2505,Ingushetiya Rep.,1000,3000,Member State,NO
+2506,Irkutskaya Oblast,1000,3000,Member State,NO
+2507,Ivanovskaya Oblast,1000,3000,Member State,NO
+2508,Kabardino-balkariya Rep.,1000,3000,Member State,NO
+2509,Kaliningradskaya Oblast,1000,3000,Member State,NO
+2510,Kalmykiya Rep.,1000,3000,Member State,NO
+2511,Kaluzhskaya Oblast,1000,3000,Member State,NO
+2512,Kamchatskaya Oblast,1000,3000,Member State,NO
+2513,Karatchayevo-cherkesiya Rep.,1000,3000,Member State,NO
+2514,Karelya Rep.,1000,3000,Member State,NO
+2515,Kemerovskaya Oblast,1000,3000,Member State,NO
+2516,Khabarovskiy Kray,1000,3000,Member State,NO
+2517,Khakasiya Rep.,1000,3000,Member State,NO
+2518,Khanty-mansyiskiy Okrug,1000,3000,Member State,NO
+2519,Kirovskaya Oblast,1000,3000,Member State,NO
+2520,Komi Rep.,1000,3000,Member State,NO
+2521,Komi-permyatskiy Okrug,1000,3000,Member State,NO
+2522,Koryakskiy Okrug,1000,3000,Member State,NO
+2523,Kostromskaya Oblast,1000,3000,Member State,NO
+2524,Krasnodarskiy Kray,1000,3000,Member State,NO
+2525,Krasnoyarskiy Kray,1000,3000,Member State,NO
+2526,Kurganskaya Oblast,1000,3000,Member State,NO
+2527,Kurskaya Oblast,1000,3000,Member State,NO
+2528,Administrative unit not available,1000,3000,Member State,NO
+2529,Leningradskaya Oblast,1000,3000,Member State,NO
+2530,Lipetskaya Oblast,1000,3000,Member State,NO
+2531,Magadanskaya Oblast,1000,3000,Member State,NO
+2532,Mariy-el Rep.,1000,3000,Member State,NO
+2533,Mordoviya Rep.,1000,3000,Member State,NO
+2534,Moskovskaya Oblast,1000,3000,Member State,NO
+2535,Moskva,1000,3000,Member State,NO
+2536,Murmanskaya Oblast,1000,3000,Member State,NO
+2537,Name Unknown,1000,3000,Member State,NO
+2538,Nenetskiy Okrug,1000,3000,Member State,NO
+2539,Nizhegorodskaya Oblast,1000,3000,Member State,NO
+2540,Novgorodskaya Oblast,1000,3000,Member State,NO
+2541,Novosibirskaya Oblast,1000,3000,Member State,NO
+2542,Omskaya Oblast,1000,3000,Member State,NO
+2543,Orenburgskaya Oblast,1000,3000,Member State,NO
+2544,Orlovskaya Oblast,1000,3000,Member State,NO
+2545,Penzenskaya Oblast,1000,3000,Member State,NO
+2546,Permskaya Oblast,1000,3000,Member State,NO
+2547,Primorskiy Kray,1000,3000,Member State,NO
+2548,Pskovskaya Oblast,1000,3000,Member State,NO
+2549,Rostovskaya Oblast,1000,3000,Member State,NO
+2550,Ryazanskaya Oblast,1000,3000,Member State,NO
+2551,Sakha Rep.,1000,3000,Member State,NO
+2552,Sakhalinskaya Oblast,1000,3000,Member State,NO
+2553,Samarskaya Oblast,1000,3000,Member State,NO
+2554,Sankt-peterburg,1000,3000,Member State,NO
+2555,Saratovskaya Oblast,1000,3000,Member State,NO
+2556,Severnaya Osetiya-alaniya Rep.,1000,3000,Member State,NO
+2557,Smolenskaya Oblast,1000,3000,Member State,NO
+2558,Stavropolskiy Kray,1000,3000,Member State,NO
+2559,Sverdlovskaya Oblast,1000,3000,Member State,NO
+2560,Tambovskaya Oblast,1000,3000,Member State,NO
+2561,Tatarstan Rep.,1000,3000,Member State,NO
+2562,Taymyrskiy Okrug,1000,3000,Member State,NO
+2563,Tomskaya Oblast,1000,3000,Member State,NO
+2564,Tulskaya Oblast,1000,3000,Member State,NO
+2565,Tverskaya Oblast,1000,3000,Member State,NO
+2566,Tyumenskaya Oblast,1000,3000,Member State,NO
+2567,Tyva Rep.,1000,3000,Member State,NO
+2568,Udmurtiya Rep.,1000,3000,Member State,NO
+2569,Ulyanovskaya Oblast,1000,3000,Member State,NO
+2570,Ustordynskiy Buryatskiy Okrug,1000,3000,Member State,NO
+2571,Vladimirskaya Oblast,1000,3000,Member State,NO
+2572,Volgogradskaya Oblast,1000,3000,Member State,NO
+2573,Vologodskaya Oblast,1000,3000,Member State,NO
+2574,Voronezhskaya Oblast,1000,3000,Member State,NO
+2575,Yamalo-nenetskiy Okrug,1000,3000,Member State,NO
+2576,Yaroslavskaya Oblast,1000,3000,Member State,NO
+2577,Yevreyskaya A. Oblast,1000,3000,Member State,NO
+1740,Administrative unit not available,1000,3000,Sovereignty unsettled,YES
+2667,Banska Bystrica,1000,3000,Member State,NO
+2668,Bratislava,1000,3000,Member State,NO
+2669,Kosice,1000,3000,Member State,NO
+2670,Nitra,1000,3000,Member State,NO
+2671,Presov,1000,3000,Member State,NO
+2672,Trencin,1000,3000,Member State,NO
+2673,Trnava,1000,3000,Member State,NO
+2674,Zilna,1000,3000,Member State,NO
+593,Brest,1000,3000,Member State,NO
+594,Gomel,1000,3000,Member State,NO
+595,Grodno,1000,3000,Member State,NO
+596,Minsk,1000,3000,Member State,NO
+597,Minsk City,1000,3000,Member State,NO
+598,Mogilev,1000,3000,Member State,NO
+599,Vitebsk,1000,3000,Member State,NO
+702,Blagoevgrad,1000,3000,Member State,NO
+703,Burgas,1000,3000,Member State,NO
+704,Dobrich,1000,3000,Member State,NO
+705,Gabrovo,1000,3000,Member State,NO
+706,Haskovo,1000,3000,Member State,NO
+707,Jambol,1000,3000,Member State,NO
+708,Kardzhali,1000,3000,Member State,NO
+709,Kustendil,1000,3000,Member State,NO
+710,Lovech,1000,3000,Member State,NO
+711,Montana,1000,3000,Member State,NO
+712,Pazardzhik,1000,3000,Member State,NO
+713,Pernik,1000,3000,Member State,NO
+714,Pleven,1000,3000,Member State,NO
+715,Plovdiv,1000,3000,Member State,NO
+716,Razgrad,1000,3000,Member State,NO
+717,Ruse,1000,3000,Member State,NO
+718,Shumen,1000,3000,Member State,NO
+719,Silistra,1000,3000,Member State,NO
+720,Sliven,1000,3000,Member State,NO
+721,Smoljan,1000,3000,Member State,NO
+722,Sofia,1000,3000,Member State,NO
+723,Sofia-city,1000,3000,Member State,NO
+724,Stara Zagora,1000,3000,Member State,NO
+725,Targovishte,1000,3000,Member State,NO
+726,Varna,1000,3000,Member State,NO
+727,Veliko Tarnovo,1000,3000,Member State,NO
+728,Vidin,1000,3000,Member State,NO
+729,Vratca,1000,3000,Member State,NO
+2244,Akershus,1000,3000,Member State,NO
+2245,Aust-agder,1000,3000,Member State,NO
+2246,Buskerud,1000,3000,Member State,NO
+2247,Finnmark,1000,3000,Member State,NO
+2248,Hedmark,1000,3000,Member State,NO
+2249,Hordaland,1000,3000,Member State,NO
+2250,Moere Og Romsdal,1000,3000,Member State,NO
+2251,Nord-troendelag,1000,3000,Member State,NO
+2252,Nordland,1000,3000,Member State,NO
+2253,Oestfold,1000,3000,Member State,NO
+2254,Oppland,1000,3000,Member State,NO
+2255,Oslo,1000,3000,Member State,NO
+2256,Rogaland,1000,3000,Member State,NO
+2257,Soer-Troendelag,1000,3000,Member State,NO
+2258,Sogn og Fjordane,1000,3000,Member State,NO
+2259,Telemark,1000,3000,Member State,NO
+2260,Troms,1000,3000,Member State,NO
+2261,Vest-Agder,1000,3000,Member State,NO
+2262,Vestfold,1000,3000,Member State,NO
+1866,Alytaus,1000,3000,Member State,NO
+1867,Kauno,1000,3000,Member State,NO
+1868,Klaipedos,1000,3000,Member State,NO
+1869,Marijampoles,1000,3000,Member State,NO
+1870,Panevezio,1000,3000,Member State,NO
+1871,Siauliu,1000,3000,Member State,NO
+1872,Taurages,1000,3000,Member State,NO
+1873,Telsiu,1000,3000,Member State,NO
+1874,Utenos,1000,3000,Member State,NO
+1875,Vilniaus,1000,3000,Member State,NO
+1771,Aizkraukles,1000,3000,Member State,NO
+1772,Aluksnes,1000,3000,Member State,NO
+1773,Balvu,1000,3000,Member State,NO
+1774,Bauskas,1000,3000,Member State,NO
+1775,Cesu,1000,3000,Member State,NO
+1776,Daugavpils,1000,3000,Member State,NO
+1777,Dobeles,1000,3000,Member State,NO
+1778,Gulbenes,1000,3000,Member State,NO
+1779,Jekabpils,1000,3000,Member State,NO
+1780,Jelgavas,1000,3000,Member State,NO
+1781,Kraslavas,1000,3000,Member State,NO
+1782,Kuldigas,1000,3000,Member State,NO
+1783,Liepajas,1000,3000,Member State,NO
+1784,Limbazu,1000,3000,Member State,NO
+1785,Ludzas,1000,3000,Member State,NO
+1786,Madonas,1000,3000,Member State,NO
+1787,Ogres,1000,3000,Member State,NO
+1788,Preilu,1000,3000,Member State,NO
+1789,Rezeknes,1000,3000,Member State,NO
+1790,Rigas,1000,3000,Member State,NO
+1791,Saldus,1000,3000,Member State,NO
+1792,Talsu,1000,3000,Member State,NO
+1793,Tukuma,1000,3000,Member State,NO
+1794,Valkas,1000,3000,Member State,NO
+1795,Valmieras,1000,3000,Member State,NO
+1796,Ventspils,1000,3000,Member State,NO
+2781,Administrative unit not available,1000,3000,NO Territory,NO
+2786,Blekinge Laen,1000,3000,Member State,NO
+2787,Dalarnas Laen,1000,3000,Member State,NO
+2788,Gaevleborgs Laen,1000,3000,Member State,NO
+2789,Gotlands Laen,1000,3000,Member State,NO
+2790,Hallands Laen,1000,3000,Member State,NO
+2791,Jaemtlands Laen,1000,3000,Member State,NO
+2792,Joenkoepings Laen,1000,3000,Member State,NO
+2793,Kalmar Laen,1000,3000,Member State,NO
+2794,Kronobergs Laen,1000,3000,Member State,NO
+2795,Norrbottens Laen,1000,3000,Member State,NO
+2796,Oerebro Laen,1000,3000,Member State,NO
+2797,Oestergoetlands Laen,1000,3000,Member State,NO
+2798,Skaane Laen,1000,3000,Member State,NO
+2799,Soedermanlands Laen,1000,3000,Member State,NO
+2800,Stockholms Laen,1000,3000,Member State,NO
+2801,Uppsala Laen,1000,3000,Member State,NO
+2802,Vaermlands Laen,1000,3000,Member State,NO
+2803,Vaesterbottens Laen,1000,3000,Member State,NO
+2804,Vaesternorrlands Laen,1000,3000,Member State,NO
+2805,Vaestmanlands Laen,1000,3000,Member State,NO
+2806,Vaestra Goetalands Laen,1000,3000,Member State,NO
+1460,Arnes,1000,3000,Member State,NO
+1461,Austur-baroastrandar,1000,3000,Member State,NO
+1462,Austur-hunavatns,1000,3000,Member State,NO
+1463,Austur-skaftafells,1000,3000,Member State,NO
+1464,Borgarfjaroar,1000,3000,Member State,NO
+1465,Dala,1000,3000,Member State,NO
+1466,Eyjafjaroar,1000,3000,Member State,NO
+1467,Gullbringu,1000,3000,Member State,NO
+1468,Kjosar,1000,3000,Member State,NO
+1469,Myra,1000,3000,Member State,NO
+1470,Nordhurland Eystra,1000,3000,Member State,NO
+1471,Norour-isafjaroar,1000,3000,Member State,NO
+1472,Norour-mùla,1000,3000,Member State,NO
+1473,Norour-pingeyjar,1000,3000,Member State,NO
+1474,Rangárvalla,1000,3000,Member State,NO
+1475,Skagafjaroar,1000,3000,Member State,NO
+1476,Snaefellsnes- Og Hna,1000,3000,Member State,NO
+1477,Stranda,1000,3000,Member State,NO
+1478,Suour-mùla,1000,3000,Member State,NO
+1479,Suour-pingeyjar,1000,3000,Member State,NO
+1480,Vestur-baroastrandar,1000,3000,Member State,NO
+1481,Vestur-hunavatns,1000,3000,Member State,NO
+1482,Vestur-isafjaroar,1000,3000,Member State,NO
+1483,Vestur-skaftafells,1000,3000,Member State,NO
+40235,Brelade,1000,3000,UK Territory,NO
+40236,Grouville,1000,3000,UK Territory,NO
+40237,Saint Helier,1000,3000,UK Territory,NO
+40238,Saint John,1000,3000,UK Territory,NO
+40239,Saint Lawrence,1000,3000,UK Territory,NO
+40240,Saint Martin,1000,3000,UK Territory,NO
+40241,Saint Mary,1000,3000,UK Territory,NO
+40242,Saint Ouen,1000,3000,UK Territory,NO
+40243,Saint Peter,1000,3000,UK Territory,NO
+40244,Saint Saviour,1000,3000,UK Territory,NO
+40245,Trinity,1000,3000,UK Territory,NO
+40274,Saint Clement,1000,3000,UK Territory,NO
+1582,Carlow,1000,3000,Member State,NO
+1583,Cavan,1000,3000,Member State,NO
+1584,Clare,1000,3000,Member State,NO
+1585,Cork,1000,3000,Member State,NO
+1586,Donegal,1000,3000,Member State,NO
+1587,Dublin,1000,3000,Member State,NO
+1588,Galway,1000,3000,Member State,NO
+1589,Kerry,1000,3000,Member State,NO
+1590,Kildare,1000,3000,Member State,NO
+1591,Kilkenny,1000,3000,Member State,NO
+1592,Laois,1000,3000,Member State,NO
+1593,Leitrim,1000,3000,Member State,NO
+1594,Limerick,1000,3000,Member State,NO
+1595,Longford,1000,3000,Member State,NO
+1596,Louth,1000,3000,Member State,NO
+1597,Mayo,1000,3000,Member State,NO
+1598,Meath,1000,3000,Member State,NO
+1599,Monaghan,1000,3000,Member State,NO
+1600,Munster,1000,3000,Member State,NO
+1601,Offaly,1000,3000,Member State,NO
+1602,Roscommon,1000,3000,Member State,NO
+1603,Sligo,1000,3000,Member State,NO
+1604,Tipperary,1000,3000,Member State,NO
+1605,Waterford,1000,3000,Member State,NO
+1606,Westmeath,1000,3000,Member State,NO
+1607,Wexford,1000,3000,Member State,NO
+1608,Wicklow,1000,3000,Member State,NO
+61305,Andreas,1000,3000,UK territory,NO
+61306,Arbory,1000,3000,UK territory,NO
+61307,Ballaugh,1000,3000,UK territory,NO
+61308,Braddan,1000,3000,UK territory,NO
+61309,Bride,1000,3000,UK territory,NO
+61310,Castletown,1000,3000,UK territory,NO
+61311,Douglas,1000,3000,UK territory,NO
+61312,German,1000,3000,UK territory,NO
+61313,Jurby,1000,3000,UK territory,NO
+61314,Laxey,1000,3000,UK territory,NO
+61315,Lezayre,1000,3000,UK territory,NO
+61316,Lonan,1000,3000,UK territory,NO
+61317,Malew,1000,3000,UK territory,NO
+61318,Marown,1000,3000,UK territory,NO
+61319,Maughold,1000,3000,UK territory,NO
+61320,Michael,1000,3000,UK territory,NO
+61321,Onchan,1000,3000,UK territory,NO
+61322,Patrick,1000,3000,UK territory,NO
+61323,Peel,1000,3000,UK territory,NO
+61324,Port Erin,1000,3000,UK territory,NO
+61325,Port St.Mary,1000,3000,UK territory,NO
+61326,Ramsey,1000,3000,UK territory,NO
+61327,Rushen,1000,3000,UK territory,NO
+61328,Santan,1000,3000,UK territory,NO
+40222,Alderney,1000,3000,UK Territory,NO
+40223,Castel,1000,3000,UK Territory,NO
+40224,Forest,1000,3000,UK Territory,NO
+40225,Herm,1000,3000,UK Territory,NO
+40226,Saint Andrew,1000,3000,UK Territory,NO
+40227,Saint Martin,1000,3000,UK Territory,NO
+40228,Saint Peter,1000,3000,UK Territory,NO
+40229,Saint Peter Port,1000,3000,UK Territory,NO
+40230,Saint Sampson,1000,3000,UK Territory,NO
+40231,Saint Saviour,1000,3000,UK Territory,NO
+40232,Sark,1000,3000,UK Territory,NO
+40233,Torteval,1000,3000,UK Territory,NO
+40234,Vale,1000,3000,UK Territory,NO
+3182,England,1000,3000,Member State,NO
+3183,Northern Ireland,1000,3000,Member State,NO
+3184,Scotland,1000,3000,Member State,NO
+3186,Wales,1000,3000,Member State,NO
+1240,Administrative unit not available,1000,3000,DK Territory,NO
+1242,Aaland,1000,3000,Member State,NO
+1243,Eastern Finland,1000,3000,Member State,NO
+1244,Lapland,1000,3000,Member State,NO
+1245,Oulu,1000,3000,Member State,NO
+1246,Southern Finland,1000,3000,Member State,NO
+1247,Western Finland,1000,3000,Member State,NO
+149727,Administrative unit not available,1000,3000,Member State,NO
+1212,Harju maakond,1000,3000,Member State,NO
+1213,Hiiu maakond,1000,3000,Member State,NO
+1214,Ida-Viru maakond,1000,3000,Member State,NO
+1215,Järva maakond,1000,3000,Member State,NO
+1216,Jõgeva maakond,1000,3000,Member State,NO
+1217,Lääne-Viru maakond,1000,3000,Member State,NO
+1218,Lääne maakond,1000,3000,Member State,NO
+1219,Pärnu maakond,1000,3000,Member State,NO
+1220,Põlva maakond,1000,3000,Member State,NO
+1221,Rapla maakond,1000,3000,Member State,NO
+1222,Saare maakond,1000,3000,Member State,NO
+1223,Tartu maakond,1000,3000,Member State,NO
+1224,Valga maakond,1000,3000,Member State,NO
+1225,Viljandi maakond,1000,3000,Member State,NO
+1226,Võru maakond,1000,3000,Member State,NO
+1077,Aarhus,1000,3000,Member State,NO
+1078,Bornholm,1000,3000,Member State,NO
+1079,Frederiksberg,1000,3000,Member State,NO
+1081,Fyn,1000,3000,Member State,NO
+1083,Nordjylland,1000,3000,Member State,NO
+1084,Ribe,1000,3000,Member State,NO
+1085,Ringkoebing,1000,3000,Member State,NO
+1087,Soenderjylland,1000,3000,Member State,NO
+1088,Storstroem,1000,3000,Member State,NO
+1090,Vejle,1000,3000,Member State,NO
+1091,Vestsjaelland,1000,3000,Member State,NO
+1092,Viborg,1000,3000,Member State,NO
+40856,Frederiksborg,1000,3000,Member State,NO
+40857,Koebenhavn,1000,3000,Member State,NO
+40858,Roskilde,1000,3000,Member State,NO
+1886,Ilha Da Madeira (madeira),1000,3000,PT Territory,NO
+1887,Ilha De Porto Santo (madeira),1000,3000,PT Territory,NO
+2927,Berovo,1000,3000,Member State,NO
+2928,Bitola,1000,3000,Member State,NO
+2929,Brod,1000,3000,Member State,NO
+2930,Debar,1000,3000,Member State,NO
+2931,Delcevo,1000,3000,Member State,NO
+2932,Demir Hisar,1000,3000,Member State,NO
+2933,Gevgelija,1000,3000,Member State,NO
+2934,Gostivar,1000,3000,Member State,NO
+2935,Kavadarci,1000,3000,Member State,NO
+2936,Kicevo,1000,3000,Member State,NO
+2937,Kocani,1000,3000,Member State,NO
+2938,Kratovo,1000,3000,Member State,NO
+2939,Kriva Palanka,1000,3000,Member State,NO
+2940,Krusevo,1000,3000,Member State,NO
+2941,Kumanovo,1000,3000,Member State,NO
+2942,Negotino,1000,3000,Member State,NO
+2943,Ohrid,1000,3000,Member State,NO
+2944,Prilep,1000,3000,Member State,NO
+2945,Probistip,1000,3000,Member State,NO
+2946,Radovic,1000,3000,Member State,NO
+2947,Resen,1000,3000,Member State,NO
+2948,Skopje,1000,3000,Member State,NO
+2949,Stip,1000,3000,Member State,NO
+2950,Struga,1000,3000,Member State,NO
+2951,Strumica,1000,3000,Member State,NO
+2952,Sveti Nikole,1000,3000,Member State,NO
+2953,Tetovo,1000,3000,Member State,NO
+2954,Valandovo,1000,3000,Member State,NO
+2955,Veles,1000,3000,Member State,NO
+2956,Vinica,1000,3000,Member State,NO
+25350,Andrijevica,2006,3000,Member State,NO
+25351,Bar,2006,3000,Member State,NO
+25352,Berane,2006,3000,Member State,NO
+25353,Bijelo Polje,2006,3000,Member State,NO
+25354,Budva,2006,3000,Member State,NO
+25355,Cetinje,2006,3000,Member State,NO
+25356,Danilovgrad,2006,3000,Member State,NO
+25357,Herceg Novi,2006,3000,Member State,NO
+25358,Kolasin,2006,3000,Member State,NO
+25359,Kotor,2006,3000,Member State,NO
+25360,Mojkovac,2006,3000,Member State,NO
+25361,Niksic,2006,3000,Member State,NO
+25362,Plav,2006,3000,Member State,NO
+25363,Pljevlja,2006,3000,Member State,NO
+25364,Pluzine,2006,3000,Member State,NO
+25365,Podgorica,2006,3000,Member State,NO
+25366,Rozaj,2006,3000,Member State,NO
+25367,Savnik,2006,3000,Member State,NO
+25368,Tivat,2006,3000,Member State,NO
+25369,Ulcinj,2006,3000,Member State,NO
+25370,Zabljak,2006,3000,Member State,NO
+2395,Ilha Da Graciosa (acores),1000,3000,PT Territory,NO
+2397,Ilha Das Flores (acores),1000,3000,PT Territory,NO
+2398,Ilha De Santa Maria (acores),1000,3000,PT Territory,NO
+2399,Ilha De Sao Jorge (acores),1000,3000,PT Territory,NO
+2400,Ilha De Sao Miguel (acores),1000,3000,PT Territory,NO
+2401,Ilha Do Corvo (acores),1000,3000,PT Territory,NO
+2402,Ilha Do Faial (acores),1000,3000,PT Territory,NO
+2403,Ilha Do Pico (acores),1000,3000,PT Territory,NO
+2404,Ilha Terceira (acores),1000,3000,PT Territory,NO
+1419,Administrative unit not available,1000,3000,The City of Vatican,NO
+988,Bjelovar-bilogora,1000,3000,Member State,NO
+989,Dubrovnik-neretva,1000,3000,Member State,NO
+990,Grad Zagreb,1000,3000,Member State,NO
+991,Istra,1000,3000,Member State,NO
+992,Karlovac,1000,3000,Member State,NO
+993,Koprivnica-krizevci,1000,3000,Member State,NO
+994,Krapina-zagorje,1000,3000,Member State,NO
+995,Lika-senj,1000,3000,Member State,NO
+996,Medimurje,1000,3000,Member State,NO
+997,Osijek-baranja,1000,3000,Member State,NO
+998,Pozega-slavonija,1000,3000,Member State,NO
+999,Primorje-gorski Kota,1000,3000,Member State,NO
+1000,Sibenik,1000,3000,Member State,NO
+1001,Sisak-moslavina,1000,3000,Member State,NO
+1002,Slavonski Brod-posav,1000,3000,Member State,NO
+1003,Split-dalmatija,1000,3000,Member State,NO
+1004,Varazdin,1000,3000,Member State,NO
+1005,Virovitica-podravina,1000,3000,Member State,NO
+1006,Vukovar-srijem,1000,3000,Member State,NO
+1007,Zadar-knin,1000,3000,Member State,NO
+1008,Zagreb,1000,3000,Member State,NO
+1935,Attard,1000,3000,Member State,NO
+1936,Balzan,1000,3000,Member State,NO
+1937,Birgu,1000,3000,Member State,NO
+1938,Birkirkara,1000,3000,Member State,NO
+1939,Birzebbugia,1000,3000,Member State,NO
+1940,Bormla,1000,3000,Member State,NO
+1941,Dingli,1000,3000,Member State,NO
+1942,Fgura,1000,3000,Member State,NO
+1943,Floriana,1000,3000,Member State,NO
+1944,Fontana,1000,3000,Member State,NO
+1945,Ghajnsielem,1000,3000,Member State,NO
+1946,Gharb,1000,3000,Member State,NO
+1947,Gharghur,1000,3000,Member State,NO
+1948,Ghasri,1000,3000,Member State,NO
+1949,Ghaxaq,1000,3000,Member State,NO
+1950,Gudja,1000,3000,Member State,NO
+1951,Gzira,1000,3000,Member State,NO
+1952,Hamrun,1000,3000,Member State,NO
+1953,Iklin,1000,3000,Member State,NO
+1954,Isla,1000,3000,Member State,NO
+1955,Kalkara,1000,3000,Member State,NO
+1956,Kercem,1000,3000,Member State,NO
+1957,Kirkop,1000,3000,Member State,NO
+1958,Lija,1000,3000,Member State,NO
+1959,Luqa,1000,3000,Member State,NO
+1960,Marsa,1000,3000,Member State,NO
+1961,Marsascala,1000,3000,Member State,NO
+1962,Marsaxlokk,1000,3000,Member State,NO
+1963,Mdina,1000,3000,Member State,NO
+1964,Mellieha,1000,3000,Member State,NO
+1965,Mgarr,1000,3000,Member State,NO
+1966,Mosta,1000,3000,Member State,NO
+1967,Mqabba,1000,3000,Member State,NO
+1968,Msida,1000,3000,Member State,NO
+1969,Munxar,1000,3000,Member State,NO
+1970,Nadur,1000,3000,Member State,NO
+1971,Naxxar,1000,3000,Member State,NO
+1972,Paola,1000,3000,Member State,NO
+1973,Pembroke,1000,3000,Member State,NO
+1974,Pieta,1000,3000,Member State,NO
+1975,Qala,1000,3000,Member State,NO
+1976,Qormi,1000,3000,Member State,NO
+1977,Qrendi,1000,3000,Member State,NO
+1978,Rabat (malta),1000,3000,Member State,NO
+1979,Rabat (victoria),1000,3000,Member State,NO
+1980,Safi,1000,3000,Member State,NO
+1981,San Giljan,1000,3000,Member State,NO
+1982,San Gwann,1000,3000,Member State,NO
+1983,San Lawrenz,1000,3000,Member State,NO
+1984,San Pawl Ii-bahar,1000,3000,Member State,NO
+1985,Sannat,1000,3000,Member State,NO
+1986,Santa Lucija,1000,3000,Member State,NO
+1987,Santa Venera,1000,3000,Member State,NO
+1988,Siggiewi,1000,3000,Member State,NO
+1989,Sliema,1000,3000,Member State,NO
+1990,Swieqi,1000,3000,Member State,NO
+1991,Ta' Xbiex,1000,3000,Member State,NO
+1992,Tarxien,1000,3000,Member State,NO
+1993,Valletta,1000,3000,Member State,NO
+1994,Xaghra,1000,3000,Member State,NO
+1995,Xewkija,1000,3000,Member State,NO
+1996,Xghajra,1000,3000,Member State,NO
+1997,Zabbar,1000,3000,Member State,NO
+1998,Zebbug (gozo),1000,3000,Member State,NO
+1999,Zebbug (malta),1000,3000,Member State,NO
+2000,Zejtun,1000,3000,Member State,NO
+2001,Zurrieq,1000,3000,Member State,NO
+2619,Administrative unit not available,1000,3000,Member State,NO
+2675,Gorenjska,1000,3000,Member State,NO
+2676,Goriska,1000,3000,Member State,NO
+2677,Jugovzodna Slovenija,1000,3000,Member State,NO
+2678,Koroska,1000,3000,Member State,NO
+2679,Notranjsko-kraska,1000,3000,Member State,NO
+2680,Obalno-kraska,1000,3000,Member State,NO
+2681,Osrednjeslovenska,1000,3000,Member State,NO
+2682,Podravska,1000,3000,Member State,NO
+2683,Pomurska,1000,3000,Member State,NO
+2684,Savinjska,1000,3000,Member State,NO
+2685,Spodnjeposavska,1000,3000,Member State,NO
+2686,Zasavska,1000,3000,Member State,NO
+1336,Anatoliki Makedonia Kai Thraki,1000,3000,Member State,NO
+1337,Attiki,1000,3000,Member State,NO
+1338,Dytiki Ellada,1000,3000,Member State,NO
+1339,Dytiki Makedonia,1000,3000,Member State,NO
+1340,Ionioi Nisoi,1000,3000,Member State,NO
+1341,Ipeiros,1000,3000,Member State,NO
+1342,Kentriki Makedonia,1000,3000,Member State,NO
+1343,Kriti,1000,3000,Member State,NO
+1345,Peloponnisos,1000,3000,Member State,NO
+1346,Sterea Ellada,1000,3000,Member State,NO
+1347,Thessalia,1000,3000,Member State,NO
+1348,Voreio Aigaio,1000,3000,Member State,NO
+40766,Notio Aigaio,1000,3000,Member State,NO
+2386,Aveiro,1000,3000,Member State,NO
+2387,Beja,1000,3000,Member State,NO
+2388,Braga,1000,3000,Member State,NO
+2389,Braganca,1000,3000,Member State,NO
+2390,Castelo Branco,1000,3000,Member State,NO
+2391,Coimbra,1000,3000,Member State,NO
+2392,Evora,1000,3000,Member State,NO
+2393,Faro,1000,3000,Member State,NO
+2394,Guarda,1000,3000,Member State,NO
+2405,Leiria,1000,3000,Member State,NO
+2406,Lisboa,1000,3000,Member State,NO
+2407,Portalegre,1000,3000,Member State,NO
+2408,Porto,1000,3000,Member State,NO
+2409,Santarem,1000,3000,Member State,NO
+2410,Setubal,1000,3000,Member State,NO
+2411,Viana Do Castelo,1000,3000,Member State,NO
+2412,Vila Real,1000,3000,Member State,NO
+2413,Viseu,1000,3000,Member State,NO
+652,Federacija Bosne I Hercegovine,1000,3000,Member State,NO
+653,Republika Srpska,1000,3000,Member State,NO
+2716,Andalucía,1000,3000,Member State,NO
+2717,Aragón,1000,3000,Member State,NO
+2720,Canarias,1000,3000,Member State,NO
+2721,Cantabria,1000,3000,Member State,NO
+2723,Castilla-La Mancha,1000,3000,Member State,NO
+2722,Castilla y León,1000,3000,Member State,NO
+2724,Cataluña/Catalunya,1000,3000,Member State,NO
+2725,Ciudad Autónoma de Ceuta,1000,3000,Member State,NO
+2730,Ciudad Autónoma de Melilla,1000,3000,Member State,NO
+2729,Comunidad de Madrid,1000,3000,Member State,NO
+2732,Comunidad Foral de Navarra,1000,3000,Member State,NO
+2726,Comunitat Valenciana,1000,3000,Member State,NO
+2727,Extremadura,1000,3000,Member State,NO
+2728,Galicia,1000,3000,Member State,NO
+2719,Illes Balears,1000,3000,Member State,NO
+2734,La Rioja,1000,3000,Member State,NO
+2733,País Vasco/Euskadi,1000,3000,Member State,NO
+2718,Principado de Asturias,1000,3000,Member State,NO
+2731,Región de Murcia,1000,3000,Member State,NO
+25371,Borski,2006,3000,Member State,NO
+25372,Branicevski,2006,3000,Member State,NO
+25373,Grad Beograd,2006,3000,Member State,NO
+25374,Jablanicki,2006,3000,Member State,NO
+25375,Juzno-backi,2006,3000,Member State,NO
+25376,Juzno-banatski,2006,3000,Member State,NO
+25377,Kolubarski,2006,3000,Member State,NO
+25378,Kosovski,2006,3000,Member State,NO
+25379,Kosovsko-mitrovatski,2006,3000,Member State,NO
+25380,Kosovsko-pomoravski,2006,3000,Member State,NO
+25381,Macvanski,2006,3000,Member State,NO
+25382,Moravicki,2006,3000,Member State,NO
+25383,Nisavski,2006,3000,Member State,NO
+25384,Pcinjski,2006,3000,Member State,NO
+25385,Pecki,2006,3000,Member State,NO
+25386,Pirotski,2006,3000,Member State,NO
+25387,Podunavski,2006,3000,Member State,NO
+25388,Pomoravski,2006,3000,Member State,NO
+25389,Prizremski,2006,3000,Member State,NO
+25390,Rasinski,2006,3000,Member State,NO
+25391,Raski,2006,3000,Member State,NO
+25392,Severno-backi,2006,3000,Member State,NO
+25393,Severno-banatski,2006,3000,Member State,NO
+25394,Srednje-banatski,2006,3000,Member State,NO
+25395,Sremski,2006,3000,Member State,NO
+25396,Sumadijski,2006,3000,Member State,NO
+25397,Toplicki,2006,3000,Member State,NO
+25398,Zajecarski,2006,3000,Member State,NO
+25399,Zapadno-backi,2006,3000,Member State,NO
+25400,Zlatiborski,2006,3000,Member State,NO
+1334,Administrative unit not available,1000,3000,UK Non-Self-Governing Territory,NO
+1616,Abruzzi,1000,3000,Member State,NO
+1617,Basilicata,1000,3000,Member State,NO
+1618,Calabria,1000,3000,Member State,NO
+1619,Campania,1000,3000,Member State,NO
+1620,Emilia-romagna,1000,3000,Member State,NO
+1621,Friuli-venezia Giulia,1000,3000,Member State,NO
+1622,Lazio,1000,3000,Member State,NO
+1623,Liguria,1000,3000,Member State,NO
+1624,Lombardia,1000,3000,Member State,NO
+1625,Marche,1000,3000,Member State,NO
+1626,Molise,1000,3000,Member State,NO
+1627,Piemonte,1000,3000,Member State,NO
+1628,Puglia,1000,3000,Member State,NO
+1629,Sardegna,1000,3000,Member State,NO
+1630,Sicilia,1000,3000,Member State,NO
+1631,Toscana,1000,3000,Member State,NO
+1632,Trentino-alto Adige,1000,3000,Member State,NO
+1633,Umbria,1000,3000,Member State,NO
+1634,Valle D'aosta,1000,3000,Member State,NO
+1635,Veneto,1000,3000,Member State,NO
+391,Andorra La Vella,1000,3000,Member State,NO
+392,Canillo,1000,3000,Member State,NO
+393,Encamp,1000,3000,Member State,NO
+394,Escaldes-engordany,1000,3000,Member State,NO
+395,La Massana,1000,3000,Member State,NO
+396,Ordino,1000,3000,Member State,NO
+397,Sant Julia De Loria,1000,3000,Member State,NO
+305,Berat,1000,3000,Member State,NO
+306,Bulqize,1000,3000,Member State,NO
+307,Delvine,1000,3000,Member State,NO
+308,Devoll,1000,3000,Member State,NO
+309,Diber,1000,3000,Member State,NO
+310,Durres,1000,3000,Member State,NO
+311,Elbasan,1000,3000,Member State,NO
+312,Fier,1000,3000,Member State,NO
+313,Gjirokaster,1000,3000,Member State,NO
+314,Gramsh,1000,3000,Member State,NO
+315,Has,1000,3000,Member State,NO
+316,Kavaje,1000,3000,Member State,NO
+317,Kolonje,1000,3000,Member State,NO
+318,Korce,1000,3000,Member State,NO
+319,Kruje,1000,3000,Member State,NO
+320,Kucove,1000,3000,Member State,NO
+321,Kukes,1000,3000,Member State,NO
+322,Kurbin,1000,3000,Member State,NO
+323,Lezhe,1000,3000,Member State,NO
+324,Librazhd,1000,3000,Member State,NO
+325,Lushnje,1000,3000,Member State,NO
+326,Malesi E Madhe,1000,3000,Member State,NO
+327,Mallakaster,1000,3000,Member State,NO
+328,Mat,1000,3000,Member State,NO
+329,Mirdite,1000,3000,Member State,NO
+330,Peqin,1000,3000,Member State,NO
+331,Permet,1000,3000,Member State,NO
+332,Pogradec,1000,3000,Member State,NO
+333,Puke,1000,3000,Member State,NO
+334,Sarande,1000,3000,Member State,NO
+335,Shkoder,1000,3000,Member State,NO
+336,Skrapar,1000,3000,Member State,NO
+337,Tepelene,1000,3000,Member State,NO
+338,Tirane,1000,3000,Member State,NO
+339,Tropoje,1000,3000,Member State,NO
+340,Vlore,1000,3000,Member State,NO
+2074,Administrative unit not available,1000,3000,Member State,NO
+2158,Drenthe,1000,3000,Member State,NO
+2159,Flevoland,1000,3000,Member State,NO
+2160,Friesland,1000,3000,Member State,NO
+2161,Gelderland,1000,3000,Member State,NO
+2162,Groningen,1000,3000,Member State,NO
+2163,Limburg,1000,3000,Member State,NO
+2164,Noord-brabant,1000,3000,Member State,NO
+2165,Noord-holland,1000,3000,Member State,NO
+2166,Overijssel,1000,3000,Member State,NO
+2167,Utrecht,1000,3000,Member State,NO
+2168,Zeeland,1000,3000,Member State,NO
+2169,Zuid-holland,1000,3000,Member State,NO
+1876,Diekirch,1000,3000,Member State,NO
+1877,Grevenmacher,1000,3000,Member State,NO
+1878,Luxembourg,1000,3000,Member State,NO
+1854,Balzers,1000,3000,Member State,NO
+1855,Eschen,1000,3000,Member State,NO
+1856,Gamprin,1000,3000,Member State,NO
+1857,Mauren,1000,3000,Member State,NO
+1859,Planken,1000,3000,Member State,NO
+1860,Ruggell,1000,3000,Member State,NO
+1861,Schaan,1000,3000,Member State,NO
+1862,Schellenberg,1000,3000,Member State,NO
+1863,Triesen,1000,3000,Member State,NO
+1864,Triesenberg,1000,3000,Member State,NO
+1865,Vaduz,1000,3000,Member State,NO
+1248,Alsace,1000,3000,Member State,NO
+1249,Aquitaine,1000,3000,Member State,NO
+1250,Auvergne,1000,3000,Member State,NO
+1251,Basse-Normandie,1000,3000,Member State,NO
+1252,Bourgogne,1000,3000,Member State,NO
+1253,Bretagne,1000,3000,Member State,NO
+1254,Centre,1000,3000,Member State,NO
+1255,Champagne-Ardenne,1000,3000,Member State,NO
+1256,Corse,1000,3000,Member State,NO
+1257,Franche-Comte,1000,3000,Member State,NO
+1258,Haute-Normandie,1000,3000,Member State,NO
+1259,Ile-de-France,1000,3000,Member State,NO
+1260,Languedoc-Rousillon,1000,3000,Member State,NO
+1262,Limousin,1000,3000,Member State,NO
+1263,Lorraine,1000,3000,Member State,NO
+1264,Midi-Pyrenees,1000,3000,Member State,NO
+1265,Nord-Pas-de-Calais,1000,3000,Member State,NO
+1266,Pays-de-la-Loire,1000,3000,Member State,NO
+1267,Picardie,1000,3000,Member State,NO
+1268,Poitou-Charentes,1000,3000,Member State,NO
+1269,Provence-Alpes-Cote-d'Azur,1000,3000,Member State,NO
+1270,Rhone-Alpes,1000,3000,Member State,NO
+1308,Baden-Wuerttemberg,1000,3000,Member State,NO
+1309,Bayern,1000,3000,Member State,NO
+1310,Berlin,1000,3000,Member State,NO
+1311,Brandenburg,1000,3000,Member State,NO
+1312,Bremen,1000,3000,Member State,NO
+1313,Hamburg,1000,3000,Member State,NO
+1314,Hessen,1000,3000,Member State,NO
+1315,Mecklenburg-Vorpommern,1000,3000,Member State,NO
+1316,Niedersachsen,1000,3000,Member State,NO
+1317,Nordrhein-Westfalen,1000,3000,Member State,NO
+1318,Rheinland-Pfalz,1000,3000,Member State,NO
+1319,Saarland,1000,3000,Member State,NO
+1320,Sachsen,1000,3000,Member State,NO
+1321,Sachsen-Anhalt,1000,3000,Member State,NO
+1322,Schleswig-Holstein,1000,3000,Member State,NO
+1323,Thueringen,1000,3000,Member State,NO
+2807,Aargau,1000,3000,Member State,NO
+2808,Appenzell Ausser-rhoden,1000,3000,Member State,NO
+2809,Appenzell Inner-rhoden,1000,3000,Member State,NO
+2810,Basel-landschaft,1000,3000,Member State,NO
+2811,Basel-stadt,1000,3000,Member State,NO
+2812,Bern,1000,3000,Member State,NO
+2813,Fribourg,1000,3000,Member State,NO
+2814,Geneve,1000,3000,Member State,NO
+2815,Glarus,1000,3000,Member State,NO
+2816,Graubunden,1000,3000,Member State,NO
+2817,Jura,1000,3000,Member State,NO
+2818,Luzern,1000,3000,Member State,NO
+2819,Neuchatel,1000,3000,Member State,NO
+2820,Nidwalden,1000,3000,Member State,NO
+2821,Obwalden,1000,3000,Member State,NO
+2822,Sankt Gallen,1000,3000,Member State,NO
+2823,Schaffhausen,1000,3000,Member State,NO
+2824,Schwyz,1000,3000,Member State,NO
+2825,Solothurn,1000,3000,Member State,NO
+2826,Thurgau,1000,3000,Member State,NO
+2827,Ticino,1000,3000,Member State,NO
+2828,Uri,1000,3000,Member State,NO
+2829,Valais,1000,3000,Member State,NO
+2830,Vaud,1000,3000,Member State,NO
+2831,Zug,1000,3000,Member State,NO
+2832,Zurich,1000,3000,Member State,NO
+600,Region de Bruxelles-Capitale / Brussels Hoofdstedelijk Gewes,1000,3000,Member State,NO
+601,Vlaams Gewest,1000,3000,Member State,NO
+602,Region wallonne,1000,3000,Member State,NO
+478,Burgenland,1000,3000,Member State,NO
+479,Karnten,1000,3000,Member State,NO
+480,Niederosterreich,1000,3000,Member State,NO
+481,Oberosterreich,1000,3000,Member State,NO
+482,Salzburg,1000,3000,Member State,NO
+483,Steiermark,1000,3000,Member State,NO
+484,Tirol,1000,3000,Member State,NO
+485,Vorarlberg,1000,3000,Member State,NO
+486,Wien,1000,3000,Member State,NO
+2242,Administrative unit not available,1000,3000,AU Territory,NO
+2171,Auckland,1000,3000,Member State,NO
+2172,Bay Of Plenty,1000,3000,Member State,NO
+2173,Canterbury,1000,3000,Member State,NO
+2174,East Cape,1000,3000,Member State,NO
+2175,Hawke's Bay,1000,3000,Member State,NO
+2176,Nelson-marlborough,1000,3000,Member State,NO
+2177,Northland,1000,3000,Member State,NO
+2178,Otago,1000,3000,Member State,NO
+2179,Southland,1000,3000,Member State,NO
+2180,Taranaki,1000,3000,Member State,NO
+2181,Waikato,1000,3000,Member State,NO
+2182,Wanganui-manawatu,1000,3000,Member State,NO
+2183,Wellington,1000,3000,Member State,NO
+2184,Westland,1000,3000,Member State,NO
+933,Administrative unit not available,1000,3000,AU Territory,NO
+931,Administrative unit not available,1000,3000,AU Territory,NO
+468,Australian Capital Territory,1000,3000,Member State,NO
+469,Coral Sea Islands Territory,1000,3000,Member State,NO
+470,New South Wales,1000,3000,Member State,NO
+471,Northern Territory,1000,3000,Member State,NO
+472,Other Territories,1000,3000,Member State,NO
+473,Queensland,1000,3000,Member State,NO
+474,South Australia,1000,3000,Member State,NO
+475,Tasmania,1000,3000,Member State,NO
+476,Victoria,1000,3000,Member State,NO
+477,Western Australia,1000,3000,Member State,NO
+467,Administrative unit not available,1000,3000,AU Territory,NO
+2290,Central,1000,3000,Member State,NO
+2291,Chimbu,1000,3000,Member State,NO
+2292,East New Britain,1000,3000,Member State,NO
+2293,East Sepik,1000,3000,Member State,NO
+2294,Eastern Highlands,1000,3000,Member State,NO
+2295,Enga,1000,3000,Member State,NO
+2296,Gulf,1000,3000,Member State,NO
+2297,Madang,1000,3000,Member State,NO
+2298,Manus,1000,3000,Member State,NO
+2299,Milne Bay,1000,3000,Member State,NO
+2300,Morobe,1000,3000,Member State,NO
+2301,National Capital District,1000,3000,Member State,NO
+2302,New Ireland,1000,3000,Member State,NO
+2303,Northern,1000,3000,Member State,NO
+2304,Northern Solomons,1000,3000,Member State,NO
+2305,Southern Highlands,1000,3000,Member State,NO
+2306,West New Britain,1000,3000,Member State,NO
+2307,West Sepik,1000,3000,Member State,NO
+2308,Western,1000,3000,Member State,NO
+2309,Western Highlands,1000,3000,Member State,NO
+3296,Malampa,1000,3000,Member State,NO
+3297,Penama,1000,3000,Member State,NO
+3298,Sanma,1000,3000,Member State,NO
+3299,Shefa,1000,3000,Member State,NO
+3300,Tafea,1000,3000,Member State,NO
+3301,Torba,1000,3000,Member State,NO
+2687,Administrative unit not available,1000,3000,Member State,NO
+2170,Administrative unit not available,1000,3000,FR Non-Self-Governing Territory,NO
+40187,Central,1000,3000,Member State,NO
+40188,Eastern,1000,3000,Member State,NO
+40189,Northern,1000,3000,Member State,NO
+40190,Western,1000,3000,Member State,NO
+2243,Administrative unit not available,1000,3000,US Territory,NO
+2002,Administrative unit not available,1000,3000,Member State,NO
+2150,Administrative unit not available,1000,3000,Member State,NO
+2278,Administrative unit not available,1000,3000,Member State,NO
+1739,Administrative unit not available,1000,3000,Member State,NO
+1359,Administrative unit not available,1000,3000,US Non-Self-Governing Territory,NO
+2060,Administrative unit not available,1000,3000,Member State,NO
+2976,Administrative unit not available,1000,3000,Member State,NO
+2618,Administrative unit not available,1000,3000,Member State,NO
+3103,Administrative unit not available,1000,3000,Member State,NO
+3391,Administrative unit not available,1000,3000,US Territory,NO
+3392,Administrative unit not available,1000,3000,FR Territory,NO
+2975,Administrative unit not available,1000,3000,NZ Non-Self-Governing Territory,NO
+1273,Administrative unit not available,1000,3000,FR Territory,NO
+2369,Administrative unit not available,1000,3000,UK Non-Self-Governing Territory,NO
+2241,Administrative unit not available,1000,3000,NZ Territory,NO
+980,Administrative unit not available,1000,3000,NZ Territory,NO
+389,Administrative unit not available,1000,3000,US Non-Self-Governing Territory,NO
