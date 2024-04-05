@@ -136,3 +136,5 @@ data/test.csv
 data/train.csv
 data/val.csv
 /model_weights
+
+**/images/*

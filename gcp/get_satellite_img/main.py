@@ -102,7 +102,7 @@ def compute_and_draw_arrow(img_path, doc, img_w_arrow_path):
 
     photo_references = (
         coll.where(filter=FieldFilter("time", ">", start_time))
-        .where(filter=FieldFilter("time", "<=", origin_time))
+        .where(filter=FieldFilter("time", "<", origin_time))
         .order_by("time", direction="DESCENDING")
         .limit(5)
         .get()
