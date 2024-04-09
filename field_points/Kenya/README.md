@@ -25,8 +25,6 @@
 - Water: 11,227 sq km
 
 **Landscape** <sup>[3]</sup>
-
-Geographic Regions
 1. Lake Victoria Basin: part of a plateau rising eastward from the lakeshore to the Rift highlands.
 2. Great Rift Valley & Associated Highlands: splits the highland region into two sections: Mau Escarpment to the west & Aberdare Range to the east. Valley itself is 30 to 80 miles (50 to 130 km) wide. Important in historic & economic development, this region was focus of European settlement.
 3. Eastern Plateau Forelands: just east of Rift highlands, constitute a vast plateau of ancient rocks gently sloping to the coastal plain, scattered hills & striking elevated formations
