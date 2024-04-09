@@ -22,22 +22,21 @@ Eastern Africa, bordering the Indian Ocean, between Somalia and Tanzania
 - Land: 569,140 sq km
 - Water: 11,227 sq km
 
-**Landscape**
-- Low plains rise to central highlands bisected by Great Rift Valley
-- Fertile plateau in west
-- Coastal Region: Mangrove swamps, low-lying coastal areas
-- Inland: Broad plains, many hills
-- Northern & Eastern: Semi-arid/arid regions
-- Southern: Most of population and economic production, low-lying coastal area and plateau
-- Highlands: Fertile plateau, successful agricultural production
+**Landscape** <sup>[3]</sup>
+Geographic Regions
+1. Lake Victoria Basin: part of a plateau rising eastward from the lakeshore to the Rift highlands.
+2. Great Rift Valley & Associated Highlands: splits the highland region into two sections: Mau Escarpment to the west & Aberdare Range to the east. Valley itself is 30 to 80 miles (50 to 130 km) wide. Important in historic & economic development, this region was focus of European settlement.
+3. Eastern Plateau Forelands: just east of Rift highlands, constitute a vast plateau of ancient rocks gently sloping to the coastal plain, scattered hills & striking elevated formations
+4. North & Northeast Semi-arid/Arid Regions: vast region extending from Ugandan border through Lake Rudolf to the plateau area between the Ethiopian and Kenyan highlands, movement of people & livestock is limited by availability of water
+5. Coastal Region: runs for about 250 miles (400 km) along the Indian Ocean, mangrove swamps, low-lying coastal areas
 
 **Terrestrial Ecoregions**
 1. Guinean forest-savanna mosaic
 2. Sahelian Acacia savanna
-3. West Sudanian savanna, and
+3. West Sudanian savanna
 4. Guinean mangroves
 
-**Land Use**
+**Land Use** <sup>[1]</sup>
 - Agricultural land: 48.1% (2018 est.)
 - Arable land: 9.8% (2018 est.)
 - Permanent crops: 0.9% (2018 est.)
@@ -47,16 +46,23 @@ Eastern Africa, bordering the Indian Ocean, between Somalia and Tanzania
 
 **Climate**
 - Varies from tropical along coast to arid in interior
-- Rainy season: May to November
-- Dry season: December to April
+- Seasonal climatic changes controlled by large-scale pressure systems of western Indian Ocean and adjacent landmasses
+- Long rain season: March to May
+- Short rain season: October to November
 
-**Natural Resources**
+**Natural Resources** <sup>[1]</sup>
 Limestone, Soda ash, Salt, Gemstones, Fluorspar, Zinc, Diatomite, Gypsum, Wildlife, Hydropower
 
 **Soils**
 - In northwest soils are highly favorable for peanut cultivation
 - Center and South of the country have a layer of laterite hidden under sand which affords sparse grazing in rainy season
 - Near river mouths soils are salty and favorable for grazing
+
+**Other Facts** <sup>[1]</sup>
+- Kenyan Highlands comprise one of the most successful agricultural production regions in Africa
+- Mount Kenya is an extinct volcano in Kenya and the second-highest peak in Africa
+- Unique physiography supports abundant/varied wildlife
+- Kenya shares a part of Lake Victoria, the world's largest tropical lake & the second largest fresh water lake
 
 ### Crop Calendars
 
