@@ -14,13 +14,22 @@
 <a title="TUBS, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Kenya,_administrative_divisions_-_de_-_colored.svg"><img width="300" alt="Kenya, administrative divisions - de - colored" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Kenya%2C_administrative_divisions_-_de_-_colored.svg/512px-Kenya%2C_administrative_divisions_-_de_-_colored.svg.png"></a>
 
 ### Geography
+**Location**
+Eastern Africa, bordering the Indian Ocean, between Somalia and Tanzania
+
 **Area** <sup>[1]</sup>
 - Total: 580,367 sq km
 - Land: 569,140 sq km
 - Water: 11,227 sq km
 
 **Landscape**
-
+- Low plains rise to central highlands bisected by Great Rift Valley
+- Fertile plateau in west
+- Coastal Region: Mangrove swamps, low-lying coastal areas
+- Inland: Broad plains, many hills
+- Northern & Eastern: Semi-arid/arid regions
+- Southern: Most of population and economic production, low-lying coastal area and plateau
+- Highlands: Fertile plateau, successful agricultural production
 
 **Terrestrial Ecoregions**
 1. Guinean forest-savanna mosaic
@@ -28,9 +37,21 @@
 3. West Sudanian savanna, and
 4. Guinean mangroves
 
+**Land Use**
+- Agricultural land: 48.1% (2018 est.)
+- Arable land: 9.8% (2018 est.)
+- Permanent crops: 0.9% (2018 est.)
+- Permanent pasture: 37.4% (2018 est.)
+- Forest: 6.1% (2018 est.)
+- Other: 45.8% (2018 est.)
+
 **Climate**
+- Varies from tropical along coast to arid in interior
 - Rainy season: May to November
 - Dry season: December to April
+
+**Natural Resources**
+Limestone, Soda ash, Salt, Gemstones, Fluorspar, Zinc, Diatomite, Gypsum, Wildlife, Hydropower
 
 **Soils**
 - In northwest soils are highly favorable for peanut cultivation
