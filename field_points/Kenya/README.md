@@ -52,6 +52,7 @@
 - Short rain season: October to November
 
 **Natural Resources** <sup>[1]</sup>
+
 Limestone, Soda ash, Salt, Gemstones, Fluorspar, Zinc, Diatomite, Gypsum, Wildlife, Hydropower
 
 **Soils**
