@@ -22,17 +22,17 @@
 **Landscape**
 
 
-**Terrestrial Ecoregions** 
+**Terrestrial Ecoregions**
 1. Guinean forest-savanna mosaic
 2. Sahelian Acacia savanna
 3. West Sudanian savanna, and
 4. Guinean mangroves
 
-**Climate** 
+**Climate**
 - Rainy season: May to November
 - Dry season: December to April
 
-**Soils** 
+**Soils**
 - In northwest soils are highly favorable for peanut cultivation
 - Center and South of the country have a layer of laterite hidden under sand which affords sparse grazing in rainy season
 - Near river mouths soils are salty and favorable for grazing
