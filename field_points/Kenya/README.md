@@ -15,7 +15,9 @@
 
 ### Geography
 **Location** <sup>[1]</sup>
-Eastern Africa, bordering the Indian Ocean, between Somalia and Tanzania
+- Eastern Africa
+- Bordering the Indian Ocean
+- Between Somalia & Tanzania
 
 **Area** <sup>[1]</sup>
 - Total: 580,367 sq km
