@@ -14,7 +14,7 @@
 <a title="TUBS, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Kenya,_administrative_divisions_-_de_-_colored.svg"><img width="300" alt="Kenya, administrative divisions - de - colored" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Kenya%2C_administrative_divisions_-_de_-_colored.svg/512px-Kenya%2C_administrative_divisions_-_de_-_colored.svg.png"></a>
 
 ### Geography
-**Location**
+**Location** <sup>[1]</sup>
 Eastern Africa, bordering the Indian Ocean, between Somalia and Tanzania
 
 **Area** <sup>[1]</sup>
