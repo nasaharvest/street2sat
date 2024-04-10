@@ -31,7 +31,7 @@
 4. North & Northeast Semi-arid/Arid Regions: vast region extending from Ugandan border through Lake Rudolf to the plateau area between the Ethiopian and Kenyan highlands, movement of people & livestock is limited by availability of water
 5. Coastal Region: runs for about 250 miles (400 km) along the Indian Ocean, mangrove swamps, low-lying coastal areas
 
-**Terrestrial Ecoregions**
+**Terrestrial Ecoregions** <sup>[2]</sup>
 1. Guinean forest-savanna mosaic
 2. Sahelian Acacia savanna
 3. West Sudanian savanna
