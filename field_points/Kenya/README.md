@@ -40,7 +40,7 @@ FAO Stat <sup>[1]</sup>
 - Permanent pasture: 37.4% (2018 est.)
 - Forest: 6.1% (2018 est.)
 - Other: 45.8% (2018 est.)
-  
+
 Terrestrial Ecoregions <sup>[2]</sup>
 1. Guinean forest-savanna mosaic
 2. Sahelian Acacia savanna
