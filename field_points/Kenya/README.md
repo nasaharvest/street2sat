@@ -51,10 +51,6 @@
 - Long rain season: March to May
 - Short rain season: October to November
 
-**Natural Resources** <sup>[1]</sup>
-
-Limestone, Soda ash, Salt, Gemstones, Fluorspar, Zinc, Diatomite, Gypsum, Wildlife, Hydropower
-
 **Soils**
 - In northwest soils are highly favorable for peanut cultivation
 - Center and South of the country have a layer of laterite hidden under sand which affords sparse grazing in rainy season
