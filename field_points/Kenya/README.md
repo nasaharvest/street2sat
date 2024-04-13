@@ -51,7 +51,7 @@ Total: 58.037 Mha
     │   │   └── Temporary fallow: 0.648 Mha
     │   └── Permanent crops: 0.610 Mha
     └── Permanent meadows & pastures: 21.3 Mha
-
+```
 **Climate**
 - Varies from tropical along coast to arid in interior
 - Seasonal climatic changes controlled by large-scale pressure systems of western Indian Ocean and adjacent landmasses
@@ -85,5 +85,3 @@ Total: 58.037 Mha
 - The USDA FAS crop calendar also includes cotton.
 - Both crop calendars show a sowing/planting period from June to August
 - Both crop calendars show a harvest period from September to February -->
-
-```
