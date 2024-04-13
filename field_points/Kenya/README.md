@@ -32,6 +32,7 @@
 5. Coastal Region: runs for about 250 miles (400 km) along the Indian Ocean, mangrove swamps, low-lying coastal areas
 
 **Land Use**
+
 CIA Factbook <sup>[1]</sup>
 - Agricultural land: 48.1% (2018 est.)
 - Arable land: 9.8% (2018 est.)
