@@ -85,3 +85,21 @@ Total: 58.037 Mha
 - The USDA FAS crop calendar also includes cotton.
 - Both crop calendars show a sowing/planting period from June to August
 - Both crop calendars show a harvest period from September to February -->
+
+### Agriculture
+
+**Farming Practices**
+
+- Main food crops in Kenya are maize, wheat, rice, potatoes, Green grams, and beans
+- Maize is the principal staple food of Kenya and it is grown in 90% of all Kenyan farms
+- The common bean and the Irish potato are the most important second and third most important crop
+- Most of the crops are grown as intercrop (one main crop planted with a second crop) - very traditional practice
+- Most cropping is rainfed
+- Seventy five percent of Kenyan agriculture is practiced by small holder farmers
+
+**Crop Losses**
+
+- Crop diseases, pests, and weeds greatly reduce the potential of these crops both in quality and quantity.
+- Losses due to these constraints are estimated at over 30% (2019)
+- Soil fertility and land degradation are major factors in declining productivity
+- Due to low productivity and decline in staple crops like corn, farmers are starting to grow traditional - food crops such as millet, sorghum, bananas, yams, greens and sweet potatoes.
