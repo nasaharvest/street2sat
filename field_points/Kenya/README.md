@@ -10,7 +10,7 @@
 [6]: https://www.fao.org/faostat/en/#data/RL
 [7]: https://www.infonet-biovision.org/agro-ecological-zones/aezs-kenya-system
 [8]: https://unctad.org/system/files/non-official-document/cw070823_p04_Kenya.pdf
-[9]: https://www.kalro.org/divisions/crops/#:~:text=Currently%2C%20the%20annual%20crop%20production,categories%20in%20quality%20and%20quantity. 
+[9]: https://www.kalro.org/divisions/crops/#:~:text=Currently%2C%20the%20annual%20crop%20production,categories%20in%20quality%20and%20quantity.
 [10]: https://food.agricultureauthority.go.ke/index.php/sectors/overview#:~:text=Maize%20is%20the%20principal%20staple,legume%20and%20tuber%20crop%20respectively
 
 ### Admin Zones
