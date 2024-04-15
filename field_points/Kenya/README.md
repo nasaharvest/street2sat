@@ -12,6 +12,7 @@
 [8]: https://unctad.org/system/files/non-official-document/cw070823_p04_Kenya.pdf
 [9]: https://www.kalro.org/divisions/crops/#:~:text=Currently%2C%20the%20annual%20crop%20production,categories%20in%20quality%20and%20quantity.
 [10]: https://food.agricultureauthority.go.ke/index.php/sectors/overview#:~:text=Maize%20is%20the%20principal%20staple,legume%20and%20tuber%20crop%20respectively
+[11]: https://www.livelihoodscentre.org/e-library-detail/-/asset_publisher/h9rC3hOrIBX7/content/lean-period#:~:text=Asset%20Publisher-,LEAN%20PERIOD,food%20are%20at%20their%20highest.
 
 ### Admin Zones
 <a title="TUBS, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Kenya,_administrative_divisions_-_de_-_colored.svg"><img width="300" alt="Kenya, administrative divisions - de - colored" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Kenya%2C_administrative_divisions_-_de_-_colored.svg/512px-Kenya%2C_administrative_divisions_-_de_-_colored.svg.png"></a>
@@ -82,23 +83,28 @@ Total: 58.037 Mha
 
 <img src="https://www.fao.org/giews/countrybrief/country/KEN/graphics/1_2023-06-12.jpg" />
 
+- This graph shows the crop calender for staple food crops produced in Kenya
+- The lean period refers to the time of year when the access to sufficient food is most difficult
+- The time period before the harvest when the harvest from the previous year has been exhausted and prices of food are at their highest, e.g, June to October. <sup>[11]</sup>
 
 **USDA/FAS Crop Calendar** <sup>[5]</sup>
 
 <img src="https://ipad.fas.usda.gov/countrysummary/images/KE/cropcalendar/eafrica_ke_calendar.png" />
 
+- This graph shows the crop calender for the most produced crops in Kenya and includes the short rain and long rain periods for maize/corn production
+
 **Crop Calendar Summary Comparison**
-<!-- - Both crop calendars include: groundnut, maize, millet, sorghum, and rice.
+- Both crop calendars include: groundnut, maize, millet, sorghum, and rice.
 - The USDA FAS crop calendar also includes cotton.
 - Both crop calendars show a sowing/planting period from June to August
-- Both crop calendars show a harvest period from September to February -->
+- Both crop calendars show a harvest period from September to February
 
 ### Agriculture
 
 **Farming Practices** <sup>[8]</sup>
 
-- Main food crops in Kenya are maize, wheat, rice, potatoes, Green grams, and beans
-- Maize is the principal staple food of Kenya and it is grown in 90% of all Kenyan farms
+- Main food crops in Kenya are maize/corn, wheat, rice, potatoes, Green grams, and beans
+- Maize/corn is the principal staple food of Kenya and it is grown in 90% of all Kenyan farms
 - The common bean and the Irish potato are the second and third most important food crop
 - Most crops are grown as intercrop (one main crop planted with a second crop) - very traditional practice
 - Most cropping is rainfed
