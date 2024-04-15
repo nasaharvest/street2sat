@@ -63,6 +63,10 @@ Total: 58.037 Mha
 - Center and South of the country have a layer of laterite hidden under sand which affords sparse grazing in rainy season
 - Near river mouths soils are salty and favorable for grazing
 
+**Agroclimatic Zones in Kenya**
+
+<img src="https://iu.pressbooks.pub/app/uploads/sites/1182/2022/05/AGro-cliimate-Kenya-1-724x1024.jpg" />
+
 **Other Facts** <sup>[1]</sup>
 - Kenyan Highlands comprise one of the most successful agricultural production regions in Africa
 - Mount Kenya is an extinct volcano in Kenya and the second-highest peak in Africa
