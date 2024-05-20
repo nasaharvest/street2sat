@@ -1,6 +1,6 @@
 # Kenya (Rift Valley County)
 
-## Preliminary Analysis of Reviewed Points 
+## Preliminary Analysis of Reviewed Points
 
 ### Geographic distribution
 All points fall within the Nandi North and Nandi South regions (Admin2) of Kenya, all within the Rift Valley County/Admin_1 region.
@@ -11,7 +11,7 @@ All points fall within the Nandi North and Nandi South regions (Admin2) of Kenya
 **Key**: Maize (Red), Sugarcane (Yellow), Banana (Green)
 
 ### Data
-First badge of reviewed points totals 250 points 
+First badge of reviewed points totals 250 points
 - **Dominant crop types**: maize, bananas, and sugarcane
 <img src="https://github.com/nasaharvest/street2sat/assets/124820831/479fa2bb-6e2f-418e-936c-3ae745c1f5f2" width="500" height="600"/>
 
