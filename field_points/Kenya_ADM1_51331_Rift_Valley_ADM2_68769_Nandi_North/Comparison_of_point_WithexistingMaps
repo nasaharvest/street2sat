@@ -67,5 +67,3 @@ Map.addLayer(maize, {color: "red"}, "Maize");
 Map.addLayer(sugarcane, {color: "black"}, "Sugarcane");
 Map.addLayer(banana, {color: "blue"}, "Banana");
 Map.setCenter(35.259,0.31140,10)
-
-
