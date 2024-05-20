@@ -26,4 +26,5 @@ First badge of reviewed points totals 250 points
 
 
 ### Link to GEE Script
-https://code.earthengine.google.com/8585123ec76da977ddbf3cb8a819381a
+- Viewing approved points :  https://code.earthengine.google.com/8585123ec76da977ddbf3cb8a819381a
+- Comparing approved points with existing cropland map: https://code.earthengine.google.com/3c3c4ab6a8b72114ee00b7141548f3f0
