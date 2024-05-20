@@ -24,3 +24,6 @@ First badge of reviewed points totals 250 points
 ### General View
 ![image](https://github.com/nasaharvest/street2sat/assets/124820831/87f75c96-f922-44be-b782-01bbcdafbacd)
 
+
+### Link to GEE Script
+https://code.earthengine.google.com/8585123ec76da977ddbf3cb8a819381a
