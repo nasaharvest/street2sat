@@ -1,0 +1,71 @@
+////////////////Region of Interest(ROI)////////////////
+
+var country = ee.FeatureCollection("FAO/GAUL/2015/level2");
+var kenya = country.filter(ee.Filter.eq("ADM0_NAME", 'Kenya'))
+var roi = country.filter(ee.Filter.eq("ADM2_NAME", 'Nandi North'));
+var roi2 = country.filter(ee.Filter.eq("ADM2_NAME", 'Nandi South'));
+
+//Map.addLayer(kenya)
+//Map.addLayer(roi, {color: "grey"}, 'Nandi North')
+//Map.addLayer(roi2, {color: "white"}, 'Nandi South')
+
+
+////////////////Load other existing cropland maps////////////////
+
+//FIRST MAP
+//import dataset
+var dataset1 = ee.ImageCollection('ESA/WorldCereal/2021/MODELS/v100')
+             .filter("product == 'temporarycrops'")
+             .select('classification')
+             .mosaic().clip(kenya).eq(100)
+             .rename("crop")
+
+
+var viz =  {palette: ["yellow", "Green"]
+};
+
+Map.addLayer(dataset1,viz,"WorldCereal")
+
+
+//SECOND MAP
+//import dataset
+var dataset2 = ee.ImageCollection("users/potapovpeter/Global_cropland_2019")
+            .mosaic().clip(kenya)
+
+//convert to a cropland mask
+var datasetcrop = ee.ImageCollection("users/potapovpeter/Global_cropland_2019")
+            .mosaic().clip(kenya).eq(1)
+
+var vis = {palette:["Yellow","green"]}
+
+Map.addLayer(datasetcrop, vis, "GLAD-Cropland")
+
+
+//THIRD MAP
+var dataset3 = ee.ImageCollection("ESA/WorldCover/v200").first();
+var visualization = {bands: ['Map']};
+
+//center map on ROI
+Map.centerObject(kenya,10)
+
+//clip dataset to region of interest
+//Map.addLayer(dataset.clip(roi), visualization, 'Landcover')
+
+//convert map to cropland mask
+var croplandmask = dataset3.clip(kenya).eq(40)
+
+Map.addLayer(croplandmask, {palette: ["Yellow","Green"]},"World Cover Cropland")
+
+////////////////Load points/////////////////////////////
+
+var nandi = ee.FeatureCollection('users/Diana_Botchway_Frimpong/Merged_Layers');
+var maize = nandi.filter(ee.Filter.eq("Name", 'maize'));
+var sugarcane = nandi.filter(ee.Filter.eq("Name", 'sugarcane'));
+var banana = nandi.filter(ee.Filter.eq("Name", 'banana'));
+
+Map.addLayer(maize, {color: "red"}, "Maize");
+Map.addLayer(sugarcane, {color: "black"}, "Sugarcane");
+Map.addLayer(banana, {color: "blue"}, "Banana");
+Map.setCenter(35.259,0.31140,10)
+
+
