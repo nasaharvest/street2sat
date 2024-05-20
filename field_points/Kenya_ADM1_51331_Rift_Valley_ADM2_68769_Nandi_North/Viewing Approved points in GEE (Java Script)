@@ -1,1 +1,21 @@
+//Convert kmz to kml in google earth pro(or leave same), merge files and then export as SHP in AcrGIS/QGIS
+//After import SHP into GEE
 
+var country = ee.FeatureCollection("FAO/GAUL/2015/level2");
+var kenya = country.filter(ee.Filter.eq("ADM0_NAME", 'Kenya'))
+var roi = country.filter(ee.Filter.eq("ADM2_NAME", 'Nandi North'));
+var roi2 = country.filter(ee.Filter.eq("ADM2_NAME", 'Nandi South'));
+
+//Map.addLayer(kenya)
+Map.addLayer(roi, {color: "grey"}, 'Nandi North')
+Map.addLayer(roi2, {color: "white"}, 'Nandi South')
+
+var nandi = ee.FeatureCollection('users/Diana_Botchway_Frimpong/Merged_Layers');
+var maize = nandi.filter(ee.Filter.eq("Name", 'maize'));
+var sugarcane = nandi.filter(ee.Filter.eq("Name", 'sugarcane'));
+var banana = nandi.filter(ee.Filter.eq("Name", 'banana'));
+
+Map.addLayer(maize, {color: "red"}, "Maize");
+Map.addLayer(sugarcane, {color: "yellow"}, "Sugarcane");
+Map.addLayer(banana, {color: "green"}, "Banana");
+Map.setCenter(35.259,0.31140,10)
